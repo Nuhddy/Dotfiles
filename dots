@@ -1,0 +1,103 @@
+#! /usr/bin/env bash
+
+
+print_help() {
+    echo "Usage: $(basename $0) ACTION PACKAGE(S)"
+}
+
+print_error() {
+    echo "Error: invalid arguments"
+    print_help
+    exit 1
+}
+
+link() {
+    stow -d $STOW_DIR -t $TARGET_DIR --stow $PKG
+}
+
+unlink() {
+    stow -d $STOW_DIR -t $TARGET_DIR --delete $PKG
+}
+
+relink() {
+    stow -d $STOW_DIR -t $TARGET_DIR --restow $PKG
+}
+
+manage() {
+    if [ -e $INIT_PATH ]; then
+        STOW_PATH=$(echo $INIT_PATH | sed 's@^\(~\|'$HOME'\)\/@'$STOW_DIR'\/'$PKG'\/@')
+
+        if [ ! -d $(dirname $STOW_PATH) ]; then
+            mkdir -p $(dirname $STOW_PATH)
+        fi
+        mv $INIT_PATH $STOW_PATH
+        link
+    else
+        print_error
+    fi
+}
+
+# unmanage() {
+    # if [ -d $STOW_DIR/$PKG ]; then
+        # FILE=$(find $STOW_DIR/$PKG -type f)
+
+    # else
+        # print_error
+    # fi
+# }
+
+
+# MAIN
+
+# Omit ending slash
+STOW_DIR="$HOME/.dotfiles"
+TARGET_DIR="$HOME"
+
+if (( $# > 1 )); then
+
+    PKG=$2
+
+    case $1 in
+
+        link | install)
+            link
+            ;;
+
+        unlink | uninstall)
+            unlink
+            ;;
+
+        relink | reinstall)
+            relink
+            ;;
+
+        manage | add)
+            INIT_PATH=$3
+            manage
+            ;;
+
+        # unmanage | remove)
+            # unmanage
+            # ;;
+
+        *)
+            print_error
+            ;;
+    esac
+
+elif (( $# == 1 )); then
+
+    case $1 in
+
+        help | -h | --help)
+            print_help
+            ;;
+
+        *)
+            print_error
+            ;;
+    esac
+
+else
+    print_error
+fi
