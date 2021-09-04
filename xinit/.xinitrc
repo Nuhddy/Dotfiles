@@ -10,11 +10,4 @@ fi
 eval $(/usr/bin/gnome-keyring-daemon --start --components=pkcs11,secrets,ssh)
 export SSH_AUTH_SOCK
 
-session=${1:-i3}
-
-case $session in
-    awesome)    exec awesome;;
-    bspwm)      exec bspwm;;
-    i3)         exec i3;;
-    qtile)      exec qtile;;
-esac
+exec i3
