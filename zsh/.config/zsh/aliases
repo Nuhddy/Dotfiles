@@ -1,0 +1,32 @@
+# Colored output
+alias diff="diff --color=auto"
+alias grep="grep --color=auto"
+alias ip="ip -color=auto"
+eval $(dircolors ~/.config/dir_colors)
+
+# Use aliases with sudo
+alias sudo="sudo "
+
+# ls
+alias ls="exa --group-directories-first"
+alias ls1="ls -1"
+alias la="ls -a"
+alias la1="ls -a1"
+alias lla="ls -la"
+
+# Safe mv/rm
+alias mv="mv -i"
+alias rm="rm -i"
+
+# Update pacman mirrorlist
+alias mirrorlistupdate="sudo reflector --country Denmark --protocol https \
+    --sort rate --save /etc/pacman.d/mirrorlist"
+
+# Start browser-sync for web dev in current directory
+alias browser-sync-start="browser-sync start --server --files . --no-notify \
+    --port 9000 --host '127.0.0.1'"
+
+# Misc
+alias sv="systemctl"
+
+# vim:ft=zsh

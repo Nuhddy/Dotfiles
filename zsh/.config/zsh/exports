@@ -1,0 +1,27 @@
+HISTFILE="$HOME/.cache/zsh/history"
+HISTSIZE=1000000
+SAVEHIST=1000000
+
+export PATH="$HOME/.local/bin:$HOME/.scripts:$PATH"
+export EDITOR="nvim"
+export VISUAL="nvim"
+export ZPLUG_HOME="$ZDOTDIR/.zplug"
+export npm_config_prefix="$HOME/.local/bin/node_modules"
+
+# Env-specific
+if [ $(hostname) = "fennec" ]; then
+
+    export BROWSER="wslview"
+    export READER="wslview"
+
+else
+
+    export TERM="kitty"
+    export BROWSER="firefox"
+    export READER="zathura"
+    export QT_STYLE_OVERRIDE="gtk2"
+    export _JAVA_OPTIONS="-Dawt.useSystemAAFontSettings=on -Dswing.aatext=true"
+
+fi
+
+# vim:ft=zsh

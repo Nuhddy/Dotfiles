@@ -1,0 +1,30 @@
+source "/usr/share/zsh/scripts/zplug/init.zsh"
+
+# Prompt theme
+zplug "hohmannr/bubblified", as:theme
+
+zplug "chrissicool/zsh-256color"
+zplug "ael-code/zsh-colored-man-pages"
+
+zplug "zsh-users/zsh-autosuggestions"
+zplug "plugins/compleat", from:oh-my-zsh
+zplug "plugins/command-not-found", from:oh-my-zsh
+
+zplug "plugins/sudo", from:oh-my-zsh
+
+# These will run after compinit
+zplug "hlissner/zsh-autopair", defer:2
+zplug "zsh-users/zsh-syntax-highlighting", defer:2
+
+# Install plugins if there are plugins that have not been installed
+if ! zplug check --verbose; then
+    printf "Install? [y/N]: "
+    if read -q; then
+        echo; zplug install
+    fi
+fi
+
+# Source plugins and add commands to $PATH
+zplug load
+
+# vim:ft=zsh
