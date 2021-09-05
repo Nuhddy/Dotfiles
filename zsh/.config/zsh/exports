@@ -16,7 +16,7 @@ if [ $(hostname) = "fennec" ]; then
 
 else
 
-    export TERM="kitty"
+    export TERM="xterm-kitty"
     export BROWSER="firefox"
     export READER="zathura"
     export QT_STYLE_OVERRIDE="gtk2"
