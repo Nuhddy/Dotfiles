@@ -1,0 +1,18 @@
+scheme: "Bubblified"
+author: "Nuhddy"
+base00: "161616" # ----
+base01: "222222" # ---
+base02: "444444" # --
+base03: "666666" # -
+base04: "cccccc" # +
+base05: "dddddd" # ++
+base06: "d5d5d5" # +++
+base07: "e5e5e5" # ++++
+base08: "d23d3d" # red
+base09: "eb8413" # orange
+base0A: "fea63c" # yellow
+base0B: "379e4d" # green
+base0C: "6d878d" # cyan
+base0D: "66a9b9" # blue
+base0E: "b7416e" # pink
+base0F: "c85e0d" # brown

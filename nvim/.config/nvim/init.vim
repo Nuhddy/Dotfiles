@@ -22,6 +22,7 @@ Plug 'baskerville/vim-sxhkdrc', {'for': 'sxhkdrc'}
 Plug 'iamcco/markdown-preview.nvim', {'do': {-> mkdp#util#install()},
             \ 'for': ['markdown', 'markdown.pandoc', 'vim-plug']}
 Plug 'vim-pandoc/vim-pandoc-syntax'
+Plug 'cespare/vim-toml'
 Plug 'dense-analysis/ale'
 Plug 'ncm2/ncm2'
 Plug 'roxma/nvim-yarp'
@@ -53,7 +54,7 @@ set updatetime=100
 set termguicolors
 set t_Co=256
 set background=dark
-colorscheme nord
+colorscheme flavours
 set pumheight=10
 set cmdheight=1
 set mouse=a
