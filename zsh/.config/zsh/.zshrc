@@ -27,7 +27,7 @@ source "$ZDOTDIR/vim-mode"
 source "$ZDOTDIR/plugins"
 
 # Env-specific
-if [ $(hostname) = "fennec" ]; then
+if [ $(uname -r | grep "microsoft") ]; then
 
     # Start genie (systemd bottle for WSL) if login shell
     if [[ -o login ]]; then

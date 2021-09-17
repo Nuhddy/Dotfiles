@@ -1,8 +1,8 @@
-[[item]]
-file = "~/.config/kitty/flavours.conf"
-template = "kitty"
-subtemplate = "default-256"
-rewrite = true
+# [[item]]
+# file = "~/.config/kitty/flavours.conf"
+# template = "kitty"
+# subtemplate = "default-256"
+# rewrite = true
 
 [[item]]
 file = "~/.config/nvim/colors/flavours.vim"
@@ -14,10 +14,10 @@ file = "~/.config/nvim/autoload/airline/themes/flavours.vim"
 template = "vim-airline-themes"
 rewrite = true
 
-[[item]]
-file = "~/.config/zathura/zathurarc"
-template = "zathura"
-subtemplate = "recolor"
+# [[item]]
+# file = "~/.config/zathura/zathurarc"
+# template = "zathura"
+# subtemplate = "recolor"
 
 # [[item]]
 # file = "~/.config/tridactyl/themes/flavours.css"

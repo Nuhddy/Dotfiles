@@ -9,7 +9,7 @@ export ZPLUG_HOME="$ZDOTDIR/.zplug"
 export npm_config_prefix="$HOME/.local/bin/node_modules"
 
 # Env-specific
-if [ $(hostname) = "fennec" ]; then
+if [ $(uname -r | grep "microsoft") ]; then
 
     export BROWSER="wslview"
     export READER="wslview"
