@@ -11,6 +11,7 @@ unsetopt BEEP
 # Completions
 autoload -Uz compinit
 zstyle ":completion:*" menu select
+zstyle ":completion:*" matcher-list "" "m:{a-z}={A-Z}" "+m:{A-Z}={a-z}"
 zmodload zsh/complist
 compinit
 _comp_options+=(globdots) # Include hidden files
