@@ -8,13 +8,12 @@ zle_highlight=("paste:none")
 # No beeping, please
 unsetopt BEEP
 
-# Completions
+# Completion
 autoload -Uz compinit
 zstyle ":completion:*" menu select
 zstyle ":completion:*" matcher-list "" "m:{a-z}={A-Z}" "+m:{A-Z}={a-z}"
 zmodload zsh/complist
 compinit
-_comp_options+=(globdots) # Include hidden files
 
 autoload -U up-line-or-beginning-search
 autoload -U down-line-or-beginning-search
@@ -26,6 +25,9 @@ source "$ZDOTDIR/exports"
 source "$ZDOTDIR/aliases"
 source "$ZDOTDIR/vim-mode"
 source "$ZDOTDIR/plugins"
+
+# Completion: include hidden files
+_comp_options+=(globdots)
 
 # Env-specific
 if [ $(uname -r | grep "microsoft") ]; then
