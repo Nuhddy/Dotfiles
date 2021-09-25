@@ -9,11 +9,6 @@ file = "~/.config/nvim/colors/flavours.vim"
 template = "vim"
 rewrite = true
 
-[[item]]
-file = "~/.config/nvim/autoload/airline/themes/flavours.vim"
-template = "vim-airline-themes"
-rewrite = true
-
 # [[item]]
 # file = "~/.config/zathura/zathurarc"
 # template = "zathura"
