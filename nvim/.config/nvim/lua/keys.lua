@@ -34,14 +34,14 @@ map('i', '<Tab>', 'pumvisible() ? "\\<C-n>" : "\\<Tab>"', { expr = true })
 map('i', '<S-Tab>', 'pumvisible() ? "\\<C-p>" : "\\<S-Tab>"', { expr = true })
 
 -- Git
-map('n', '<leader>gg', ':GitGutterToggle<CR>')
-map('n', '<leader>gs', ':Git<CR>') -- git status
+map('n', '<leader>gs', ':Gitsigns toggle_signs<CR>')
+map('n', '<leader>gg', ':Git<CR>')
 map('n', '<leader>gc', ':Gcommit<space>%<CR>')
 map('n', '<leader>gw', ':Gwrite<CR>')
 
 -- Other plugins
 map('n', '<leader>go', ':Goyo<CR>')
 map('n', '<leader>t', ':TagbarToggle<CR>')
-map('n', '<leader>n', ':NERDTreeToggle<CR>')
+map('n', '<leader>n', ':NvimTreeToggle<CR>')
 map('n', '<C-e>', '<Plug>(ale_next_wrap)') -- go to next linter error
 map('n', '<leader>mp', '<Plug>MarkdownPreviewToggle')
