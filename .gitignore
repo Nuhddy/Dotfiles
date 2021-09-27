@@ -5,3 +5,5 @@ flavours/.local/share/flavours/base16/sources/
 flavours/.local/share/flavours/base16/templates/
 flavours/.local/share/flavours/base16/sources.yaml
 flavours/.local/share/flavours/lastscheme
+
+kitty/.config/kitty/flavours.conf

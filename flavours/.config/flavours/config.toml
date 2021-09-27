@@ -1,8 +1,8 @@
-# [[item]]
-# file = "~/.config/kitty/flavours.conf"
-# template = "kitty"
-# subtemplate = "default-256"
-# rewrite = true
+[[item]]
+file = "~/.config/kitty/flavours.conf"
+template = "kitty"
+subtemplate = "default-256"
+rewrite = true
 
 [[item]]
 file = "~/.config/nvim/colors/flavours.vim"
