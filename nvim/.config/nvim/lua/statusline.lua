@@ -149,7 +149,7 @@ add_section('r', {
     DiffAdd = {
         provider = 'DiffAdd',
         highlight = { colors.green, colors.dark2 },
-        icon = ' ',
+        icon = '+',
     }
 })
 
@@ -157,7 +157,7 @@ add_section('r', {
     DiffModified = {
         provider = 'DiffModified',
         highlight = { colors.blue, colors.dark2 },
-        icon = '柳 ',
+        icon = '~',
     }
 })
 
@@ -165,7 +165,7 @@ add_section('r', {
     DiffRemove = {
         provider = 'DiffRemove',
         highlight = { colors.red, colors.dark2 },
-        icon = ' ',
+        icon = '-',
     }
 })
 

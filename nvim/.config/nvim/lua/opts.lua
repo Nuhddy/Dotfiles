@@ -20,6 +20,7 @@ o.backupcopy = 'yes'
 o.number = false
 o.relativenumber = false
 o.cursorline = true
+o.colorcolumn = "999" -- workaround for indent-blankline + cursorline bug
 o.showmode = false
 o.pumheight = 10
 o.cmdheight = 1
@@ -45,12 +46,14 @@ o.smarttab = true
 o.autoindent = true -- dependency for o.formatoptions = 'n'
 
 -- Auto-completion
-cmd 'au BufEnter * call ncm2#enable_for_buffer()'
-o.completeopt = 'noinsert,menuone,noselect'
-o.shortmess = o.shortmess .. 'c'
+--[[
+   [ cmd 'au BufEnter * call ncm2#enable_for_buffer()'
+   [ o.completeopt = 'noinsert,menuone,noselect'
+   [ o.shortmess = o.shortmess .. 'c'
+   ]]
 
 -- Auto-formatting
-cmd 'au BufEnter * lua vim.o.formatoptions = "njtcql"'
+cmd 'au VimEnter,BufEnter * lua vim.o.formatoptions = "njtcql"'
 --[[
    [ o.formatoptions = '' -- doesn't work outside au
    [         .. 'n' -- indent numbered lists

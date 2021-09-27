@@ -29,9 +29,21 @@ map('i', '<leader>infer2', '\\infer[<++>]<CR><TAB>{<++>}<CR>{<++> &<CR><++>}<CR>
 map('i', '<leader>infer3', '\\infer[<++>]<CR><TAB>{<++>}<CR>{<++> &<CR><++> &<CR><++>}<CR><BACKSPACE><ESC>5k0i')
 
 -- Completion
-map('i', '<CR>', '(pumvisible() ? "\\<C-y>\\<CR>" : "\\<CR>")', { expr = true })
-map('i', '<Tab>', 'pumvisible() ? "\\<C-n>" : "\\<Tab>"', { expr = true })
-map('i', '<S-Tab>', 'pumvisible() ? "\\<C-p>" : "\\<S-Tab>"', { expr = true })
+--[[
+   [ map('i', '<CR>', '(pumvisible() ? "\\<C-y>\\<CR>" : "\\<CR>")', { expr = true })
+   [ map('i', '<Tab>', 'pumvisible() ? "\\<C-n>" : "\\<Tab>"', { expr = true })
+   [ map('i', '<S-Tab>', 'pumvisible() ? "\\<C-p>" : "\\<S-Tab>"', { expr = true })
+   ]]
+
+-- LSP
+map('n', 'gd', '<cmd>lua vim.lsp.buf.definition()<CR>')
+map('n', 'gD', '<cmd>lua vim.lsp.buf.declaration()<CR>')
+map('n', 'gr', '<cmd>lua vim.lsp.buf.references()<CR>')
+map('n', 'gi', '<cmd>lua vim.lsp.buf.implementation()<CR>')
+map('n', 'K', '<cmd>lua vim.lsp.buf.hover()<CR>')
+map('n', '<C-k>', '<cmd>lua vim.lsp.buf.signature_help()<CR>')
+map('n', '<C-n>', '<cmd>lua vim.lsp.diagnostic.goto_prev()<CR>')
+map('n', '<C-p>', '<cmd>lua vim.lsp.diagnostic.goto_next()<CR>')
 
 -- Git
 map('n', '<leader>gs', ':Gitsigns toggle_signs<CR>')
