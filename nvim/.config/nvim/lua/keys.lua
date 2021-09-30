@@ -1,6 +1,6 @@
 -- Keymap helper
 local function map(mode, lhs, rhs, opts)
-    local options = { noremap = true, silent = true }
+    local options = {noremap = true, silent = true}
     if opts then options = vim.tbl_extend('force', options, opts) end
     vim.api.nvim_set_keymap(mode, lhs, rhs, options)
 end
@@ -28,13 +28,6 @@ map('i', '<leader>infer1', '\\infer[<++>]<CR><TAB>{<++>}<CR>{<++>}<CR><BACKSPACE
 map('i', '<leader>infer2', '\\infer[<++>]<CR><TAB>{<++>}<CR>{<++> &<CR><++>}<CR><BACKSPACE><ESC>4k0i')
 map('i', '<leader>infer3', '\\infer[<++>]<CR><TAB>{<++>}<CR>{<++> &<CR><++> &<CR><++>}<CR><BACKSPACE><ESC>5k0i')
 
--- Completion
---[[
-   [ map('i', '<CR>', '(pumvisible() ? "\\<C-y>\\<CR>" : "\\<CR>")', { expr = true })
-   [ map('i', '<Tab>', 'pumvisible() ? "\\<C-n>" : "\\<Tab>"', { expr = true })
-   [ map('i', '<S-Tab>', 'pumvisible() ? "\\<C-p>" : "\\<S-Tab>"', { expr = true })
-   ]]
-
 -- LSP
 map('n', 'gd', '<cmd>lua vim.lsp.buf.definition()<CR>')
 map('n', 'gD', '<cmd>lua vim.lsp.buf.declaration()<CR>')
@@ -55,5 +48,4 @@ map('n', '<leader>gw', ':Gwrite<CR>')
 map('n', '<leader>go', ':Goyo<CR>')
 map('n', '<leader>t', ':TagbarToggle<CR>')
 map('n', '<leader>n', ':NvimTreeToggle<CR>')
-map('n', '<C-e>', '<Plug>(ale_next_wrap)') -- go to next linter error
 map('n', '<leader>mp', '<Plug>MarkdownPreviewToggle')

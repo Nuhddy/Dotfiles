@@ -2,9 +2,10 @@ local g = vim.g
 local o = vim.o
 local cmd = vim.cmd
 
+local colors = require 'colors'
+
 -- Completion
 local cmp = require 'cmp'
-o.completeopt = 'menu,menuone,noselect'
 cmp.setup {
     mapping = {
         ['<C-d>'] = cmp.mapping.scroll_docs(-4),
@@ -23,22 +24,32 @@ cmp.setup {
     }
 }
 
+o.completeopt = 'menu,menuone,noselect'
+
 -- Colorizer
 require('colorizer').setup()
 
 -- Gitsigns
-require('gitsigns').setup()
-
--- File explorer
-require('nvim-tree').setup()
-
--- Show indentation
-require('indent_blankline').setup {
-    buftype_exclude = { 'terminal', 'help' }
+require('gitsigns').setup {
+    signcolumn = false,
 }
 
--- Whitespace trimmer (redundant?)
-g.better_whitespace_enabled = 1
+-- File explorer
+require('nvim-tree').setup {
+    auto_close = true,
+}
+
+-- Show indentation
+cmd('hi IndentBlanklineIndent1 guifg=' .. colors.dark3 .. ' gui=nocombine')
+
+require('indent_blankline').setup {
+    char = '¦',
+    char_highlight_list = {'IndentBlanklineIndent1'},
+    buftype_exclude = {'terminal', 'help'},
+}
+
+-- Whitespace trimmer
+g.better_whitespace_enabled = 0
 g.strip_whitespace_on_save = 1
 g.strip_whitespace_confirm = 1
 
@@ -50,11 +61,6 @@ g.NERDTrimTrailingWhitespace = 0
 -- Emmet
 g.user_emmet_install_global = 0
 cmd 'au FileType html,css,xml EmmetInstall'
-
--- Linter (redundant?)
-g.ale_lint_on_enter = 0
-g.ale_sign_error = '✘'
-g.ale_sign_warning = ''
 
 -- Markdown live-preview
 g.mkdp_command_for_global = 1

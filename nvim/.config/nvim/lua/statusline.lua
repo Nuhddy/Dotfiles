@@ -1,188 +1,67 @@
-local gl = require 'galaxyline'
-local gls = gl.section
+local c = require 'colors'
 
-local condition = require 'galaxyline.condition'
+local theme = {
+    normal = {
+        a = {fg = c.blue, bg = c.dark2},
+        b = {fg = c.light1, bg = c.dark2},
+        c = {fg = c.light1, bg = c.dark1},
+    },
 
-local fileinfo = require 'galaxyline.provider_fileinfo'
-local vcs = require 'galaxyline.provider_vcs'
+    insert = {a = {fg = c.green, bg = c.dark2}},
+    visual = {a = {fg = c.orange, bg = c.dark2}},
+    replace = {a = {fg = c.red, bg = c.dark2}},
+    command = {a = {fg = c.pink, bg = c.dark2}},
 
-gl.short_line_list = { 'packer', 'NvimTree' }
-
-local colors = {
-    dark1   = '#161616',
-    dark2   = '#222222',
-    dark3   = '#444444',
-    dark4   = '#666666',
-    light4  = '#cccccc',
-    light3  = '#dddddd',
-    light2  = '#d5d5d5',
-    light1  = '#e5e5e5',
-    red     = '#d23d3d',
-    orange  = '#eb8413',
-    yellow  = '#fea63c',
-    green   = '#379e4d',
-    cyan    = '#6d878d',
-    blue    = '#66a9b9',
-    pink    = '#b7416e',
-    brown   = '#c85e0d',
+    inactive = {
+        a = { fg = c.light1, bg = c.dark2 },
+        b = { fg = c.light1, bg = c.dark1 },
+        c = { fg = c.dark1, bg = c.dark1 },
+    },
 }
 
--- Helpers
-local Sections = {
-    left = 0,
-    center = 0,
-    right = 0
-}
-
-local function add_section(place, opts)
-    if place == 'l' then
-        local i = Sections.left
-        gl.section.left[i + 1] = opts
-        Sections.left = Sections.left + 1
-    elseif place == 'c' then
-        local i = Sections.center
-        gl.section.center[i + 1] = opts
-        Sections.center = Sections.center + 1
-    elseif place == 'r' then
-        local i = Sections.right
-        gl.section.right[i + 1] = opts
-        Sections.right = Sections.right + 1
+local function diff_source()
+    local gitsigns = vim.b.gitsigns_status_dict
+    if gitsigns then
+        return {
+            added = gitsigns.added,
+            modified = gitsigns.modified,
+            removed = gitsigns.removed,
+        }
     end
 end
 
-local function get_mode_opts()
-    local mode_map = {
-        [110] = { 'NORMAL',     colors.blue },
-        [105] = { 'INSERT',     colors.green },
-        [99] =  { 'COMMAND',    colors.blue },
-        [116] = { 'TERMINAL',   colors.green },
-        [118] = { 'VISUAL',     colors.pink },
-        [22] =  { 'V-BLOCK',    colors.pink },
-        [86] =  { 'V-LINE',     colors.pink },
-        [82] =  { 'REPLACE',    colors.red },
-        [115] = { 'SELECT',     colors.red },
-        [83] =  { 'S-LINE',     colors.red },
-    }
-    local mode = vim.fn.mode():byte()
-    local label = mode_map[mode][1]
-    local color = mode_map[mode][2]
-    return { label, color }
-end
-
-local buffer_not_empty = function()
-    if vim.fn.empty(vim.fn.expand('%:t')) ~= 1 then
-        return true
-    else
-        return false
-    end
-end
-
--- Sections
--- Left
-add_section('l', {
-    ViModeSepLeft = {
-        provider = function()
-            local color = get_mode_opts()[2]
-            vim.cmd('hi GalaxyViModeSepLeft guifg=' .. color)
-            return ''
-        end,
-    }
-})
-
-add_section('l', {
-    ViMode = {
-        provider = function()
-            local label = get_mode_opts()[1]
-            local color = get_mode_opts()[2]
-            vim.cmd('hi GalaxyViMode guibg=' .. color
-                    .. ' guifg=' .. colors.dark1)
-            return label
-        end,
-        highlight = { colors.dark1, colors.dark1, 'bold' },
-    }
-})
-
-add_section('l', {
-    ViModeSepRight = {
-        provider = function()
-            local color = get_mode_opts()[2]
-            vim.cmd('hi GalaxyViModeSepRight guifg=' .. color)
-            return ''
-        end,
-        highlight = { colors.dark2, colors.dark2 },
-    }
-})
-
-add_section('l', {
-    FileIcon = {
-        provider = 'FileIcon',
-        condition = buffer_not_empty,
-        highlight = { fileinfo.get_file_icon_color, colors.dark2 },
-    }
-})
-
-add_section('l', {
-    FileName = {
-        provider = 'FileName',
-        highlight = { colors.light1, colors.dark2 },
-    }
-})
-
--- Right
-add_section('r', {
-    GitIcon = {
-        provider = function() return '' end,
-        condition = vcs.check_git_workspace,
-        highlight = { colors.orange, colors.dark2 },
-    }
-})
-
-add_section('r', {
-    GitBranch = {
-        provider = 'GitBranch',
-        condition = vcs.check_git_workspace,
-        highlight = { colors.light1, colors.dark2 },
-    }
-})
-
-add_section('r', {
-    DiffAdd = {
-        provider = 'DiffAdd',
-        highlight = { colors.green, colors.dark2 },
-        icon = '+',
-    }
-})
-
-add_section('r', {
-    DiffModified = {
-        provider = 'DiffModified',
-        highlight = { colors.blue, colors.dark2 },
-        icon = '~',
-    }
-})
-
-add_section('r', {
-    DiffRemove = {
-        provider = 'DiffRemove',
-        highlight = { colors.red, colors.dark2 },
-        icon = '-',
-    }
-})
-
-add_section('r', {
-    LineInfo = {
-        provider = 'LineColumn',
-        highlight = { colors.light1, colors.dark2 },
-    }
-})
-
--- Short statusline
-gls.short_line_left[1] = {
-    FileName = {
-        provider = 'FileName',
-        highlight = { colors.light1, colors.dark2 },
+require('lualine').setup {
+    options = {
+        theme = theme,
+        color = {gui = 'bold'},
+        section_separators = {left = '', right = ''},
+        component_separators = '',
+    },
+    sections = {
+        lualine_a = {
+            {'mode', separator = {left = ''}, color = {gui = 'bold'}},
+        },
+        lualine_b = {
+            {'filetype', icon_only = true},
+            {'filename', path = 1, padding = {left = 0, right = 1}},
+        },
+        lualine_c = {},
+        lualine_x = {},
+        lualine_y = {
+            {'b:gitsigns_head', icon = ''},
+            {'diff', source = diff_source, padding = 0},
+        },
+        lualine_z = {
+            {'location', color = {fg = c.light1, bg = c.dark2}},
+            {
+                'progress', separator = {right = ''},
+                color = {fg = c.light1, bg = c.dark2}
+            },
+        },
+    },
+    inactive_sections = {
+        lualine_a = {
+            {'filename', path = 1, separator = {left = '', right = ''}}
+        },
     }
 }
-
--- Force manual load so that nvim boots with a status line
-gl.load_galaxyline()

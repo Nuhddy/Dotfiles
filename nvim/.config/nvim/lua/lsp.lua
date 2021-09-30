@@ -5,7 +5,7 @@ local capabilities = require('cmp_nvim_lsp').update_capabilities(
     vim.lsp.protocol.make_client_capabilities()
     )
 
--- efm
+-- Auto-formatting with efm
 lspc.efm.setup {
     capabilities = capabilities,
     init_options = {documentFormatting = true},
@@ -22,9 +22,14 @@ lspc.efm.setup {
 
 vim.cmd 'au BufWritePre *.lua lua vim.lsp.buf.formatting_sync(nil, 100)'
 
+-- bash
+lspc.bashls.setup {
+    capabilities = capabilities
+}
+
 -- lua
 local sumneko_root_path = '/usr/share/lua-language-server'
-local sumneko_binary = '/usr/bin/lua-language-server'
+local sumneko_binary = 'lua-language-server'
 
 lspc.sumneko_lua.setup {
     capabilities = capabilities,

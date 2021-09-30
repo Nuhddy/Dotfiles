@@ -45,13 +45,6 @@ o.expandtab = true
 o.smarttab = true
 o.autoindent = true -- dependency for o.formatoptions = 'n'
 
--- Auto-completion
---[[
-   [ cmd 'au BufEnter * call ncm2#enable_for_buffer()'
-   [ o.completeopt = 'noinsert,menuone,noselect'
-   [ o.shortmess = o.shortmess .. 'c'
-   ]]
-
 -- Auto-formatting
 cmd 'au VimEnter,BufEnter * lua vim.o.formatoptions = "njtcql"'
 --[[
