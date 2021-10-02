@@ -1,7 +1,7 @@
 [[item]]
 file = "~/.config/kitty/flavours.conf"
 template = "kitty"
-subtemplate = "default-256"
+subtemplate = "custom"
 rewrite = true
 
 [[item]]
