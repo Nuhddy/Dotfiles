@@ -24,11 +24,11 @@ o.colorcolumn = "999" -- workaround for indent-blankline + cursorline bug
 o.showmode = false
 o.pumheight = 10
 o.cmdheight = 1
-cmd 'syntax on'
-cmd 'au TextYankPost * lua vim.highlight.on_yank { on_visual = false }'
+o.shortmess = o.shortmess .. 'c'
 o.termguicolors = true
 o.background = 'dark'
-cmd 'colorscheme flavours'
+cmd 'syntax on'
+cmd 'au TextYankPost * lua vim.highlight.on_yank { on_visual = false }'
 
 -- Searching
 o.ignorecase = true

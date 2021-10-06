@@ -1,8 +1,12 @@
 local g = vim.g
-local o = vim.o
 local cmd = vim.cmd
 
 local colors = require 'colors'
+
+-- Colorscheme
+require('flavours').setup {
+    colors = colors,
+}
 
 -- Completion
 local cmp = require 'cmp'
@@ -12,7 +16,6 @@ cmp.setup {
         ['<C-f>'] = cmp.mapping.scroll_docs(4),
         ['<C-Space>'] = cmp.mapping.complete(),
         ['<C-e>'] = cmp.mapping.close(),
-        ['<CR>'] = cmp.mapping.confirm {select = true},
         ['<Tab>'] = cmp.mapping(cmp.mapping.select_next_item(), {'i', 's'}),
         ['<S-Tab>'] = cmp.mapping(cmp.mapping.select_prev_item(), {'i', 's'}),
     },
@@ -23,8 +26,6 @@ cmp.setup {
         {name = 'nvim_lsp'},
     }
 }
-
-o.completeopt = 'menu,menuone,noselect'
 
 -- Colorizer
 require('colorizer').setup()
