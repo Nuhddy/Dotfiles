@@ -1,5 +1,6 @@
 packer_compiled.lua
 nvim/.config/nvim/colors/
+nvim/.config/nvim/lua/colors.lua
 
 flavours/.local/share/flavours/lastscheme
 
