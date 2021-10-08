@@ -1,3 +1,3 @@
 #!/bin/bash
 
-sudo --user=noddy spicetify backup update apply && killall -q spotify
+sudo --user=$USER spicetify backup update apply && killall -q spotify
