@@ -1,0 +1,10 @@
+[Trigger]
+Operation = Upgrade
+Type = Package
+Target = spotify
+
+[Action]
+Description = Applying spicetify theme
+When = PostTransaction
+Depends = spicetify-cli
+Exec = /bin/sh -c "sudo --user=$USER spicetify backup apply; killall -q spotify"
