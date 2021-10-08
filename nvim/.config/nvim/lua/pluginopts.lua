@@ -57,7 +57,7 @@ g.strip_whitespace_confirm = 1
 -- Commenter
 g.NERDSpaceDelims = 1
 g.NERDCommentEmptyLines = 1
-g.NERDTrimTrailingWhitespace = 0
+g.NERDTrimTrailingWhitespace = 1
 
 -- Emmet
 g.user_emmet_install_global = 0
