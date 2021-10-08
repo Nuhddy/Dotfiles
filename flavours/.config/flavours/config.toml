@@ -5,8 +5,9 @@ subtemplate = "custom"
 rewrite = true
 
 [[item]]
-file = "~/.config/nvim/colors/flavours.vim"
-template = "vim"
+file = "~/.config/nvim/lua/colors.lua"
+template = "nvim"
+subtemplate = "custom"
 rewrite = true
 
 # [[item]]
