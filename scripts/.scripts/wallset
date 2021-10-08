@@ -1,0 +1,10 @@
+#!/bin/sh
+
+feh --bg-fill $1
+
+res=$(xdpyinfo | awk '/dimensions/{print $2}')
+convert $1 \
+    -resize $res^ \
+    -gravity Center \
+    -extent $res \
+    -filter Gaussian -blur 0x8 $HOME/Pictures/.blurredwallpaper
