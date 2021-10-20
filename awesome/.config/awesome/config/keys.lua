@@ -4,11 +4,7 @@ local hotkeys_popup = require 'awful.hotkeys_popup'
 local mod = 'Mod4'
 local alt = 'Mod1'
 
-local apps = {
-    term = 'kitty -1',
-    launcher = 'rofi -show drun',
-    player = 'spotify',
-}
+local apps = require 'config.apps'
 
 -- Window manager
 awful.keyboard.append_global_keybindings {
@@ -104,7 +100,7 @@ awful.keyboard.append_global_keybindings {
 
 -- Launcher
 awful.keyboard.append_global_keybindings {
-    awful.key({mod}, 'Return', function() awful.spawn(apps.term) end,
+    awful.key({mod}, 'Return', function() awful.spawn(apps.terminal) end,
         {description = 'Open a terminal', group = 'Launcher'}),
     awful.key({mod}, 'space', function() awful.spawn(apps.launcher) end,
         {description = 'Open app launcher', group = 'Launcher'}),
@@ -143,18 +139,18 @@ awful.keyboard.append_global_keybindings {
 -- Music player
 awful.keyboard.append_global_keybindings {
     awful.key({}, 'XF86AudioPlay', function()
-            awful.spawn('playerctl-specific-player.sh ' .. apps.player ..
-                    'play-pause')
+            awful.spawn('playerctl-specific-player.sh ' ..
+                    apps.musicplayer .. 'play-pause')
         end,
         {description = 'Play/pause', group = 'Media'}),
     awful.key({}, 'XF86AudioNext', function()
-            awful.spawn('playerctl-specific-player.sh ' .. apps.player ..
-                    'next')
+            awful.spawn('playerctl-specific-player.sh ' ..
+                    apps.musicplayer .. 'next')
         end,
         {description = 'Next track', group = 'Media'}),
     awful.key({}, 'XF86AudioPrev', function()
-            awful.spawn('playerctl-specific-player.sh ' .. apps.player ..
-                    'prev')
+            awful.spawn('playerctl-specific-player.sh ' ..
+                    apps.musicplayer .. 'prev')
         end,
         {description = 'Previous track', group = 'Media'}),
 }

@@ -7,17 +7,16 @@ require 'util.errorhandling'
 
 beautiful.init(awful.util.getdir 'config' .. 'theme.lua')
 
-require 'util.wallpaper'
-require 'layouts'
-require 'tags'
-require 'rules'
+require 'config.layouts'
+require 'config.tags'
+require 'config.rules'
+require 'config.keys'
+
 require 'util.clientplacement'
 require 'awful.autofocus'
-require 'keys'
 
+require 'widgets.bar'
 -- titlebars
--- top bar
--- tasklist
 -- dashboard
 -- popup
 -- notifications
