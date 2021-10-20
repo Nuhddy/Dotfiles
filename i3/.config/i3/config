@@ -84,15 +84,14 @@ font pango:sans 10
 for_window [class=".*"] border pixel 0
 for_window [class="kitty"] border pixel 6
 gaps inner 6
-gaps top -3
 
 # class                 border  backgr. text    indicator child_border
 client.focused          #161616 #161616 #161616 #161616   #161616
 client.focused_inactive #161616 #161616 #161616 #161616   #161616
 client.unfocused        #161616 #161616 #161616 #161616   #161616
-client.urgent           #e84f4f #e84f4f #e84f4f #e84f4f   #e84f4f
+client.urgent           #d23d3d #d23d3d #d23d3d #d23d3d   #d23d3d
 client.placeholder      #161616 #161616 #161616 #161616   #161616
 
-client.background       #ffffff
+client.background       #e5e5e5
 
 # vim:ft=i3config
