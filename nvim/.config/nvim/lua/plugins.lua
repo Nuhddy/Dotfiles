@@ -3,7 +3,7 @@ return require('packer').startup(function(use)
     -- Appearance
     use '~/Projects/flavours.nvim'
     use {
-        'shadmansaleh/lualine.nvim',
+        'nvim-lualine/lualine.nvim',
         requires = {'kyazdani42/nvim-web-devicons', opt = true}
     }
     use 'norcalli/nvim-colorizer.lua'
