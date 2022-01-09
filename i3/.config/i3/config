@@ -72,6 +72,9 @@ bindsym XF86AudioPlay exec --no-startup-id playerctl-specific-player.sh $music_p
 bindsym XF86AudioNext exec --no-startup-id playerctl-specific-player.sh $music_player next
 bindsym XF86AudioPrev exec --no-startup-id playerctl-specific-player.sh $music_player previous
 
+bindsym $mod+bracketleft exec --no-startup-id easyeffects -l flat
+bindsym $mod+bracketright exec --no-startup-id easyeffects -l momentum2
+
 bindsym XF86MonBrightnessDown exec --no-startup-id xbacklight -dec 5
 bindsym XF86MonBrightnessUp exec --no-startup-id xbacklight -inc 5
 bindsym $mod+F2 exec --no-startup-id xbacklight -set 0
