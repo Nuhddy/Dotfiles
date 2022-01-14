@@ -32,6 +32,7 @@ return require('packer').startup(function(use)
     use {'mboughaba/i3config.vim', ft = 'i3config'}
     use {'baskerville/vim-sxhkdrc', ft = 'sxhkdrc'}
     use {'vim-pandoc/vim-pandoc-syntax', ft = 'pandoc'}
+    use 'pearofducks/ansible-vim'
 
     -- Completion
     use {'neovim/nvim-lspconfig'}
