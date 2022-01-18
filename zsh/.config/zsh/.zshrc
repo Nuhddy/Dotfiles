@@ -32,9 +32,9 @@ _comp_options+=(globdots)
 # Env-specific
 if [ $(uname -r | grep "microsoft") ]; then
 
-    # Start genie (systemd bottle for WSL) if login shell
-    if [[ -o login ]]; then
-        genie -i
+    # Start and enter genie (systemd bottle for WSL) if login shell
+    if [[ -o login ]] && [ $(genie -b) = "outside" ]; then
+        genie -s
     fi
 
 else
