@@ -32,9 +32,12 @@ _comp_options+=(globdots)
 # Env-specific
 if [ $(uname -r | grep "microsoft") ]; then
 
-    # Start and enter genie (systemd bottle for WSL) if login shell
-    if [[ -o login ]] && [ $(genie -b) = "outside" ]; then
-        genie -s
+    # Start ssh-agent
+    if ! pgrep -u "$USER" ssh-agent > /dev/null; then
+        ssh-agent -s > "$XDG_RUNTIME_DIR/ssh-agent.env"
+    fi
+    if [[ ! "$SSH_AUTH_SOCK" ]]; then
+        source "$XDG_RUNTIME_DIR/ssh-agent.env" > /dev/null
     fi
 
 else
