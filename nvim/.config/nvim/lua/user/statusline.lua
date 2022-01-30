@@ -1,4 +1,4 @@
-local c = require 'colors'
+local c = require 'user.colors'
 
 local theme = {
     normal = {

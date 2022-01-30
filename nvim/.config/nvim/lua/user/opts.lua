@@ -1,34 +1,40 @@
 local o = vim.o
+local opt = vim.opt
 local cmd = vim.cmd
 
 -- Behavior
-vim.g.mapleader = ','
 o.compatible = false
 cmd 'filetype plugin indent on'
 o.encoding = 'utf-8'
 o.fileencoding = 'utf-8'
 o.hidden = true
 o.updatetime = 100
+o.timeoutlen = 500
 o.wrap = false
 o.splitbelow = true
 o.splitright = true
+o.scrolloff = 0
+o.sidescrolloff = 0
 o.mouse = 'a'
 o.clipboard = 'unnamedplus'
 o.backupcopy = 'yes'
+opt.completeopt = { 'menu', 'menuone', 'noselect' }
 
 -- Appearance
 o.number = false
 o.relativenumber = false
 o.cursorline = true
-o.colorcolumn = "999" -- workaround for indent-blankline + cursorline bug
+o.colorcolumn = '999' -- workaround for indent-blankline + cursorline bug
 o.showmode = false
 o.pumheight = 10
 o.cmdheight = 1
-o.shortmess = o.shortmess .. 'c'
+o.showtabline = 1
+opt.shortmess:append { c = true }
 o.termguicolors = true
 o.background = 'dark'
+o.guifont = 'monospace:h17'
 cmd 'syntax on'
-cmd 'au TextYankPost * lua vim.highlight.on_yank { on_visual = false }'
+cmd 'au TextYankPost * lua vim.highlight.on_yank {on_visual = false}'
 
 -- Searching
 o.ignorecase = true
@@ -48,14 +54,13 @@ o.autoindent = true -- dependency for o.formatoptions = 'n'
 -- Auto-formatting
 cmd 'au VimEnter,BufEnter * lua vim.o.formatoptions = "njtcql"'
 --[[
-   [ o.formatoptions = '' -- doesn't work outside au
-   [         .. 'n' -- indent numbered lists
-   [         .. 'j' -- remove comment leader when joining lines
-   [         .. 't' -- wrap text using textwidth
-   [         .. 'c' -- wrap comments using textwidth
-   [         .. 'q' -- allow comment formatting
-   [         .. 'l' -- don't wrap long lines if they were too long beforehand
-   ]]
+n -- indent numbered lists
+j -- remove comment leader when joining lines
+t -- wrap text using textwidth
+c -- wrap comments using textwidth
+q -- allow comment formatting
+l -- don't wrap long lines if they were too long beforehand
+]]
 
 -- Abbreviations
 cmd 'cabbrev h vert h'

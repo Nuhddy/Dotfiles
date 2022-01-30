@@ -1,10 +1,20 @@
 -- Modules
-require 'plugins'       -- lua/plugins.lua
-require 'opts'          -- lua/opts.lua
-require 'pluginopts'    -- lua/pluginopts.lua
-require 'keys'          -- lua/keys.lua
-require 'statusline'    -- lua/statusline.lua
-require 'treesitter'    -- lua/treesitter.lua
-require 'lsp'           -- lua/lsp.lua
+require 'user.plugins'
+require 'user.impatient'
+require 'user.opts'
+require 'user.keys'
+require 'user.pluginopts'
+require 'user.completion'
+require 'user.lsp'
+require 'user.telescope'
+require 'user.treesitter'
+require 'user.autopairs'
+require 'user.comment'
+require 'user.git'
+require 'user.explorer'
+require 'user.bufferline'
+require 'user.statusline'
+require 'user.project'
+require 'user.indentline'
 
 vim.cmd 'source ~/.config/nvim/vim/firenvim.vim'
