@@ -16,5 +16,6 @@ require 'user.bufferline'
 require 'user.statusline'
 require 'user.project'
 require 'user.indentline'
+require 'user.greeter'
 
 vim.cmd 'source ~/.config/nvim/vim/firenvim.vim'

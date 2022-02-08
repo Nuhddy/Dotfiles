@@ -69,6 +69,10 @@ return packer.startup({
             requires = 'nvim-lua/plenary.nvim',
         }
         use 'ahmedkhalf/project.nvim'
+        use {
+            'goolord/alpha-nvim',
+            requires = { 'kyazdani42/nvim-web-devicons' },
+        }
         use 'numtostr/comment.nvim'
         use 'tpope/vim-surround'
         use 'windwp/nvim-autopairs'

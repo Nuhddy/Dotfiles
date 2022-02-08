@@ -4,7 +4,7 @@
         "description": "Import module in protected call. Return on error.",
         "body": [
             "local ${1:status_ok}, ${2:_} = pcall(require, '$3')",
-            "if not $1 then ",
+            "if not $1 then",
             "\treturn",
             "end",
             "$0"
