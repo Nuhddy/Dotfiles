@@ -4,6 +4,16 @@ if not status_ok then
 end
 
 nvimtree.setup {
-    auto_close = true,
     ignore_ft_on_setup = { 'startify' },
 }
+
+local au = vim.api.nvim_create_autocmd
+
+vim.api.nvim_create_augroup('nvimtree_auto_close', {})
+
+au('BufEnter', {
+    group = 'nvimtree_auto_close',
+    pattern = '*',
+    command = "if winnr('$') == 1 && bufname() == 'NvimTree_' . tabpagenr() | quit | endif",
+    nested = true,
+})

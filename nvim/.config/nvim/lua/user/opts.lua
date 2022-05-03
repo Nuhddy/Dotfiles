@@ -1,10 +1,11 @@
 local o = vim.o
 local opt = vim.opt
-local cmd = vim.cmd
+
+local au = vim.api.nvim_create_autocmd
 
 -- Behavior
 o.compatible = false
-cmd 'filetype plugin indent on'
+vim.cmd 'filetype plugin indent on'
 o.encoding = 'utf-8'
 o.fileencoding = 'utf-8'
 o.hidden = true
@@ -33,8 +34,13 @@ opt.shortmess:append { c = true }
 o.termguicolors = true
 o.background = 'dark'
 o.guifont = 'monospace:h17'
-cmd 'syntax on'
-cmd 'au TextYankPost * lua vim.highlight.on_yank {on_visual = false}'
+vim.cmd 'syntax on'
+vim.api.nvim_create_augroup('general_settings', {})
+au('TextYankPost', {
+    group = 'general_settings',
+    pattern = '*',
+    command = 'lua vim.highlight.on_yank { on_visual = false }',
+})
 
 -- Searching
 o.ignorecase = true
@@ -52,7 +58,11 @@ o.smarttab = true
 o.autoindent = true -- dependency for o.formatoptions = 'n'
 
 -- Auto-formatting
-cmd 'au VimEnter,BufEnter * lua vim.o.formatoptions = "njtcql"'
+au({'VimEnter', 'BufEnter'}, {
+    group = 'general_settings',
+    pattern = '*',
+    command = 'lua vim.o.formatoptions = "njtcql"',
+})
 --[[
 n -- indent numbered lists
 j -- remove comment leader when joining lines
@@ -63,5 +73,5 @@ l -- don't wrap long lines if they were too long beforehand
 ]]
 
 -- Abbreviations
-cmd 'cabbrev h vert h'
-cmd 'cabbrev H h'
+vim.cmd 'cabbrev h vert h'
+vim.cmd 'cabbrev H h'

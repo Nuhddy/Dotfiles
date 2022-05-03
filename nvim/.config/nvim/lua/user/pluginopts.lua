@@ -1,5 +1,4 @@
 local g = vim.g
-local cmd = vim.cmd
 
 local colors = require 'user.colors'
 
@@ -13,7 +12,10 @@ require('flavours').setup {
 require('colorizer').setup()
 
 -- IndentBlankLine highlight group
-cmd('hi IndentBlanklineIndent1 guifg=' .. colors.dark3 .. ' gui=nocombine')
+vim.api.nvim_set_hl(0, 'IndentBlanklineIndent1', {
+    fg = colors.dark3,
+    nocombine = true,
+})
 
 -- Whitespace trimmer
 g.better_whitespace_enabled = 0
@@ -22,7 +24,7 @@ g.strip_whitespace_confirm = 1
 
 -- Emmet
 g.user_emmet_install_global = 0
-cmd 'au FileType html,css,xml EmmetInstall'
+vim.cmd 'au FileType html,css,xml EmmetInstall'
 
 -- Markdown live-preview
 g.mkdp_command_for_global = 1

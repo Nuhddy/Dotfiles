@@ -1,5 +1,4 @@
 local fn = vim.fn
-local cmd = vim.cmd
 
 -- Auto-bootstrap packer
 local install_path = fn.stdpath 'data' .. '/site/pack/packer/start/packer.nvim'
@@ -15,12 +14,12 @@ if fn.empty(fn.glob(install_path)) > 0 then
 end
 
 -- Reload neovim after writing to plugins.lua
-cmd [[
-augroup packer_user_config
-    autocmd!
-    autocmd BufWritePost plugins.lua source <afile> | PackerSync
-augroup END
-]]
+vim.api.nvim_create_augroup('packer_user_config', {})
+vim.api.nvim_create_autocmd('BufWritePost', {
+    group = 'packer_user_config',
+    pattern = 'plugins.lua',
+    command = 'source <afile> | PackerSync',
+})
 
 -- Prevent error on first use
 local status_ok, packer = pcall(require, 'packer')
@@ -34,6 +33,9 @@ packer.init {
         open_fn = function()
             return require('packer.util').float { border = 'rounded' }
         end,
+    },
+    config = {
+        compile_path = fn.stdpath 'config' .. '/lua/packer_compiled.lua',
     },
 }
 
@@ -134,8 +136,4 @@ return packer.startup({
             require('packer').sync()
         end
     end,
-}, {
-    config = {
-        compile_path = fn.stdpath 'config' .. '/lua/packer_compiled.lua',
-    },
 })

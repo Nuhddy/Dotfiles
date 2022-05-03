@@ -1,3 +1,4 @@
+vim.cmd [[
 function! s:IsFirenvimActive(event) abort
   if !exists('*nvim_get_chan_info')
     return 0
@@ -28,3 +29,4 @@ let g:firenvim_config = {
         \ },
     \ }
 \ }
+]]
