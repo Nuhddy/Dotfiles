@@ -29,6 +29,7 @@ o.colorcolumn = '999' -- workaround for indent-blankline + cursorline bug
 o.showmode = false
 o.pumheight = 10
 o.cmdheight = 1
+o.laststatus = 3
 o.showtabline = 1
 opt.shortmess:append { c = true }
 o.termguicolors = true
