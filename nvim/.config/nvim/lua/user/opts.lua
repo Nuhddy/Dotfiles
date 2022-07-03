@@ -26,6 +26,7 @@ o.number = false
 o.relativenumber = false
 o.cursorline = true
 o.colorcolumn = '999' -- workaround for indent-blankline + cursorline bug
+o.laststatus = 3
 o.showmode = false
 o.pumheight = 10
 o.cmdheight = 1
