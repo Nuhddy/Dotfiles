@@ -36,8 +36,8 @@ ls.add_snippets('lua', {
 
 ls.add_snippets('tex', {
     s({
-        trig = '\\i1',
-        dscr = 'Infer with 1 premise'
+        trig = 'infer',
+        dscr = 'Infer w/ label (optional), conclusion & premise(s)'
     },
     fmt(
         [[
@@ -47,40 +47,7 @@ ls.add_snippets('tex', {
 
             <>
         ]],
-        { i(1, 'label'), i(2, 'conclusion'), i(3, 'premise'), i(0) },
-        { delimiters = '<>' })
-    ),
-    s({
-        trig = '\\i2',
-        dscr = 'Infer with 2 premises'
-    },
-    fmt(
-        [[
-            \infer[<>]
-                {<>}
-                {<> &
-                <>}
-
-            <>
-        ]],
-        { i(1, 'label'), i(2, 'conclusion'), i(3, 'p1'), i(4, 'p2'), i(0) },
-        { delimiters = '<>' })
-    ),
-    s({
-        trig = '\\i3',
-        dscr = 'Infer with 3 premises'
-    },
-    fmt(
-        [[
-            \infer[<>]
-                {<>}
-                {<> &
-                <> &
-                <>}
-
-            <>
-        ]],
-        { i(1, 'label'), i(2, 'conclusion'), i(3, 'p1'), i(4, 'p2'), i(5, 'p3'), i(0) },
+        { i(1, ''), i(2, 'conclusion'), i(3, 'premise(s)'), i(0) },
         { delimiters = '<>' })
     ),
 })
