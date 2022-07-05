@@ -22,10 +22,10 @@ o.backupcopy = 'yes'
 opt.completeopt = { 'menu', 'menuone', 'noselect' }
 
 -- Appearance
-o.number = false
-o.relativenumber = false
-o.cursorline = true
-o.colorcolumn = '999' -- workaround for indent-blankline + cursorline bug
+o.number = true
+o.relativenumber = true
+--[[ o.cursorline = true
+o.colorcolumn = '999' -- workaround for indent-blankline + cursorline bug ]]
 o.laststatus = 3
 o.showmode = false
 o.pumheight = 10
