@@ -1,10 +1,12 @@
--- Keymap helper
-local function map(mode, lhs, rhs, opts)
-    local options = { noremap = true, silent = true }
+-- Sets keymap with default :map-arguments (custom opts override defaults)
+local function kset(mode, lhs, rhs, opts)
+    local default_opts = { silent = true }
     if opts then
-        options = vim.tbl_extend('force', options, opts)
+        opts = vim.tbl_extend('force', default_opts, opts)
+    else
+        opts = default_opts
     end
-    vim.api.nvim_set_keymap(mode, lhs, rhs, options)
+    vim.keymap.set(mode, lhs, rhs, opts)
 end
 
 -- Leader key
@@ -12,53 +14,52 @@ vim.g.mapleader = ','
 vim.g.maplocalleader = ','
 
 -- Navigate splits
-map('n', '<C-h>', '<C-w>h')
-map('n', '<C-j>', '<C-w>j')
-map('n', '<C-k>', '<C-w>k')
-map('n', '<C-l>', '<C-w>l')
-map('i', '<leader><leader>', '<ESC>/<++><CR>"_c4l') -- go to next temporary
--- mark (look into regular
--- vim marks)
-map('t', '<ESC>', '<C-\\><C-n>') -- escape terminal
+kset('n', '<C-h>', '<C-w>h')
+kset('n', '<C-j>', '<C-w>j')
+kset('n', '<C-k>', '<C-w>k')
+kset('n', '<C-l>', '<C-w>l')
+-- go to next temporary mark (look into regular vim marks)
+-- kset('i', '<leader><leader>', '<ESC>/<++><CR>"_c4l')
+kset('t', '<ESC>', '<C-\\><C-n>') -- escape terminal
 
 -- Resize splits
-map('n', '<C-Up>', ':resize -2<CR>')
-map('n', '<C-Down>', ':resize +2<CR>')
-map('n', '<C-Left>', ':vertical resize -2<CR>')
-map('n', '<C-Right>', ':vertical resize +2<CR>')
+kset('n', '<C-Up>', '<cmd>resize -2<CR>')
+kset('n', '<C-Down>', '<cmd>resize +2<CR>')
+kset('n', '<C-Left>', '<cmd>vertical resize -2<CR>')
+kset('n', '<C-Right>', '<cmd>vertical resize +2<CR>')
 
 -- Navigate buffers
-map('n', '<A-h>', ':bprevious<CR>')
-map('n', '<A-l>', ':bnext<CR>')
+kset('n', '<A-h>', '<cmd>bprevious<CR>')
+kset('n', '<A-l>', '<cmd>bnext<CR>')
 
--- Move text
-map('n', '<A-j>', ':move .+1<CR>==gi<ESC>')
-map('n', '<A-k>', ':move .-2<CR>==gi<ESC>')
-map('v', '<A-j>', ':move .+1<CR>==')
-map('v', '<A-k>', ':move .-2<CR>==')
-map('x', '<A-j>', ":move '>+1<CR>gv-gv")
-map('x', '<A-k>', ":move '<-2<CR>gv-gv")
+-- Move text (some of these don't work)
+-- kset('n', '<A-j>', '<cmd>move .+1<CR>==gi<ESC>')
+-- kset('n', '<A-k>', '<cmd>move .-2<CR>==gi<ESC>')
+kset('v', '<A-j>', '<cmd>move .+1<CR>==')
+kset('v', '<A-k>', '<cmd>move .-2<CR>==')
+-- kset('x', '<A-j>', "<cmd>move '>+1<CR>gv-gv")
+-- kset('x', '<A-k>', "<cmd>move '<-2<CR>gv-gv")
 
 -- Stay in indent mode
-map('v', '<', '<gv')
-map('v', '>', '>gv')
+kset('v', '<', '<gv')
+kset('v', '>', '>gv')
 
 -- Spell check
-map('n', '<leader>o', ':setlocal spell! spelllang=da,en<CR>')
+kset('n', '<leader>o', '<cmd>setlocal spell! spelllang=da,en<CR>')
 
 -- Pandoc compilation
-map('n', '<leader>xpdf', ':!pandoc -f markdown -t pdf %<CR><CR>')
-map('n', '<leader>xepub', ':!pandoc -f markdown -t epub %<CR><CR>')
+kset('n', '<leader>xpdf', '<cmd>!pandoc -f markdown -t pdf %<CR><CR>')
+kset('n', '<leader>xepub', '<cmd>!pandoc -f markdown -t epub %<CR><CR>')
 
 -- Git
-map('n', '<leader>gs', ':Gitsigns toggle_signs<CR>')
-map('n', '<leader>gg', ':Git<CR>')
-map('n', '<leader>gc', ':Gcommit<space>%<CR>')
-map('n', '<leader>gw', ':Gwrite<CR>')
+kset('n', '<leader>gs', '<cmd>Gitsigns toggle_signs<CR>')
+kset('n', '<leader>gg', '<cmd>Git<CR>')
+kset('n', '<leader>gc', '<cmd>Gcommit<space>%<CR>')
+kset('n', '<leader>gw', '<cmd>Gwrite<CR>')
 
 -- Other plugins
-map('n', '<leader>go', ':Goyo<CR>')
-map('n', '<leader>e', ':NvimTreeToggle<CR>')
-map('n', '<leader>mp', ':MarkdownPreviewToggle<CR>')
-map('n', '<leader>t', ':Telescope find_files<CR>')
-map('n', '<leader>f', ':lua vim.lsp.buf.formatting_sync()<CR>')
+kset('n', '<leader>go', '<cmd>Goyo<CR>')
+kset('n', '<leader>e', '<cmd>NvimTreeToggle<CR>')
+kset('n', '<leader>mp', '<cmd>MarkdownPreviewToggle<CR>')
+kset('n', '<leader>t', '<cmd>Telescope find_files<CR>')
+kset('n', '<leader>f', '<cmd>lua vim.lsp.buf.formatting_sync()<CR>')

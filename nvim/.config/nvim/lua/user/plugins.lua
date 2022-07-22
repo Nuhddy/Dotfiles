@@ -1,9 +1,8 @@
-local fn = vim.fn
-
 -- Auto-bootstrap packer
-local install_path = fn.stdpath 'data' .. '/site/pack/packer/start/packer.nvim'
-if fn.empty(fn.glob(install_path)) > 0 then
-    PACKER_BOOTSTRAP = fn.system {
+local install_path = vim.fn.stdpath 'data'
+    .. '/site/pack/packer/start/packer.nvim'
+if vim.fn.empty(vim.fn.glob(install_path)) > 0 then
+    PACKER_BOOTSTRAP = vim.fn.system {
         'git',
         'clone',
         '--depth',
@@ -35,28 +34,37 @@ packer.init {
         end,
     },
     config = {
-        compile_path = fn.stdpath 'config' .. '/lua/packer_compiled.lua',
+        compile_path = vim.fn.stdpath 'config' .. '/lua/packer_compiled.lua',
     },
 }
 
 -- Package management
-return packer.startup({
+return packer.startup {
     function(use)
         use 'wbthomason/packer.nvim'
         use 'nvim-lua/popup.nvim'
         use 'lewis6991/impatient.nvim'
 
         -- Appearance
-        use '~/Projects/flavours.nvim'
+        use 'edeneast/nightfox.nvim'
         use {
             'nvim-lualine/lualine.nvim',
+            requires = { 'kyazdani42/nvim-web-devicons', opt = true },
+        }
+        use {
+            'feline-nvim/feline.nvim',
             requires = { 'kyazdani42/nvim-web-devicons', opt = true },
         }
         use {
             'akinsho/bufferline.nvim',
             requires = { 'kyazdani42/nvim-web-devicons', opt = true },
         }
-        use 'norcalli/nvim-colorizer.lua'
+        use {
+            'norcalli/nvim-colorizer.lua',
+            config = function()
+                require('colorizer').setup()
+            end,
+        }
         use 'junegunn/goyo.vim'
         use 'lukas-reineke/indent-blankline.nvim'
 
@@ -78,7 +86,12 @@ return packer.startup({
         use 'numtostr/comment.nvim'
         use 'tpope/vim-surround'
         use 'windwp/nvim-autopairs'
-        use 'ntpeters/vim-better-whitespace'
+        use {
+            'mcauley-penney/tidy.nvim',
+            config = function()
+                require('tidy').setup()
+            end,
+        }
         use 'mattn/emmet-vim'
 
         -- Git
@@ -89,10 +102,16 @@ return packer.startup({
         use { 'tridactyl/vim-tridactyl', ft = 'tridactyl' }
         use { 'mboughaba/i3config.vim', ft = 'i3config' }
         use { 'baskerville/vim-sxhkdrc', ft = 'sxhkdrc' }
-        use { 'vim-pandoc/vim-pandoc-syntax', ft = 'pandoc' }
+        use {
+            'vim-pandoc/vim-pandoc-syntax',
+            ft = 'pandoc',
+            config = function()
+                vim.g['pandoc#syntax#conceal#use'] = 0
+            end,
+        }
 
         -- Treesitter
-        use { 'nvim-treesitter/nvim-treesitter', run = ':TSUpdate' }
+        use { 'nvim-treesitter/nvim-treesitter', run = '<cmd>TSUpdate' }
         use 'nvim-treesitter/playground'
         use 'joosepalviste/nvim-ts-context-commentstring'
 
@@ -122,13 +141,16 @@ return packer.startup({
             'iamcco/markdown-preview.nvim',
             ft = { 'packer', 'markdown', 'pandoc' },
             run = function()
-                fn['mkdp#util#install']()
+                vim.fn['mkdp#util#install']()
+            end,
+            config = function()
+                vim.g.mkdp_filetypes = { 'markdown', 'pandoc' }
             end,
         }
         use {
             'glacambre/firenvim',
             run = function()
-                fn['firenvim#install'](0)
+                vim.fn['firenvim#install'](0)
             end,
         }
 
@@ -136,4 +158,4 @@ return packer.startup({
             require('packer').sync()
         end
     end,
-})
+}
