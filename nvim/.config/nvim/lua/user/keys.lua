@@ -1,12 +1,7 @@
 -- Sets keymap with default :map-arguments (custom opts override defaults)
 local function kset(mode, lhs, rhs, opts)
     local default_opts = { silent = true }
-    if opts then
-        opts = vim.tbl_extend('force', default_opts, opts)
-    else
-        opts = default_opts
-    end
-    vim.keymap.set(mode, lhs, rhs, opts)
+    require('user.lib.utils').keymap_set(mode, lhs, rhs, opts, default_opts)
 end
 
 -- Leader key

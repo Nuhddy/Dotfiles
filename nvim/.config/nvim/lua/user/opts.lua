@@ -75,5 +75,4 @@ l -- don't wrap long lines if they were too long beforehand
 ]]
 
 -- Abbreviations
-vim.cmd 'cabbrev h vert h'
-vim.cmd 'cabbrev H h'
+vim.cmd 'cabbrev vh vert h'

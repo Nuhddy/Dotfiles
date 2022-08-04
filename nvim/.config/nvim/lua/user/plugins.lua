@@ -67,6 +67,7 @@ return packer.startup {
         }
         use 'junegunn/goyo.vim'
         use 'lukas-reineke/indent-blankline.nvim'
+        use 'rcarriga/nvim-notify'
 
         -- Utilities
         use {
