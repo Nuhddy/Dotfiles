@@ -17,7 +17,7 @@ run polybar.sh
 run nm-applet
 run xsetroot -cursor_name left_ptr
 run unclutter
-run dunst
+# run dunst
 run keepassxc
 run nextcloud
 run easyeffects --gapplication-service

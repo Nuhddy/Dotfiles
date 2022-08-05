@@ -30,6 +30,7 @@ o.laststatus = 3
 o.showmode = false
 o.pumheight = 10
 o.cmdheight = 1
+o.laststatus = 3
 o.showtabline = 1
 opt.shortmess:append { c = true }
 o.termguicolors = true
@@ -74,5 +75,4 @@ l -- don't wrap long lines if they were too long beforehand
 ]]
 
 -- Abbreviations
-vim.cmd 'cabbrev h vert h'
-vim.cmd 'cabbrev H h'
+vim.cmd 'cabbrev vh vert h'
