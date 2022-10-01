@@ -29,7 +29,7 @@ o.colorcolumn = '999' -- workaround for indent-blankline + cursorline bug ]]
 o.laststatus = 3
 o.showmode = false
 o.pumheight = 10
-o.cmdheight = 1
+o.cmdheight = 0
 o.laststatus = 3
 o.showtabline = 1
 opt.shortmess:append { c = true }
@@ -38,11 +38,12 @@ o.background = 'dark'
 o.guifont = 'monospace:h17'
 vim.cmd 'syntax on'
 vim.api.nvim_create_augroup('general_settings', {})
-au('TextYankPost', {
+-- This pattern probably isn't the right approach
+--[[au('TextYankPost', {
     group = 'general_settings',
     pattern = '*',
     command = 'lua vim.highlight.on_yank { on_visual = false }',
-})
+})]]
 
 -- Searching
 o.ignorecase = true
