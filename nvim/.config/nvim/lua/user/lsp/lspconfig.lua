@@ -23,17 +23,30 @@ end
 
 -- Diagnostics
 local signs = {
-    { name = 'DiagnosticSignError', text = '', num = 'DiagnosticLineNrError' },
-    { name = 'DiagnosticSignWarn', text = '', num = 'DiagnosticLineNrWarn' },
-    { name = 'DiagnosticSignHint', text = '', num = 'DiagnosticLineNrHint' },
-    { name = 'DiagnosticSignInfo', text = '', num = 'DiagnosticLineNrInfo' },
+    {
+        name = 'DiagnosticSignError',
+        text = '',
+        num = 'DiagnosticLineNrError',
+    },
+    {
+        name = 'DiagnosticSignWarn',
+        text = '',
+        num = 'DiagnosticLineNrWarn',
+    },
+    {
+        name = 'DiagnosticSignHint',
+        text = '',
+        num = 'DiagnosticLineNrHint',
+    },
+    {
+        name = 'DiagnosticSignInfo',
+        text = '',
+        num = 'DiagnosticLineNrInfo',
+    },
 }
 
 for _, sign in ipairs(signs) do
-    vim.fn.sign_define(
-        sign.name,
-        { texthl = '', text = '', numhl = sign.num }
-    )
+    vim.fn.sign_define(sign.name, { texthl = '', text = '', numhl = sign.num })
 end
 
 vim.diagnostic.config {
@@ -81,5 +94,13 @@ lspconfig.sumneko_lua.setup {
                 enable = false,
             },
         },
+    },
+}
+
+lspconfig.pyright.setup {
+    on_attach = on_attach,
+    capabilities = capabilities,
+    settings = {
+        pyright = {},
     },
 }

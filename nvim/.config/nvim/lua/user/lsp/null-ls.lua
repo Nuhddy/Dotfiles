@@ -15,7 +15,7 @@ null_ls.setup {
         f.stylua,
 
         -- python
-        f.black,
+        f.autopep8,
         d.flake8,
     },
 }

@@ -19,7 +19,7 @@
     },
 } ]]
 
-local function diff_source()
+--[[ local function diff_source()
     local gitsigns = vim.b.gitsigns_status_dict
     if gitsigns then
         return {
@@ -28,46 +28,46 @@ local function diff_source()
             removed = gitsigns.removed,
         }
     end
-end
-
---[[ require('lualine').setup {
-    options = {
-        theme = 'nordfox',
-    },
-} ]]
+end ]]
 
 require('lualine').setup {
     options = {
         theme = 'nordfox',
-        color = {gui = 'bold'},
-        section_separators = {left = '', right = ''},
-        component_separators = '',
     },
-    sections = {
-        lualine_a = {
-            {'mode', separator = {left = ''}, color = {gui = 'bold'}},
-        },
-        lualine_b = {
-            {'filetype', icon_only = true},
-            {'filename', path = 1, padding = {left = 0, right = 1}},
-        },
-        lualine_c = {},
-        lualine_x = {},
-        lualine_y = {
-            {'b:gitsigns_head', icon = ''},
-            {'diff', source = diff_source, padding = 0},
-        },
-        lualine_z = {
-            {'location'--[[ , color = {fg = '#e5e5e5', bg = '#e5e5e5'} ]]},
-            {
-                'progress', separator = {right = ''},
-                -- color = {fg = '#e5e5e5', bg = '#222222'}
-            },
-        },
-    },
-    inactive_sections = {
-        lualine_a = {
-            {'filename', path = 1, separator = {left = '', right = ''}}
-        },
-    }
 }
+
+-- require('lualine').setup {
+--     options = {
+--         theme = 'nordfox',
+--         color = {gui = 'bold'},
+--         section_separators = {left = '', right = ''},
+--         component_separators = '',
+--     },
+--     sections = {
+--         lualine_a = {
+--             {'mode', separator = {left = ''}, color = {gui = 'bold'}},
+--         },
+--         lualine_b = {
+--             {'filetype', icon_only = true},
+--             {'filename', path = 1, padding = {left = 0, right = 1}},
+--         },
+--         lualine_c = {},
+--         lualine_x = {},
+--         lualine_y = {
+--             {'b:gitsigns_head', icon = ''},
+--             {'diff', source = diff_source, padding = 0},
+--         },
+--         lualine_z = {
+--             {'location'--[[ , color = {fg = '#e5e5e5', bg = '#e5e5e5'} ]]},
+--             {
+--                 'progress', separator = {right = ''},
+--                 -- color = {fg = '#e5e5e5', bg = '#222222'}
+--             },
+--         },
+--     },
+--     inactive_sections = {
+--         lualine_a = {
+--             {'filename', path = 1, separator = {left = '', right = ''}}
+--         },
+--     }
+-- }

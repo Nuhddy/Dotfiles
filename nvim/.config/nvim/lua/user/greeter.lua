@@ -9,13 +9,13 @@ dashboard.section.buttons.val = {
     dashboard.button(
         'e',
         '  New file',
-        '<cmd>enew<CR> | <cmd>startinsert<CR>',
+        '<cmd>enew | startinsert<CR>',
         {}
     ),
     dashboard.button(
         'o',
         '  Open file',
-        '<cmd>Telescope find_files<CR>',
+        '<cmd>lua require("user.lib.utils").telescope_project_files()<CR>',
         {}
     ),
     --[[ dashboard.button(
@@ -34,7 +34,7 @@ dashboard.section.buttons.val = {
     dashboard.button(
         'c',
         '  Configuration',
-        '<cmd>cd ~/.config/nvim/<CR> | <cmd>e init.lua<CR>',
+        '<cmd>cd ~/.config/nvim/ | e init.lua<CR>',
         {}
     ),
     dashboard.button('q', '  Quit neovim', '<cmd>qa<CR>', {}),

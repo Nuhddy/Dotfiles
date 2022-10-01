@@ -9,4 +9,13 @@ M.keymap_set = function(mode, lhs, rhs, opts, default_opts)
     vim.keymap.set(mode, lhs, rhs, opts)
 end
 
+M.telescope_project_files = function()
+    local t = require 'telescope.builtin'
+    local opts = {}
+    local ok = pcall(t.git_files, opts)
+    if not ok then
+        t.find_files(opts)
+    end
+end
+
 return M
