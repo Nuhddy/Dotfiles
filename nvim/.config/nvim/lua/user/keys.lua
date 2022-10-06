@@ -61,4 +61,4 @@ kset(
     '<leader>t',
     '<cmd>lua require("user.lib.utils").telescope_project_files()<CR>'
 )
-kset('n', '<leader>f', '<cmd>lua vim.lsp.buf.formatting_sync()<CR>')
+kset('n', '<leader>f', '<cmd>lua vim.lsp.buf.format()<CR>')
