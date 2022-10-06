@@ -7,9 +7,9 @@ vim.notify = require 'notify'
 
 notify.setup {
     fps = 60,
-    level = 0,
+    level = 'info',
     stages = 'fade',
-    timeout = 5000,
+    timeout = 2000,
 }
 
 require('telescope').load_extension('notify')
