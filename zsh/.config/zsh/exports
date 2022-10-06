@@ -13,6 +13,7 @@ if [ $(uname -r | grep "microsoft") ]; then
 
     export BROWSER="wslview"
     export READER="wslview"
+    export COLORTERM="truecolor"
 
 else
 

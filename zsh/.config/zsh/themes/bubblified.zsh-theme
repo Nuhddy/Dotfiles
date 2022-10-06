@@ -11,7 +11,7 @@ blub_right=''
 prompt_symbol='-->'
 
 user_symbol='%n'
-user_machine_symbol=' גּ '
+user_machine_symbol=' @ '
 machine_symbol='%M'
 
 filepath_symbol='%~'
@@ -44,7 +44,7 @@ filepath_color='blue'
 
 git_clean_color='green'
 git_unstaged_color='yellow'
-git_staged_color='magenta' 
+git_staged_color='magenta'
 git_stashed_color='blue'
 git_unmerged_color='red'
 git_symbols_color='black'
@@ -55,11 +55,11 @@ ssh_bubble_color='green'
 # HELPER FUNCTIONS
 bubblify () {
     # This is a helper function to build custom bubbles.
-    # 
+    #
     # ARGS      VALUES          DESC
     # ----      ------          ----
     # 1.        {0, 1, 2, 3}        0: build left side bubble: content█
-    #                               1: build right side bubble: █content                
+    #                               1: build right side bubble: █content
     #                               2: build middle part: █content█
     #                               3: build custom colored whole bubble: content
     #
@@ -109,7 +109,7 @@ git_bubble () {
         # branch name with symbol, initialize symbols and git status output
         local git_info="$git_branch_symbol $git_branch"
         local git_symbols=""
-        local git_status=$(git status -s 2> /dev/null | awk '{print substr($0,1,2)}') 
+        local git_status=$(git status -s 2> /dev/null | awk '{print substr($0,1,2)}')
 
         # used for coloring (and some for icons)
         local git_unmerged=$(grep -m1 -E -- 'U|DD|AA' <<< $git_status)
@@ -127,7 +127,7 @@ git_bubble () {
 
         # coloring
         if [[ -n $git_unmerged ]]; then
-            local git_color=$git_unmerged_color   
+            local git_color=$git_unmerged_color
             git_symbols="$git_symbols$git_unmerged_symbol"
         elif [[ -n $git_branch_stashed ]]; then
             local git_color=$git_stashed_color
@@ -166,7 +166,7 @@ git_bubble () {
 }
 
 ssh_bubble () {
-    # detects an ssh connection and displays a bubble 
+    # detects an ssh connection and displays a bubble
     if [[ -n $SSH_CLIENT || -n $SSH_TTY || -n $SSH_CONNECTION ]]; then
         echo -n "$(bubblify 3 "$ssh_symbol" $ssh_symbol_color $ssh_bubble_color) "
     fi
@@ -204,4 +204,3 @@ _linedown=$'\e[1B'
 
 PROMPT='$(ssh_bubble)$user_machine_bubble$filepath_bubble$_newline$end_of_prompt%{$reset_color%}'
 RPROMPT='%{$_lineup%}$(git_bubble)$error_code_bubble%{$_linedown%}%{$reset_color%}'
-
