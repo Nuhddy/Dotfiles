@@ -112,7 +112,12 @@ return packer.startup {
         }
 
         -- Treesitter
-        use { 'nvim-treesitter/nvim-treesitter', run = '<cmd>TSUpdate' }
+        use {
+            'nvim-treesitter/nvim-treesitter',
+            run = function()
+                require('nvim-treesitter.install').update { with_sync = true }
+            end,
+        }
         use 'nvim-treesitter/playground'
         use 'joosepalviste/nvim-ts-context-commentstring'
 
