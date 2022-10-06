@@ -55,10 +55,10 @@ return packer.startup {
             'feline-nvim/feline.nvim',
             requires = { 'kyazdani42/nvim-web-devicons', opt = true },
         }
-        use {
+        --[[ use {
             'akinsho/bufferline.nvim',
             requires = { 'kyazdani42/nvim-web-devicons', opt = true },
-        }
+        } ]]
         use {
             'norcalli/nvim-colorizer.lua',
             config = function()
@@ -74,7 +74,7 @@ return packer.startup {
             'kyazdani42/nvim-tree.lua',
             requires = { 'kyazdani42/nvim-web-devicons', opt = true },
         }
-        use 'preservim/tagbar'
+        -- use 'preservim/tagbar'
         use {
             'nvim-telescope/telescope.nvim',
             requires = 'nvim-lua/plenary.nvim',
@@ -135,8 +135,9 @@ return packer.startup {
         use 'rafamadriz/friendly-snippets'
 
         -- LSP
+        use 'williamboman/mason.nvim'
+        use 'williamboman/mason-lspconfig.nvim'
         use 'neovim/nvim-lspconfig'
-        use 'williamboman/nvim-lsp-installer'
         use {
             'jose-elias-alvarez/null-ls.nvim',
             requires = 'nvim-lua/plenary.nvim',

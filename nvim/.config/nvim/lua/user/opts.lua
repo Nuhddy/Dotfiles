@@ -39,11 +39,11 @@ o.guifont = 'monospace:h17'
 vim.cmd 'syntax on'
 vim.api.nvim_create_augroup('general_settings', {})
 -- This pattern probably isn't the right approach
---[[au('TextYankPost', {
+au('TextYankPost', {
     group = 'general_settings',
     pattern = '*',
     command = 'lua vim.highlight.on_yank { on_visual = false }',
-})]]
+})
 
 -- Searching
 o.ignorecase = true
