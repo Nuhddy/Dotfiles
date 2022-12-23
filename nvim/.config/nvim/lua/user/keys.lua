@@ -59,6 +59,7 @@ kset('n', '<leader>mp', '<cmd>MarkdownPreviewToggle<CR>')
 kset(
     'n',
     '<leader>t',
-    '<cmd>lua require("user.lib.utils").telescope_project_files()<CR>'
+    -- '<cmd>lua require("user.lib.utils").telescope_project_files()<CR>'
+    '<cmd>Telescope find_files<CR>'
 )
 kset('n', '<leader>f', '<cmd>lua vim.lsp.buf.format()<CR>')

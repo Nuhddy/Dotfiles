@@ -15,7 +15,8 @@ dashboard.section.buttons.val = {
     dashboard.button(
         'o',
         '  Open file',
-        '<cmd>lua require("user.lib.utils").telescope_project_files()<CR>',
+        -- '<cmd>lua require("user.lib.utils").telescope_project_files()<CR>',
+        '<cmd>Telescope find_files<CR>',
         {}
     ),
     --[[ dashboard.button(

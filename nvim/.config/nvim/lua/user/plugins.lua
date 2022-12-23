@@ -67,7 +67,15 @@ return packer.startup {
         }
         use 'junegunn/goyo.vim'
         use 'lukas-reineke/indent-blankline.nvim'
-        use 'rcarriga/nvim-notify'
+        -- use 'rcarriga/nvim-notify'
+        use {
+            'folke/noice.nvim',
+            event = 'VimEnter',
+            requires = {
+                'muniftanjim/nui.nvim',
+                'rcarriga/nvim-notify'
+            }
+        }
 
         -- Utilities
         use {
@@ -135,13 +143,14 @@ return packer.startup {
         use 'rafamadriz/friendly-snippets'
 
         -- LSP
+        use 'neovim/nvim-lspconfig'
         use 'williamboman/mason.nvim'
         use 'williamboman/mason-lspconfig.nvim'
-        use 'neovim/nvim-lspconfig'
         use {
             'jose-elias-alvarez/null-ls.nvim',
             requires = 'nvim-lua/plenary.nvim',
         }
+        use 'smiteshp/nvim-navic'
 
         -- IPC-like
         use {

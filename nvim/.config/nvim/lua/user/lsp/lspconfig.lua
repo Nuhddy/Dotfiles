@@ -8,7 +8,16 @@ local function kset(mode, lhs, rhs, opts)
     require('user.lib.utils').keymap_set(mode, lhs, rhs, opts, default_opts)
 end
 
-local function on_attach()
+local function navic_on_attach(client, bufnr)
+    local navic_status_ok, navic = pcall(require, 'nvim-navic')
+    if not navic_status_ok then
+        return
+    end
+
+    navic.attach(client, bufnr)
+end
+
+local function on_attach(client, bufnr)
     kset('n', 'K', vim.lsp.buf.hover)
     kset('n', 'gd', vim.lsp.buf.definition)
     kset('n', 'gr', vim.lsp.buf.references) -- show refs in telescope instead?
@@ -19,6 +28,10 @@ local function on_attach()
     kset('n', ']d', vim.diagnostic.goto_next)
     kset('n', 'gl', vim.diagnostic.open_float)
     kset('n', '<leader>q', vim.diagnostic.setloclist)
+
+    if client.server_capabilities.documentSymbolProvider then
+        navic_on_attach(client, bufnr)
+    end
 end
 
 -- Diagnostics

@@ -34,6 +34,15 @@ require('lualine').setup {
     options = {
         theme = 'nordfox',
     },
+    winbar = {
+        lualine_a = { 'filename' },
+        lualine_c = {
+            {
+                require('nvim-navic').get_location,
+                cond = require('nvim-navic').is_available,
+            },
+        },
+    },
 }
 
 -- require('lualine').setup {
