@@ -1,7 +1,8 @@
 source "/usr/share/zsh/scripts/zplug/init.zsh"
 
 # Prompt theme
-zplug "$ZDOTDIR/themes", from:local, as:theme
+# zplug "$ZDOTDIR/themes", from:local, as:theme
+zplug romkatv/powerlevel10k, as:theme, depth:1
 
 zplug "chrissicool/zsh-256color"
 zplug "ael-code/zsh-colored-man-pages"
