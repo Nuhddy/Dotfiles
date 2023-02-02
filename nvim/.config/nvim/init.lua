@@ -1,25 +1,15 @@
--- Modules
-require 'user.plugins'
-require 'user.impatient'
-require 'user.opts'
-require 'user.ft-autocmd'
-require 'user.keys'
-require 'user.colorscheme'
-require 'user.completion'
-require 'user.lsp'
--- require 'user.noice'
-require 'user.telescope'
-require 'user.treesitter'
-require 'user.autopairs'
-require 'user.comment'
-require 'user.git'
-require 'user.explorer'
-require 'user.bufferline'
-require 'user.lualine'
--- require 'user.feline'
--- require 'user.project'
-require 'user.indentline'
-require 'user.greeter'
-require 'user.firenvim'
-require 'user.snippets'
--- require 'user.notify'
+local impatient_ok, impatient = pcall(require, "impatient")
+if impatient_ok then impatient.enable_profile() end
+
+for _, source in ipairs {
+    "options",
+    "autocmds",
+    "mappings",
+    "plugins",
+} do
+    source = "core." .. source
+    local status_ok, fault = pcall(require, source)
+    if not status_ok then
+        vim.api.nvim_err_writeln("Failed to load " .. source .. "\n\n" .. fault)
+    end
+end
