@@ -1,0 +1,31 @@
+:root {
+    --toolbarbutton-border-radius: var(--uc-border-radius) !important;
+    --tab-border-radius: var(--uc-border-radius) !important;
+    --arrowpanel-border-radius: var(--uc-border-radius) !important;
+}
+
+#main-window,
+#toolbar-menubar,
+#TabsToolbar,
+#navigator-toolbox,
+#sidebar-box,
+#nav-bar {
+    box-shadow: none !important;
+    border: none !important;
+}
+
+#PersonalToolbar {
+    border: none !important;
+    padding: 6px !important;
+    background: transparent !important;
+}
+
+.titlebar-spacer {
+    display: none !important;
+}
+
+#statuspanel #statuspanel-label {
+    border: none !important;
+    border-radius: var(--uc-border-radius) !important;
+    margin: 0 0 var(--uc-status-panel-spacing) var(--uc-status-panel-spacing) !important;
+}

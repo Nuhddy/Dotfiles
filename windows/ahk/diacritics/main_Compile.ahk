@@ -1,0 +1,1 @@
+RunWait "C:\Program Files\AutoHotkey\Compiler\Ahk2Exe.exe" /in "C:\PortablePrograms\AhkScripts\diacritics\main.ahk" /out "C:\PortablePrograms\AhkScripts\diacritics\diacritics.exe" /icon "C:\PortablePrograms\AhkScripts\diacritics\res\default_256.ico" /bin "C:\Program Files\AutoHotkey\Compiler\AutoHotkeySC.bin" /compress 0
