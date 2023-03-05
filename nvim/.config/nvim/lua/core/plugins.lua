@@ -35,6 +35,8 @@ packer.init {
     },
 }
 
+local not_vscode = function() return vim.g.vscode == 0 and true or false end -- check if running in vscode
+
 return packer.startup {
     function(use)
         use "wbthomason/packer.nvim"
@@ -43,6 +45,7 @@ return packer.startup {
         use {
             "catppuccin/nvim",
             as = "catppuccin",
+            cond = not_vscode,
             config = function() require "configs.catppuccin" end,
         }
         use {
@@ -53,11 +56,13 @@ return packer.startup {
                 "nvim-tree/nvim-web-devicons",
                 "muniftanjim/nui.nvim",
             },
+            cond = not_vscode,
             config = function() require "configs.neo-tree" end,
         }
         use {
             "windwp/nvim-autopairs",
             event = "InsertEnter",
+            cond = not_vscode,
             config = function() require "configs.autopairs" end,
         }
         use {
@@ -66,19 +71,23 @@ return packer.startup {
         }
         use {
             "lukas-reineke/indent-blankline.nvim",
+            cond = not_vscode,
             config = function() require "configs.indent-blankline" end,
         }
         use {
             "windwp/nvim-ts-autotag",
             after = "nvim-treesitter",
+            cond = not_vscode,
             config = function() require("nvim-ts-autotag").setup() end,
         }
         use {
             "joosepalviste/nvim-ts-context-commentstring",
             after = "nvim-treesitter",
+            cond = not_vscode,
         }
         use {
             "nvchad/nvim-colorizer.lua",
+            cond = not_vscode,
             config = function() require("colorizer").setup {} end,
         }
         use "tpope/vim-surround"
@@ -89,15 +98,21 @@ return packer.startup {
         use { "mattn/emmet-vim", ft = { "html", "css" } }
         use {
             "fgheng/winbar.nvim",
+            cond = not_vscode,
             config = function() require "configs.winbar" end,
         }
-        use { "smiteshp/nvim-navic", requires = "neovim/nvim-lspconfig" }
+        use {
+            "smiteshp/nvim-navic",
+            requires = "neovim/nvim-lspconfig",
+            cond = not_vscode,
+        }
         --[[ use {
             "rebelot/heirline.nvim",
             config = function() require "configs.heirline" end,
         } ]]
         use {
             "nvim-lualine/lualine.nvim",
+            cond = not_vscode,
             config = function() require "configs.lualine" end,
         }
         use {
@@ -116,6 +131,7 @@ return packer.startup {
         use {
             "nvim-telescope/telescope.nvim",
             requires = "nvim-lua/plenary.nvim",
+            cond = not_vscode,
             config = function() require "configs.telescope" end,
         }
 
@@ -124,6 +140,7 @@ return packer.startup {
         use {
             "vim-pandoc/vim-pandoc-syntax",
             ft = "markdown.pandoc",
+            cond = not_vscode,
             config = function() vim.g["pandoc#syntax#conceal#use"] = 0 end,
         }
 
@@ -133,31 +150,37 @@ return packer.startup {
             run = function()
                 require("nvim-treesitter.install").update { with_sync = true }
             end,
+            cond = not_vscode,
             config = function() require "configs.treesitter" end,
         }
 
         -- LSP
         use {
             "neovim/nvim-lspconfig",
+            cond = not_vscode,
             config = function() require "configs.lspconfig" end,
         }
         use {
             "jose-elias-alvarez/null-ls.nvim",
             requires = "nvim-lua/plenary.nvim",
+            cond = not_vscode,
             config = function() require "configs.null-ls" end,
         }
         use {
             "williamboman/mason.nvim",
+            cond = not_vscode,
             config = function() require "configs.mason" end,
         }
         use {
             "williamboman/mason-lspconfig.nvim",
             after = "nvim-lspconfig",
+            cond = not_vscode,
             config = function() require "configs.mason-lspconfig" end,
         }
         use {
             "jayp0521/mason-null-ls.nvim",
             after = "null-ls.nvim",
+            cond = not_vscode,
             config = function() require "configs.mason-null-ls" end,
         }
 
@@ -165,11 +188,13 @@ return packer.startup {
         use {
             "hrsh7th/nvim-cmp",
             event = "InsertEnter",
+            cond = not_vscode,
             config = function() require "configs.cmp" end,
         }
         use {
             "hrsh7th/cmp-path",
             after = "nvim-cmp",
+            cond = not_vscode,
             config = function()
                 require("core.utils").cmp_add_source { name = "path" }
             end,
@@ -177,6 +202,7 @@ return packer.startup {
         use {
             "hrsh7th/cmp-buffer",
             after = "nvim-cmp",
+            cond = not_vscode,
             config = function()
                 require("core.utils").cmp_add_source {
                     name = "buffer",
@@ -187,6 +213,7 @@ return packer.startup {
         --[[ use {
             "hrsh7th/cmp-cmdline",
             after = "nvim-cmp",
+            cond = not_vscode,
             config = function()
                 require("core.utils").cmp_add_source { name = "cmdline" }
             end,
@@ -194,6 +221,7 @@ return packer.startup {
         use {
             "hrsh7th/cmp-nvim-lua",
             after = "nvim-cmp",
+            cond = not_vscode,
             config = function()
                 require("core.utils").cmp_add_source { name = "nvim_lua" }
             end,
@@ -201,6 +229,7 @@ return packer.startup {
         use {
             "hrsh7th/cmp-nvim-lsp",
             after = "nvim-cmp",
+            cond = not_vscode,
             config = function()
                 require("core.utils").cmp_add_source { name = "nvim_lsp" }
             end,
@@ -208,6 +237,7 @@ return packer.startup {
         --[[ use {
             "saadparwaiz1/cmp_luasnip",
             after = "nvim-cmp",
+            cond = not_vscode,
             config = function()
                 require("core.utils").cmp_add_source { name = "luasnip" }
             end,
