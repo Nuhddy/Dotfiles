@@ -1,10 +1,9 @@
-" General Settings
-set configversion 2.0
-set newtab https://ozencb.github.io/tilde-enhanced/
-set searchengine tilde
-set theme bubblified
-set searchurls.duckduckgo https://duckduckgo.com/?q=
 set searchurls.tilde https://ozencb.github.io/tilde-enhanced/?q=
+set searchurls.duckduckgo https://duckduckgo.com/?q=
 
-" For syntax highlighting see https://github.com/tridactyl/vim-tridactyl
+set searchengine tilde
+set newtab https://ozencb.github.io/tilde-enhanced/
+set theme catppuccin
+set smoothscroll true
+
 " vim: set filetype=tridactyl
