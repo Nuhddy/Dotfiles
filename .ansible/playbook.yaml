@@ -1,0 +1,26 @@
+- name: Bootstrap dotfiles
+  hosts: localhost
+  connection: local
+
+  tasks:
+  # Get package lists
+  - name: Get packages list
+    include_vars:
+      file: packages.yaml
+
+  # Ensure yay is installed
+  - name: Ensure yay is installed
+    vars:
+      yay_path: "/usr/bin/yay"
+    kewlfft.aur.aur:
+      name: yay
+      use: makepkg
+    when: yay_path is not file
+
+  # Ensure aur packages are installed
+  - name: Ensure packages are installed
+    kewlfft.aur.aur:
+      name: "{{ dominus.pkgs }}"
+      use: yay
+
+# Deploy symlinks with stow
