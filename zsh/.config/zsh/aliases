@@ -2,7 +2,6 @@
 alias diff="diff --color=auto"
 alias grep="grep --color=auto"
 alias ip="ip -color=auto"
-eval $(dircolors ~/.config/dir_colors)
 
 # Use aliases with sudo
 alias sudo="sudo "
