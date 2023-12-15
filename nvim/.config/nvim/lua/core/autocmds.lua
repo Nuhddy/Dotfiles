@@ -1,13 +1,6 @@
 local au = vim.api.nvim_create_autocmd
 local aug = vim.api.nvim_create_augroup
 
-au("TextYankPost", {
-    desc = "Highlight yanked text",
-    group = aug("highlightyank", { clear = true }),
-    pattern = "*",
-    callback = function() vim.highlight.on_yank { on_visual = false } end,
-})
-
 au({ "VimEnter", "BufEnter" }, {
     desc = "Properly set formatoptions",
     group = aug("formatoptions", { clear = true }),
@@ -53,4 +46,12 @@ au("FileType", {
     group = aug("markdown", { clear = true }),
     pattern = "markdown",
     callback = function() vim.bo.textwidth = 79 end,
+})
+
+if vim.g.vscode then return end
+au("TextYankPost", {
+    desc = "Highlight yanked text",
+    group = aug("highlightyank", { clear = true }),
+    pattern = "*",
+    callback = function() vim.highlight.on_yank { on_visual = false } end,
 })

@@ -6,3 +6,5 @@
 ^/misc
 ^/windows
 ^/dots
+
+^/.ansible

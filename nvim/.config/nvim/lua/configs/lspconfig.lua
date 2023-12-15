@@ -49,7 +49,7 @@ end
 local capabilities = vim.lsp.protocol.make_client_capabilities()
 
 -- Server settings
-lspconfig.sumneko_lua.setup {
+lspconfig.lua_ls.setup {
     on_attach = on_attach,
     capabilities = capabilities,
     settings = {

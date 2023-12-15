@@ -1,0 +1,714 @@
+<?xml version='1.0' encoding='ascii'?>
+<installed>
+    <mod name="Friendly Focus" enabled="True" date="2022-12-27 04:09:25" priority="-">
+        <data>modFriendlyFocus</data>
+        <menu>modFriendlyFocus.xml</menu>
+    </mod>
+    <mod name="Thoughtful Roach" enabled="True" date="2022-12-27 04:20:22" priority="-">
+        <data>modThoughtfulRoach</data>
+        <menu>thoughtfulroach.xml</menu>
+    </mod>
+    <mod name="No Pop-Up for Read Books" enabled="True" date="2022-12-27 04:20:26" priority="-">
+        <data>modNoPopupForReadBooks</data>
+    </mod>
+    <mod name="Don't Fear Quen" enabled="True" date="2022-12-27 04:23:06" priority="-">
+        <data>modDontFearQuen</data>
+    </mod>
+    <mod name="Missing Card Tracker" enabled="False" date="2022-12-27 04:23:39" priority="-">
+        <data>modMissingCardTracker</data>
+    </mod>
+    <mod name="Warmly Dressed Skelligers" enabled="True" date="2022-12-27 04:25:50" priority="4">
+        <data>modWarmlyDressedSkelligers</data>
+    </mod>
+    <mod name="Sword FX" enabled="True" date="2022-12-27 04:26:00" priority="-">
+        <data>modSwordFX</data>
+        <menu>modswordfx.xml</menu>
+    </mod>
+    <mod name="Remove Camera Shake Effect" enabled="True" date="2022-12-27 04:26:31" priority="-">
+        <data>modRemoveCameraShakeEffect</data>
+    </mod>
+    <mod name="No intro - No storybook" enabled="True" date="2022-12-27 04:34:53" priority="-">
+        <data>modnostory</data>
+    </mod>
+    <mod name="Dynamic Costumes - Philippa" enabled="True" date="2022-12-30 23:30:58" priority="-">
+        <data>modDCPhilippa_VanillaToNewStyle</data>
+        <dlc>dlcDCPhilippa_VanillaToNewStyle</dlc>
+    </mod>
+    <mod name="Dynamic Costumes - Yennefer" enabled="True" date="2022-12-30 23:32:01" priority="-">
+        <dlc>dlcDCYenT1_DefaultDLC</dlc>
+    </mod>
+    <mod name="Menu Strings" enabled="True" date="2022-12-30 23:48:26" priority="-">
+        <data>modMenuStrings</data>
+    </mod>
+    <mod name="Book Inspired Medallion" enabled="True" date="2022-12-31 23:55:18" priority="-">
+        <data>modBookMedallion</data>
+    </mod>
+    <mod name="Slimmer Griffin Armor" enabled="True" date="2023-01-13 02:37:41" priority="-">
+        <data>modSlenderGriffinArmor</data>
+    </mod>
+    <mod name="Better Movement" enabled="False" date="2023-01-15 01:12:45" priority="-">
+        <data>modBetterMovement</data>
+        <menu>modBetterMovement.xml</menu>
+    </mod>
+    <mod name="Dynamic Costumes - Triss T1 alt" enabled="True" date="2023-01-21 21:04:09" priority="-">
+        <data>modDCTrissT1_DefaultDLCHair</data>
+        <dlc>dlcDCTrissT1_DefaultDLCHair</dlc>
+    </mod>
+    <mod name="Dynamic Costumes - Ciri" enabled="True" date="2023-01-21 21:04:29" priority="-">
+        <dlc>dlcDCCiriT1_DefaultDLC</dlc>
+    </mod>
+    <mod name="Grammar of the Path" enabled="True" date="2023-01-30 01:41:17" priority="-">
+        <data>modZ_GrammarOfThePath</data>
+    </mod>
+    <mod name="DLC - Events - Quest Journal Category" enabled="True" date="2023-02-08 21:10:05" priority="-">
+        <data>modEvents</data>
+    </mod>
+    <mod name="Sort Everything" enabled="True" date="2023-02-09 00:46:51" priority="-">
+        <data>modSortEverything</data>
+        <menu>modSortEverything.xml</menu>
+    </mod>
+    <mod name="Friendly HUD" enabled="True" date="2023-02-13 14:55:16" priority="-">
+        <data>modFriendlyHUD</data>
+        <menu>modFHUDConfig.xml</menu>
+        <xmlkey>&lt;Var builder="Input" id="PauseGameToggle" displayName="PauseGameToggle" displayType="INPUTPC" actions="PauseGameToggle" /&gt;</xmlkey>
+        <xmlkey>&lt;Var builder="Input" id="PinModuleModfier" displayName="PinModuleModfier" displayType="INPUTPC" actions="PinModuleModfier" /&gt;</xmlkey>
+        <xmlkey>&lt;Var builder="Input" id="Toggle3DMarkers" displayName="Toggle3DMarkers" displayType="INPUTPC" actions="Toggle3DMarkers" /&gt;</xmlkey>
+        <xmlkey>&lt;Var builder="Input" id="ToggleEssentials" displayName="ToggleEssentials" displayType="INPUTPC" actions="ToggleEssentials" /&gt;</xmlkey>
+        <xmlkey>&lt;Var builder="Input" id="SwitchCrossbow" displayName="SwitchCrossbow" displayType="INPUTPC" actions="SwitchCrossbow" /&gt;</xmlkey>
+        <xmlkey>&lt;Var builder="Input" id="HoldToSeeEssentials" displayName="HoldToSeeEssentials" displayType="INPUTPC" actions="HoldToSeeEssentials" /&gt;</xmlkey>
+        <xmlkey>&lt;Var builder="Input" id="HoldToSeeCharStats" displayName="HoldToSeeCharStats" displayType="INPUTPC" actions="HoldToSeeCharStats" /&gt;</xmlkey>
+        <xmlkey>&lt;Var builder="Input" id="HoldToSeeMap" displayName="HoldToSeeMap" displayType="INPUTPC" actions="HoldToSeeMap" /&gt;</xmlkey>
+        <xmlkey>&lt;Var builder="Input" id="HoldToSeeQuests" displayName="HoldToSeeQuests" displayType="INPUTPC" actions="HoldToSeeQuests" /&gt;</xmlkey>
+        <hidden>&lt;Var builder="Input" id="UseItem1" displayName="UseItem1" displayType="INPUTPC" actions="UseItem1" /&gt;</hidden>
+        <hidden>&lt;Var builder="Input" id="UseItem2" displayName="UseItem2" displayType="INPUTPC" actions="UseItem2" /&gt;</hidden>
+        <hidden>&lt;Var builder="Input" id="UseItem3" displayName="UseItem3" displayType="INPUTPC" actions="UseItem3" /&gt;</hidden>
+        <hidden>&lt;Var builder="Input" id="UseItem4" displayName="UseItem4" displayType="INPUTPC" actions="UseItem4" /&gt;</hidden>
+        <hidden>&lt;Var builder="Input" id="UseItem5" displayName="UseItem5" displayType="INPUTPC" actions="UseItem5" /&gt;</hidden>
+        <hidden>&lt;Var builder="Input" id="UseItem6" displayName="UseItem6" displayType="INPUTPC" actions="UseItem6" /&gt;</hidden>
+        <hidden>&lt;Var builder="Input" id="UseItem7" displayName="UseItem7" displayType="INPUTPC" actions="UseItem7" /&gt;</hidden>
+        <hidden>&lt;Var builder="Input" id="UseItem8" displayName="UseItem8" displayType="INPUTPC" actions="UseItem8" /&gt;</hidden>
+        <hidden>&lt;Var builder="Input" id="UseItem9" displayName="UseItem9" displayType="INPUTPC" actions="UseItem9" /&gt;</hidden>
+        <hidden>&lt;Var builder="Input" id="UseItem10" displayName="UseItem10" displayType="INPUTPC" actions="UseItem10" /&gt;</hidden>
+        <hidden>&lt;Var builder="Input" id="UseItem11" displayName="UseItem11" displayType="INPUTPC" actions="UseItem11" /&gt;</hidden>
+        <hidden>&lt;Var builder="Input" id="UseItem12" displayName="UseItem12" displayType="INPUTPC" actions="UseItem12" /&gt;</hidden>
+        <hidden>&lt;Var builder="Input" id="ShowPotionsHelper" displayName="ShowPotionsHelper" displayType="INPUTPC" actions="ShowPotionsHelper" /&gt;</hidden>
+        <hidden>&lt;Var builder="Input" id="ShowBombsHelper" displayName="ShowBombsHelper" displayType="INPUTPC" actions="ShowBombsHelper" /&gt;</hidden>
+        <hidden>&lt;Var builder="Input" id="ShowOilsHelper" displayName="ShowOilsHelper" displayType="INPUTPC" actions="ShowOilsHelper" /&gt;</hidden>
+        <hidden>&lt;Var builder="Input" id="ShowActiveBuffs" displayName="ShowActiveBuffs" displayType="INPUTPC" actions="ShowActiveBuffs" /&gt;</hidden>
+        <hidden>&lt;Var builder="Input" id="SwitchBuffsMode" displayName="SwitchBuffsMode" displayType="INPUTPC" actions="SwitchBuffsMode" /&gt;</hidden>
+        <hidden>&lt;Var builder="Input" id="ItemsPadUp" displayName="ItemsPadUp" displayType="INPUTPC" actions="ItemsPadUp" /&gt;</hidden>
+        <hidden>&lt;Var builder="Input" id="ItemsPadDown" displayName="ItemsPadDown" displayType="INPUTPC" actions="ItemsPadDown" /&gt;</hidden>
+        <hidden>&lt;Var builder="Input" id="ItemsPadLeft" displayName="ItemsPadLeft" displayType="INPUTPC" actions="ItemsPadLeft" /&gt;</hidden>
+        <hidden>&lt;Var builder="Input" id="ItemsPadRight" displayName="ItemsPadRight" displayType="INPUTPC" actions="ItemsPadRight" /&gt;</hidden>
+        <hidden>&lt;Var builder="Input" id="ItemsPadUse" displayName="ItemsPadUse" displayType="INPUTPC" actions="ItemsPadUse" /&gt;</hidden>
+        <key context="[Boat]">IK_F2=(Action=Toggle3DMarkers)</key>
+        <key context="[Boat]">IK_F11=(Action=PauseGameToggle)</key>
+        <key context="[Boat]">IK_Tilde=(Action=SwitchCrossbow)</key>
+        <key context="[Boat]">IK_RShift=(Action=PinModuleModfier)</key>
+        <key context="[Boat]">IK_F10=(Action=ToggleEssentials)</key>
+        <key context="[Boat]">IK_Pad_Back_Select=(Action=PanelInv,State=Duration,IdleTime=0.5)</key>
+        <key context="[Boat]">IK_Enter=(Action=HoldToSeeEssentials)</key>
+        <key context="[Boat]">IK_K=(Action=HoldToSeeCharStats)</key>
+        <key context="[Boat]">IK_M=(Action=HoldToSeeMap)</key>
+        <key context="[Boat]">IK_J=(Action=HoldToSeeQuests)</key>
+        <key context="[BoatPassenger]">IK_F2=(Action=Toggle3DMarkers)</key>
+        <key context="[BoatPassenger]">IK_F11=(Action=PauseGameToggle)</key>
+        <key context="[BoatPassenger]">IK_Tilde=(Action=SwitchCrossbow)</key>
+        <key context="[BoatPassenger]">IK_RShift=(Action=PinModuleModfier)</key>
+        <key context="[BoatPassenger]">IK_F10=(Action=ToggleEssentials)</key>
+        <key context="[BoatPassenger]">IK_Pad_Back_Select=(Action=PanelInv,State=Duration,IdleTime=0.5)</key>
+        <key context="[BoatPassenger]">IK_Enter=(Action=HoldToSeeEssentials)</key>
+        <key context="[BoatPassenger]">IK_K=(Action=HoldToSeeCharStats)</key>
+        <key context="[BoatPassenger]">IK_M=(Action=HoldToSeeMap)</key>
+        <key context="[BoatPassenger]">IK_J=(Action=HoldToSeeQuests)</key>
+        <key context="[Combat]">IK_F2=(Action=Toggle3DMarkers)</key>
+        <key context="[Combat]">IK_F11=(Action=PauseGameToggle)</key>
+        <key context="[Combat]">IK_Tilde=(Action=SwitchCrossbow)</key>
+        <key context="[Combat]">IK_RShift=(Action=PinModuleModfier)</key>
+        <key context="[Combat]">IK_F10=(Action=ToggleEssentials)</key>
+        <key context="[Combat]">IK_Pad_Back_Select=(Action=PanelInv,State=Duration,IdleTime=0.5)</key>
+        <key context="[Combat]">IK_Enter=(Action=HoldToSeeEssentials)</key>
+        <key context="[Combat]">IK_K=(Action=HoldToSeeCharStats)</key>
+        <key context="[Combat]">IK_M=(Action=HoldToSeeMap)</key>
+        <key context="[Combat]">IK_J=(Action=HoldToSeeQuests)</key>
+        <key context="[Combat_Replacer_Ciri]">IK_F2=(Action=Toggle3DMarkers)</key>
+        <key context="[Combat_Replacer_Ciri]">IK_F11=(Action=PauseGameToggle)</key>
+        <key context="[Combat_Replacer_Ciri]">IK_RShift=(Action=PinModuleModfier)</key>
+        <key context="[Combat_Replacer_Ciri]">IK_F10=(Action=ToggleEssentials)</key>
+        <key context="[Combat_Replacer_Ciri]">IK_Enter=(Action=HoldToSeeEssentials)</key>
+        <key context="[Combat_Replacer_Ciri]">IK_K=(Action=HoldToSeeCharStats)</key>
+        <key context="[Combat_Replacer_Ciri]">IK_M=(Action=HoldToSeeMap)</key>
+        <key context="[Combat_Replacer_Ciri]">IK_J=(Action=HoldToSeeQuests)</key>
+        <key context="[Exploration]">IK_F2=(Action=Toggle3DMarkers)</key>
+        <key context="[Exploration]">IK_F11=(Action=PauseGameToggle)</key>
+        <key context="[Exploration]">IK_Tilde=(Action=SwitchCrossbow)</key>
+        <key context="[Exploration]">IK_RShift=(Action=PinModuleModfier)</key>
+        <key context="[Exploration]">IK_F10=(Action=ToggleEssentials)</key>
+        <key context="[Exploration]">IK_Pad_Back_Select=(Action=PanelInv,State=Duration,IdleTime=0.5)</key>
+        <key context="[Exploration]">IK_Enter=(Action=HoldToSeeEssentials)</key>
+        <key context="[Exploration]">IK_K=(Action=HoldToSeeCharStats)</key>
+        <key context="[Exploration]">IK_M=(Action=HoldToSeeMap)</key>
+        <key context="[Exploration]">IK_J=(Action=HoldToSeeQuests)</key>
+        <key context="[Exploration_Replacer_Ciri]">IK_F2=(Action=Toggle3DMarkers)</key>
+        <key context="[Exploration_Replacer_Ciri]">IK_F11=(Action=PauseGameToggle)</key>
+        <key context="[Exploration_Replacer_Ciri]">IK_RShift=(Action=PinModuleModfier)</key>
+        <key context="[Exploration_Replacer_Ciri]">IK_F10=(Action=ToggleEssentials)</key>
+        <key context="[Exploration_Replacer_Ciri]">IK_Enter=(Action=HoldToSeeEssentials)</key>
+        <key context="[Exploration_Replacer_Ciri]">IK_K=(Action=HoldToSeeCharStats)</key>
+        <key context="[Exploration_Replacer_Ciri]">IK_M=(Action=HoldToSeeMap)</key>
+        <key context="[Exploration_Replacer_Ciri]">IK_J=(Action=HoldToSeeQuests)</key>
+        <key context="[Horse]">IK_F2=(Action=Toggle3DMarkers)</key>
+        <key context="[Horse]">IK_F11=(Action=PauseGameToggle)</key>
+        <key context="[Horse]">IK_Tilde=(Action=SwitchCrossbow)</key>
+        <key context="[Horse]">IK_RShift=(Action=PinModuleModfier)</key>
+        <key context="[Horse]">IK_F10=(Action=ToggleEssentials)</key>
+        <key context="[Horse]">IK_Pad_Back_Select=(Action=PanelInv,State=Duration,IdleTime=0.5)</key>
+        <key context="[Horse]">IK_Enter=(Action=HoldToSeeEssentials)</key>
+        <key context="[Horse]">IK_K=(Action=HoldToSeeCharStats)</key>
+        <key context="[Horse]">IK_M=(Action=HoldToSeeMap)</key>
+        <key context="[Horse]">IK_J=(Action=HoldToSeeQuests)</key>
+        <key context="[Horse_Replacer_Ciri]">IK_F2=(Action=Toggle3DMarkers)</key>
+        <key context="[Horse_Replacer_Ciri]">IK_F11=(Action=PauseGameToggle)</key>
+        <key context="[Horse_Replacer_Ciri]">IK_RShift=(Action=PinModuleModfier)</key>
+        <key context="[Horse_Replacer_Ciri]">IK_F10=(Action=ToggleEssentials)</key>
+        <key context="[Horse_Replacer_Ciri]">IK_Enter=(Action=HoldToSeeEssentials)</key>
+        <key context="[Horse_Replacer_Ciri]">IK_K=(Action=HoldToSeeCharStats)</key>
+        <key context="[Horse_Replacer_Ciri]">IK_M=(Action=HoldToSeeMap)</key>
+        <key context="[Horse_Replacer_Ciri]">IK_J=(Action=HoldToSeeQuests)</key>
+        <key context="[Diving]">IK_F2=(Action=Toggle3DMarkers)</key>
+        <key context="[Diving]">IK_F11=(Action=PauseGameToggle)</key>
+        <key context="[Diving]">IK_RShift=(Action=PinModuleModfier)</key>
+        <key context="[Diving]">IK_F10=(Action=ToggleEssentials)</key>
+        <key context="[Diving]">IK_Pad_Back_Select=(Action=PanelInv,State=Duration,IdleTime=0.5)</key>
+        <key context="[Swimming]">IK_F2=(Action=Toggle3DMarkers)</key>
+        <key context="[Swimming]">IK_F11=(Action=PauseGameToggle)</key>
+        <key context="[Swimming]">IK_RShift=(Action=PinModuleModfier)</key>
+        <key context="[Swimming]">IK_F10=(Action=ToggleEssentials)</key>
+        <key context="[Swimming]">IK_Pad_Back_Select=(Action=PanelInv,State=Duration,IdleTime=0.5)</key>
+        <key context="[Swimming]">IK_Enter=(Action=HoldToSeeEssentials)</key>
+        <key context="[Swimming]">IK_K=(Action=HoldToSeeCharStats)</key>
+        <key context="[Swimming]">IK_M=(Action=HoldToSeeMap)</key>
+        <key context="[Swimming]">IK_J=(Action=HoldToSeeQuests)</key>
+        <key context="[JumpClimb]">IK_F2=(Action=Toggle3DMarkers)</key>
+        <key context="[JumpClimb]">IK_F3=(Action=UserMarkersToggle)</key>
+        <key context="[JumpClimb]">IK_F11=(Action=PauseGameToggle)</key>
+        <key context="[RadialMenu]">IK_1=(Action=UseItem1)</key>
+        <key context="[RadialMenu]">IK_2=(Action=UseItem2)</key>
+        <key context="[RadialMenu]">IK_3=(Action=UseItem3)</key>
+        <key context="[RadialMenu]">IK_4=(Action=UseItem4)</key>
+        <key context="[RadialMenu]">IK_5=(Action=UseItem5)</key>
+        <key context="[RadialMenu]">IK_6=(Action=UseItem6)</key>
+        <key context="[RadialMenu]">IK_7=(Action=UseItem7)</key>
+        <key context="[RadialMenu]">IK_8=(Action=UseItem8)</key>
+        <key context="[RadialMenu]">IK_9=(Action=UseItem9)</key>
+        <key context="[RadialMenu]">IK_0=(Action=UseItem10)</key>
+        <key context="[RadialMenu]">IK_Minus=(Action=UseItem11)</key>
+        <key context="[RadialMenu]">IK_Equals=(Action=UseItem12)</key>
+        <key context="[RadialMenu]">IK_Q=(Action=SwitchBuffsMode)</key>
+        <key context="[RadialMenu]">IK_Pad_Y_TRIANGLE=(Action=SwitchBuffsMode)</key>
+        <key context="[RadialMenu]">IK_F1=(Action=ShowPotionsHelper)</key>
+        <key context="[RadialMenu]">IK_F2=(Action=ShowBombsHelper)</key>
+        <key context="[RadialMenu]">IK_F3=(Action=ShowOilsHelper)</key>
+        <key context="[RadialMenu]">IK_F4=(Action=ShowActiveBuffs)</key>
+        <key context="[RadialMenu]">IK_Pad_DigitUp=(Action=ItemsPadUp)</key>
+        <key context="[RadialMenu]">IK_W=(Action=ItemsPadUp)</key>
+        <key context="[RadialMenu]">IK_Pad_DigitRight=(Action=ItemsPadRight)</key>
+        <key context="[RadialMenu]">IK_D=(Action=ItemsPadRight)</key>
+        <key context="[RadialMenu]">IK_Pad_DigitLeft=(Action=ItemsPadLeft)</key>
+        <key context="[RadialMenu]">IK_A=(Action=ItemsPadLeft)</key>
+        <key context="[RadialMenu]">IK_Pad_DigitDown=(Action=ItemsPadDown)</key>
+        <key context="[RadialMenu]">IK_S=(Action=ItemsPadDown)</key>
+        <key context="[RadialMenu]">IK_Pad_RightThumb=(Action=ItemsPadUse)</key>
+        <key context="[RadialMenu]">IK_C=(Action=ItemsPadUse)</key>
+        <key context="[RadialMenu]">IK_F11=(Action=PauseGameToggle)</key>
+        <key context="[Scene]">IK_F11=(Action=PauseGameToggle)</key>
+        <key context="[Scene]">IK_Escape=(Action=IngameMenu)</key>
+        <key context="[Scene]">IK_Pad_Back_Select=(Action=IngameMenu)</key>
+        <key context="[ThrowHold]">IK_F11=(Action=PauseGameToggle)</key>
+        <key context="[ThrowHold]">IK_Tilde=(Action=SwitchCrossbow)</key>
+        <setting context="fhudHUD">fhudEnableCombatModules=true</setting>
+        <setting context="fhudHUD">fhudEnableCombatModulesOnUnsheathe=false</setting>
+        <setting context="fhudHUD">fhudEnableWolfModuleOnVitalityChanged=true</setting>
+        <setting context="fhudHUD">fhudEnableWitcherSensesModules=false</setting>
+        <setting context="fhudHUD">fhudEnableMeditationModules=true</setting>
+        <setting context="fhudHUD">fhudEnableRadialMenuModules=true</setting>
+        <setting context="fhudHUD">fhudHideJournalUpdates=false</setting>
+        <setting context="fhudHUD">fhudFadeOutTimeSeconds=3</setting>
+        <setting context="fhudMarkers">fhud3DMarkersEnabled=true</setting>
+        <setting context="fhudMarkers">fhudMarkerIconDisplayMode=0</setting>
+        <setting context="fhudMarkers">fhudMarkerDescriptionDisplayMode=0</setting>
+        <setting context="fhudMarkers">fhudMarkerDistanceDisplayMode=0</setting>
+        <setting context="fhudMarkers">fhudMarkerIconType=0</setting>
+        <setting context="fhudMarkers">fhudMarkerOnScreenOnly=false</setting>
+        <setting context="fhudMarkers">fhudMarkersIconSizePrc=50</setting>
+        <setting context="fhudMarkers">fhudMarkersDescriptionTextSize=15</setting>
+        <setting context="fhudMarkers">fhudMarkersDistanceTextSize=15</setting>
+        <setting context="fhudMarkers">fhudMarkersAltTextSize=15</setting>
+        <setting context="fhudMarkers">fhudMarkerMinDistance=4</setting>
+        <setting context="fhudMarkers">fhudMarkerMaxDistance=100</setting>
+        <setting context="fhudMarkers">fhudCompassMarkersEnabled=false</setting>
+        <setting context="fhudMarkers">fhudProject3DMarkersOnCompass=true</setting>
+        <setting context="fhudMarkers">fhudCompassScreenPosY=1.0</setting>
+        <setting context="fhudMarkers">fhudMarkersFadeOutDelay=3</setting>
+        <setting context="fhudMarkers">fhudMarkersShowQuests=2</setting>
+        <setting context="fhudMarkers">fhudMarkersShowQuestsAll=0</setting>
+        <setting context="fhudMarkers">fhudMarkersShowUser=2</setting>
+        <setting context="fhudMarkers">fhudMarkersShowUserAll=0</setting>
+        <setting context="fhudMarkers">fhudMarkersShowMapLoc=0</setting>
+        <setting context="fhudMarkers">fhudMarkersShowNPCs=0</setting>
+        <setting context="fhudMarkers">fhudMarkersShowPOIs=0</setting>
+        <setting context="fhudMarkers">fhudMarkersShowDisabled=1</setting>
+        <setting context="fhudMarkers">fhudMarkersShowUndiscovered=1</setting>
+        <setting context="fhudMarkers">fhudMarkersShowMisc=1</setting>
+        <setting context="fhudMarkers">fhudMarkersShowHerbs=1</setting>
+        <setting context="fhudMarkers">fhudMarkersShowEnemies=1</setting>
+        <setting context="fhudMarkers">fhudMarkersShowDeadEnemies=1</setting>
+        <setting context="fhudMarkers">fhudMarkersShowWSClues=1</setting>
+        <setting context="fhudMarkers">fhudMarkerHideActivities=false</setting>
+        <setting context="fhudMarkers">fhudMarkerShowUndiscoveredRoadsigns=false</setting>
+        <setting context="fhudMarkers">fhudMarkerPinWithUserMarker=true</setting>
+        <setting context="fhudQuickItems">fhudEnableItemsInRadialMenu=true</setting>
+        <setting context="fhudQuickItems">fhudShowItemsInSlowdownMode=false</setting>
+        <setting context="fhudQuickItems">fhudDefaultDisplayMode=0</setting>
+        <setting context="fhudQuickItems">fhudCycleThroughBuffs=true</setting>
+        <setting context="fhudQuickItems">fhudEnableWASD=false</setting>
+        <setting context="fhudQuickItems">fhudApplyOilToDrawnSword=false</setting>
+        <setting context="fhudQuickItems">fhudRadialMenuTimescale=0.05</setting>
+        <setting context="fhudMap">fhudMapUnlimitedZoom=true</setting>
+        <setting context="fhudMap">fhudMapZoomMinCoef=2.5</setting>
+        <setting context="fhudMap">fhudMapZoomMaxCoef=0.5</setting>
+        <setting context="fhudMap">fhudMinimapZoomExterior=0.5</setting>
+        <setting context="fhudMap">fhudMinimapZoomInterior=1</setting>
+        <setting context="fhudMap">fhudMinimapZoomBoat=0.5</setting>
+        <setting context="fhudInventory">fhudDefaultInventoryTab=1</setting>
+        <setting context="fhudInventory">fhudResetNewItemsIngredients=true</setting>
+        <setting context="fhudInventory">fhudResetNewItemsQuest=true</setting>
+        <setting context="fhudInventory">fhudResetNewItemsOthers=true</setting>
+        <setting context="fhudInventory">fhudResetNewItemsEdibles=true</setting>
+        <setting context="fhudInventory">fhudResetNewItemsRoach=true</setting>
+        <setting context="fhudInventory">fhudResetNewItemsAlchemy=true</setting>
+        <setting context="fhudInventory">fhudResetNewItemsEquipment=false</setting>
+        <setting context="fhudInventory">fhudShowTrueItemPrice=true</setting>
+        <setting context="fhudInventory">fhudShowStashItemQuantity=true</setting>
+        <setting context="fhudInventory">fhudShowRecyclingParts=true</setting>
+        <setting context="fhudInventory">fhudShowItemCountWhenCrafting=true</setting>
+        <setting context="fhudInteractions">fhudDisableAllInteractionPrompts=false</setting>
+        <setting context="fhudInteractions">fhudTalkBubbleMode=3</setting>
+        <setting context="fhudInteractions">fhudTalkButtonMode=2</setting>
+        <setting context="fhudInteractions">fhudInteractionButtonMode=2</setting>
+        <setting context="fhudInteractions">fhudHideWSInteractionIcons=false</setting>
+        <setting context="fhudInteractions">fhudMaxDistanceToShowNames=3</setting>
+        <setting context="fhudInteractions">fhudMaxDistanceToShowNamesInCbt=10</setting>
+        <setting context="fhudInteractions">fhudHideAnimalNames=true</setting>
+        <setting context="fhudInteractions">fhudHideHerbNames=false</setting>
+        <setting context="fhudInteractions">fhudHideNPCQuestMarkers=true</setting>
+        <setting context="fhudMainMenu">fhudMainMenuMode=0</setting>
+        <setting context="fhudMainMenu">fhudHideDLC=false</setting>
+        <setting context="fhudMisc">fhudDoNotShowDamage=false</setting>
+        <setting context="fhudMisc">fhudDoNotShowLevels=0</setting>
+        <setting context="fhudMisc">fhudSilentJournalUpdates=false</setting>
+        <setting context="fhudMisc">fhudDisableCatWhenNotInDarkPlace=false</setting>
+        <setting context="fhudMisc">fhudEnableCatAtNight=false</setting>
+        <setting context="fhudHUD">fhudEnableCombatModules=true</setting>
+        <setting context="fhudHUD">fhudEnableCombatModulesOnUnsheathe=false</setting>
+        <setting context="fhudHUD">fhudEnableWolfModuleOnVitalityChanged=true</setting>
+        <setting context="fhudHUD">fhudEnableWitcherSensesModules=false</setting>
+        <setting context="fhudHUD">fhudEnableMeditationModules=true</setting>
+        <setting context="fhudHUD">fhudEnableRadialMenuModules=true</setting>
+        <setting context="fhudHUD">fhudHideJournalUpdates=false</setting>
+        <setting context="fhudHUD">fhudFadeOutTimeSeconds=3</setting>
+        <setting context="fhudMarkers">fhud3DMarkersEnabled=true</setting>
+        <setting context="fhudMarkers">fhudMarkerIconDisplayMode=0</setting>
+        <setting context="fhudMarkers">fhudMarkerDescriptionDisplayMode=0</setting>
+        <setting context="fhudMarkers">fhudMarkerDistanceDisplayMode=0</setting>
+        <setting context="fhudMarkers">fhudMarkerIconType=0</setting>
+        <setting context="fhudMarkers">fhudMarkerOnScreenOnly=false</setting>
+        <setting context="fhudMarkers">fhudMarkersIconSizePrc=50</setting>
+        <setting context="fhudMarkers">fhudMarkersDescriptionTextSize=15</setting>
+        <setting context="fhudMarkers">fhudMarkersDistanceTextSize=15</setting>
+        <setting context="fhudMarkers">fhudMarkersAltTextSize=15</setting>
+        <setting context="fhudMarkers">fhudMarkerMinDistance=4</setting>
+        <setting context="fhudMarkers">fhudMarkerMaxDistance=100</setting>
+        <setting context="fhudMarkers">fhudCompassMarkersEnabled=false</setting>
+        <setting context="fhudMarkers">fhudProject3DMarkersOnCompass=true</setting>
+        <setting context="fhudMarkers">fhudCompassScreenPosY=1.0</setting>
+        <setting context="fhudMarkers">fhudMarkersFadeOutDelay=3</setting>
+        <setting context="fhudMarkers">fhudMarkersShowQuests=2</setting>
+        <setting context="fhudMarkers">fhudMarkersShowQuestsAll=0</setting>
+        <setting context="fhudMarkers">fhudMarkersShowUser=2</setting>
+        <setting context="fhudMarkers">fhudMarkersShowUserAll=0</setting>
+        <setting context="fhudMarkers">fhudMarkersShowMapLoc=0</setting>
+        <setting context="fhudMarkers">fhudMarkersShowNPCs=0</setting>
+        <setting context="fhudMarkers">fhudMarkersShowPOIs=0</setting>
+        <setting context="fhudMarkers">fhudMarkersShowDisabled=1</setting>
+        <setting context="fhudMarkers">fhudMarkersShowUndiscovered=1</setting>
+        <setting context="fhudMarkers">fhudMarkersShowMisc=1</setting>
+        <setting context="fhudMarkers">fhudMarkersShowHerbs=1</setting>
+        <setting context="fhudMarkers">fhudMarkersShowEnemies=1</setting>
+        <setting context="fhudMarkers">fhudMarkersShowDeadEnemies=1</setting>
+        <setting context="fhudMarkers">fhudMarkersShowWSClues=1</setting>
+        <setting context="fhudMarkers">fhudMarkerHideActivities=false</setting>
+        <setting context="fhudMarkers">fhudMarkerShowUndiscoveredRoadsigns=false</setting>
+        <setting context="fhudMarkers">fhudMarkerPinWithUserMarker=true</setting>
+        <setting context="fhudQuickItems">fhudEnableItemsInRadialMenu=true</setting>
+        <setting context="fhudQuickItems">fhudShowItemsInSlowdownMode=false</setting>
+        <setting context="fhudQuickItems">fhudDefaultDisplayMode=0</setting>
+        <setting context="fhudQuickItems">fhudCycleThroughBuffs=true</setting>
+        <setting context="fhudQuickItems">fhudEnableWASD=false</setting>
+        <setting context="fhudQuickItems">fhudApplyOilToDrawnSword=false</setting>
+        <setting context="fhudQuickItems">fhudRadialMenuTimescale=0.05</setting>
+        <setting context="fhudMap">fhudMapUnlimitedZoom=true</setting>
+        <setting context="fhudMap">fhudMapZoomMinCoef=2.5</setting>
+        <setting context="fhudMap">fhudMapZoomMaxCoef=0.5</setting>
+        <setting context="fhudMap">fhudMinimapZoomExterior=0.5</setting>
+        <setting context="fhudMap">fhudMinimapZoomInterior=1</setting>
+        <setting context="fhudMap">fhudMinimapZoomBoat=0.5</setting>
+        <setting context="fhudInventory">fhudDefaultInventoryTab=1</setting>
+        <setting context="fhudInventory">fhudResetNewItemsIngredients=true</setting>
+        <setting context="fhudInventory">fhudResetNewItemsQuest=true</setting>
+        <setting context="fhudInventory">fhudResetNewItemsOthers=true</setting>
+        <setting context="fhudInventory">fhudResetNewItemsEdibles=true</setting>
+        <setting context="fhudInventory">fhudResetNewItemsRoach=true</setting>
+        <setting context="fhudInventory">fhudResetNewItemsAlchemy=true</setting>
+        <setting context="fhudInventory">fhudResetNewItemsEquipment=false</setting>
+        <setting context="fhudInventory">fhudShowTrueItemPrice=true</setting>
+        <setting context="fhudInventory">fhudShowStashItemQuantity=true</setting>
+        <setting context="fhudInventory">fhudShowRecyclingParts=true</setting>
+        <setting context="fhudInventory">fhudShowItemCountWhenCrafting=true</setting>
+        <setting context="fhudInteractions">fhudDisableAllInteractionPrompts=false</setting>
+        <setting context="fhudInteractions">fhudTalkBubbleMode=3</setting>
+        <setting context="fhudInteractions">fhudTalkButtonMode=2</setting>
+        <setting context="fhudInteractions">fhudInteractionButtonMode=2</setting>
+        <setting context="fhudInteractions">fhudHideWSInteractionIcons=false</setting>
+        <setting context="fhudInteractions">fhudMaxDistanceToShowNames=3</setting>
+        <setting context="fhudInteractions">fhudMaxDistanceToShowNamesInCbt=10</setting>
+        <setting context="fhudInteractions">fhudHideAnimalNames=true</setting>
+        <setting context="fhudInteractions">fhudHideHerbNames=false</setting>
+        <setting context="fhudInteractions">fhudHideNPCQuestMarkers=true</setting>
+        <setting context="fhudMainMenu">fhudMainMenuMode=0</setting>
+        <setting context="fhudMainMenu">fhudHideDLC=false</setting>
+        <setting context="fhudMisc">fhudDoNotShowDamage=false</setting>
+        <setting context="fhudMisc">fhudDoNotShowLevels=0</setting>
+        <setting context="fhudMisc">fhudSilentJournalUpdates=false</setting>
+        <setting context="fhudMisc">fhudDisableCatWhenNotInDarkPlace=false</setting>
+        <setting context="fhudMisc">fhudEnableCatAtNight=false</setting>
+        <readmeb64>RnJpZW5kbHlIVUQgTW9kIGZvciB0aGUgTmV4dCBHZW4gRWRpdGlvbiB2LjAuOU5HRQo9PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09CmJ5IHdnaG9zdDgxIGFrYSBXYXN0ZWxhbmQgR2hvc3QKPT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PQoKVGhpcyBtb2QgaXMgZm9yIHY0LjAgb2YgdGhlIGdhbWUgYWxzbyBrbm93biBhcyB0aGUgIk5leHQgR2VuIEVkaXRpb24iIChOR0UpLgoKTkdFIGludHJvZHVjZXMgYSBjb3VwbGUgb2YgUW9MIGNoYW5nZXMgdGhhdCB3ZXJlIHByZXZpb3VzbHkgcHJvdmlkZWQgYnkgRnJpZW5kbHlIVUQgLSB0aG9zZSBhcmUgbm93IHJlbW92ZWQgZnJvbSB0aGUgbW9kIGZpbGVzOiBtYWluIG1lbnUgYWNjZXNzIGZyb20gZGlhbG9ncyBhbmQgY3V0c2NlbmVzLCBmaXggZm9yICJ1bmFibGUgdG8gY2FsbCBSb2FjaCIgbWVzc2FnZSBwb3BwaW5nIHVwIHdoZW4gaW5kb29ycyB1bmRlciBjZXJ0YWluIGNvbmRpdGlvbnMuIFRodXMsIG1ha2Ugc3VyZSB5b3UgY29tcGxldGVseSBkZWxldGUgbm9uLU5HRSAoQ2xhc3NpYyBFZGl0aW9uIC0gQ0UpIHZlcnNpb24gb2YgdGhlIG1vZCBiZWZvcmUgaW5zdGFsbGluZyBhbiBOR0Ugb25lLgoKTm90ZSB0aGF0IE5HRSBwYXJ0aWFsbHkgZHVwbGljYXRlcyBkeW5hbWljIG1pbmltYXAgYW5kIHF1ZXN0IGxvZyBmZWF0dXJlcyBvZiB0aGUgbW9kLCBzbyB5b3UgbmVlZCB0byBkaXNhYmxlIHRob3NlIGluIHZhbmlsbGEgb3B0aW9ucyBpZiB5b3Ugd2FudCBGcmllbmRseUhVRCB0byB0YWtlIHByb3BlciBjb250cm9sIG9mIHRob3NlIG1vZHVsZXMuCgpBbHNvIG5vdGUgdGhhdCB0aGUgbW9kIGRvZXNuJ3QgaGlkZSBIVUQgbW9kdWxlcywgaXQgc2hvd3MgdGhlbS4gU28gaWYgeW91IHdhbnQgdG8gdXNlIHRoZSBzbWFydCBIVUQgZmVhdHVyZSwgeW91IG5lZWQgdG8gdHVybiBtb2R1bGVzIE9GRiBvbmUgYnkgb25lIHVzaW5nIGluLWdhbWUgdmFuaWxsYSB2aWRlbyBvcHRpb25zIG1lbnUgKHNlZSB0aGUgZGV0YWlscyBiZWxvdykuCgpEZXNjcmlwdGlvbjoKPT09PT09PT09PT09CgpTd2l0Y2hpbmcgc29tZSBwYXJ0cyBvZiB0aGUgSFVEIG9mZiBhbGxvd3MgZm9yIG1vcmUgaW1tZXJzaXZlIGdhbWVwbGF5LiBCdXQgcGxheWluZyB3aXRob3V0IG1pbmltYXAgb3IgaGVhbHRoYmFyIGNhbiBiZSBhcyBwYWluZnVsIHVuZGVyIGNlcnRhaW4gY2lyY3Vtc3RhbmNlcyBhcyBpdCdzIGZhbnRhc3RpYyB3aGlsZSBqdXN0IGV4cGxvcmluZyB0aGUgd29ybGQuIFRoaXMgbW9kIG9mZmVycyBhIGxvdCBvZiBvcHRpb25zIHRvIGNvbmZpZ3VyZSBIVUQgbW9kdWxlcyBhcyB3ZWxsIGFzIGFkZHMgM0QgbWFya2VycyBmb3IgcXVlc3QgYW5kIE5QQyB0cmFja2luZyBhbmQgbWFrZXMgc2V2ZXJhbCBpbXByb3ZlbWVudHMgdG8gZ2FtZSBtZW51cy4gWW91IGNhbiB1c2UgYWxsIG9mIHRoZSBvcHRpb25zIG1vZCBoYXMgb3IgdHVybiB0aGUgb25lcyB5b3UgZG9uJ3QgbmVlZCBvZmYuCgpUaGUgbW9kIGRvZXNuJ3QgY2hhbmdlIGFueSBvZiB0aGUgYmFsYW5jZSBhc3BlY3RzIG9mIHRoZSBnYW1lIGFuZCBvbmx5IHByb3ZpZGVzIHBpZWNlcyBvZiBpbmZvcm1hdGlvbiB0byB0aGUgcGxheWVyIGhlL3NoZSBhbHJlYWR5IGhhcyBhY2Nlc3MgdG8uIEJ5IGluc3RhbGxpbmcgaXQgeW91IHdvbid0IGJlIG1ha2luZyB0aGUgZ2FtZSBlYXNpZXIgb3IgdW5yZWFsaXN0aWMsIGl0J3MgYW4gVUkgbW9kLCB3aGljaCBhaW1zIHRvIGltcHJvdmUgcXVhbGl0eSBvZiBsaWZlIGFuZCBpbW1lcnNpb24uCgpOb3RlOiBUaGlzIG1vZCBkb2Vzbid0IGNoYW5nZSB5b3VyIHNhdmUgZmlsZXMsIHNvIGluc3RhbGxpbmcgb3IgdW5pbnN0YWxsaW5nIGl0IGluIHRoZSBtaWRkbGUgb2YgcGxheXRocm91Z2ggaXMgc2FmZS4KCkxpc3Qgb2YgY2hhbmdlczoKPT09PT09PT09PT09PT09PQoKMS4gTm9uLWludHJ1c2l2ZSBjdXN0b21pemFibGUgSFVECgotIFNtYXJ0IEhVRDogdHVybiBvZmYgYWxsIEhVRCBtb2R1bGVzIGZvciBjbGVhbiB1bmNsdXR0ZXJlZCB2aWV3IGR1cmluZyBleHBsb3JhdGlvbiBhbmQgdGhlIG1vZCB3aWxsIGF1dG9tYXRpY2FsbHkgc2hvdyBkaWZmZXJlbnQgZ3JvdXBzIG9mIG1vZHVsZXMgd2hlbiB0aGV5J3JlIG5lZWRlZCAtIHdoZW4gaW4gY29tYmF0LCBsb3Npbmcgdml0YWxpdHkgb3IgdXNpbmcgd2l0Y2hlciBzZW5zZXMsIGV0Yy4KCi0gUXVpY2sgYWNjZXNzIHRvIGhpZGRlbiBIVUQgbW9kdWxlcyB3aXRoICJob2xkIHRvIHNlZSIgYW5kICJwaW4gaXQiIGZlYXR1cmVzOiBob2xkaW5nIGEgaG90a2V5IHNob3dzIGNvcnJlc3BvbmRpbmcgZ3JvdXAgb2YgbW9kdWxlcyBhbmQgcmVsZWFzaW5nIGl0IGhpZGVzIGl0OyBob2xkaW5nICJwaW4gbW9kdWxlIiBtb2RpZmllciBrZXkgcGlucyBjb3JyZXNwb25kaW5nIGdyb3VwIG9mIG1vZHVsZXMgdW50aWwgeW91IHVucGluIGl0LiBIb3RrZXlzIGNhbiBvdmVybGFwIHdpdGggY29ycmVzcG9uZGluZyB2YW5pbGxhIG1lbnUgaG90a2V5cyAoYXMgbWVudXMgYXJlIGFjY2Vzc2VkIGJ5IHByZXNzaW5nIGEga2V5IG5vdCBob2xkaW5nIGl0KSwgc28geW91IGRvbid0IG5lZWQgdG8ga2VlcCBpbiBtaW5kIGRvemVucyBvZiBuZXcga2V5IGJpbmRpbmdzLgoKLSBBbiBvcHRpb24gdG8gaGlkZSBqb3VybmFsIHVwZGF0ZXMgSFVEIG1vZHVsZSAtIHRoZSBvbmUgdGhhdCBzaG93cyB1cGRhdGVkIHF1ZXN0IG5hbWUsIHF1ZXN0IGl0ZW1zIHJlY2VpdmVkLCBib29rcyByZWNlaXZlZCwgbGV2ZWwgdXAgYW5kIG90aGVyIHF1ZXN0IHJlbGF0ZWQgbWVzc2FnZXMgYW5kIGNhbiBuZXZlciBiZSBzd2l0Y2hlZCBvZmYgdXNpbmcgdmFuaWxsYSBtZW51LgoKLSAzRCBtYXJrZXJzIGZvciBtYXAgbG9jYXRpb25zIGFuZCBOUENzOiBzaG93cyBtYXAvbWluaW1hcCBtYXJrZXJzIGFzIGljb25zIGluIGdhbWUgd29ybGQuIENhbiBiZSB1c2VkIGluc3RlYWQgb2YgbWluaW1hcCBvciBhbG9uZyB3aXRoIGl0LiBUaGVyZSBhcmUgYSBsb3Qgb2Ygb3B0aW9ucyB0byBjb25maWd1cmUgbWFya2VycycgYXBwZWFyYW5jZSBhcyB3ZWxsIGFzIHdoZW4gYW5kIHdoaWNoIG1hcmtlcnMgdG8gc2hvdy4KCi0gTm9uLWludHJ1c2l2ZSBTa3lyaW0gbGlrZSBjb21wYXNzOiBjYW4gYmUgdXNlZCBpbnN0ZWFkIG9mIG1pbmltYXAgKG9yIGFsb25nIHdpdGggaXQpIGFuZCB0b2dldGhlciB3aXRoIDNEIG1hcmtlcnMuCgotIENvbmZpZ3VyYWJsZSBpbnRlcmFjdGlvbiBtYXJrZXJzIGFuZCB0ZXh0OiBzd2l0Y2ggdGFsayBidWJibGUvdGV4dCBvdmVyIE5QQ3MgaGVhZHMgb24gYW5kIG9mZiBvciBzd2l0Y2ggYWxsIGludGVyYWN0aW9uIGJ1dHRvbnMvdGV4dCBvZmYgY29tcGxldGVseS4KCi0gUXVlc3QgbWFya2VycyBmb3IgcXVlc3QgTlBDczogZml4ZXMgdmFuaWxsYSBidWcgKG9yIHdlaXJkIGZlYXR1cmUpIHdpdGggbm90IGRpc3BsYXlpbmcgcXVlc3QgbWFya2VycyBmb3IgTlBDcyBpZiB5b3UncmUgbm90IHRyYWNraW5nIHRoZWlyIHNwZWNpZmljIHF1ZXN0LiBDYW4gYmUgc3dpdGNoZWQgb2ZmLgoKLSBDb25maWd1cmFibGUgem9vbSBsZXZlbHMgZm9yIG1pbmltYXAuIEJ5IGRlZmF1bHQgbWluaW1hcCBpcyB6b29tZWQgb3V0IHR3aWNlIGNvbXBhcmVkIHRvIHZhbmlsbGEuCgoyLiBRdWFsaXR5IG9mIExpZmUgZmVhdHVyZXMKCi0gUXVpY2sgYWNjZXNzIHRvIHBvdGlvbnMsIGJvbWJzIGFuZCBvaWxzIHZpYSBSYWRpYWwgTWVudSB1c2luZyBob3RrZXlzL1dBU0QvY29udHJvbGxlciBELVBhZC4KCi0gUXVpY2sgc3dpdGNoaW5nIGJldHdlZW4gY3Jvc3Nib3cgYW5kIGxhdGVzdCB1c2VkIGJvbWIuCgotIFBhdXNlIGdhbWUgYXQgYW55IHRpbWUgeW91IGxpa2UsIGV2ZW4gaW4gZGlhbG9ncyBhbmQgY3V0c2NlbmVzLgoKMy4gTWVudSBlbmhhbmNlbWVudHMKCi0gQ29uZmlndXJhYmxlIHpvb20gdmFsdWVzIGZvciBtYXAgbWVudSB3aXRoIGFuIGFiaWxpdHkgdG8gc3dpdGNoIHVubGltaXRlZCB6b29tIG9uIChhbHJlYWR5IGVuYWJsZWQgYnkgZGVmYXVsdCkuCgotIENvbmZpZ3VyYWJsZSBkZWZhdWx0IGludmVudG9yeSB0YWIgLSBjaG9vc2Ugd2hpY2ggdGFiIHdpbGwgYmUgc2VsZWN0ZWQgd2hlbiBvcGVuaW5nIGludmVudG9yeSBtZW51LgoKLSBOZXcgaXRlbSBtYXJrZXIgZm9yIGp1bmssIGNyYWZ0aW5nIGFuZCBlZGlibGVzIG5ldmVyIHNob3dzIHVwIGFuZCBhbGwgc3VjaCBpdGVtcyBhcmUgYXV0b21hdGljYWxseSBtYXJrZWQgYXMgYmVpbmcgc2VlbiBhbHJlYWR5IChjYW4gYmUgc3dpdGNoZWQgb2ZmKS4KCi0gVHJ1ZSBpdGVtIHByaWNlIGFuZCBwcmljZSBjb21wYXJpc29uIHdoaWxlIGJhcnRlcmluZyBpcyBzaG93biBiZXNpZGUgYnV5aW5nL3NlbGxpbmcgcHJpY2UgYXMgd2VsbCBhcyBob3cgbWFueSBvZiB0aGlzIGl0ZW0geW91IGFscmVhZHkgaGF2ZSAoaW4gc3Rhc2ggYW5kIHRvdGFsKS4KCi0gUmVjeWNsaW5nIHBhcnRzIHlvdSBnZXQgd2hlbiBkaXNtYW50bGluZyBhbiBpdGVtIGFyZSBzaG93biBpbiBpdGVtIGRlc2NyaXB0aW9uLgoKLSBOZXcgcmVjaXBlcyBhbmQgY3JhZnRpbmcgc2NoZW1hdGljcyBhcmUgbm93IG1hcmtlZCB3aXRoIGFzdGVyaXNrcyBtYWtpbmcgdGhlbSBlYXNpZXIgdG8gZmluZC4KCi0gUGF0Y2ggMS4yMiBmZWF0dXJlIHdoZXJlIHlvdSBjYW4gYnV5IGNyYWZ0aW5nIGluZ3JlZGllbnRzIGZyb20gYmxhY2tzbWl0aHMgZGlyZWN0bHkgd2hpbGUgZXhhbWluaW5nIGNyYWZ0aW5nIHNjaGVtYXRpYyBpbiBjcmFmdGluZyBtZW51IGlzIGFkZGVkIHRvIGFsY2hlbWlzdHM6IHlvdSBjYW4gbm93IGJ1eSBhbGNoZW15IGluZ3JlZGllbnRzIGZyb20gYWxjaGVtaXN0cyBkaXJlY3RseSB3aGlsZSBleGFtaW5pbmcgYWxjaGVteSByZWNpcGUgaW4gYWxjaGVteSBtZW51LgoKLSBQYXRjaCAxLjIyIGZlYXR1cmUgd2hlcmUgeW91IGNhbiBzcGxpdCBzdGFjayBvZiBpdGVtcyB3aGVuIG1vdmluZyBpdCB0byBzdGFzaCB3YXMgaW1wcm92ZWQ6IHlvdSBjYW4gbm93IGFsc28gc3BsaXQgc3RhY2sgb2YgaXRlbXMgd2hlbiBtb3ZpbmcgaXQgZnJvbSBzdGFzaCBiYWNrIGludG8geW91ciBpbnZlbnRvcnkuCgotIFNlbGVjdGFibGUgbWFpbiBtZW51IGFuaW1hdGlvbiAoZGVmYXVsdCwgcmFuZG9tLCBiYXNlIGdhbWUsIEhvUywgQiZXKS4KCjQuIE1pc2NlbGxhbmVvdXMKCi0gQW4gb3B0aW9uIHRvIGhpZGUgZW5lbXkgbGV2ZWxzIGFuZCBkYW1hZ2UgbnVtYmVycy4KCi0gQW4gb3B0aW9uIHRvIGRpc2FibGUgc291bmQgbm90aWZpY2F0aW9uIG9uIGpvdXJuYWwgdXBkYXRlLgoKLSBBbiBvcHRpb24gdG8gcGF1c2UgY2F0IGVmZmVjdCBvdXRzaWRlIG9mIGNhdmVzIGFuZCB0byB1bnBhdXNlIGl0IGF0IG5pZ2h0LgoKRGVmYXVsdCBrZXkgYmluZGluZ3M6Cj09PT09PT09PT09PT09PT09PT09PQoKIkYyIiAtIGZvcmNlIHNob3cgM0QgbWFya2VyczsKIkYxMCIgLSBlc3NlbnRpYWwgSFVEIG1vZHVsZXMgb24vb2ZmOwoiRjExIiAtIHBhdXNlL3VucGF1c2UgdGhlIGdhbWU7CiJ+IiAtIHN3aXRjaCBiZXR3ZWVuIGNyb3NzYm93IGFuZCBzZWxlY3RlZCBib21iOwoiSG9sZCBSaWdodCBTaGlmdCIgLSBwaW4gbW9kdWxlIG1vZGlmaWVyIChob2xkIFJTaGlmdCBhbmQgcHJlc3MgTSB0byBwaW4gbWluaW1hcCBtb2R1bGUsIGZvciBleGFtcGxlKS4KIjEtOSwgMCwgLSwgPSIgLSBkcmluayBwb3Rpb25zL2VxdWlwIGJvbWJzL2FwcGx5IG9pbHMgaW4gcmFkaWFsIG1lbnU7CiJGMSIgLSBzaG93IHBvdGlvbnMgaW4gcmFkaWFsIG1lbnU7CiJGMiIgLSBzaG93IGJvbWJzIGluIHJhZGlhbCBtZW51OwoiRjMiIC0gc2hvdyBvaWxzIGluIHJhZGlhbCBtZW51OwoiRjQiIC0gc2hvdyBjdXJyZW50bHkgYWN0aXZlIGJ1ZmZzIGluIHJhZGlhbCBtZW51OwoiUSAoY29udHJvbGxlciBZIGJ1dHRvbikiIC0gY3ljbGUgdGhyb3VnaCBwb3Rpb25zL2JvbWJzL29pbHMvYnVmZnMgaW4gcmFkaWFsIG1lbnU7CiJDb250cm9sbGVyIEQtUGFkIGFycm93cyIgKG9yIFdBU0QgaWYgY29ycmVzcG9uZGluZyBvcHRpb24gaXMgZW5hYmxlZCkgLSBuYXZpZ2F0ZSBxdWljayBpdGVtcyBsaXN0IGluIHJhZGlhbCBtZW51OwoiQ29udHJvbGxlciBSaWdodCBUaHVtYiIgKG9yICJDIiBpZiBjb3JyZXNwb25kaW5nIG9wdGlvbiBpcyBlbmFibGVkKSAtIGRyaW5rIHNlbGVjdGVkIHBvdGlvbi9lcXVpcCBzZWxlY3RlZCBib21iL2FwcGx5IHNlbGVjdGVkIG9pbCBpbiByYWRpYWwgbWVudTsKIkhvbGQgTSIgLSBzaG93IG1pbmltYXAgdGVtcG9yYXJpbHk7CiJIb2xkIEoiIC0gc2hvdyB0cmFja2VkIHF1ZXN0IG9iamVjdGl2ZXMgdGVtcG9yYXJpbHk7CiJIb2xkIEsiIC0gc2hvdyBjaGFyYWN0ZXIgbW9kdWxlcyB0ZW1wb3JhcmlseTsKIkhvbGQgRW50ZXIiIC0gc2hvdyBlc3NlbnRpYWwgbW9kdWxlcyB0ZW1wb3JhcmlseTsKIkhvbGQgY29udHJvbGxlciBCYWNrIGJ1dHRvbiIgLSBpbnZlbnRvcnkgbWVudS4KCkNvbmZpZ3VyYXRpb246Cj09PT09PT09PT09PT09CgpNb3N0IG9mIHRoZSBvcHRpb25zIGFyZSBjb25maWd1cmFibGUgZGlyZWN0bHkgZnJvbSBpbi1nYW1lIG1lbnUgLSBsb29rIGZvciAiTW9kcyIgYW5kICJGcmllbmRseSBIVUQiIGVudHJpZXMuCgozRCBNYXJrZXJzIHZpc2liaWxpdHkgb3B0aW9uczoKLSBGb3JjZTogcmVzcGVjdHMgbWF4IGRpc3RhbmNlLCBpZ25vcmVzIHZpc2liaWxpdHkgY29uZGl0aW9uczsKLSBQaW46IGlnbm9yZXMgbWF4IGRpc3RhbmNlLCByZXNwZWN0cyB2aXNpYmlsaXR5IGNvbmRpdGlvbnM7Ci0gQWxsb3cgdXNlci1waW5uZWQgbWFya2VyczogbWFrZXMgaXQgc28gcGxhY2luZyB0aGUgZ3JlZW4gdXNlciBtYXJrZXIgb24gdG9wIG9mIGFueSBvZiB0aGUgb3RoZXIgbWFya2VycyBvbiBtYXAgd2lsbCBzaW11bHRhbmVvdXNseSBmb3JjZSBhbmQgcGluIHRoYXQgbWFya2VyIChzbyBpdCB3aWxsIGFsd2F5cyBiZSB2aXNpYmxlKSBhbmQgdGhlIHVzZXIgbWFya2VyIGl0c2VsZiB3b24ndCBiZSBkaXNwbGF5ZWQuCi0gSGlkZSBtYXJrZXJzIGRpc2FibGVkIGluIGFyZWEgbWFwOiBoaWRlcyAzRCBtYXJrZXJzIGJhc2VkIG9uIG1hcCBtYXJrZXIgdHlwZXMgZGlzYWJsZWQgaW4gYXJlYSBtYXAgZmlsdGVyLiBJLmUuIGlmIHlvdSBkaXNhYmxlIFBsYXllciBTdGFzaCBtYXJrZXIgZm9yIGFyZWEgbWFwLCB3aXRoIHRoaXMgb3B0aW9uIG9uIGl0IHdpbGwgYWxzbyBiZSBkaXNhYmxlZCBmb3IgM0QgbWFya2Vycy4KCkZvciBjb25kaXRpb25hbCBtb2R1bGVzIHRvIHNob3cgdXAgYWZ0ZXIgeW91IHR1cm4gdGhlbSBvbiBpbiBtZW51IHlvdSBzb21ldGltZXMgbmVlZCB0byByZWVudGVyIHRoZSBzdGF0ZS4gRm9yIGV4YW1wbGUsIGlmIHlvdSdyZSBpbiBjb21iYXQgc3RhdGUgd2l0aCBubyBjb21iYXQgbW9kdWxlcyBlbmFibGVkIGFuZCB5b3UgZ28gdG8gbWVudSBhbmQgZW5hYmxlIHRoZW0sIHRoZXkgd29uJ3Qgc2hvdyB1cCBpbW1lZGlhdGVseS4gQnV0IGFmdGVyIHlvdSBmaW5pc2ggY3VycmVudCBjb21iYXQgYW5kIHN0YXJ0IHRoZSBuZXh0IG9uZSwgdGhleSB3aWxsIHNob3cgdXAgcHJvcGVybHkuIERpc2FibGluZyBvZiBtb2R1bGVzIHdvcmtzIGltbWVkaWF0ZWx5LgoKQWxsIG1lbnVzIGhhdmUgcHJlc2V0cyB0byBxdWlja2x5IHJlc3RvcmUgZGVmYXVsdCBtb2Qgc2V0dGluZ3Mgb3IgdG8gc3dpdGNoIHRvIHZhbmlsbGEuCgpDb21iYXQgbW9kdWxlczogd29sZiBtZWRhbGxpb24sIGJ1ZmZzLCBhZGRpdGlvbmFsIGl0ZW1zLCBkYW1hZ2VkIGl0ZW1zLCBjb21wYW5pb25zLgpXaXRjaGVyIHNlbnNlcyBtb2R1bGVzOiBtaW5pbWFwLCB0cmFja2VkIHF1ZXN0LgpNZWRpdGF0aW9uIG1vZHVsZXMgKGZvciBGcmllbmRseSBNZWRpdGF0aW9uL1ByZXBhcmF0aW9ucyBtb2QpOiBtaW5pbWFwLgpSYWRpYWwgbWVudSBtb2R1bGVzOiBhZGRpdGlvbmFsIGl0ZW1zLgoKTGlzdHMgb2YgbW9kdWxlcyBhbmQgcXVpY2sgaXRlbXMgY2FuIGJlIGNvbmZpZ3VyZWQgaW5zaWRlICJbUGF0aCBUbyBUaGUgV2l0Y2hlciAzXVxNb2RzXG1vZEZyaWVuZGx5SFVEXGNvbnRlbnRcc2NyaXB0c1xmaHVkY29uZmlnXG1vZEZyaWVuZGx5SFVEQ29uZmlnLndzIiBmaWxlLiBDb25maWd1cmluZyByZXF1aXJlcyB2ZXJ5IGJhc2ljIHByb2dyYW1taW5nIGtub3dsZWRnZSwgdXNlIGl0IGlmIHlvdSB3YW50IHRvIGNoYW5nZSBzb21lIG9mIHRoZSBtb2QncyBpbm5lciB3b3JraW5ncy4gQ29uZmlndXJhYmxlIHNlY3Rpb24gc3RhcnRzIHdpdGggdGhlIGxpbmUgIkNvbmZpZ3VyYWJsZSBzZWN0aW9uIGJlZ2luIiBhbmQgZW5kcyB3aXRoIHRoZSBsaW5lICJFbmQgb2YgY29uZmlndXJhYmxlIHNlY3Rpb24iLiBEb24ndCBjaGFuZ2UgYW55dGhpbmcgb3V0c2lkZSB0aGVzZSBsaW5lcyBpZiB5b3UgZG9uJ3Qga25vdyBleGFjdGx5IHdoYXQgeW91J3JlIGRvaW5nLgoKSW5zdGFsbGF0aW9uOgo9PT09PT09PT09PT09CgpTaW5jZSB2LjQuMCAoTmV4dCBHZW4gRWRpdGlvbikgVFczIGhhbmRsZXMgbWVudXMgZGlmZmVyZW50bHkgYW5kIGhhcyB0d28gc2VwYXJhdGUgY29uZmlnIGZpbGVzIGZvciBkeDExIGFuZCBkeDEyIHZlcnNpb25zIG9mIHRoZSBnYW1lLiBJZiBtZW51cyBhcmUgbm90IHNob3duIGluIGdhbWUgZm9yIHlvdSBvciBvcHRpb25zIGFyZSBub3Qgc2V0IC0gY2hlY2sgdGhlIG1hbnVhbCBpbnN0YWxsIHNlY3Rpb24gYmVsb3cgKHN0ZXBzIDMgYW5kIDQgaW4gcGFydGljdWxhcikuCgpJdCdzIHJlY29tbWVuZGVkIHRvIHVzZSBUaGUgV2l0Y2hlciAzIE1vZCBNYW5hZ2VyIChUVzNNTSkgYXZhaWxhYmxlIG9uIE5leHVzIGZvciBpbnN0YWxsaW5nIHRoZSBtb2QuCgpOb3RlIHRoYXQgVm9ydGV4IChmb3JtZXIgTmV4dXMgTW9kIE1hbmFnZXIpIGlzIGtub3duIHRvIGhhdmUgdHJvdWJsZXMgaW5zdGFsbGluZyBzb21lIG9mIHRoZSBwYXJ0cyBsaWtlIGFkZGl0aW9uYWwgaG90a2V5cy4gSWYgeW91J3JlIHVzaW5nIFZvcnRleCBhbmQgc29tZXRoaW5nIGlzIG5vdCB3b3JraW5nLCBjaGVjayBtYW51YWwgaW5zdGFsbCBmaXJzdCBiZWZvcmUgcmVwb3J0aW5nIGEgYnVnLgoKUmVzb2x2aW5nIGNvbmZsaWN0cyB3aXRoIG90aGVyIG1vZHMKPT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT0KCklmIHlvdSBoYXZlIG90aGVyIG1vZHMgaW5zdGFsbGVkLCB1c2UgU2NyaXB0IE1lcmdlciB0byBmaW5kIGFuZCByZXNvbHZlIGNvbmZsaWN0cy4gTm90ZSB0aGF0IHNvbWUgb2YgdGhlIG1vZHMgb24gTmV4dXMgbWlnaHQgbm90IHN1cHBvcnQgdGhlIGxhdGVzdCBwYXRjaCBhbmQgdGh1cyBhcmUgaW5jb21wYXRpYmxlIG5vciB3aXRoIHRoaXMgbW9kIG5vdCB3aXRoIHRoZSBjdXJyZW50IGdhbWUgdmVyc2lvbiBpbiBnZW5lcmFsLiBBbHNvIG5vdGUgdGhhdCB5b3UgbmVlZCB0byByZS1tZXJnZSBhbGwgeW91ciBtZXJnZXMgYWZ0ZXIgdXBkYXRpbmcgYW55IG9mIHRoZSBtb2RzIHRvIGEgbmV3ZXIgdmVyc2lvbi4KCkNvbmZpZ3VyaW5nIEhVRCBtb2R1bGVzIChpbXBvcnRhbnQhKQo9PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT0KClRoZSBtb2QgZG9lc24ndCBoaWRlIEhVRCBtb2R1bGVzLCBpdCBzaG93cyB0aGVtLiBTbyBpZiB5b3Ugd2FudCB0byB1c2Ugc21hcnQgSFVEIGZlYXR1cmUsIHlvdSBuZWVkIHRvIHR1cm4gbW9kdWxlcyBPRkYgb25lIGJ5IG9uZSB1c2luZyBpbi1nYW1lIHZhbmlsbGEgdmlkZW8gb3B0aW9ucyBtZW51LiBZb3UgZG9uJ3QgaGF2ZSB0byB0dXJuIG9mZiBldmVyeSBtb2R1bGUsIGp1c3QgdGhlIG9uZXMgeW91IGRvbid0IHdhbnQgdG8gc2VlIGFsbCB0aGUgdGltZS4gTW9kdWxlcyB0aGF0IGFyZSBPTiBpbiBnYW1lIHZpZGVvIG9wdGlvbnMgYXJlIG5vdCBhZmZlY3RlZCBieSB0aGUgbW9kIGFuZCByZXRhaW4gdGhlaXIgdmFuaWxsYSBiZWhhdmlvci4gQW5vdGhlciBpbXBvcnRhbnQgdGhpbmcgdG8ga25vdyBpcyB0aGF0IHR1cm5pbmcgYW4gZW50aXJlIEhVRCBvZmYgd2l0aCBhIGhvdGtleSBvciBtZW51IHN3aXRjaCB3aWxsIHJlc3VsdCBpbiBubyBtb2R1bGVzIGJlaW5nIHNob3duIGF0IGFsbCAoYXMgbW9kdWxlcyBhcmUgYSBwYXJ0IG9mIHRoZSBIVUQgYW5kIHdoZW4gYW4gZW50aXJlIEhVRCBpcyBvZmYgbm90aGluZyBpcyBzaG93bikuCgpOb3RlIHRoYXQgTkdFIHBhcnRpYWxseSBkdXBsaWNhdGVzIGR5bmFtaWMgbWluaW1hcCBhbmQgcXVlc3QgbG9nIGZlYXR1cmVzIG9mIHRoZSBtb2QsIHNvIHlvdSBuZWVkIHRvIGRpc2FibGUgdGhvc2UgaW4gdmFuaWxsYSBvcHRpb25zIGlmIHlvdSB3YW50IEZyaWVuZGx5SFVEIHRvIHRha2UgcHJvcGVyIGNvbnRyb2wgb2YgdGhvc2UgbW9kdWxlcy4KCk1hbnVhbCBpbnN0YWxsYXRpb246Cj09PT09PT09PT09PT09PT09PT09CgoxLiBDcmVhdGluZyBiYWNrdXBzIChvcHRpb25hbCkKCklmIHlvdSBoYXZlIHZhbmlsbGEgdmVyc2lvbiBvZiB0aGUgZ2FtZSwgYmFja3VwIHlvdXIgIltQYXRoIFRvIFRoZSBXaXRjaGVyIDNdXGJpblxjb25maWciIGZvbGRlciBhcyBzb21lIG9mIHRoZSBtb2RzIChpbmNsdWRpbmcgdGhpcyBvbmUpIG1ha2UgY2hhbmdlcyB0byBjb25maWd1cmF0aW9uIGZpbGVzIGFuZCBpdCB3b24ndCBodXJ0IHRvIGhhdmUgdmFuaWxsYSB2ZXJzaW9uIGluIGNhc2UgeW91IHdpbGwgbmVlZCB0byBxdWlja2x5IGNsZWFuIHVwIGFsbCB5b3VyIG1vZHMuCgoyLiBJbnN0YWxsaW5nIGNvcmUgbW9kIGZpbGVzCgpJbnN0YWxsIHRoZSBjb3JlIHBhY2thZ2UgYnkgdW5wYWNraW5nIHRoZSBtb2QgYW5kIGNvcHlpbmcgYW4gZW50aXJlICJtb2RGcmllbmRseUhVRCIgZm9sZGVyIHRvICJbUGF0aCBUbyBUaGUgV2l0Y2hlciAzXVxNb2RzIiBmb2xkZXIuIElmICJNb2RzIiBmb2xkZXIgZG9lc24ndCBleGlzdCwgY3JlYXRlIGl0IGZpcnN0LgoKMy4gSW5zdGFsbGluZyBpbi1nYW1lIG1lbnUgYW5kIG5ldyBob3RrZXlzCgpGb3IgaW4tZ2FtZSBtZW51IHRvIHdvcmsgeW91IG5lZWQgbW9kRkhVRENvbmZpZy54bWwgdG8gYmUgaW4geW91ciAiW1BhdGggVG8gVGhlIFdpdGNoZXIgM11cYmluXGNvbmZpZ1xyNGdhbWVcdXNlcl9jb25maWdfbWF0cml4XHBjIiBmb2xkZXIuIEFzIHdlbGwgYXMgdGhlIGVudHJ5IG1vZEZIVURDb25maWcueG1sOyB0byBiZSBpbiBkeDExZmlsZWxpc3QudHh0IGFuZCBkeDEyZmlsZWxpc3QudHh0IGZpbGVzLgoKRm9yIG5ldyBob3RrZXlzIHRvIHdvcmssIHRoZXkgaGF2ZSB0byBiZSBhZGRlZCB0byB5b3VyICJbUGF0aCBUbyBUaGUgV2l0Y2hlciAzXVxiaW5cY29uZmlnXHI0Z2FtZVx1c2VyX2NvbmZpZ19tYXRyaXhccGNcaW5wdXQueG1sIiBmaWxlLgoKMy4xLiBRdWljayBpbnN0YWxsCgpJZiB5b3UgZG9uJ3QgaGF2ZSBhbnkgb3RoZXIgbW9kcyB3aGljaCBhZGQgbmV3IGhvdGtleXMgYW5kL29yIG1lbnVzIGluc3RhbGxlZCwgc2ltcGx5IGNvcHkgIltQYXRoIFRvIFRoZSBXaXRjaGVyIDNdXE1vZHNcbW9kRnJpZW5kbHlIVURcYmluIiBmb2xkZXIgaW50byB5b3VyICJbUGF0aCBUbyBUaGUgV2l0Y2hlciAzXSIgZm9sZGVyLiBBIHdpbmRvdyB3aWxsIHBvcCB1cCwgYXNraW5nIGlmIHlvdSB3YW50IHRvIHJlcGxhY2UgZXhpc3RpbmcgZmlsZXMsIGlmIHlvdSdyZSBkb2luZyBldmVyeXRoaW5nIHJpZ2h0LiBDaG9vc2UgIm92ZXJ3cml0ZSIgdG8gcmVwbGFjZSB2YW5pbGxhIGZpbGVzIHdpdGggdGhlIG1vZGRlZCBvbmVzLgoKMy4yLiBTdGVwIGJ5IHN0ZXAgaW5zdGFsbAoKSWYgeW91IGhhdmUgb3RoZXIgbW9kKHMpIGluc3RhbGxlZCB3aGljaCBhZGQgbmV3IGhvdGtleXMgYW5kL29yIG1lbnVzLCB5b3UgbW9zdCBwcm9iYWJseSBkb24ndCB3YW50IHRvIHJlcGxhY2UgeW91ciBleGlzdGluZyBmaWxlcy4KClRvIGluc3RhbGwgbmV3IGhvdGtleXMgaW4gdGhpcyBjYXNlIG9wZW4geW91ciBleGlzdGluZyAiW1BhdGggVG8gVGhlIFdpdGNoZXIgM11cYmluXGNvbmZpZ1xyNGdhbWVcdXNlcl9jb25maWdfbWF0cml4XHBjXGlucHV0LnhtbCIgZmlsZSBhbmQgbW9kZGVkICJbUGF0aCBUbyBUaGUgV2l0Y2hlciAzXVxNb2RzXG1vZEZyaWVuZGx5SFVEXGJpblxjb25maWdccjRnYW1lXHVzZXJfY29uZmlnX21hdHJpeFxwY1xpbnB1dC54bWwiIGZpbGUgYW5kIG1hbnVhbGx5IGNvcHkgbW9kRnJpZW5kbHlIVUQgY2hhbmdlcyAodGhleSBhcmUgbWFya2VkIHdpdGggIm1vZEZyaWVuZGx5SFVEIGJlZ2luIiBhbmQgIm1vZEZyaWVuZGx5SFVEIGVuZCIgY29tbWVudHMpIGludG8gdGhlIHNhbWUgcGFydCBvZiB5b3VyIGV4aXN0aW5nIGlucHV0LnhtbCBmaWxlLgoKQWxzbyBjb3B5ICJbUGF0aCBUbyBUaGUgV2l0Y2hlciAzXVxNb2RzXG1vZEZyaWVuZGx5SFVEXGJpblxjb25maWdccjRnYW1lXHVzZXJfY29uZmlnX21hdHJpeFxwY1xtb2RGSFVEQ29uZmlnLnhtbCIgZmlsZSBpbnRvICJbUGF0aCBUbyBUaGUgV2l0Y2hlciAzXVxiaW5cY29uZmlnXHI0Z2FtZVx1c2VyX2NvbmZpZ19tYXRyaXhccGMiIGZvbGRlciB0byBpbnN0YWxsIGluLWdhbWUgbWVudS4KCk9wZW4geW91ciBleGlzdGluZyAiW1BhdGggVG8gVGhlIFdpdGNoZXIgM11cYmluXGNvbmZpZ1xyNGdhbWVcdXNlcl9jb25maWdfbWF0cml4XHBjXGR4MTFmaWxlbGlzdC50eHQiIGZpbGUgYW5kIGFkZCBtb2RGSFVEQ29uZmlnLnhtbDsgdG8gdGhlIGVuZCBvZiBpdCAoc2VlIHRoZSBleGFtcGxlIGluICJbUGF0aCBUbyBUaGUgV2l0Y2hlciAzXVxNb2RzXG1vZEZyaWVuZGx5SFVEXGJpblxjb25maWdccjRnYW1lXHVzZXJfY29uZmlnX21hdHJpeFxwY1xkeDExZmlsZWxpc3QudHh0IikuIERvIHRoZSBzYW1lIGZvciB0aGUgb3RoZXIgZmlsZSBuYW1lZCBkeDEyZmlsZWxpc3QudHh0LgoKNC4gSW5pdGlhbGl6aW5nIG1vZCBkZWZhdWx0IHNldHRpbmdzIGFuZCBob3RrZXlzCgpGb3IgRFgxMSB2ZXJzaW9uIG1vZCBzZXR0aW5ncyBhcmUgc3RvcmVkIGluICJDOlxVc2Vyc1xbWW91ciBVc2VybmFtZV1cRG9jdW1lbnRzXFRoZSBXaXRjaGVyIDNcdXNlci5zZXR0aW5ncyIuCgpGb3IgRFgxMiB2ZXJzaW9uIG1vZCBzZXR0aW5ncyBhcmUgc3RvcmVkIGluICJDOlxVc2Vyc1xbWW91ciBVc2VybmFtZV1cRG9jdW1lbnRzXFRoZSBXaXRjaGVyIDNcZHgxMnVzZXIuc2V0dGluZ3MiLgoKS2V5IGJpbmRpbmdzIGFyZSBzdG9yZWQgaW4gIkM6XFVzZXJzXFtZb3VyIFVzZXJuYW1lXVxEb2N1bWVudHNcVGhlIFdpdGNoZXIgM1xpbnB1dC5zZXR0aW5ncyIuCgpUbyBpbml0aWFsaXplIGRlZmF1bHQgc2V0dGluZ3Mgb3BlbiBib3RoICJDOlxVc2Vyc1xbWW91ciBVc2VybmFtZV1cRG9jdW1lbnRzXFRoZSBXaXRjaGVyIDNcdXNlci5zZXR0aW5ncyIgYW5kICJbUGF0aCBUbyBUaGUgV2l0Y2hlciAzXVxNb2RzXG1vZEZyaWVuZGx5SFVEXHVzZXIuc2V0dGluZ3MucGFydC50eHQiIGZpbGUgZnJvbSB0aGUgbW9kLCBzZWxlY3QgZXZlcnl0aGluZyBpbnNpZGUgInVzZXIuc2V0dGluZ3MucGFydC50eHQiIGFuZCBjb3B5IGFuZCBwYXN0ZSBpdCBhdCB0aGUgYmVnaW5uaW5nIG9mICJ1c2VyLnNldHRpbmdzIiBmaWxlLiBOb3RlIHRoYXQgaWYgeW91IG1pc3MgdGhpcyBzdGVwLCBtb3N0IG9mIHRoZSBtb2QncyBvcHRpb25zIHdpbGwgYmUgb2ZmIGFuZCB0aGUgbW9kIHdpbGwgYXBwZWFyIHRvIGJlIG5vdCBmdW5jdGlvbmluZyBwcm9wZXJseS4gRG8gdGhlIHNhbWUgZm9yIGR4MTJ1c2VyLnNldHRpbmdzLgoKVG8gaW5pdGlhbGl6ZSBrZXkgYmluZGluZ3Mgb3BlbiBib3RoICJDOlxVc2Vyc1xbWW91ciBVc2VybmFtZV1cRG9jdW1lbnRzXFRoZSBXaXRjaGVyIDNcaW5wdXQuc2V0dGluZ3MiIGFuZCAiW1BhdGggVG8gVGhlIFdpdGNoZXIgM11cTW9kc1xtb2RGcmllbmRseUhVRFxpbnB1dC5zZXR0aW5ncy5wYXJ0LnR4dCIgZmlsZSBmcm9tIHRoZSBtb2QsIHNlbGVjdCBldmVyeXRoaW5nIGluc2lkZSAiaW5wdXQuc2V0dGluZ3MucGFydC50eHQiIGFuZCBjb3B5IGFuZCBwYXN0ZSBpdCBhdCB0aGUgYmVnaW5uaW5nIG9mICJpbnB1dC5zZXR0aW5ncyIgZmlsZS4gTm90ZSB0aGF0IGlmIHlvdSBtaXNzIHRoaXMgc3RlcCwgeW91IHdpbGwgc2VlIGhvdGtleXMgaW4gZ2FtZSBtZW51LCBidXQgeW91IHdpbGwgYmUgdW5hYmxlIHRvIGFzc2lnbiB0aGVtIHByb3Blcmx5LgoKVXBkYXRpbmc6Cj09PT09PT09PQoKSXQgaXMgYWx3YXlzIHNhZmVyLCBib3RoIHdoZW4gdXBkYXRpbmcgbWFudWFsbHkgYW5kIHdpdGggVFczTU0vVm9ydGV4LCB0byByZW1vdmUgcHJldmlvdXMgbW9kIHZlcnNpb24gKGFuZCBtYWtlIHN1cmUgIltQYXRoIFRvIFRoZSBXaXRjaGVyIDNdXE1vZHNcbW9kRnJpZW5kbHlIVUQiIGZvbGRlciB3YXMgaW5kZWVkIGRlbGV0ZWQpIGFuZCBpbnN0YWxsIGl0IGFuZXcuIE5vIG90aGVyIHN0ZXBzIGJ1dCBpbnN0YWxsaW5nIGNvcmUgbW9kIGZpbGVzIGFyZSBuZWVkZWQsIGlmIGNoYW5nZWxvZyBmb3IgdGhlIG5ldyB2ZXJzaW9uIGhhcyBubyBuZXcgbWVudSBvcHRpb25zIGFuZCBubyBuZXcgYmluZGluZ3MgbWVudGlvbmVkLgoKSWYgdGhlcmUgd2VyZSBjaGFuZ2VzIHRvIGhvdGtleXMgaW4gYSBuZXcgdmVyc2lvbiwgc2FmZXN0IHdheSB0byB1cGdyYWRlIGlzIHRvIGRlbGV0ZSB5b3VyICJDOlxVc2Vyc1xbWW91ciBVc2VybmFtZV1cRG9jdW1lbnRzXFRoZSBXaXRjaGVyIDNcaW5wdXQuc2V0dGluZ3MiLCBydW4gdGhlIGdhbWUgb25jZSB0byBjcmVhdGUgYSBkZWZhdWx0IG9uZSBhbmQgdGhlbiByZXBlYXQgc3RlcHMgMyBhbmQgNCBvZiB0aGUgaW5zdGFsbCBwcm9jZXNzLCBkZXNjcmliZWQgYWJvdmUuCgpJZiB0aGVyZSB3ZXJlIGNoYW5nZXMgdG8gbWVudSBvcHRpb25zIGluIGEgbmV3IHZlcnNpb24sIHNhZmVzdCB3YXkgdG8gdXBncmFkZSBpcyB0byBkZWxldGUgeW91ciAiQzpcVXNlcnNcW1lvdXIgVXNlcm5hbWVdXERvY3VtZW50c1xUaGUgV2l0Y2hlciAzXHVzZXIuc2V0dGluZ3MiIChkeDEydXNlci5zZXR0aW5ncyksIHJ1biB0aGUgZ2FtZSBvbmNlIHRvIGNyZWF0ZSBhIGRlZmF1bHQgb25lIGFuZCB0aGVuIHJlcGVhdCBzdGVwcyAzIGFuZCA0IG9mIHRoZSBpbnN0YWxsIHByb2Nlc3MsIGRlc2NyaWJlZCBhYm92ZS4KCldhcm5pbmchIERlbGV0aW5nIGlucHV0LnNldHRpbmdzIGFuZCB1c2VyLnNldHRpbmdzIChkeDEydXNlci5zZXR0aW5ncykgZmlsZXMgd2lsbCByZXNldCB5b3VyIGlucHV0IGFuZCBnYW1lIHNldHRpbmdzIHRvIGRlZmF1bHRzLCBzbyB5b3UnbGwgbmVlZCB0byByZXN0b3JlIHlvdXIgcHJlZmVycmVkIHNldHRpbmcgYWZ0ZXIgZG9pbmcgc28hCgpJZiB5b3UgaGF2ZSBvdGhlciBtb2RzIGluc3RhbGxlZCwgdW4tbWVyZ2UgeW91ciBleGlzdGluZyBtZXJnZXMgaW4gU2NyaXB0TWVyZ2VyIGFuZCByZS1tZXJnZSBldmVyeXRoaW5nIGFnYWluLgoKVW5pbnN0YWxsYXRpb246Cj09PT09PT09PT09PT09PQoKSWYgeW91J3ZlIGluc3RhbGxlZCB0aGUgbW9kIHVzaW5nIFRXM01NLCBvcGVuIGl0IHVwIGFuZCBjaG9vc2UgdGhlIHVuaW5zdGFsbCBvcHRpb24uCgpJZiB5b3UncmUgc3RpbGwgaGF2aW5nIG1vZCBtZW51cyBpbiB0aGUgbGlzdCBvciBoYXZpbmcgZW1wdHkgbGluZXMgaW4gcGxhY2Ugb2YgdGhlIG1vZCBtZW51cywgY2hlY2sgeW91ciBkeDExZmlsZWxpc3QudHh0IGFuZCBkeDEyZmlsZWxpc3QudHh0IChzZWUgSW5zdGFsbCBpbnN0cnVjdGlvbnMgYWJvdmUsIHN0ZXAgMy4yKS4KCkRvIG5vdCBmb3JnZXQgdG8gcnVuIFNjcmlwdCBNZXJnZXIgdG8gZml4IHlvdXIgbWVyZ2VkIGZpbGVzIGFuZCB0byByZXN0b3JlIGluLWdhbWUgdmlkZW8gb3B0aW9ucyB0byB2YW5pbGxhIGFmdGVyIHVuaW5zdGFsbGluZyB0aGUgbW9kLgoKTWFudWFsIHVuaW5zdGFsbGF0aW9uOgo9PT09PT09PT09PT09PT09PT09PT09CgoxLiBVbmluc3RhbGxpbmcgY29yZSBtb2QgZmlsZXMKCllvdSBjYW4gZWl0aGVyIHVuaW5zdGFsbCB0aGUgbW9kIHdpdGggVm9ydGV4IG9yIG1hbnVhbGx5IGRlbGV0ZSAiW1BhdGggVG8gVGhlIFdpdGNoZXIgM11cTW9kc1xtb2RGcmllbmRseUhVRCIgZm9sZGVyLgoKMi4gVW5pbnN0YWxsaW5nIG1lbnUgYW5kIGhvdGtleXMKClRvIHJlbW92ZSBpbi1nYW1lIG1lbnUgeW91IG5lZWQgdG8gZGVsZXRlIG1vZEZIVURDb25maWcueG1sIGZyb20geW91ciAiW1BhdGggVG8gVGhlIFdpdGNoZXIgM11cYmluXGNvbmZpZ1xyNGdhbWVcdXNlcl9jb25maWdfbWF0cml4XHBjIiBmb2xkZXIuIFRoZW4gcmVtb3ZlIHRoZSBtb2RGSFVEQ29uZmlnLnhtbDsgbGluZSBmcm9tIGR4MTFmaWxlbGlzdC50eHQgYW5kIGR4MTJmaWxlbGlzdC50eHQuCgpUbyByZW1vdmUgbmV3IGhvdGtleXMsIHlvdSBoYXZlIHRvIGRlbGV0ZSB0aGVtIGZyb20geW91ciAiW1BhdGggVG8gVGhlIFdpdGNoZXIgM11cYmluXGNvbmZpZ1xyNGdhbWVcdXNlcl9jb25maWdfbWF0cml4XHBjXGlucHV0LnhtbCIgZmlsZS4KCjIuMS4gUXVpY2sgdW5pbnN0YWxsIHVzaW5nIGJhY2t1cAoKSWYgeW91IGhhdmUgYmFja3VwIG9mIHlvdXIgdmFuaWxsYSAiW1BhdGggVG8gVGhlIFdpdGNoZXIgM11cYmluXGNvbmZpZyIgZm9sZGVyIGFuZCBoYXZlIG5vIG90aGVyIG1vZHMgaW5zdGFsbGVkIHdoaWNoIGNoYW5nZSBjb25maWd1cmF0aW9uIGZpbGVzLCBzaW1wbHkgZGVsZXRlIHlvdXIgIltQYXRoIFRvIFRoZSBXaXRjaGVyIDNdXGJpblxjb25maWciIGZvbGRlciBhbmQgY29weSBiYWNrdXAgImNvbmZpZyIgZm9sZGVyIGluIGl0cyBwbGFjZS4KCjIuMi4gU3RlcCBieSBzdGVwIHVuaW5zdGFsbAoKVG8gcmVtb3ZlIGtleSBiaW5kaW5ncyB5b3UgbmVlZCB0byBvcGVuICJbUGF0aCBUbyBUaGUgV2l0Y2hlciAzXVxiaW5cY29uZmlnXHI0Z2FtZVx1c2VyX2NvbmZpZ19tYXRyaXhccGNcaW5wdXQueG1sIiBmaWxlIGFuZCBkZWxldGUgZXZlcnl0aGluZyBpbiBiZXR3ZWVuICJtb2RGcmllbmRseUhVRCBiZWdpbiIgYW5kICJtb2RGcmllbmRseUhVRCBlbmQiIGNvbW1lbnRzLgoKVG8gcmVtb3ZlIG1lbnUgb3B0aW9ucyBzaW1wbHkgZGVsZXRlICJbUGF0aCBUbyBUaGUgV2l0Y2hlciAzXVxiaW5cY29uZmlnXHI0Z2FtZVx1c2VyX2NvbmZpZ19tYXRyaXhccGNcbW9kRkhVRENvbmZpZy54bWwiIGZpbGUuIFRoZW4gcmVtb3ZlIHRoZSBtb2RGSFVEQ29uZmlnLnhtbDsgbGluZSBmcm9tIGR4MTFmaWxlbGlzdC50eHQgYW5kIGR4MTJmaWxlbGlzdC50eHQuCgozLiBDb25mbGljdHMgd2l0aCBvdGhlciBtb2RzCgpJZiB5b3UgaGF2ZSB0aGlzIG1vZCBtZXJnZWQgd2l0aCB0aGUgb3RoZXJzLCB5b3Ugd2lsbCBuZWVkIHRvIHJlLW1lcmdlIHJlbWFpbmluZyBtb2RzIGFmdGVyIHVuaW5zdGFsbGluZyB0aGlzIG9uZS4KCjQuIFJlc3RvcmluZyB2YW5pbGxhIEhVRCBzZXR0aW5ncwoKUmVtZW1iZXIgdGhhdCBtb2QgZG9lc24ndCBjaGFuZ2UgYW55IG9mIHlvdXIgdmFuaWxsYSBIVUQgc2V0dGluZ3MsIHNvIHlvdSBoYXZlIHRvIHJlLWVuYWJsZSBldmVyeSBtb2R1bGUgeW91IHdhbnQgdG8gc2VlIHVzaW5nIGluLWdhbWUgdmlkZW8gb3B0aW9ucyBtZW51Lgo=</readmeb64>
+        <readmeb64>RnJpZW5kbHlIVUQgTW9kINC00LvRjyBOZXh0IEdlbiBFZGl0aW9uIHYuMC45TkdFCj09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PQpieSB3Z2hvc3Q4MSBha2EgV2FzdGVsYW5kIEdob3N0Cj09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT0KCtCc0L7QtCDQv9GA0LXQtNC90LDQt9C90LDRh9C10L0g0LTQu9GPINCy0LXRgNGB0LjQuCA0LjAg0YLQsNC60LbQtSDQuNC30LLQtdGB0YLQvdC+0Lkg0LrQsNC6ICJOZXh0IEdlbiBFZGl0aW9uIiAoTkdFKS4KCtCn0LDRgdGC0YwgUW9MLCDRgNCw0L3QtdC1INC/0YDQuNGB0YPRgtGB0YLQstC+0LLQsNCy0YjQuNGFINCy0L4gRnJpZW5kbHlIVUQsINGC0LXQv9C10YDRjCDQtNC+0YHRgtGD0L/QvdCwINCyIE5HRSAtINC60LDQuiDRgdC70LXQtNGB0YLQstC40LUsINGB0L7QvtGC0LLQtdGC0YHRgtCy0YPRjtGJ0LjQtSDQuNC30LzQtdC90LXQvdC40Y8g0LjQtyDQvNC+0LTQsCDQsdGL0LvQuCDRg9C00LDQu9C10L3Rizog0LTQvtGB0YLRg9C/INC6INC80LXQvdGOINCyINC00LjQsNC70L7Qs9Cw0YUg0Lgg0LrQsNGC0YHRhtC10L3QsNGFLCDRhNC40LrRgSDQstC90LXQt9Cw0L/QvdC+INC/0L7Rj9Cy0LvRj9GO0YnQtdCz0L7RgdGPINCyINC/0L7QvNC10YnQtdC90LjRj9GFINGB0L7QvtCx0YnQtdC90LjRjyAi0L3QtdC70YzQt9GPINC/0L7Qt9Cy0LDRgtGMINCf0LvQvtGC0LLRgyIuINCf0L4g0Y3RgtC+0Lkg0L/RgNC40YfQuNC90LUg0L/QtdGA0LXQtCDRg9GB0YLQsNC90L7QstC60L7QuSBOR0Ug0LLQtdGA0YHQuNC4INC80L7QtNCwINC90LDQtNC+INC/0L7Qu9C90L7RgdGC0YzRjiDRg9C00LDQu9C40YLRjCDQstC10YDRgdC40Y4g0LrQu9Cw0YHRgdC40YfQtdGB0LrRg9GOIENsYXNzaWMgRWRpdGlvbiAtIENFLgoKTkdFINGH0LDRgdGC0LjRh9C90L4g0LTRg9Cx0LvQuNGA0YPQtdGCINGE0YPQvdC60YbQuNC+0L3QsNC7IEZyaWVuZGx5SFVEINC00LvRjyDQtNC40L3QsNC80LjRh9C10YHQutC+0Lkg0LzQuNC90Lgt0LrQsNGA0YLRiyDQuCDQttGD0YDQvdCw0LvQsCDQutCy0LXRgdGC0L7QsiAtINGB0L7QvtGC0LLQtdGC0YHRgtCy0YPRjtGJ0LjQtSDQstCw0L3QuNC70YzQvdGL0LUg0L7Qv9GG0LjQuCDQvdCw0LTQviDQvtGC0LrQu9GO0YfQuNGC0YwsINC10YHQu9C4INCy0Ysg0YXQvtGC0LjRgtC1LCDRh9GC0L7QsdGLINGN0YLQuNC80Lgg0LzQvtC00YPQu9GP0LzQuCDRg9C/0YDQsNCy0LvRj9C7IEZyaWVuZGx5SFVELgoK0JzQvtC0INC90LUg0YHQutGA0YvQstCw0LXRgiDQvNC+0LTRg9C70LggSFVELCDQvtC9INC40YUg0L/QvtC60LDQt9GL0LLQsNC10YIuINCU0LvRjyDQuNGB0L/QvtC70YzQt9C+0LLQsNC90LjRjyDQstGB0LXRhSDRhNGD0L3QutGG0LjQuSDQvNC+0LTQsCDRgdC+0L7RgtCy0LXRgtGB0YLQstGD0Y7RidC40LUg0LzQvtC00YPQu9C4INC90LXQvtCx0YXQvtC00LjQvNC+INC+0YLQutC70Y7Rh9C40YLRjCDQuNC90LTQuNCy0LjQtNGD0LDQu9GM0L3QviDQsiDQstCw0L3QuNC70YzQvdC+0Lwg0LzQtdC90Y4g0L3QsNGB0YLRgNC+0LXQuiDQstC40LTQtdC+ICjQv9C+0LTRgNC+0LHQvdC10LUg0YHQvC4g0L3QuNC20LUpLgoK0J7Qv9C40YHQsNC90LjQtToKPT09PT09PT09CgrQntGC0LrQu9GO0YfQtdC90LjQtSDRjdC70LXQvNC10L3RgtC+0LIgSFVEINGB0L/QvtGB0L7QsdGB0YLQstGD0LXRgiDQu9GD0YfRiNC10LzRgyDQv9C+0LPRgNGD0LbQtdC90LjRjiDQsiDQvNC40YAg0LjQs9GA0YsuINCd0L4g0YXQvtGC0Y8g0LIg0L/RgNC+0YbQtdGB0YHQtSDQuNGB0YHQu9C10LTQvtCy0LDQvdC40Y8g0LzQuNGA0LAg0YHQu9GD0LbQtdCx0L3QsNGPINC40L3RhNC+0YDQvNCw0YbQuNGPINC/0L4g0LHQvtC70YzRiNC10Lkg0YfQsNGB0YLQuCDRgtC+0LvRjNC60L4g0LzQtdGI0LDQtdGCLCDQuNCz0YDQsNGC0Ywg0LHQtdC3INC40L3QtNC40LrQsNGC0L7RgNCwINC30LTQvtGA0L7QstGM0Y8sINC90LDQv9GA0LjQvNC10YAsINCyINCx0L7RjiDQvdC1INC+0YfQtdC90Ywg0YPQtNC+0LHQvdC+LiDQlNCw0L3QvdGL0Lkg0LzQvtC0INC/0YDQtdC00LvQsNCz0LDQtdGCINC80L3QvtC20LXRgdGC0LLQviDQstCw0YDQuNCw0L3RgtC+0LIg0L3QsNGB0YLRgNC+0LnQutC4INC80L7QtNGD0LvQtdC5IEhVRCwg0L/Qu9GO0YEg0L3QvtCy0YvQtSDQstC+0LfQvNC+0LbQvdC+0YHRgtC4INC00LvRjyDQvtGC0YHQu9C10LbQuNCy0LDQvdC40Y8g0YLQtdC60YPRidC40YUg0LfQsNC00LDRhyDQuCDQndCf0KEsINCwINGC0LDQutC20LUg0L3QtdGB0LrQvtC70YzQutC+INGD0LvRg9GH0YjQtdC90LjQuSDQuNCz0YDQvtCy0YvRhSDQvNC10L3Rji4g0JzQvtC0INC80L7QttC90L4g0LjRgdC/0L7Qu9GM0LfQvtCy0LDRgtGMINGG0LXQu9C40LrQvtC8INC40LvQuCDQvtGC0LrQu9GO0YfQuNGC0Ywg0YfQsNGB0YLRjCDQvdC10L3Rg9C20L3Ri9GFINC+0L/RhtC40LkuCgrQnNC+0LQg0L3QuCDQutC+0LjQvCDQvtCx0YDQsNC30L7QvCDQvdC1INCy0LvQuNGP0LXRgiDQvdCwINCx0LDQu9Cw0L3RgSDQuCDQv9GA0LXQtNC+0YHRgtCw0LLQu9GP0LXRgiDRgtC+0LvRjNC60L4g0LjQvdGE0L7RgNC80LDRhtC40Y4sINC60L7RgtC+0YDQsNGPINC4INGC0LDQuiDRg9C20LUg0LjQt9Cy0LXRgdGC0L3QsCDQuNCz0YDQvtC60YMuINCj0YHRgtCw0L3QvtCy0LrQsCDQvNC+0LTQsCDQvdC1INGB0LTQtdC70LDQtdGCINC40LPRgNGDINC70LXQs9GH0LUg0Lgg0L3QtSDQv9C+0LLQu9C40Y/QtdGCINC90LAg0YDQtdCw0LvQuNC30LwsINGN0YLQviDQu9C40YjRjCDQvNC+0LQg0LjQvdGC0LXRgNGE0LXQudGB0LAsINGG0LXQu9GMINC60L7RgtC+0YDQvtCz0L4g0L/QvtCy0YvRgdC40YLRjCDRg9C00L7QsdGB0YLQstC+INC4INGB0YLQtdC/0LXQvdGMINC/0L7Qs9GA0YPQttC10L3QuNGPINCyINC80LjRgCDQuNCz0YDRiy4KCtCf0YDQuNC80LXRh9Cw0L3QuNC1OiDQvNC+0LQg0L3QtSDQvNC10L3Rj9C10YIg0YHQvtGF0YDQsNC90LXQvdC40Y8sINGC0LDQuiDRh9GC0L4g0YPRgdGC0LDQvdC+0LLQutCwL9GD0LTQsNC70LXQvdC40LUg0L/QvtGB0YDQtdC00Lgg0L/RgNC+0YXQvtC20LTQtdC90LjRjyDQsdC10LfQvtC/0LDRgdC90YsuCgrQmNC30LzQtdC90LXQvdC40Y86Cj09PT09PT09PT0KCjEuINCd0LXQvdCw0LLRj9C30YfQuNCy0YvQuSDQvdCw0YHRgtGA0LDQuNCy0LDQtdC80YvQuSBIVUQKCi0g0KPQvNC90YvQuSBIVUQ6INC+0YLQutC70Y7Rh9C40YLQtSDQvNC+0LTRg9C70LggSFVELCDRh9GC0L7QsdGLINC+0L3QuCDQvdC1INC80LXRiNCw0LvQuCDQstCw0Lwg0YDQsNGB0YHQvNCw0YLRgNC40LLQsNGC0Ywg0LzQuNGAINC40LPRgNGLINCy0L4g0LLRgNC10LzRjyDQuNGB0YHQu9C10LTQvtCy0LDQvdC40Y8sINC4INC80L7QtCDQsNCy0YLQvtC80LDRgtC40YfQtdGB0LrQuCDQsdGD0LTQtdGCINC/0L7QutCw0LfRi9Cy0LDRgtGMINCz0YDRg9C/0L/RiyDQvNC+0LTRg9C70LXQuSDRgtC+0LPQtNCwLCDQutC+0LPQtNCwINC+0L3QuCDQvdC10L7QsdGF0L7QtNC40LzRiyAtINCyINCx0L7Rjiwg0L/RgNC4INC40YHQv9C+0LvRjNC30L7QstCw0L3QuNC4INGH0YPRgtGM0Y8sINC/0YDQuCDQv9C+0YLQtdGA0LUg0LbQuNC30L3QtdC5INC4INGCLtC/LgoKLSDQkdGL0YHRgtGA0YvQuSDQtNC+0YHRgtGD0L8g0Log0L7RgtC60LvRjtGH0LXQvdC90YvQvCDQvNC+0LTRg9C70Y/QvCBIVUQg0YEg0L/QvtC80L7RidGM0Y4g0L7Qv9GG0LjQuSAi0LfQsNC20LzQuCwg0YfRgtC+0LHRiyDRg9Cy0LjQtNC10YLRjCIg0LggItC/0YDQuNC60YDQtdC/0LjRgtGMINC80L7QtNGD0LvRjCI6INC30LDQttC40LzQsNGPINCz0L7RgNGP0YfRg9GOINC60LvQsNCy0LjRiNGDINC80L7QttC90L4g0YPQstC40LTQtdGC0Ywg0YHQvtC+0YLQstC10YLRgdGC0LLRg9GO0YnRg9GOINCz0YDRg9C/0L/RgyDQvNC+0LTRg9C70LXQuSwg0LrQvtGC0L7RgNCw0Y8g0YHQutGA0YvQstCw0LXRgtGB0Y8g0L/QvtGB0LvQtSDRgtC+0LPQviDQutCw0Log0LrQu9Cw0LLQuNGI0LAg0L7RgtC/0YPRidC10L3QsDsg0L3QsNC20LjQvNCw0Y8g0LrQu9Cw0LLQuNGI0YMt0LzQvtC00LjRhNC40LrQsNGC0L7RgCAi0L/RgNC40LrRgNC10L/QuNGC0YwiLCDQvNC+0LbQvdC+INCy0YDQtdC80LXQvdC90L4g0LfQsNC60YDQtdC/0LjRgtGMINCz0YDRg9C/0L/RgyDQvNC+0LTRg9C70LXQuSDQuCDQvtC90Lgg0L3QtSDQvtGC0LrQu9GO0YfQsNGC0YHRjyDQv9C+0LrQsCDQuNCz0YDQvtC6INC40YUg0L3QtSDQvtGC0LrRgNC10L/QuNGCLiDQmtC70LDQstC40YjQuCDQvNC+0LPRg9GCINC/0LXRgNC10YHQtdC60LDRgtGM0YHRjyDRgSDQstCw0L3QuNC70YzQvdGL0LzQuCDQutC70LDQstC40YjQsNC80Lgg0LTQu9GPINGB0L7QvtGC0LLQtdGC0YHRgtCy0YPRjtGJ0LjRhSDQvNC10L3RjiAo0YIu0LouINCy0YXQvtC0INCyINC80LXQvdGOINC40LTRkdGCINC/0L4g0L3QsNC20LDRgtC40Y4sINCwINC90LUg0L/QviDQt9Cw0LbQsNGC0LjRjiDQutC70LDQstC40YjQuCksINGC0LDQuiDRh9GC0L4g0LfQsNC/0L7QvNC40L3QsNGC0Ywg0LTQtdGB0Y/RgtC+0Log0L3QvtCy0YvRhSDRgdC+0YfQtdGC0LDQvdC40Lkg0L3QtSDQv9GA0LjQtNGR0YLRgdGPLgoKLSDQntC/0YbQuNGPLCDQv9C+0LfQstC+0LvRj9GO0YnQsNGPINGB0LrRgNGL0YLRjCDQvdC10L7RgtC60LvRjtGH0LDQtdC80YvQuSDQvNC+0LTRg9C70Ywg0L7QsdC90L7QstC70LXQvdC40Lkg0LbRg9GA0L3QsNC70LAgLSDRgtC+0YIg0YHQsNC80YvQuSwg0LrQvtGC0L7RgNGL0Lkg0L7RgtC+0LHRgNCw0LbQsNC10YIg0L7QsdC90L7QstC70LXQvdC40Y8g0LrQstC10YHRgtC+0LIsINC/0L7Qu9GD0YfQtdC90L3Ri9C1INC60LLQtdGB0YLQvtCy0YvQtSDQv9GA0LXQtNC80LXRgtGLLCDQutC90LjQs9C4LCDQuNC90YTQvtGA0LzQsNGG0LjRjiDQviDQv9C+0LLRi9GI0LXQvdC40Lgg0YPRgNC+0LLQvdGPINC4INGCLtC/LgoKLSAzRCDQvNCw0YDQutC10YDRiyDQtNC70Y8g0L7RgtGB0LvQtdC20LjQstCw0L3QuNGPINGC0L7Rh9C10Log0L3QsCDQutCw0YDRgtC1OiDQvNC10YHRgtCwINC40L3RgtC10YDQtdGB0LAsINC60LLQtdGB0YLRiywg0J3Qn9ChLCDQv9C+0LvRjNC30L7QstCw0YLQtdC70YzRgdC60LjQtSDQvNCw0YDQutC10YDRiyDQvtGC0L7QsdGA0LDQttCw0Y7RgtGB0Y8g0LrQsNC6INC40LrQvtC90LrQuCDQvdC10L/QvtGB0YDQtdC00YHRgtCy0LXQvdC90L4g0LIg0LzQuNGA0LUg0LjQs9GA0YsuINCc0L7QttC90L4g0LjRgdC/0L7Qu9GM0LfQvtCy0LDRgtGMINCy0LzQtdGB0YLQviDQuNC70Lgg0LLQvNC10YHRgtC1INGBINC80LjQvdC40LrQsNGA0YLQvtC5LiDQktC90LXRiNC90LjQuSDQstC40LQg0Lgg0YDQtdC20LjQvCDQvtGC0L7QsdGA0LDQttC10L3QuNGPINC80LDRgNC60LXRgNC+0LIg0L/QvtC70L3QvtGB0YLRjNGOINC90LDRgdGC0YDQsNC40LLQsNGO0YLRgdGPLgoKLSDQndC10L3QsNCy0Y/Qt9GH0LjQstGL0Lkg0LrQvtC80L/QsNGBINC/0L4g0YLQuNC/0YMg0LrQvtC80L/QsNGB0LAg0LjQtyDQodC60LDQudGA0LjQvNCwOiDQvNC+0LbQvdC+INC40YHQv9C+0LvRjNC30L7QstCw0YLRjCDQstC80LXRgdGC0L4g0LjQu9C4INCy0LzQtdGB0YLQtSDRgSDQvNC40L3QuNC60LDRgNGC0L7QuSDQuCDRgSAzRCDQvNCw0YDQutC10YDQsNC80LguCgotINCd0LDRgdGC0YDQsNC40LLQsNC10LzRi9C1INC40LrQvtC90LrQuCDQuCDRgtC10LrRgdGCINCy0LfQsNC40LzQvtC00LXQudGB0YLQstC40Y86INC80L7QttC90L4g0L7RgtC60LvRjtGH0LjRgtGMINC40LrQvtC90LrQuCAi0L/QvtCz0L7QstC+0YDQuNGC0YwiINC4L9C40LvQuCDRgdC+0L7RgtCy0LXRgtGB0YLQstGD0Y7RidC40Lkg0YLQtdC60YHRgiDQtNC70Y8g0J3Qn9ChINC40LvQuCDQv9C+0LvQvdC+0YHRgtGM0Y4g0L7RgtC60LvRjtGH0LjRgtGMINCy0YHQtSDQv9C+0LTRgdC60LDQt9C60Lgg0LLQt9Cw0LjQvNC+0LTQtdC50YHRgtCy0LjRjy4KCi0g0JrQstC10YHRgtC+0LLRi9C1INC80LDRgNC60LXRgNGLINC00LvRjyDQv9C10YDRgdC+0L3QsNC20LXQuTog0LjRgdC/0YDQsNCy0LvQtdC9INCy0LDQvdC40LvRjNC90YvQuSDQsdCw0LMgKNC40LvQuCDRjdGC0L4g0YLQsNC60LDRjyDRgdGC0YDQsNC90L3QsNGPINGE0LjRh9CwKSwg0LrQvtGC0L7RgNGL0Lkg0L3QtSDQv9C+0LfQstC+0LvRj9C7INC+0YLQvtCx0YDQsNC20LDRgtGMINC60LLQtdGB0YLQvtCy0YvQtSDQvNCw0YDQutC10YDRiyDQtNC70Y8g0J3Qn9ChLCDQtdGB0LvQuCDQuNGFINC60L7QvdC60YDQtdGC0L3Ri9C5INC60LLQtdGB0YIg0LIg0LTQsNC90L3Ri9C5INC80L7QvNC10L3RgiDQvdC1INC+0YLRgdC70LXQttC40LLQsNC10YLRgdGPLgoKLSDQndCw0YHRgtGA0LDQuNCy0LDQtdC80YvQuSDQvNCw0YHRiNGC0LDQsSDQtNC70Y8g0LzQuNC90LjQutCw0YDRgtGLOiDQv9C+INGD0LzQvtC70YfQsNC90LjRjiDQutCw0YDRgtCwINC+0YLQtNCw0LvQtdC90LAg0LLQtNCy0L7QtSDQv9C+INGB0YDQsNCy0L3QtdC90LjRjiDRgSDQstCw0L3QuNC70LvQvtC5LgoKMi4gItCa0LDRh9C10YHRgtCy0L4g0LbQuNC30L3QuCIKCi0g0JHRi9GB0YLRgNGL0Lkg0LTQvtGB0YLRg9C/INC6INC30LXQu9GM0Y/QvCwg0LHQvtC80LHQsNC8INC4INC80LDRgdC70LDQvCDRh9C10YDQtdC3INGA0LDQtNC40LDQu9GM0L3QvtC1INC80LXQvdGOINC/0YDQuCDQv9C+0LzQvtGJ0Lgg0LPQvtGA0Y/Rh9C40YUg0LrQu9Cw0LLQuNGIL1dBU0Qv0LrQvtC90YLRgNC+0LvQu9C10YDQsC4KCi0g0JHRi9GB0YLRgNC+0LUg0L/QtdGA0LXQutC70Y7Rh9C10L3QuNC1INC80LXQttC00YMg0LDRgNCx0LDQu9C10YLQvtC8INC4INC/0L7RgdC70LXQtNC90LXQuSDQuNGB0L/QvtC70YzQt9C+0LLQsNC90L3QvtC5INCx0L7QvNCx0L7QuS4KCi0g0JLQvtC30LzQvtC20L3QvtGB0YLRjCDQv9C+0YHRgtCw0LLQuNGC0Ywg0LjQs9GA0YMg0L3QsCDQv9Cw0YPQt9GDINCyINC70Y7QsdC+0LUg0LLRgNC10LzRjywg0LTQsNC20LUg0LIg0LTQuNCw0LvQvtCz0LUg0Lgg0YDQvtC70LjQutC1INC90LAg0LTQstC40LbQutC1LgoKMy4g0KPQu9GD0YfRiNC10L3QuNGPINC80LXQvdGOCgotINCd0LDRgdGC0YDQsNC40LLQsNC10LzRi9C5INC80LDRgdGI0YLQsNCxINCyINC80LXQvdGOINC60LDRgNGC0Ysg0Lgg0LLQvtC30LzQvtC20L3QvtGB0YLRjCDQstC60LvRjtGH0LjRgtGMINGB0LLQvtCx0L7QtNC90L7QtSDQvNCw0YHRiNGC0LDQsdC40YDQvtCy0LDQvdC40LUuCgotINCd0LDRgdGC0YDQsNC40LLQsNC10LzQsNGPINCy0LrQu9Cw0LTQutCwINC40L3QstC10L3RgtCw0YDRjywg0LrQvtGC0L7RgNCw0Y8g0L7RgtC60YDRi9Cy0LDQtdGC0YHRjyDQv9C+INGD0LzQvtC70YfQsNC90LjRji4KCi0g0JLQvtC30LzQvtC20L3QvtGB0YLRjCDQvdC40LrQvtCz0LTQsCDQvdC1INC/0L7QvNC10YfQsNGC0Ywg0LrQsNC6INC90L7QstGL0LUg0L/RgNC10LTQvNC10YLRiyDQuNC3INC60LDRgtC10LPQvtGA0LjQuSDQvNGD0YHQvtGALCDQutC+0LzQv9C+0L3QtdC90YLRiy/QuNC90LPRgNC10LTQuNC10L3RgtGLINC4INC10LTQsC4KCi0g0J7RgtC+0LHRgNCw0LbQtdC90LjQtSDQuNGB0YLQuNC90L3QvtC5INGG0LXQvdGLINC/0YDQtdC00LzQtdGC0LAg0Lgg0L3QsNGG0LXQvdC60Lgg0LLQviDQstGA0LXQvNGPINGC0L7RgNCz0L7QstC70LgsINCwINGC0LDQutC20LUg0LjQvdGE0L7RgNC80LDRhtC40Lgg0L4g0YLQvtC8LCDRgdC60L7Qu9GM0LrQviDRgtCw0LrQuNGFINC/0YDQtdC00LzQtdGC0L7QsiDRg9C20LUg0LjQvNC10LXRgtGB0Y8g0LIg0LjQvdCy0LXQvdGC0LDRgNC1INC4INGC0LDQudC90LjQutC1LgoKLSDQndC+0LLRi9C1INGA0LXRhtC10L/RgtGLINC4INGB0YXQtdC80Ysg0L/QvtC80LXRh9Cw0Y7RgtGB0Y8g0LfQstGR0LfQtNC+0YfQutC+0LksINGH0YLQvtCx0Ysg0LjRhSDRg9C00L7QsdC90LXQtSDQsdGL0LvQviDQuNGB0LrQsNGC0YwuCgotINCj0LvRg9GH0YjQtdC90LjQtSDQuNC3INC/0LDRgtGH0LAgMS4yMiwg0L/QvtC30LLQvtC70Y/RjtGJ0LXQtSDQv9C+0LrRg9C/0LDRgtGMINC60L7QvNC/0L7QvdC10L3RgtGLINC00LvRjyDQutGA0LDRhNGC0LAg0L3QtdC/0L7RgdGA0LXQtNGB0YLQstC10L3QvdC+INCyINC80LXQvdGOINC60YDQsNGE0YLQsCDQstC+INCy0YDQtdC80Y8g0L/RgNC+0YHQvNC+0YLRgNCwINGB0YXQtdC80Ysg0LTQvtCx0LDQstC70LXQvdC+INGC0LDQutC20LUg0Lgg0LDQu9GF0LjQvNC40LrQsNC8OiDRgtC10L/QtdGA0Ywg0LzQvtC20L3QviDQv9C+0LrRg9C/0LDRgtGMINC40L3Qs9GA0LXQtNC40LXQvdGC0Ysg0L3QtdC/0L7RgdGA0LXQtNGB0YLQstC10L3QvdC+INCyINC80LXQvdGOINCw0LvRhdC40LzQuNC4INCy0L4g0LLRgNC10LzRjyDQv9GA0L7RgdC80L7RgtGA0LAg0YDQtdGG0LXQv9GC0LAuCgotINCj0LvRg9GH0YjQtdC90LjQtSDQv9Cw0YLRh9CwIDEuMjIsINC/0L7Qt9Cy0L7Qu9GP0Y7RidC10LUg0YDQsNC30LHQuNCy0LDRgtGMINC60YPRh9C60YMg0L/RgNC10LTQvNC10YLQvtCyINC90LAg0LTQstC1INC/0YDQuCDQv9C10YDQtdC80LXRidC10L3QuNC4INCyINGC0LDQudC90LjQuiDQtNC+0YDQsNCx0L7RgtCw0L3Qvjog0YLQtdC/0LXRgNGMINC80L7QttC90L4g0YLQsNC60LbQtSDRgNCw0LfQsdC40LLQsNGC0Ywg0LrRg9GH0LrQuCDQv9GA0Lgg0L/QtdGA0LXQvNC10YnQtdC90LjQuCDQvtCx0YDQsNGC0L3QviDQsiDQuNC90LLQtdC90YLQsNGA0YwuCgotINCS0L7Qt9C80L7QttC90L7RgdGC0Ywg0LLRi9Cx0YDQsNGC0Ywg0LDQvdC40LzQsNGG0LjRjiDQs9C70LDQstC90L7Qs9C+INC80LXQvdGOICjQv9C+INGD0LzQvtC70YfQsNC90LjRjiwg0YHQu9GD0YfQsNC50L3QsNGPLCDQsdCw0LfQvtCy0LDRjyDQuNCz0YDQsCwg0JrQsNC80LXQvdC90YvQtSDQodC10YDQtNGG0LAsINCa0YDQvtCy0Ywg0Lgg0JLQuNC90L4pLgoKNC4g0KDQsNC30L3QvtC1CgotINCS0L7Qt9C80L7QttC90L7RgdGC0Ywg0YHQutGA0YvRgtGMINGD0YDQvtCy0L3QuCDQv9GA0L7RgtC40LLQvdC40LrQvtCyINC4INGG0LjRhNGA0Ysg0L3QsNC90LXRgdGR0L3QvdC+0LPQviDRg9GA0L7QvdCwLgoKLSDQktC+0LfQvNC+0LbQvdC+0YHRgtGMINC+0YLQutC70Y7Rh9C40YLRjCDQt9Cy0YPQutC+0LLQvtC1INC+0L/QvtCy0LXRidC10L3QuNC1INC/0YDQuCDQvtCx0L3QvtCy0LvQtdC90LjQuCDQttGD0YDQvdCw0LvQsC4KCi0g0JLQvtC30LzQvtC20L3QvtGB0YLRjCDQv9GA0LjQvtGB0YLQsNC90LDQstC70LjQstCw0YLRjCDRjdGE0YTQtdC60YIg0JrQvtGI0LrQuCDQstC90LUg0L/QtdGJ0LXRgNGLINC4INCy0L7Qt9C+0LHQvdC+0LLQu9GP0YLRjCDQtdCz0L4g0L3QvtGH0YzRji4KCtCd0LDQt9C90LDRh9C10L3QuNGPINC60LvQsNCy0LjRiCDQv9C+LdGD0LzQvtC70YfQsNC90LjRjjoKPT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PQoKIkYyIiAtINGE0L7RgNGB0LjRgNC+0LLQsNGC0Ywg0L7RgtC+0LHRgNCw0LbQtdC90LjQtSAzRCDQvNCw0YDQutC10YDQvtCyOwoiRjEwIiAtINCy0LrQu9GO0YfQuNGC0Ywv0L7RgtC60LvRjtGH0LjRgtGMINC+0YHQvdC+0LLQvdGL0LUg0LzQvtC00YPQu9C4IEhVRDsKIkYxMSIgLSDQv9Cw0YPQt9CwOwoifiIgLSDQv9C10YDQtdC60LvRjtGH0LjRgtGM0YHRjyDQvNC10LbQtNGDINCw0YDQsdCw0LvQtdGC0L7QvCDQuCDQstGL0LHRgNCw0L3QvdC+0Lkg0YDQsNC90LXQtSDQsdC+0LzQsdC+0Lk7CiLQo9C00LXRgNC20LjQstCw0YLRjCDQv9GA0LDQstGL0LkgU2hpZnQiIC0g0L/RgNC40LrRgNC10L/QuNGC0Ywg0LzQvtC00YPQu9GMICjRg9C00LXRgNC20LjQstCw0LnRgtC1INC/0YDQsNCy0YvQuSBTaGlmdCDQuCDQvtC00L3QvtCy0YDQtdC80LXQvdC90L4g0L3QsNC20LzQuNGC0LUgTSwg0YfRgtC+0LHRiyDQt9Cw0LrRgNC10L/QuNGC0Ywg0LzQuNC90Lgt0LrQsNGA0YLRgywg0L3QsNC/0YDQuNC80LXRgCkuCiIxLTksIDAsIC0sID0iIC0g0LLRi9C/0LjRgtGMINC30LXQu9GM0LUv0LLRi9Cx0YDQsNGC0Ywg0LHQvtC80LHRgy/QvdCw0L3QtdGB0YLQuCDQvNCw0YHQu9C+INCyINGA0LDQtNC40LDQu9GM0L3QvtC8INC80LXQvdGOOwoiRjEiIC0g0L/QvtC60LDQt9Cw0YLRjCDQt9C10LvRjNGPINCyINGA0LDQtNC40LDQu9GM0L3QvtC8INC80LXQvdGOOwoiRjIiIC0g0L/QvtC60LDQt9Cw0YLRjCDQsdC+0LzQsdGLINCyINGA0LDQtNC40LDQu9GM0L3QvtC8INC80LXQvdGOOwoiRjMiIC0g0L/QvtC60LDQt9Cw0YLRjCDQvNCw0YHQu9CwINCyINGA0LDQtNC40LDQu9GM0L3QvtC8INC80LXQvdGOOwoiRjQiIC0g0L/QvtC60LDQt9Cw0YLRjCDQsNC60YLQuNCy0L3Ri9C1INGN0YTRhNC10LrRgtGLINCyINGA0LDQtNC40LDQu9GM0L3QvtC8INC80LXQvdGOOwoiUSAo0LjQu9C4INC60LvQsNCy0LjRiNCwIFkg0LrQvtC90YLRgNC+0LvQu9C10YDQsCkiIC0g0YbQuNC60LvQuNGH0LXRgdC60L7QtSDQv9C10YDQtdC60LvRjtGH0LXQvdC40LUg0LzQtdC20LTRgyDQt9C10LvRjNGP0LzQuC/QsdC+0LzQsdCw0LzQuC/QvNCw0YHQu9Cw0LzQuCDQsiDRgNCw0LTQuNCw0LvRjNC90L7QvCDQvNC10L3RjjsKItCh0YLRgNC10LvQutC4INC60L7QvdGC0YDQvtC70LvQtdGA0LAiICjQuNC70LggV0FTRCwg0LXRgdC70Lgg0LLQutC70Y7Rh9C10L3QsCDRgdC+0L7RgtCy0LXRgtGB0YLQstGD0Y7RidCw0Y8g0L7Qv9GG0LjRjykgLSDQvdCw0LLQuNCz0LDRhtC40Y8g0L/QviDRgdC/0LjRgdC60YMg0L/RgNC10LTQvNC10YLQvtCyINCyINGA0LDQtNC40LDQu9GM0L3QvtC8INC80LXQvdGOOwoi0J3QsNC20LDRgtGMINC90LAg0L/RgNCw0LLRi9C5INGB0YLQuNC6INC60L7QvdGC0YDQvtC70LvQtdGA0LAiICjQuNC70LggIkMiLCDQtdGB0LvQuCDQstC60LvRjtGH0LXQvdCwINGB0L7QvtGC0LLQtdGC0YHRgtCy0YPRjtGJ0LDRjyDQvtC/0YbQuNGPKSAtINCy0YvQv9C40YLRjCDQstGL0LHRgNCw0L3QvdC+0LUg0LfQtdC70YzQtS/QstGL0LHRgNCw0YLRjCDQsdC+0LzQsdGDL9C90LDQvdC10YHRgtC4INC80LDRgdC70L4g0LIg0YDQsNC00LjQsNC70YzQvdC+0Lwg0LzQtdC90Y47CiLQo9C00LXRgNC20LjQstCw0YLRjCBNIiAtINCy0YDQtdC80LXQvdC90L4g0L/QvtC60LDQt9Cw0YLRjCDQvNC40L3QuC3QutCw0YDRgtGDOwoi0KPQtNC10YDQttC40LLQsNGC0YwgSiIgLSDQstGA0LXQvNC10L3QvdC+INC/0L7QutCw0LfQsNGC0Ywg0YLQtdC60YPRidC10LUg0LfQsNC00LDQvdC40LU7CiLQo9C00LXRgNC20LjQstCw0YLRjCBLIiAtINCy0YDQtdC80LXQvdC90L4g0L/QvtC60LDQt9Cw0YLRjCDQvNC+0LTRg9C70Lgg0YHQviDRgdGC0LDRgtC40YHRgtC40LrQvtC5Owoi0KPQtNC10YDQttC40LLQsNGC0YwgRW50ZXIiIC0g0LLRgNC10LzQtdC90L3QviDQv9C+0LrQsNC30LDRgtGMINC+0YHQvdC+0LLQvdGL0LUg0LzQvtC00YPQu9C4Owoi0KPQtNC10YDQttC40LLQsNGC0Ywg0LrQvdC+0L/QutGDINCd0LDQt9Cw0LQg0L3QsCDQutC+0L3RgtGA0L7Qu9C70LXRgNC1IiAtINC40L3QstC10L3RgtCw0YDRjC4KCtCd0LDRgdGC0YDQvtC50LrQsDoKPT09PT09PT09PQoK0JHQvtC70YzRiNCw0Y8g0YfQsNGB0YLRjCDQvtC/0YbQuNC5INC00L7RgdGC0YPQv9C90LAg0LLQviDQstC90YPRgtGA0LjQuNCz0YDQvtCy0L7QvCDQvNC10L3RjiAtINC40YnQuNGC0LUgItCc0L7QtNGLIiDQuCAiRnJpZW5kbHkgSFVEIi4KCtCd0LDRgdGC0YDQvtC50LrQuCDQstC40LTQuNC80L7RgdGC0LggM0Qg0LzQsNGA0LrQtdGA0L7QsjoKLSDQpNC+0YDRgdC40YDQvtCy0LDRgtGMOiDRg9GH0LjRgtGL0LLQsNC10YIg0LzQsNC60YEuINGA0LDRgdGB0YLQvtGP0L3QuNC1INC00LvRjyDQv9C+0LrQsNC30LAg0LzQsNGA0LrQtdGA0L7Qsiwg0LjQs9C90L7RgNC40YDRg9C10YIg0YPRgdC70L7QstC40Y8g0LLQuNC00LjQvNC+0YHRgtC4OwotINCX0LDQutGA0LXQv9C40YLRjDog0LjQs9C90L7RgNC40YDRg9C10YIg0LzQsNC60YEuINGA0LDRgdGB0YLQvtGP0L3QuNC1LCDRg9GH0LjRgtGL0LLQsNC10YIg0YPRgdC70L7QstC40Y8g0LLQuNC00LjQvNC+0YHRgtC4OwotINCg0LDQt9GA0LXRiNC40YLRjCDQt9Cw0LrRgNC10L/Qu9C10L3QvdGL0LUg0L/QvtC70YzQt9C+0LLQsNGC0LXQu9C10Lwg0LzQsNGA0LrQtdGA0Ys6INGD0YHRgtCw0L3QvtCy0LrQsCDQt9C10LvRkdC90L7Qs9C+INC/0L7Qu9GM0LfQvtCy0LDRgtC10LvRjNGB0LrQvtCz0L4g0LzQsNGA0LrQtdGA0LAg0L/QvtCy0LXRgNGFINC70Y7QsdC+0LPQviDQtNGA0YPQs9C+0LPQviDQvNCw0YDQutC10YDQsCDQvtC00L3QvtCy0YDQtdC80LXQvdC90L4g0YTQvtGA0YHQuNGA0YPQtdGCINC4INC30LDQutGA0LXQv9C70Y/QtdGCINGN0YLQvtGCINC80LDRgNC60LXRgCwg0L/QvtC70YzQt9C+0LLQsNGC0LXQu9GM0YHQutC40Lkg0LzQsNGA0LrQtdGAINC/0YDQuCDRjdGC0L7QvCDQvdC1INC+0YLQvtCx0YDQsNC20LDQtdGC0YHRjy4KLSDQodC60YDRi9GC0Ywg0L7RgtC60LvRjtGH0LXQvdC90YvQtSDRh9C10YDQtdC3INC60LDRgNGC0YMg0LzQsNGA0LrQtdGA0Ys6INGB0LrRgNGL0LLQsNC10YIgM0Qg0LzQsNGA0LrQtdGA0YssINC40YHQv9C+0LvRjNC30YPRjyDRgtC40L/RiyDQvNCw0YDQutC10YDQvtCyLCDQvtGC0LrQu9GO0YfQtdC90L3Ri9C1INCyINGE0LjQu9GM0YLRgNC1INC60LDRgNGC0YsuINCiLtC1LiDQtdGB0LvQuCDQvtGC0LrQu9GO0YfQuNGC0Ywg0LzQsNGA0LrQtdGAINCi0LDQudC90LjQutCwINC90LAg0LrQsNGA0YLQtSwg0YLQviDRgSDRjdGC0L7QuSDQvtC/0YbQuNC10Lkg0LzQsNGA0LrQtdGAINCi0LDQudC90LjQutCwINGC0LDQutC20LUg0L7RgtC60LvRjtGH0LjRgtGB0Y8g0Lgg0LIgM0QuCgrQn9GA0Lgg0LLQutC70Y7Rh9C10L3QuNC4INGD0YHQu9C+0LLQvdGL0YUg0LzQvtC00YPQu9C10Lkg0LIg0LzQtdC90Y4g0L7QvdC4INC90LUg0L/QvtGP0LLRj9GC0YHRjyDRgdGA0LDQt9GDLCDQvdC+INC/0L7Rj9Cy0Y/RgtGB0Y8g0LIg0YHQu9C10LTRg9GO0YnQuNC5INGA0LDQtyDQv9GA0Lgg0L3QsNGB0YLRg9C/0LvQtdC90LjQuCDQtNCw0L3QvdC+0LPQviDRg9GB0LvQvtCy0LjRjy4g0J3QsNC/0YDQuNC80LXRgCwg0LXRgdC70Lgg0LIg0LHQvtGOINCy0LrQu9GO0YfQuNGC0Ywg0LLRi9C60LvRjtGH0LXQvdC90YvQtSDQtNC+INGN0YLQvtCz0L4g0LHQvtC10LLRi9C1INC80L7QtNGD0LvQuCwg0YLQviDQtNC70Y8g0YLQtdC60YPRidC10LPQviDQsdC+0Y8g0L7QvdC4INC90LUg0L/QvtGP0LLRj9GC0YHRjywg0L3QviDQsdGD0LTRg9GCINC/0L7Rj9Cy0LvRj9GC0YzRgdGPINC90L7RgNC80LDQu9GM0L3QviDQvdCw0YfQuNC90LDRjyDRgdC+INGB0LvQtdC00YPRjtGJ0LXQs9C+INCx0L7Rjy4g0J7RgtC60LvRjtGH0LXQvdC40LUg0LzQvtC00YPQu9C10Lkg0YHRgNCw0LHQsNGC0YvQstCw0LXRgiDRgdGA0LDQt9GDLgoK0JLQviDQstGB0LXRhSDQvNC10L3RjiDQtNC+0YHRgtGD0L/QvdGLINC/0YDQtdGB0LXRgtGLINC00LvRjyDQsdGL0YHRgtGA0L7Qs9C+INGB0LHRgNC+0YHQsCDQvdCw0YHRgtGA0L7QtdC6INC80L7QtNCwINCyINC90LDRgdGC0YDQvtC50LrQuCDQv9C+INGD0LzQvtC70YfQsNC90LjRjiDQuNC70Lgg0LLQsNC90LjQu9GM0L3Ri9C1INC90LDRgdGC0YDQvtC50LrQuC4KCtCR0L7QtdCy0YvQtSDQvNC+0LTRg9C70Lg6INCy0L7Qu9GH0LjQuSDQvNC10LTQsNC70YzQvtC9LCDRjdGE0YTQtdC60YLRiywg0LTQvtC/0L7Qu9C90LjRgtC10LvRjNC90L7QtSDRgdC90LDRgNGP0LbQtdC90LjQtSwg0L/QvtCy0YDQtdC20LTRkdC90L3Ri9C1INC/0YDQtdC00LzQtdGC0YssINC90LDQv9Cw0YDQvdC40LrQuC4K0JzQvtC00YPQu9C4INCy0LXQtNGM0LzQsNGH0YzQtdCz0L4g0YfRg9GC0YzRjzog0LzQuNC90Lgt0LrQsNGA0YLQsCwg0L7RgtGB0LvQtdC20LjQstCw0LXQvNGL0Lkg0LrQstC10YHRgi4K0JzQvtC00YPQu9C4INC80LXQtNC40YLQsNGG0LjQuCAo0LTQu9GPINC80L7QtNC+0LIgRnJpZW5kbHkgTWVkaXRhdGlvbiDQuCBQcmVwYXJhdGlvbnMpOiDQvNC40L3QuC3QutCw0YDRgtCwLgrQnNC+0LTRg9C70Lgg0YDQsNC00LjQsNC70YzQvdC+0LPQviDQvNC10L3Rjjog0LTQvtC/0L7Qu9C90LjRgtC10LvRjNC90L7QtSDRgdC90LDRgNGP0LbQtdC90LjQtS4KCtCh0L/QuNGB0LrQuCDQvNC+0LTRg9C70LXQuSDQuCDQsdGL0YHRgtGA0YvRhSDQv9GA0LXQtNC80LXRgtC+0LIg0LzQvtC20L3QviDQvdCw0YHRgtGA0L7QuNGC0Ywg0YDQtdC00LDQutGC0LjRgNGD0Y8g0YTQsNC50LsgIlvQn9GD0YLRjCDQutGD0LTQsCDRg9GB0YLQsNC90L7QstC70LXQvdCwIFRoZSBXaXRjaGVyIDNdXE1vZHNcbW9kRnJpZW5kbHlIVURcY29udGVudFxzY3JpcHRzXGZodWRjb25maWdcbW9kRnJpZW5kbHlIVURDb25maWcud3MiLiDQn9GA0Lgg0L3QsNC70LjRh9C40Lgg0LzQuNC90LjQvNCw0LvRjNC90YvRhSDQv9C+0LfQvdCw0L3QuNC5INCyINC+0LHQu9Cw0YHRgtC4INC/0YDQvtCz0YDQsNC80LzQuNGA0L7QstCw0L3QuNGPINC80L7QttC90L4g0LvQtdCz0LrQviDQv9C+0LzQtdC90Y/RgtGMINC90LXQutC+0YLQvtGA0YvQtSDQstC90YPRgtGA0LXQvdC90LjQtSDQvNC10YXQsNC90LjQt9C80Ysg0LzQvtC00LAuINCh0LXQutGG0LjRjyDQvdCw0YHRgtGA0L7QtdC6INC90LDRh9C40L3QsNC10YLRgdGPINGB0L4g0YHRgtGA0L7Rh9C60LggIkNvbmZpZ3VyYWJsZSBzZWN0aW9uIGJlZ2luIiDQuCDQt9Cw0LrQsNC90YfQuNCy0LDQtdGC0YHRjyDRgdGC0YDQvtGH0LrQvtC5ICJFbmQgb2YgY29uZmlndXJhYmxlIHNlY3Rpb24iLiDQndC1INC80LXQvdGP0LnRgtC1INC90LjRh9C10LPQviDQt9CwINC/0YDQtdC00LXQu9Cw0LzQuCDRjdGC0L7QuSDRgdC10LrRhtC40LgsINC10YHQu9C4INC90LUg0YPQstC10YDQtdC90YsuCgrQo9GB0YLQsNC90L7QstC60LA6Cj09PT09PT09PT0KCtCd0LDRh9C40L3QsNGPINGBINCy0LXRgNGB0LjQuCA0LjAgKE5leHQgR2VuIEVkaXRpb24pINC40LPRgNCwINC40YHQv9C+0LvRjNC30YPQtdGCINC00LLQsCDQvtGC0LTQtdC70YzQvdGL0YUg0YTQsNC50LvQsCDQutC+0L3RhNC40LPRg9GA0LDRhtC40Lgg0LTQu9GPIGR4MTEg0LggZHgxMiDQstC10YDRgdC40LkuINCV0YHQu9C4INCy0Ysg0L3QtSDQstC40LTQuNGC0LUg0LzQtdC90Y4g0LzQvtC00LAg0LIg0LjQs9GA0LUg0LjQu9C4INGDINCy0LDRgSDQv9GA0L7QsdC70LXQvNGLINGBINC90LDRgdGC0YDQvtC50LrQsNC80LggLSDQv9GA0L7QtNC10LvQsNC50YLQtSDRiNCw0LPQuCAzINC4IDQg0YDRg9GH0L3QvtC5INGD0YHRgtCw0L3QvtCy0LrQuCAo0YHQvC4g0L3QuNC20LUpLgoK0JTQu9GPINGD0YHRgtCw0L3QvtCy0LrQuCDQvNC+0LTQsCDRgNC10LrQvtC80LXQvdC00YPQtdGC0YHRjyDQuNGB0L/QvtC70YzQt9C+0LLQsNGC0YwgVGhlIFdpdGNoZXIgMyBNb2QgTWFuYWdlciAoVFczTU0pLCDQtNC+0YHRgtGD0L/QvdGL0Lkg0LTQu9GPINGB0LrQsNGH0LjQstCw0L3QuNGPINC90LAgTmV4dXMgTW9kcy4KClZvcnRleCAo0LHRi9Cy0YjQuNC5IE5leHVzIE1vZCBNYW5hZ2VyKSDRg9GB0YLQsNC90LDQstC70LjQstCw0LXRgiDQvNC+0LQg0L3QtSDQv9C+0LvQvdC+0YHRgtGM0Y4gLSDRh9Cw0YHRgtC4INC80L7QtNCwINC80L7Qs9GD0YIg0YDQsNCx0L7RgtCw0YLRjCDQvdC10LrQvtGA0YDQtdC60YLQvdC+LCDQvdCw0L/RgNC40LzQtdGALCDQs9C+0YDRj9GH0LjQtSDQutC70LDQstC40YjQuCEg0JXRgdC70Lgg0LLRiyDQuNGB0L/QvtC70YzQt9GD0LXRgtC1IFZvcnRleCDQuCDRgyDQstCw0YEg0YfRgtC+LdGC0L4g0L3QtSDRgNCw0LHQvtGC0LDQtdGCLCDQv9GA0L7QstC10YDRjNGC0LUg0YjQsNCz0Lgg0YDRg9GH0L3QvtC5INGD0YHRgtCw0L3QvtCy0LrQuCDQv9C10YDQtdC0INGC0LXQvCwg0LrQsNC6INGB0L7QvtCx0YnQsNGC0Ywg0L4g0LHQsNCz0LUuCgrQoNC10YjQtdC90LjQtSDQutC+0L3RhNC70LjQutGC0L7QsiDRgSDQtNGA0YPQs9C40LzQuCDQvNC+0LTQsNC80LgKPT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT0KCtCf0YDQuCDQvdCw0LvQuNGH0LjQuCDQtNGA0YPQs9C40YUg0LzQvtC00L7QsiDQutC+0L3RhNC70LjQutGC0Ysg0YPRgdGC0YDQsNC90Y/RjtGC0YHRjyDRgSDQv9C+0LzQvtGJ0YzRjiDQv9GA0L7Qs9GA0LDQvNC80YsgU2NyaXB0IE1lcmdlci4g0J/RgNC4INGN0YLQvtC8INC90LDQtNC+INGD0LHQtdC00LjRgtGM0YHRjywg0YfRgtC+INCy0YHQtSDRg9GB0YLQsNC90L7QstC70LXQvdC90YvQtSDQvNC+0LTRiyDQv9C+0LTQtNC10YDQttC40LLQsNGO0YIg0LLQsNGI0YMg0LLQtdGA0YHQuNGOINC40LPRgNGLLCDQuNC90LDRh9C1INC60L7QvdGE0LvQuNC60YLRiyDRgdC60L7RgNC10LUg0LLRgdC10LPQviDRgNCw0LfRgNC10YjQuNGC0Ywg0L3QtSDRg9C00LDRgdGC0YHRjy4KCtCd0LDRgdGC0YDQvtC50LrQsCDQvNC+0LTRg9C70LXQuSBIVUQgKNCy0LDQttC90L4hKQo9PT09PT09PT09PT09PT09PT09PT09PT09PT09PT0KCtCc0L7QtCDQvdC1INGB0LrRgNGL0LLQsNC10YIg0LzQvtC00YPQu9C4IEhVRCwg0L7QvSDQuNGFINC/0L7QutCw0LfRi9Cy0LDQtdGCLiDQotCw0Log0YfRgtC+INC00LvRjyDQuNGB0L/QvtC70YzQt9C+0LLQsNC90LjRjyDQstGB0LXRhSDRhNGD0L3QutGG0LjQuSDQvNC+0LTQsCDRgdC+0L7RgtCy0LXRgtGB0YLQstGD0Y7RidC40LUg0LzQvtC00YPQu9C4INC90LXQvtCx0YXQvtC00LjQvNC+INC+0YLQutC70Y7Rh9C40YLRjCDQuNC90LTQuNCy0LjQtNGD0LDQu9GM0L3QviDQsiDQstCw0L3QuNC70YzQvdC+0Lwg0LzQtdC90Y4g0L3QsNGB0YLRgNC+0LXQuiDQstC40LTQtdC+LiDQntGC0LrQu9GO0YfQsNGC0Ywg0LLRgdC1INC80L7QtNGD0LvQuCDQvdC1INC+0LHRj9C30LDRgtC10LvRjNC90L4gLSDRgtC1LCDRh9GC0L4g0L7RgdGC0LDQvdGD0YLRgdGPINCy0LrQu9GO0YfRkdC90L3Ri9C80LgsINGB0L7RhdGA0LDQvdGP0YIg0LLQsNC90LjQu9GM0L3QvtC1INC/0L7QstC10LTQtdC90LjQtS4g0J7RgtC60LvRjtGH0LXQvdC40LUg0LLRgdC10LPQviBIVUQg0LIg0LzQtdC90Y4g0LjQu9C4INCz0L7RgNGP0YfQtdC5INC60LvQsNCy0LjRiNC10Lkg0L/RgNC40LLQtdC00ZHRgiDQuiDRgtC+0LzRgywg0YfRgtC+INC80L7QtNGD0LvQuCDQvdC1INCx0YPQtNGD0YIg0L7RgtC+0LHRgNCw0LbQsNGC0YzRgdGPINGB0L7QstGB0LXQvCAo0L/QvtGC0L7QvNGDINGH0YLQviDQstGB0LUg0LzQvtC00YPQu9C4INGP0LLQu9GP0Y7RgtGB0Y8g0YfQsNGB0YLRjNGOIEhVRCDQuCDQtdGB0LvQuCBIVUQg0YHQutGA0YvRgiwg0YLQviDQvtC90Lgg0YLQvtC20LUg0YHQutGA0YvRgtGLKS4KCk5HRSDRh9Cw0YHRgtC40YfQvdC+INC00YPQsdC70LjRgNGD0LXRgiDRhNGD0L3QutGG0LjQvtC90LDQuyBGcmllbmRseUhVRCDQtNC70Y8g0LTQuNC90LDQvNC40YfQtdGB0LrQvtC5INC80LjQvdC4LdC60LDRgNGC0Ysg0Lgg0LbRg9GA0L3QsNC70LAg0LrQstC10YHRgtC+0LIgLSDRgdC+0L7RgtCy0LXRgtGB0YLQstGD0Y7RidC40LUg0LLQsNC90LjQu9GM0L3Ri9C1INC+0L/RhtC40Lgg0L3QsNC00L4g0L7RgtC60LvRjtGH0LjRgtGMLCDQtdGB0LvQuCDQstGLINGF0L7RgtC40YLQtSwg0YfRgtC+0LHRiyDRjdGC0LjQvNC4INC80L7QtNGD0LvRj9C80Lgg0YPQv9GA0LDQstC70Y/QuyBGcmllbmRseUhVRC4KCtCg0YPRh9C90LDRjyDRg9GB0YLQsNC90L7QstC60LA6Cj09PT09PT09PT09PT09PT09CgoxLiDQodC+0LfQtNCw0L3QuNC1INGA0LXQt9C10YDQstC90L7QuSDQutC+0L/QuNC4ICjQvdC1INC+0LHRj9C30LDRgtC10LvRjNC90L4pCgrQn9C+0YHQutC+0LvRjNC60YMg0L3QtdC60L7RgtC+0YDRi9C1INC80L7QtNGLICjQstC60LvRjtGH0LDRjyDRjdGC0L7Rgikg0LzQtdC90Y/RjtGCINGE0LDQudC70Ysg0LrQvtC90YTQuNCz0YPRgNCw0YbQuNC4LCDQvdC1INC/0L7QstGA0LXQtNC40YIg0YHQtNC10LvQsNGC0Ywg0YDQtdC30LXRgNCy0L3Rg9GOINC60L7Qv9C40Y4g0L/QsNC/0LrQuCAiW1BhdGggVG8gVGhlIFdpdGNoZXIgM11cYmluXGNvbmZpZyIgKNCyINGB0LvRg9GH0LDQtSDQtdGB0LvQuCDQv9C+0LTQvtCx0L3Ri9C1INC80L7QtNGLINGA0LDQvdC10LUg0L3QtSDRg9GB0YLQsNC90LDQstC70LjQstCw0LvQuNGB0Ywg0Lgg0L/QsNC/0LrQsCDQstGB0ZEg0LXRidGRINCy0LDQvdC40LvRjNC90LDRjykuCgoyLiDQo9GB0YLQsNC90L7QstC60LAg0L7RgdC90L7QstC90YvRhSDRhNCw0LnQu9C+0LIg0LzQvtC00LAKCtCU0LvRjyDRg9GB0YLQsNC90L7QstC60Lgg0L7RgdC90L7QstC90YvRhSDRhNCw0LnQu9C+0LIg0LzQvtC00LAg0L3QtdC+0LHRhdC+0LTQuNC80L4g0YDQsNGB0L/QsNC60L7QstCw0YLRjCDQuCDRgdC60L7Qv9C40YDQvtCy0LDRgtGMINC/0LDQv9C60YMgIm1vZEZyaWVuZGx5SFVEIiDQsiAiW9Cf0YPRgtGMINC60YPQtNCwINGD0YHRgtCw0L3QvtCy0LvQtdC90LAgVGhlIFdpdGNoZXIgM11cTW9kcyIuINCV0YHQu9C4INC/0LDQv9C60LAgIk1vZHMiINC90LUg0YHRg9GJ0LXRgdGC0LLRg9C10YIsINC10ZEg0L3Rg9C20L3QviDRgdC+0LfQtNCw0YLRjC4g0J7RgdC90L7QstC90YvQtSDRhNCw0LnQu9GLINC80L7QttC90L4g0YPRgdGC0LDQvdC+0LLQuNGC0Ywg0YEg0L/QvtC80L7RidGM0Y4gTk1NLCDQvdC+INC/0YDQuNCy0Y/Qt9C60Lgg0LrQu9Cw0LLQuNGIINC4INC90LDRgdGC0YDQvtC50LrQuCDQtNC70Y8g0LjQs9GA0L7QstC+0LPQviDQvNC10L3RjiDQstGB0ZEg0YDQsNCy0L3QviDQv9GA0LjQtNGR0YLRgdGPINGD0YHRgtCw0L3QsNCy0LvQuNCy0LDRgtGMINCy0YDRg9GH0L3Rg9GOICjRgdC8LiDQvdC40LbQtSkuCgozLiDQo9GB0YLQsNC90L7QstC60LAg0LLQvdGD0YLRgNC40LjQs9GA0L7QstC+0LPQviDQvNC10L3RjiDQuCDQs9C+0YDRj9GH0LjRhSDQutC70LDQstC40YgKCtCU0LvRjyDRgNCw0LHQvtGC0Ysg0LjQs9GA0L7QstC+0LPQviDQvNC10L3RjiDQvdC10L7QsdGF0L7QtNC40Lwg0YTQsNC50LsgbW9kRkhVRENvbmZpZy54bWwg0LIg0L/QsNC/0LrQtSAiW9Cf0YPRgtGMINC60YPQtNCwINGD0YHRgtCw0L3QvtCy0LvQtdC90LAgVGhlIFdpdGNoZXIgM11cYmluXGNvbmZpZ1xyNGdhbWVcdXNlcl9jb25maWdfbWF0cml4XHBjIiBmb2xkZXIuINCQINGC0LDQutC20LUg0LfQsNC/0LjRgdGMIG1vZEZIVURDb25maWcueG1sOyDQsiDRhNCw0LnQu9Cw0YUgZHgxMWZpbGVsaXN0LnR4dCDQuCBkeDEyZmlsZWxpc3QudHh0LgoK0JTQu9GPINGA0LDQsdC+0YLRiyDQvdC+0LLRi9GFINCz0L7RgNGP0YfQuNGFINC60LvQsNCy0LjRiCwg0LjRhSDQvdC10L7QsdGF0L7QtNC40LzQviDQtNC+0LHQsNCy0LjRgtGMINCyINGE0LDQudC7ICJb0J/Rg9GC0Ywg0LrRg9C00LAg0YPRgdGC0LDQvdC+0LLQu9C10L3QsCBUaGUgV2l0Y2hlciAzXVxiaW5cY29uZmlnXHI0Z2FtZVx1c2VyX2NvbmZpZ19tYXRyaXhccGNcaW5wdXQueG1sIi4KCjMuMS4g0JHRi9GB0YLRgNCw0Y8g0YPRgdGC0LDQvdC+0LLQutCwCgrQldGB0LvQuCDRgyDQstCw0YEg0L3QtdGCINC00YDRg9Cz0LjRhSDQvNC+0LTQvtCyLCDQtNC+0LHQsNCy0LvRj9GO0YnQuNGFINCz0L7RgNGP0YfQuNC1INC60LvQsNCy0LjRiNC4LCDQv9GA0L7RgdGC0L4g0YHQutC+0L/QuNGA0YPQudGC0LUg0L/QsNC/0LrRgyAiW9Cf0YPRgtGMINC60YPQtNCwINGD0YHRgtCw0L3QvtCy0LvQtdC90LAgVGhlIFdpdGNoZXIgM11cTW9kc1xtb2RGcmllbmRseUhVRFxiaW4iINCyINC/0LDQv9C60YMgIlvQn9GD0YLRjCDQutGD0LTQsCDRg9GB0YLQsNC90L7QstC70LXQvdCwIFRoZSBXaXRjaGVyIDNdIi4g0JXRgdC70Lgg0LLRgdGRINGB0LTQtdC70LDQvdC+INC/0YDQsNCy0LjQu9GM0L3Qviwg0YLQviDQv9C+0Y/QstC40YLRgdGPINC+0LrQvdC+LCDRgSDQstC+0L/RgNC+0YHQvtC8INGF0L7RgtC40YLQtSDQu9C4INCy0Ysg0L/QtdGA0LXQt9Cw0L/QuNGB0LDRgtGMINGB0YPRidC10YHRgtCy0YPRjtGJ0LjQuSDRhNCw0LnQuyBpbnB1dC54bWwuINCS0YvQsdC10YDQuNGC0LUgItC/0LXRgNC10LfQsNC/0LjRgdCw0YLRjCIsINGH0YLQvtCx0Ysg0LfQsNC80LXQvdC40YLRjCDQuNGB0YXQvtC00L3Ri9C5INGE0LDQudC7IGlucHV0LnhtbCDQvNC+0LTQuNGE0LjRhtC40YDQvtCy0LDQvdC90YvQvC4KCjMuMi4g0J/QvtGI0LDQs9C+0LLQsNGPINGD0YHRgtCw0L3QvtCy0LrQsAoK0JXRgdC70Lgg0YMg0LLQsNGBINGD0LbQtSDRg9GB0YLQsNC90L7QstC70LXQvdGLINC00YDRg9Cz0LjQtSDQvNC+0LTRiywg0LTQvtCx0LDQstC70Y/RjtGJ0LjQtSDQs9C+0YDRj9GH0LjQtSDQutC70LDQstC40YjQuCwg0LLRiyDQv9C+0YfRgtC4INC90LDQstC10YDQvdGP0LrQsCDQvdC1INC30LDRhdC+0YLQuNGC0LUg0L/QtdGA0LXQt9Cw0L/QuNGB0YvQstCw0YLRjCBpbnB1dC54bWwuINCSINGN0YLQvtC8INGB0LvRg9GH0LDQtSDQtNC70Y8g0YPRgdGC0LDQvdC+0LLQutC4INCz0L7RgNGP0YfQuNGFINC60LvQsNCy0LjRiCDQvdGD0LbQvdC+INC+0YLQutGA0YvRgtGMINGE0LDQudC70YsgIlvQn9GD0YLRjCDQutGD0LTQsCDRg9GB0YLQsNC90L7QstC70LXQvdCwIFRoZSBXaXRjaGVyIDNdXGJpblxjb25maWdccjRnYW1lXHVzZXJfY29uZmlnX21hdHJpeFxwY1xpbnB1dC54bWwiINC4ICJb0J/Rg9GC0Ywg0LrRg9C00LAg0YPRgdGC0LDQvdC+0LLQu9C10L3QsCBUaGUgV2l0Y2hlciAzXVxNb2RzXG1vZEZyaWVuZGx5SFVEXGJpblxjb25maWdccjRnYW1lXHVzZXJfY29uZmlnX21hdHJpeFxwY1xpbnB1dC54bWwiINC4INGB0LrQvtC/0LjRgNC+0LLQsNGC0Ywg0LjQt9C80LXQvdC10L3QuNGPIG1vZEZyaWVuZGx5SFVEINCy0YDRg9GH0L3Rg9GOICjQvtC90Lgg0L/QvtC80LXRidC10L3RiyDQstC90YPRgtGA0Ywg0LrQvtC80LzQtdC90YLQsNGA0LjQtdCyICJtb2RGcmllbmRseUhVRCBiZWdpbiIg0LggIm1vZEZyaWVuZGx5SFVEIGVuZCIpINCyINCw0L3QsNC70L7Qs9C40YfQvdGD0Y4g0YfQsNGB0YLRjCDRgdGD0YnQtdGB0YLQstGD0Y7RidC10LPQviDRhNCw0LnQu9CwLgoK0KLQsNC60LbQtSDQvdC10L7QsdGF0L7QtNC40LzQviDRgdC60L7Qv9C40YDQvtCy0LDRgtGMINGE0LDQudC7ICJb0J/Rg9GC0Ywg0LrRg9C00LAg0YPRgdGC0LDQvdC+0LLQu9C10L3QsCBUaGUgV2l0Y2hlciAzXVxNb2RzXG1vZEZyaWVuZGx5SFVEXGJpblxjb25maWdccjRnYW1lXHVzZXJfY29uZmlnX21hdHJpeFxwY1xtb2RGSFVEQ29uZmlnLnhtbCIg0LIg0L/QsNC/0LrRgyAiW9Cf0YPRgtGMINC60YPQtNCwINGD0YHRgtCw0L3QvtCy0LvQtdC90LAgVGhlIFdpdGNoZXIgM11cYmluXGNvbmZpZ1xyNGdhbWVcdXNlcl9jb25maWdfbWF0cml4XHBjIiDQtNC70Y8g0YPRgdGC0LDQvdC+0LLQutC4INC80LXQvdGOLgoK0J7RgtC60YDQvtC50YLQtSDRhNCw0LnQuyAiW1BhdGggVG8gVGhlIFdpdGNoZXIgM11cYmluXGNvbmZpZ1xyNGdhbWVcdXNlcl9jb25maWdfbWF0cml4XHBjXGR4MTFmaWxlbGlzdC50eHQiINC4INCy0L/QuNGI0LjRgtC1INCyINC60L7QvdC10YYg0YHRgtGA0L7QutGDIG1vZEZIVURDb25maWcueG1sOyAo0YHQvC4g0L/RgNC40LzQtdGAINCyINGE0LDQudC70LUgIltQYXRoIFRvIFRoZSBXaXRjaGVyIDNdXE1vZHNcbW9kRnJpZW5kbHlIVURcYmluXGNvbmZpZ1xyNGdhbWVcdXNlcl9jb25maWdfbWF0cml4XHBjXGR4MTFmaWxlbGlzdC50eHQiKS4g0J/RgNC+0LTQtdC70LDQudGC0LUg0YLQsNC60YPRjiDQttC1INC+0L/QtdGA0LDRhtC40Y4g0YEg0YTQsNC50LvQvtC8IGR4MTJmaWxlbGlzdC50eHQuCgo0LiDQmNC90LjRhtC40LDQu9C40LfQsNGG0LjRjyDRg9GB0YLQsNC90L7QstC+0Log0LzQvtC00LAg0L/QviDRg9C80L7Qu9GH0LDQvdC40Y4g0Lgg0LPQvtGA0Y/Rh9C40YUg0LrQu9Cw0LLQuNGICgrQlNC70Y8g0LLQtdGA0YHQuNC4IERYMTEg0YPRgdGC0LDQvdC+0LLQutC4INC80L7QtNCwINGF0YDQsNC90Y/RgtGB0Y8g0LIg0YTQsNC50LvQtSAiQzpcVXNlcnNcW9CY0LzRjyDQn9C+0LvRjNC30L7QstCw0YLQtdC70Y9dXERvY3VtZW50c1xUaGUgV2l0Y2hlciAzXHVzZXIuc2V0dGluZ3MiLgoK0JTQu9GPINCy0LXRgNGB0LjQuCBEWDExINGD0YHRgtCw0L3QvtCy0LrQuCDQvNC+0LTQsCDRhdGA0LDQvdGP0YLRgdGPINCyINGE0LDQudC70LUgIkM6XFVzZXJzXFvQmNC80Y8g0J/QvtC70YzQt9C+0LLQsNGC0LXQu9GPXVxEb2N1bWVudHNcVGhlIFdpdGNoZXIgM1xkeDEydXNlci5zZXR0aW5ncyIuCgrQn9GA0LjQstGP0LfQutC4INC60LvQsNCy0LjRiCDRhdGA0LDQvdGP0YLRgdGPINCyINGE0LDQudC70LUgIkM6XFVzZXJzXFvQmNC80Y8g0J/QvtC70YzQt9C+0LLQsNGC0LXQu9GPXVxEb2N1bWVudHNcVGhlIFdpdGNoZXIgM1xpbnB1dC5zZXR0aW5ncyIuCgrQlNC70Y8g0LjQvdC40YbQuNCw0LvQuNC30LDRhtC40Lgg0L3QsNGB0YLRgNC+0LXQuiDQvNC+0LTQsCDQv9C+LdGD0LzQvtC70YfQsNC90LjRjiDQvdC10L7QsdGF0L7QtNC40LzQviDQvtGC0LrRgNGL0YLRjCAiQzpcVXNlcnNcW9CY0LzRjyDQn9C+0LvRjNC30L7QstCw0YLQtdC70Y9dXERvY3VtZW50c1xUaGUgV2l0Y2hlciAzXHVzZXIuc2V0dGluZ3MiINC4ICJb0J/Rg9GC0Ywg0LrRg9C00LAg0YPRgdGC0LDQvdC+0LLQu9C10L3QsCBUaGUgV2l0Y2hlciAzXVxNb2RzXG1vZEZyaWVuZGx5SFVEXHVzZXIuc2V0dGluZ3MucGFydC50eHQiINC40Lcg0LzQvtC00LAuINCS0YvQtNC10LvQuNGC0Ywg0LLRgdGRINCyINGE0LDQudC70LUgInVzZXIuc2V0dGluZ3MucGFydC50eHQiLCDRgdC60L7Qv9C40YDQvtCy0LDRgtGMINC4INCy0YHRgtCw0LLQuNGC0Ywg0LIg0L3QsNGH0LDQu9C+INGE0LDQudC70LAgInVzZXIuc2V0dGluZ3MiLiDQldGB0LvQuCDQv9GA0L7Qv9GD0YHRgtC40YLRjCDRjdGC0L7RgiDRiNCw0LMsINC/0L7Rh9GC0Lgg0LLRgdC1INGE0YPQvdC60YbQuNC4INC80L7QtNCwINCx0YPQtNGD0YIg0L7RgtC60LvRjtGH0LXQvdGLINC4INCx0YPQtNC10YIg0LrQsNC30LDRgtGM0YHRjywg0YfRgtC+INC80L7QtCDQvdC1INGA0LDQsdC+0YLQsNC10YIg0LjQu9C4INGA0LDQsdC+0YLQsNC10YIg0L3QtdC/0YDQsNCy0LjQu9GM0L3Qvi4g0J/RgNC+0LTQtdC70LDQudGC0LUg0YLQsNC60LjQtSDQttC1INC+0L/QtdGA0LDRhtC40Lgg0L3QsNC0IGR4MTJ1c2VyLnNldHRpbmdzLgoK0JTQu9GPINC40L3QuNGG0LjQsNC70LjQt9Cw0YbQuNC4INCz0L7RgNGP0YfQuNGFINC60LvQsNCy0LjRiCDQvdC10L7QsdGF0L7QtNC40LzQviDQvtGC0LrRgNGL0YLRjCAiQzpcVXNlcnNcW9CY0LzRjyDQn9C+0LvRjNC30L7QstCw0YLQtdC70Y9dXERvY3VtZW50c1xUaGUgV2l0Y2hlciAzXGlucHV0LnNldHRpbmdzIiDQuCAiW9Cf0YPRgtGMINC60YPQtNCwINGD0YHRgtCw0L3QvtCy0LvQtdC90LAgVGhlIFdpdGNoZXIgM11cTW9kc1xtb2RGcmllbmRseUhVRFxpbnB1dC5zZXR0aW5ncy5wYXJ0LnR4dCIg0LjQtyDQvNC+0LTQsCwg0LLRi9C00LXQu9C40YLRjCDQstGB0ZEg0LIg0YTQsNC50LvQtSAiaW5wdXQuc2V0dGluZ3MucGFydC50eHQiLCDRgdC60L7Qv9C40YDQvtCy0LDRgtGMINC4INCy0YHRgtCw0LLQuNGC0Ywg0LIg0L3QsNGH0LDQu9C+INGE0LDQudC70LAgImlucHV0LnNldHRpbmdzIi4g0JXRgdC70Lgg0L/RgNC+0L/Rg9GB0YLQuNGC0Ywg0Y3RgtC+0YIg0YjQsNCzLCDRgtC+INC60LvQsNCy0LjRiNC4INCx0YPQtNGD0YIg0L7RgtC+0LHRgNCw0LbQsNGC0YzRgdGPINCyINC80LXQvdGOLCDQvdC+INC90LDQt9C90LDRh9C40YLRjCDQuNGFINC90L7RgNC80LDQu9GM0L3QviDQvdC1INC/0L7Qu9GD0YfQuNGC0YHRjy4KCtCe0LHQvdC+0LLQu9C10L3QuNC1Ogo9PT09PT09PT09PQoK0KPQtNCw0LvQtdC90LjQtSDRgdGC0LDRgNC+0Lkg0LLQtdGA0YHQuNC4INC4INGD0YHRgtCw0L3QvtCy0LrQsCDQvdC+0LLQvtC5IC0g0L3QsNC40LHQvtC70LXQtSDQsdC10LfQvtC/0LDRgdC90YvQuSDRgdC/0L7RgdC+0LEuINCf0YDQuNGH0ZHQvCDQtdGB0LvQuCDQvNC+0LQg0YPQtNCw0LvRj9C70YHRjyDRh9C10YDQtdC3IFRXM01NL1ZvcnRleCwg0L3QtdC+0LHRhdC+0LTQuNC80L4g0YPQsdC10LTQuNGC0YzRgdGPLCDRh9GC0L4g0L/QsNC/0LrQsCAiW1BhdGggVG8gVGhlIFdpdGNoZXIgM11cTW9kc1xtb2RGcmllbmRseUhVRCIg0LTQtdC50YHRgtCy0LjRgtC10LvRjNC90L4g0LHRi9C70LAg0YPQtNCw0LvQtdC90LAuINCV0YHQu9C4INCyINGB0L/QuNGB0LrQtSDQuNC30LzQtdC90LXQvdC40Lkg0L3QtdGCINC90L7QstGL0YUg0LrQu9Cw0LLQuNGIINC4INC+0L/RhtC40Lkg0LzQtdC90Y4sINGC0L4g0L3QuNC60LDQutC40LUg0LTRgNGD0LPQuNC1INC00LXQudGB0YLQstC40Y8sINC60YDQvtC80LUg0YPRgdGC0LDQvdC+0LLQutC4INC+0YHQvdC+0LLQvdGL0YUg0YTQsNC50LvQvtCyLCDQvdC1INGC0YDQtdCx0YPRjtGC0YHRjy4KCtCV0YHQu9C4INC+0LHQvdC+0LLQu9C10L3QuNC1INGB0L7QtNC10YDQttC40YIg0L3QvtCy0YvQtSDQs9C+0YDRj9GH0LjQtSDQutC70LDQstC40YjQuCwg0L/RgNC+0YnQtSDQstGB0LXQs9C+INGD0LTQsNC70LjRgtGMINGE0LDQudC7ICJDOlxVc2Vyc1xb0JjQvNGPINCf0L7Qu9GM0LfQvtCy0LDRgtC10LvRj11cRG9jdW1lbnRzXFRoZSBXaXRjaGVyIDNcaW5wdXQuc2V0dGluZ3MiIChkeDEydXNlci5zZXR0aW5ncyksINC30LDQv9GD0YHRgtC40YLRjCDQuNCz0YDRgyDQvtC00LjQvSDRgNCw0LcsINGH0YLQvtCx0Ysg0L/QvtC70YPRh9C40YLRjCDQvdC+0LLRi9C5INGE0LDQudC7INGBINC90LDRgdGC0YDQvtC50LrQsNC80Lgg0L/QviDRg9C80L7Qu9GH0LDQvdC40Y4g0Lgg0LfQsNGC0LXQvCDQv9C+0LLRgtC+0YDQuNGC0Ywg0YjQsNCz0LggMyDQuCA0INC+0L/QuNGB0LDQvdC90L7Qs9C+INCy0YvRiNC1INC/0YDQvtGG0LXRgdGB0LAg0YPRgdGC0LDQvdC+0LLQutC4LgoK0JXRgdC70Lgg0L7QsdC90L7QstC70LXQvdC40LUg0YHQvtC00LXRgNC20LjRgiDQvdC+0LLRi9C1INC+0L/RhtC40Lgg0LzQtdC90Y4sINC/0YDQvtGJ0LUg0LLRgdC10LPQviDRg9C00LDQu9C40YLRjCDRhNCw0LnQuyAiQzpcVXNlcnNcW9CY0LzRjyDQn9C+0LvRjNC30L7QstCw0YLQtdC70Y9dXERvY3VtZW50c1xUaGUgV2l0Y2hlciAzXHVzZXIuc2V0dGluZ3MiLCDQt9Cw0L/Rg9GB0YLQuNGC0Ywg0LjQs9GA0YMg0L7QtNC40L0g0YDQsNC3LCDRh9GC0L7QsdGLINC/0L7Qu9GD0YfQuNGC0Ywg0L3QvtCy0YvQuSDRhNCw0LnQuyDRgSDQvdCw0YHRgtGA0L7QudC60LDQvNC4INC/0L4g0YPQvNC+0LvRh9Cw0L3QuNGOINC4INC30LDRgtC10Lwg0L/QvtCy0YLQvtGA0LjRgtGMINGI0LDQs9C4IDMg0LggNCDQvtC/0LjRgdCw0L3QvdC+0LPQviDQstGL0YjQtSDQv9GA0L7RhtC10YHRgdCwINGD0YHRgtCw0L3QvtCy0LrQuC4KCtCS0L3QuNC80LDQvdC40LUhINCd0LUg0LfQsNCx0YPQtNGM0YLQtSDQstC+0YHRgdGC0LDQvdC+0LLQuNGC0Ywg0L/QvtC70YzQt9C+0LLQsNGC0LXQu9GM0YHQutC40LUg0L3QsNGB0YLRgNC+0LnQutC4INC/0L7RgdC70LUg0YPQtNCw0LvQtdC90LjRjyDRhNCw0LnQu9C+0LIgaW5wdXQuc2V0dGluZ3Mg0LggdXNlci5zZXR0aW5ncyAoZHgxMnVzZXIuc2V0dGluZ3MpIQoK0J/RgNC4INC90LDQu9C40YfQuNC4INC00YDRg9Cz0LjRhSDQvNC+0LTQvtCyLCDQv9C+0YHQu9C1INGD0YHRgtCw0L3QvtCy0LrQuCDQvdCw0LTQviDRg9C00LDQu9C40YLRjCDRgdGD0YnQtdGB0YLQstGD0Y7RidC40LUg0L7QsdGK0LXQtNC40L3QtdC90LjRjyDQsiBTY3JpcHRNZXJnZXIg0Lgg0L7QsdGK0LXQtNC40L3QuNGC0Ywg0LLRgdGRINC30LDQvdC+0LLQvi4KCtCj0LTQsNC70LXQvdC40LU6Cj09PT09PT09PQoK0JXRgdC70Lgg0LLRiyDRgdGC0LDQstC40LvQuCDQvNC+0LQg0YEg0L/QvtC80L7RidGM0Y4gVFczTU0sINC/0YDQvtGB0YLQviDQt9Cw0L/Rg9GB0YLQuNGC0LUg0LXQs9C+INC4INCy0YvQsdC10YDQuNGC0LUg0L/Rg9C90LrRgiAi0YPQtNCw0LvQtdC90LjQtSIuCgrQldGB0LvQuCDQvNC10L3RjiDQvNC+0LTQsCAo0LjQu9C4INC/0YPRgdGC0YvQtSDRgdGC0YDQvtGH0LrQuCkg0LLRgdGRINC10YnRkSDQstC40LTQvdGLINCyINC40LPRgNC1LCDQv9GA0L7QstC10YDRjNGC0LUg0YTQsNC50LvRiyBkeDExZmlsZWxpc3QudHh0INC4IGR4MTJmaWxlbGlzdC50eHQgKNGB0LwuINGA0YPRh9C90YPRjiDRg9GB0YLQsNC90L7QstC60YMsINGI0LDQsyAzLjIpLgoK0J3QtSDQt9Cw0LHRg9C00YzRgtC1INC/0L7RgdC70LUg0YPQtNCw0LvQtdC90LjRjyDQt9Cw0L/Rg9GB0YLQuNGC0YwgU2NyaXB0IE1lcmdlciDQuCDQstC+0YHRgdGC0LDQvdC+0LLQuNGC0Ywg0LLQsNC90LjQu9GM0L3Ri9C1INC90LDRgdGC0YDQvtC50LrQuCDQstC40LTQtdC+ICjQvNC+0LTRg9C70LXQuSBIVUQpLgoK0KDRg9GH0L3QvtC1INGD0LTQsNC70LXQvdC40LU6Cj09PT09PT09PT09PT09PT0KCjEuINCj0LTQsNC70LXQvdC40LUg0L7RgdC90L7QstC90YvRhSDRhNCw0LnQu9C+0LIg0LzQvtC00LAKCtCY0YHQv9C+0LvRjNC30L7QstCw0YLRjCBOTU0g0LjQu9C4INGD0LTQsNC70LjRgtGMINCy0YDRg9GH0L3Rg9GOINC/0LDQv9C60YMg0LzQvtC00LAgIlvQn9GD0YLRjCDQutGD0LTQsCDRg9GB0YLQsNC90L7QstC70LXQvdCwIFRoZSBXaXRjaGVyIDNdXE1vZHNcbW9kRnJpZW5kbHlIVUQiLgoKMi4g0KPQtNCw0LvQtdC90LjQtSDQvNC10L3RjiDQuCDQs9C+0YDRj9GH0LjRhSDQutC70LDQstC40YgKCtCU0LvRjyDRg9C00LDQu9C10L3QuNGPINC80LXQvdGOINC90LDQtNC+INGD0LTQsNC70LjRgtGMINGE0LDQudC7IG1vZEZIVURDb25maWcueG1sINC40Lcg0L/QsNC/0LrQuCAiW9Cf0YPRgtGMINC60YPQtNCwINGD0YHRgtCw0L3QvtCy0LvQtdC90LAgVGhlIFdpdGNoZXIgM11cYmluXGNvbmZpZ1xyNGdhbWVcdXNlcl9jb25maWdfbWF0cml4XHBjIi4g0JfQsNGC0LXQvCDRg9C00LDQu9C40YLQtSDRgdGC0YDQvtGH0LrRgyBtb2RGSFVEQ29uZmlnLnhtbDsg0LjQtyDRhNCw0LnQu9C+0LIgZHgxMWZpbGVsaXN0LnR4dCDQuCBkeDEyZmlsZWxpc3QudHh0LgoK0JTQu9GPINGD0LTQsNC70LXQvdC40Y8g0LPQvtGA0Y/Rh9C40YUg0LrQu9Cw0LLQuNGIINC40YUg0L3QtdC+0LHRhdC+0LTQuNC80L4g0YPQsdGA0LDRgtGMINC40Lcg0YTQsNC50LvQsCAiW9Cf0YPRgtGMINC60YPQtNCwINGD0YHRgtCw0L3QvtCy0LvQtdC90LAgVGhlIFdpdGNoZXIgM11cYmluXGNvbmZpZ1xyNGdhbWVcdXNlcl9jb25maWdfbWF0cml4XHBjXGlucHV0LnhtbCIuCgoyLjEuINCR0YvRgdGC0YDQvtC1INGD0LTQsNC70LXQvdC40LUg0YEg0LjRgdC/0L7Qu9GM0LfQvtCy0LDQvdC40LXQvCDRgNC10LfQtdGA0LLQvdC+0Lkg0LrQvtC/0LjQuAoK0JXRgdC70Lgg0YMg0LLQsNGBINC10YHRgtGMINGA0LXQt9C10YDQstC90LDRjyDQutC+0L/QuNGPINC/0LDQv9C60LggIlvQn9GD0YLRjCDQutGD0LTQsCDRg9GB0YLQsNC90L7QstC70LXQvdCwIFRoZSBXaXRjaGVyIDNdXGJpblxjb25maWciINC4INC90LXRgiDQtNGA0YPQs9C40YUg0LzQvtC00L7Qsiwg0LzQtdC90Y/RjtGJ0LjRhSDRhNCw0LnQu9GLINC60L7QvdGE0LjQs9GD0YDQsNGG0LjQuCwg0L/RgNC+0YHRgtC+INGD0LTQsNC70LjRgtC1INC/0LDQv9C60YMgIlvQn9GD0YLRjCDQutGD0LTQsCDRg9GB0YLQsNC90L7QstC70LXQvdCwIFRoZSBXaXRjaGVyIDNdXGJpblxjb25maWciINC4INGB0LrQvtC/0LjRgNGD0LnRgtC1INC90LAg0LXRkSDQvNC10YHRgtC+INC/0LDQv9C60YMgImNvbmZpZyIg0LjQtyDRgNC10LfQtdGA0LLQvdC+0Lkg0LrQvtC/0LjQuC4KCjIuMi4g0KDRg9GH0L3QvtC1INGD0LTQsNC70LXQvdC40LUKCtCU0LvRjyDRg9C00LDQu9C10L3QuNGPINCz0L7RgNGP0YfQuNGFINC60LvQsNCy0LjRiCDQvtGC0LrRgNC+0LnRgtC1INGE0LDQudC7ICJb0J/Rg9GC0Ywg0LrRg9C00LAg0YPRgdGC0LDQvdC+0LLQu9C10L3QsCBUaGUgV2l0Y2hlciAzXVxiaW5cY29uZmlnXHI0Z2FtZVx1c2VyX2NvbmZpZ19tYXRyaXhccGNcaW5wdXQueG1sIiDQuCDRg9C00LDQu9C40YLQtSDQstGB0ZEg0LzQtdC20LTRgyDQutC+0LzQvNC10L3RgtCw0YDQuNGP0LzQuCAibW9kRnJpZW5kbHlIVUQgYmVnaW4iINC4ICJtb2RGcmllbmRseUhVRCBlbmQiLgoK0JTQu9GPINGD0LTQsNC70LXQvdC40Y8g0LzQtdC90Y4g0L/RgNC+0YHRgtC+INGD0LTQsNC70LjRgtC1INGE0LDQudC7ICJb0J/Rg9GC0Ywg0LrRg9C00LAg0YPRgdGC0LDQvdC+0LLQu9C10L3QsCBUaGUgV2l0Y2hlciAzXVxiaW5cY29uZmlnXHI0Z2FtZVx1c2VyX2NvbmZpZ19tYXRyaXhccGNcbW9kRkhVRENvbmZpZy54bWwiLiDQl9Cw0YLQtdC8INGD0LTQsNC70LjRgtC1INGB0YLRgNC+0YfQutGDIG1vZEZIVURDb25maWcueG1sOyDQuNC3INGE0LDQudC70L7QsiBkeDExZmlsZWxpc3QudHh0INC4IGR4MTJmaWxlbGlzdC50eHQuCgozLiDQmtC+0L3RhNC70LjQutGC0Ysg0YEg0LTRgNGD0LPQuNC80Lgg0LzQvtC00LDQvNC4CgrQn9GA0Lgg0L3QsNC70LjRh9C40Lgg0LTRgNGD0LPQuNGFINC80L7QtNC+0LIsINC/0L7RgdC70LUg0YPQtNCw0LvQtdC90LjRjyDQvdCw0LTQviDQvtCx0YrQtdC00LjQvdC40YLRjCDQstGB0ZEg0LfQsNC90L7QstC+INCyIFNjcmlwdE1lcmdlci4KCjQuINCS0L7RgdGB0YLQsNC90L7QstC70LXQvdC40LUg0L3QsNGB0YLRgNC+0LXQuiBIVUQKCtCn0YLQvtCx0Ysg0LzQvtC00YPQu9C4IEhVRCDQstC10YDQvdGD0LvQuNGB0Ywg0Log0LLQsNC90LjQu9GM0L3QvtC80YMg0L/QvtCy0LXQtNC10L3QuNGOLCDQuNGFINC90LDQtNC+INCx0YPQtNC10YIg0LLQutC70Y7Rh9C40YLRjCDQsiDQvNC10L3RjiDQvdCw0YHRgtGA0L7QtdC6INCy0LjQtNC10L4g0LLRgNGD0YfQvdGD0Y4uCg==</readmeb64>
+        <readmeb64>VXNlIGVuLmNzdiB0byBsb2NhbGl6ZSB0aGUgbW9kIHRvIHlvdXIgbmF0aXZlIGxhbmd1YWdlLgoKWW91IGNhbiBwdWJsaXNoIHRoZSBsb2NhbGl6YXRpb24gb24gTmV4dXMgYW5kIGxpbmsgaXQgdG8gdGhlIG1vZCB1c2luZyBOZXh1cyBvcHRpb25zLgoKSWYgeW91IGRvbid0IGtub3cgaG93IG9yIGRvbid0IHdhbnQgdG8gY29tcGlsZSBhbmQgZGlzdHJpYnV0ZSBsb2NhbGl6ZWQgc3RyaW5ncyB5b3Vyc2VsZiwKeW91IGNhbiBzZW5kIHRoZSBsb2NhbGl6ZWQgZmlsZSB0byBtZTogd2dob3N0ODFAZ21haWwuY29tLgoKSWYgeW91IHdhbnQgdG8gZW5jb2RlIGxvY2FsaXphdGlvbiBmaWxlIHlvdXJzZWxmLCB5b3Ugd2lsbCBuZWVkIFczIHN0cmluZ3MgZW5jb2Rlci4KaWQtc3BhY2UgZm9yIHRoZSBtb2QgaXMgMzY1LgoKRW5jb2RpbmcgZXhhbXBsZToKdzNzdHJpbmdzLmV4ZSAtLWVuY29kZSBlbi5jc3YgLS1pZC1zcGFjZSAzNjUK</readmeb64>
+    </mod>
+    <mod name="DLC - Fast Travel Pack" enabled="True" date="2023-02-14 17:35:28" priority="-">
+        <dlc>dlcFastTravelPack</dlc>
+    </mod>
+    <mod name="On The Path - Griffin T5 Textures" enabled="True" date="2023-02-14 17:52:59" priority="-">
+        <data>modGriffT5</data>
+    </mod>
+    <mod name="HD Animals Reworked" enabled="True" date="2023-02-14 23:15:19" priority="-">
+        <data>modHDAnimalsReworked</data>
+    </mod>
+    <mod name="HD Horses Accessories" enabled="True" date="2023-02-14 23:15:30" priority="-">
+        <data>modHDHorseAccessories</data>
+    </mod>
+    <mod name="Axii Always Active in Dialog" enabled="True" date="2023-02-06 16:07:48" priority="-">
+        <data>modAxiiDelusion</data>
+        <readmeb64>QXhpaSBBbHdheXMgQWN0aXZlIGluIERpYWxvZyB2ZXJzaW9uIDEuMAoKLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLQpEZXNjcmlwdGlvbgotLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tCgpUaGlzIG1vZCBhbGxvd3MgeW91IHRvIHVzZSBBeGlpIGluIGNvbnZlcnNhdGlvbnMgd2l0aG91dCBuZWVkaW5nIHRoZSBBeGlpIERlbHVzaW9uIHNraWxsLiBOb3RoaW5nIG1vcmUgYW5kIG5vdGhpbmcgbGVzcy4KSWYgeW91IHdhbnQgdGhlIGNvbWJhdCBwb3J0aW9uIG9mIHRoZSBEZWx1c2lvbiBza2lsbCwgeW91IHN0aWxsIG5lZWQgdG8gaGF2ZSB0aGUgc2tpbGwgc2xvdHRlZC4KVGhpcyBpcyBmb3IgcGVvcGxlIHdobyB3YW50IHRvIHVzZSBBeGlpIGluIGNvbnZlcnNhdGlvbnMgYnV0IGRvbid0IHdhbnQgdG8gd2FzdGUgc2tpbGwgcG9pbnRzIG9yIHNsb3RzIG9uIHRoZSBEZWx1c2lvbiBza2lsbC4KCi0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0KSW5zdGFsbGF0aW9uCi0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0KClVzZSBhIG1vZCBtYW5hZ2VyIG9yIGNvcHkgdGhlICJtb2RBeGlpRGVsdXNpb24iIGZvbGRlciBpbnRvIHRoZSAibW9kcyIgZm9sZGVyIGluIHlvdXIgV2l0Y2hlciAzIGluc3RhbGxhdGlvbiBkaXJlY3RvcnkuCgpVc2UgU2NyaXB0IE1lcmdlciB0byBtZXJnZSBpdCB3aXRoIG90aGVyIG1vZHMuIEFsbW9zdCBldmVyeSBtb2Qgc2hvdWxkIG1lcmdlIHdpdGggdGhpcyBvbmUgYXV0b21hdGljYWxseS4gVGhpcyBtb2Qgb25seSBjaGFuZ2VzIHR3byBsaW5lcyBvZiBjb2RlIGFuZCBtb3N0IG1vZHMgbmV2ZXIgdG91Y2ggdGhpcyBzZWN0aW9uIG9mIGNvZGUuCgpUbyB1bmluc3RhbGwsIGRlbGV0ZSB0aGUgIm1vZEF4aWlEZWx1c2lvbiIgZm9sZGVyIGZyb20geW91ciAibW9kcyIgZm9sZGVyLgoK</readmeb64>
+    </mod>
+    <mod name="Humans of the Continent - Female Bushy" enabled="True" date="2023-01-01 02:49:37" priority="4">
+        <data>modHC4K02FemalesVanillaBushy</data>
+    </mod>
+    <mod name="Auto Loot All-in-One" enabled="True" date="2023-02-06 16:10:06" priority="-">
+        <data>modAutoLootMenu</data>
+        <menu>AHDAutoLootConfig.xml</menu>
+        <key context="[Combat_Replacer_Ciri]">IK_Z=(Action=AutoLootRadius)</key>
+        <key context="[Combat_Replacer_Ciri]">IK_Pad_A_CROSS=(Action=AutoLootRadius,State=Duration,IdleTime=1.5)</key>
+        <key context="[Combat_Replacer_Ciri]">IK_P=(Action=ToggleTrueAutoLoot)</key>
+        <key context="[Diving]">IK_Z=(Action=AutoLootRadius)</key>
+        <key context="[Diving]">IK_Pad_A_CROSS=(Action=AutoLootRadius,State=Duration,IdleTime=1.5)</key>
+        <key context="[Diving]">IK_P=(Action=ToggleTrueAutoLoot)</key>
+        <key context="[Exploration]">IK_Z=(Action=AutoLootRadius)</key>
+        <key context="[Exploration]">IK_Pad_A_CROSS=(Action=AutoLootRadius,State=Duration,IdleTime=1.5)</key>
+        <key context="[Exploration]">IK_P=(Action=ToggleTrueAutoLoot)</key>
+        <key context="[Exploration_Replacer_Ciri]">IK_Z=(Action=AutoLootRadius)</key>
+        <key context="[Exploration_Replacer_Ciri]">IK_Pad_A_CROSS=(Action=AutoLootRadius,State=Duration,IdleTime=1.5)</key>
+        <key context="[Exploration_Replacer_Ciri]">IK_P=(Action=ToggleTrueAutoLoot)</key>
+        <key context="[Horse]">IK_Z=(Action=AutoLootRadius)</key>
+        <key context="[Horse]">IK_Pad_A_CROSS=(Action=AutoLootRadius,State=Duration,IdleTime=1.5)</key>
+        <key context="[Horse]">IK_P=(Action=ToggleTrueAutoLoot)</key>
+        <key context="[Horse_Replacer_Ciri]">IK_Z=(Action=AutoLootRadius)</key>
+        <key context="[Horse_Replacer_Ciri]">IK_Pad_A_CROSS=(Action=AutoLootRadius,State=Duration,IdleTime=1.5)</key>
+        <key context="[Horse_Replacer_Ciri]">IK_P=(Action=ToggleTrueAutoLoot)</key>
+        <key context="[Combat]">IK_Z=(Action=AutoLootRadius)</key>
+        <key context="[Combat]">IK_Pad_A_CROSS=(Action=AutoLootRadius,State=Duration,IdleTime=1.5)</key>
+        <key context="[Combat]">IK_P=(Action=ToggleTrueAutoLoot)</key>
+        <key context="[Swimming]">IK_Z=(Action=AutoLootRadius)</key>
+        <key context="[Swimming]">IK_Pad_A_CROSS=(Action=AutoLootRadius,State=Duration,IdleTime=1.5)</key>
+        <key context="[Swimming]">IK_P=(Action=ToggleTrueAutoLoot)</key>
+    </mod>
+    <mod name="Better Than Icons" enabled="True" date="2023-02-06 16:07:25" priority="-">
+        <data>modBetterThanIconsFull_ENG</data>
+    </mod>
+    <mod name="BIA - Well Dressed Skelligers Patch" enabled="True" date="2023-02-14 17:59:41" priority="3">
+        <data>mod0Bia_WDS_CompatibilityPatch</data>
+    </mod>
+    <mod name="Bootstrap - Registry" enabled="True" date="2022-12-27 01:59:16" priority="-">
+        <data>modBootstrap-registry</data>
+    </mod>
+    <mod name="Bootstrap" enabled="True" date="2022-12-27 01:59:19" priority="-">
+        <data>modBootstrap</data>
+        <dlc>dlcBootstrap</dlc>
+    </mod>
+    <mod name="Humans of the Continent - Children" enabled="True" date="2023-01-01 02:49:46" priority="-">
+        <data>modHC4K03ChildrenVanilla</data>
+    </mod>
+    <mod name="DLC - Events (BIA version)" enabled="True" date="2023-02-08 21:09:21" priority="-">
+        <dlc>dlcEvents</dlc>
+    </mod>
+    <mod name="Dynamic Main Menu" enabled="True" date="2022-12-27 04:26:51" priority="-">
+        <data>mod_DMM</data>
+        <menu>DMM.xml</menu>
+    </mod>
+    <mod name="Gear Improvements Last Longer - Half Day" enabled="True" date="2022-12-27 04:30:18" priority="-">
+        <data>modGILL_HD</data>
+    </mod>
+    <mod name="HD Monsters Reworked" enabled="True" date="2023-02-14 23:14:53" priority="-">
+        <data>modHDMonstersReworked</data>
+        <data>modMonsterpack</data>
+    </mod>
+    <mod name="HDMR - Trophies" enabled="True" date="2023-02-14 23:15:10" priority="-">
+        <data>modHDMRTrophies</data>
+    </mod>
+    <mod name="Hood Removal - All" enabled="True" date="2023-01-01 21:31:29" priority="-">
+        <data>modHoodRemovalAll</data>
+    </mod>
+    <mod name="Humans of the Continent - Males" enabled="True" date="2023-01-01 02:49:07" priority="-">
+        <data>modHC4K01MalesVanilla</data>
+    </mod>
+    <mod name="Intuitive Fast Travel" enabled="True" date="2022-12-27 04:26:25" priority="-">
+        <data>mod_IFT</data>
+    </mod>
+    <mod name="Jump In Shallow Water" enabled="True" date="2022-12-27 04:26:36" priority="-">
+        <data>modJumpInShallowWater</data>
+    </mod>
+    <mod name="Lamp on Boat - City Light" enabled="True" date="2022-12-27 04:20:14" priority="-">
+        <data>modLamponboatCityLight</data>
+    </mod>
+    <mod name="Master Mirror Challenge Time Extender - 30 min" enabled="True" date="2022-12-27 04:20:18" priority="2">
+        <data>modMasterMirrorChallengeExtender_30min</data>
+    </mod>
+    <mod name="Night To Remember Quest" enabled="True" date="2023-01-04 22:09:09" priority="-">
+        <data>modNightToRemember</data>
+        <dlc>dlcNightToRemember</dlc>
+    </mod>
+    <mod name="No Screen FX" enabled="True" date="2022-12-27 04:26:41" priority="-">
+        <data>modNoScreenFX</data>
+    </mod>
+    <mod name="Poster View - Smooth" enabled="True" date="2022-12-27 04:34:56" priority="-">
+        <data>modPosterView</data>
+    </mod>
+    <mod name="Progress on the Path" enabled="True" date="2023-02-08 20:49:04" priority="2">
+        <data>modProgressOnThePath</data>
+        <data>mod_sharedutils_glossary</data>
+        <data>mod_sharedutils_helpers</data>
+        <data>mod_sharedutils_mappins</data>
+        <data>mod_sharedutils_storage</data>
+        <data>mod_sharedutils_tiny_bootstrapper</data>
+        <dlc>dlcProgressOnThePath</dlc>
+        <menu>modProgressOnThePath.xml</menu>
+        <readmeb64>Ly8tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLQovLy0tLS0tLS0tLS0tLS0tLS0tLS0tIEluc3RhbGxhdGlvbiAtLS0tLS0tLS0tLS0tLS0tLS0tLS0tCi8vLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0KCkNvbXBsZXRlbHkgcmVtb3ZlIGFueSBvbGQgdmVyc2lvbi4KClNraXAgdGhpcyBzdGVwIGlmIHlvdSBoYXZlIGluc3RhbGxlZCB0aGUgbW9kIHdpdGggdGhlIGluc3RhbGwgc2NyaXB0LgoKQ29weSB0aGUgJ21vZHMnLCAnZGxjJyBhbmQgJ2JpbicgZm9sZGVyIGludG8geW91ciB3aXRjaGVyIDMgZGlyZWN0b3J5LgoKSWYgeW91IGdldCBhIHByb21wdCB0byBvdmVyd3JpdGUgZmlsZXMgZ28gYWhlYWQgYW5kIGRvIHNvLgoKLy8tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLQovLy0tLS0tLS0tLS0tLS0tLS0gQWRkaW5nIFVzZXIgU2V0dGluZ3MgLS0tLS0tLS0tLS0tLS0tLS0tCi8vLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0KCi0gQ29weSBhbmQgcGFzdGUgdGhlIGZvbGxvd2luZzoKCltQcm9ncmVzc09uVGhlUGF0aF9QcmV2aWV3U2V0dGluZ3NdClByb2dyZXNzT25UaGVQYXRoX1ByZXZpZXc9MApQcm9ncmVzc09uVGhlUGF0aF9QcmV2aWV3X0hpZGU9ZmFsc2UKUHJvZ3Jlc3NPblRoZVBhdGhfUHJldmlld19Db21wPXRydWUKUHJvZ3Jlc3NPblRoZVBhdGhfUHJldmlld19JZ25vPWZhbHNlClByb2dyZXNzT25UaGVQYXRoX1ByZXZpZXdfSWRlbj1mYWxzZQpQcm9ncmVzc09uVGhlUGF0aF9QcmV2aWV3X1FBcmVhPTAKUHJvZ3Jlc3NPblRoZVBhdGhfUHJldmlld19RVHlwZT0wClByb2dyZXNzT25UaGVQYXRoX1ByZXZpZXdfSVR5cGU9MApQcm9ncmVzc09uVGhlUGF0aF9QcmV2aWV3X0dBcmVhPTAKUHJvZ3Jlc3NPblRoZVBhdGhfUHJldmlld19HVHlwZT0wClByb2dyZXNzT25UaGVQYXRoX1ByZXZpZXdfV0FyZWE9MApQcm9ncmVzc09uVGhlUGF0aF9QcmV2aWV3X1dUeXBlPTAKCltQcm9ncmVzc09uVGhlUGF0aF9HZW5lcmFsU2V0dGluZ3NdClByb2dyZXNzT25UaGVQYXRoX01lZGl0YXRpb25VcGRhdGU9dHJ1ZQpQcm9ncmVzc09uVGhlUGF0aF9FbmFibGVIb3RLZXk9dHJ1ZQpQcm9ncmVzc09uVGhlUGF0aF9FdmVudE1hcFBpbnNfU2hvd01hcFBpbnM9dHJ1ZQpQcm9ncmVzc09uVGhlUGF0aF9FdmVudE1hcFBpbnNfTWFwUGluRGVzY3JpcHRpb249dHJ1ZQpQcm9ncmVzc09uVGhlUGF0aF9FdmVudE1hcFBpbnNfTWFwUGluUmFkaXVzPTMwClByb2dyZXNzT25UaGVQYXRoX0V2ZW50TWFwUGluc19NYXBQaW5UeXBlPTEKUHJvZ3Jlc3NPblRoZVBhdGhfRXZlbnRNYXBQaW5zX1Nob3dNaW5pTWFwPWZhbHNlClByb2dyZXNzT25UaGVQYXRoX0V2ZW50TWFwUGluc19BcnJvd1BvaW50ZXJzPWZhbHNlClByb2dyZXNzT25UaGVQYXRoX0V2ZW50TWFwUGluc19IaWdobGlnaHRlZFBvaW50ZXJzPWZhbHNlCgpbUHJvZ3Jlc3NPblRoZVBhdGhfTm90aWZpY2F0aW9uU2V0dGluZ3NdClByb2dyZXNzT25UaGVQYXRoX0dsb2JhbE5vdGlmaWNhdGlvbl9UaW1lPTcKUHJvZ3Jlc3NPblRoZVBhdGhfR2xvYmFsTm90aWZpY2F0aW9uX1NpemU9MTgKUHJvZ3Jlc3NPblRoZVBhdGhfR2xvYmFsTm90aWZpY2F0aW9uX0ZvbnQ9MQpQcm9ncmVzc09uVGhlUGF0aF9GdWxsTm90aWZpY2F0aW9uX1F1ZXN0PXRydWUKUHJvZ3Jlc3NPblRoZVBhdGhfRnVsbE5vdGlmaWNhdGlvbl9Xb3JsZD10cnVlClByb2dyZXNzT25UaGVQYXRoX0Z1bGxOb3RpZmljYXRpb25fSXRlbXM9dHJ1ZQpQcm9ncmVzc09uVGhlUGF0aF9GdWxsTm90aWZpY2F0aW9uX0d3ZW50PXRydWUKUHJvZ3Jlc3NPblRoZVBhdGhfRnVsbE5vdGlmaWNhdGlvbl9FdmVudD10cnVlClByb2dyZXNzT25UaGVQYXRoX0Z1bGxOb3RpZmljYXRpb25fTnVsbHM9dHJ1ZQpQcm9ncmVzc09uVGhlUGF0aF9CYWNrTm90aWZpY2F0aW9uX1F1ZXN0PXRydWUKUHJvZ3Jlc3NPblRoZVBhdGhfQmFja05vdGlmaWNhdGlvbl9Xb3JsZD10cnVlClByb2dyZXNzT25UaGVQYXRoX0JhY2tOb3RpZmljYXRpb25fSXRlbXM9dHJ1ZQpQcm9ncmVzc09uVGhlUGF0aF9CYWNrTm90aWZpY2F0aW9uX0d3ZW50PXRydWUKUHJvZ3Jlc3NPblRoZVBhdGhfQmFja05vdGlmaWNhdGlvbl9FdmVudD10cnVlClByb2dyZXNzT25UaGVQYXRoX01pc2NOb3RpZmljYXRpb25fRXZlbnQ9dHJ1ZQpQcm9ncmVzc09uVGhlUGF0aF9NaXNjTm90aWZpY2F0aW9uX0VudGVyPXRydWUKCi0gSW50byBUaGVzZSAyIEZpbGVzOgoKKlxEb2N1bWVudHNcVGhlIFdpdGNoZXIgM1x1c2VyLnNldHRpbmdzCipcRG9jdW1lbnRzXFRoZSBXaXRjaGVyIDNcZHgxMnVzZXIuc2V0dGluZ3MgKE5HIE9ubHkpCgovLy0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tCi8vLS0tLS0tLS0gQWRkaW5nIEhvdGtleSBTdXBwb3J0IChPcHRpb25hbCkgLS0tLS0tLS0tLS0tLS0KLy8tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLQoKLSBDb3B5IGFuZCBwYXN0ZSB0aGUgZm9sbG93aW5nOgoKW0V4cGxvcmF0aW9uXQpJS19OdW1QYWQ1PShBY3Rpb249VXBkYXRlUHJvZ3Jlc3NPblRoZVBhdGgpCklLX051bVBhZDY9KEFjdGlvbj1EaXNwbGF5UHJvZ3Jlc3NQcmV2aWV3KQpbSG9yc2VdCklLX051bVBhZDU9KEFjdGlvbj1VcGRhdGVQcm9ncmVzc09uVGhlUGF0aCkKSUtfTnVtUGFkNj0oQWN0aW9uPURpc3BsYXlQcm9ncmVzc1ByZXZpZXcpCltTd2ltbWluZ10KSUtfTnVtUGFkNT0oQWN0aW9uPVVwZGF0ZVByb2dyZXNzT25UaGVQYXRoKQpJS19OdW1QYWQ2PShBY3Rpb249RGlzcGxheVByb2dyZXNzUHJldmlldykKW0JvYXRdCklLX051bVBhZDU9KEFjdGlvbj1VcGRhdGVQcm9ncmVzc09uVGhlUGF0aCkKSUtfTnVtUGFkNj0oQWN0aW9uPURpc3BsYXlQcm9ncmVzc1ByZXZpZXcpCltCb2F0UGFzc2VuZ2VyXQpJS19OdW1QYWQ1PShBY3Rpb249VXBkYXRlUHJvZ3Jlc3NPblRoZVBhdGgpCklLX051bVBhZDY9KEFjdGlvbj1EaXNwbGF5UHJvZ3Jlc3NQcmV2aWV3KQpbQ29tYmF0XQpJS19OdW1QYWQ1PShBY3Rpb249VXBkYXRlUHJvZ3Jlc3NPblRoZVBhdGgpCklLX051bVBhZDY9KEFjdGlvbj1EaXNwbGF5UHJvZ3Jlc3NQcmV2aWV3KQpbRGl2aW5nXQpJS19OdW1QYWQ1PShBY3Rpb249VXBkYXRlUHJvZ3Jlc3NPblRoZVBhdGgpCklLX051bVBhZDY9KEFjdGlvbj1EaXNwbGF5UHJvZ3Jlc3NQcmV2aWV3KQoKLSBJbnRvIFRoaXMgRmlsZToKCipcRG9jdW1lbnRzXFRoZSBXaXRjaGVyIDNcaW5wdXQuc2V0dGluZ3MKCi0gQ29weSBhbmQgcGFzdGUgdGhlIGZvbGxvd2luZzoKCjwhLS0gUHJvZ3Jlc3Mgb24gdGhlIFBhdGggQmVnaW4gLS0+IAo8VmFyIGJ1aWxkZXI9IklucHV0IiBpZD0iVXBkYXRlUHJvZ3Jlc3NPblRoZVBhdGgiIAkJZGlzcGxheU5hbWU9IlVwZGF0ZVByb2dyZXNzT25UaGVQYXRoIiAJCWRpc3BsYXlUeXBlPSJJTlBVVFBDIiBhY3Rpb25zPSJVcGRhdGVQcm9ncmVzc09uVGhlUGF0aCIvPgo8VmFyIGJ1aWxkZXI9IklucHV0IiBpZD0iRGlzcGxheVByb2dyZXNzUHJldmlldyIgCQlkaXNwbGF5TmFtZT0iRGlzcGxheVByb2dyZXNzUHJldmlldyIgCQlkaXNwbGF5VHlwZT0iSU5QVVRQQyIgYWN0aW9ucz0iRGlzcGxheVByb2dyZXNzUHJldmlldyIvPgo8IS0tIFByb2dyZXNzIG9uIHRoZSBQYXRoIEVuZCAtLT4KCi0gSW50byBUaGlzIEZpbGU6CgoqXFRoZSBXaXRjaGVyIDNcYmluXGNvbmZpZ1xyNGdhbWVcdXNlcl9jb25maWdfbWF0cml4XHBjXGlucHV0LnhtbAoKLy8tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLQovLy0tLS0tLS0tLS0tLS0tLS0tIE1lbnUgQnVpbGRpbmcgKE5HIE9OTFkpIC0tLS0tLS0tLS0tLS0tCi8vLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0KCi1Db3B5IGFuZCBwYXN0ZSB0aGUgZm9sbG93aW5nOgoKbW9kUHJvZ3Jlc3NPblRoZVBhdGgueG1sOwoKLSBJbnRvIFRoZXNlIDIgRmlsZXM6CgoqVGhlIFdpdGNoZXIgM1xiaW5cY29uZmlnXHI0Z2FtZVx1c2VyX2NvbmZpZ19tYXRyaXhccGNcZHgxMWZpbGVsaXN0LnR4dAoqVGhlIFdpdGNoZXIgM1xiaW5cY29uZmlnXHI0Z2FtZVx1c2VyX2NvbmZpZ19tYXRyaXhccGNcZHgxMmZpbGVsaXN0LnR4dAoKTk9URTogU29tZSB1c2VycyBoYXZlIHJlcG9ydGVkIHByb2JsZW1zIGlmIHRoaXMgbGluZSBpcyBhdCB0aGUgdmVyeSBlbmQgb2YgdGhlIGZpbGUgbGlzdCwgaWYgeW91IGhhdmUgYW55IGlzc3VlcyBkaXNwbGF5aW5nIHRoZSBtZW51IHRoZW4gbW92ZSB0aGUgbGluZSBmdXJ0aGVyIHVwIHRoZSBmaWxlIGxpc3QuCgovLy0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tCi8vLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0gRW5kIC0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0KLy8tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLQ==</readmeb64>
+        <readmeb64>IyBDdXN0b20gbWFwIHBpbnMKCkVhc2lseSBhZGQgbWFwIHBpbnMgdG8gdGhlIGdhbWUgd2l0aCBjdXN0b20gY29vcmRpbmF0ZXMsIGljb25zLCBkZXNjcmlwdGlvbiBhbmQgbGFiZWxzLiBFbnRpcmVseSB0aHJvdWdoIGNvZGUgd2l0aG91dCBhbnkgYnVuZGxpbmcKCiMjIFVzaW5nIGl0CiMjIyBBZGRpbmcgYSBwaW4KX1tleGFtcGxlIGZpbGVdKGV4YW1wbGUvYWRkX3Bpbi53cylfCgpBZGRpbmcgYSBjdXN0b20gcGluIGlzIHJlYWxseSBlYXN5LCB0aGUgdXRpbGl0eSBjb21lcyB3aXRoIGl0cyBvd24gdHlwZSBbYFNVX01hcFBpbmBdKGNvbnRlbnQvc2NyaXB0cy9sb2NhbC9zaGFyZWR1dGlscy9tYXBwaW5zLndzKSB0aGF0IHlvdSBtdXN0IGluc3RhbmNpYXRlIGFuZCBpbml0aWFsaXplIGl0cyBhdHRyaWJ1dGVzLgoKVGhlIFtleGFtcGxlIGZpbGVdKGV4YW1wbGUvbWFpbi53cykgc2hvdWxkIHNob3cgZXZlcnl0aGluZyB5b3UgbmVlZCB0byBrbm93IGFib3V0IHRoZSB1dGlsaXR5LiBJZiB0aGlzIGlzIG5vdCBlbm91Z2ggdGhlbiB0aGUgW2NvbW1lbnRlZCBjb2RlXShjb250ZW50L3NjcmlwdHMvbG9jYWwvc2hhcmVkdXRpbHMvbWFwcGlucy53cwopIHNob3VsZCBndWlkZSB5b3UgZXZlbiBtb3JlLgoKQmFzaWNhbGx5LCB5b3UgY3JlYXRlIHlvdXIgbmV3IHBpbiBmcm9tIHRoZSBjbGFzcyBgU1VfTWFwUGluYCBhbmQgc2V0IGl0cyBpbmZvcm1hdGlvbiwgdGhlbiB5b3UgY2FsbCBgdGhlUGxheWVyLmFkZEN1c3RvbVBpbihwaW4pO2AgYW5kIHlvdSdyZSBkb25lLgoKVGhlcmUgYXJlIHR3byBmdW5jdGlvbnMgdG8gcmVtb3ZlIHBpbnMgZnJvbSB0aGUgbGlzdCBvZiBjdXN0b20gcGluczoKIC0gW1NVX3JlbW92ZUN1c3RvbVBpbkJ5VGFnXShjb250ZW50L3NjcmlwdHMvbG9jYWwvc2hhcmVkdXRpbHMvbWFwcGlucy53cykgdG8gcmVtb3ZlIGFsbCBwaW5zIHdpdGggdGhlIHNhbWUgdGFnIGFzIHRoZSBzdXBwbGllZCB0YWcuCiAtIFtTVV9yZW1vdmVDdXN0b21QaW5CeVBvc2l0aW9uXShjb250ZW50L3NjcmlwdHMvbG9jYWwvc2hhcmVkdXRpbHMvbWFwcGlucy53cykgdG8gcmVtb3ZlIGFsbCBwaW5zIHdpdGggdGhlIHNhbWUgWDpZIGNvb3JkaW5hdGVzIGFzIHRoZSBzdXBwbGllZCBjb29yZGluYXRlcy4=</readmeb64>
+        <readmeb64>IyBSZWFzb25zIHRvIHVzZSBhIHNoYXJlZHV0aWxzIHN0b3JhZ2Ugc3lzdGVtClRoZSBgU1VfU3RvcmFnZWAgbW9kdWxlIGFsbG93cyBhbnlvbmUgdG8gc3RvcmUgZGF0YSBpbiB0aGUgcGxheWVyJ3Mgc2F2ZSBpbiBhbiBlZmZpY2llbnQgYW5kIG1lcmdlIGZyaWVuZGx5IHdheS4KVGhlIGFkdmFudGFnZSBvZiB1c2luZyBhIHNoYXJlZHV0aWxzIG1vZHVsZSBmb3Igc3RvcmFnZSBpcyB0aGF0IGV2ZW4gaWYgMTAgbW9kcyB3ZXJlIHRvIHVzZSB0aGUgc3RvcmFnZSBpdCB3b3VsZApzdGlsbCByZXN1bHQgaW4gYSBzaW5nbGUgbGluZSB0byBtZXJnZSBjb21wYXJlZCB0byAxMCB1bmlxdWUgbWVyZ2VzLiBBbGwgb2YgdGhlIG90aGVyIHNoYXJlZHV0aWxzIG1vZHVsZSB3ZXJlIHVwZGF0ZWQKdG8gdXNlIHRoZSBzdG9yYWdlLCBncmVhdGx5IHJlZHVjaW5nIHRoZSBhbW91bnQgb2YgbWVyZ2VzIGNyZWF0ZWQgYnkgdGhlIG1vZHVsZXMgKGV2ZW4gaWYgdGhleSB3ZXJlIGFscmVhZHkgcHJldHR5IHNtYWxsKS4KCiMgVXNpbmcgaXQKU3RhcnQgYnkgY3JlYXRpbmcgdGhlIHR5cGUgdGhhdCB3aWxsIGhvbGQgeW91ciBkYXRhOgpgYGBqcwpjbGFzcyBNeURhdGEgZXh0ZW5kcyBTVV9TdG9yYWdlSXRlbSB7CiAgZGVmYXVsdCB0YWcgPSAiTXlEYXRhIjsKCiAgdmFyIGFueXRoaW5nOiBzdHJpbmc7Cn0KYGBgCm1ha2UgeW91cnNlbGYgYSBmdW5jdGlvbiB0byByZXRyaWV2ZSBhbmQgY3JlYXRlIHRoZSBkYXRhIGlmIGl0J3MgdGhlIGZpcnN0IHJldHJpZXZhbDoKYGBganMKZnVuY3Rpb24gZ2V0TXlEYXRhKCk6IE15RGF0YSB7CiAgdmFyIGRhdGE6IE15RGF0YTsKCiAgZGF0YSA9IChNeURhdGEpU1VfZ2V0U3RvcmFnZSgpLmdldEl0ZW0oIk15RGF0YSIpOwogIC8vIGNyZWF0ZSB0aGUgZGF0YSBpZiBpdCdzIHRoZSBmaXJzdCB0aW1lOgogIGlmICghZGF0YSkgewogICAgZGF0YSA9IG5ldyBNeURhdGEgaW4gdGhlUGxheWVyOwogICAgU1VfZ2V0U3RvcmFnZSgpLnNldEl0ZW0oZGF0YSk7CiAgfQoKICByZXR1cm4gZGF0YTsKfQpgYGAKZmluYWxseSB1c2UgaXQgbGlrZSBhbnkgb3RoZXIgY2xhc3M6CmBgYGpzCmZ1bmN0aW9uIGV4YW1wbGUoKSB7CiAgdmFyIG15X2RhdGE6IE15RGF0YSA9IGdldE15RGF0YSgpOwoKICBteV9kYXRhLmFueXRoaW5nID0gIlRoaXMgc3RyaW5nIHdpbGwgYmUgc3RvcmVkIGZvciBsYXRlciI7Cn0KYGBgCg==</readmeb64>
+        <readmeb64>IyBUaW55IGJvb3RzdHJhcHBlcgoKIyMgV2h5IHRpbnkgYm9vdHN0cmFwcGVyClNvbWUgbW9kcyBuZWVkIHRvIHJ1biBjb2RlIGV2ZXJ5IHRpbWUgdGhlIHBsYXllciBlbnRlcnMgdGhlIGdhbWUuIFlvdSBtYXkgc29sdmUKdGhpcyBwcm9ibGVtIGJ5IGFkZGluZyBhIG5ldyBsaW5lIGluIHRoZSBQbGF5ZXIgY2xhc3MsIGJ1dCBpZiBldmVyeSBtb2QgZG9lcyBpdAp5b3VyIHVzZXJzIHdvdWxkIGVuZCB1cCB3aXRoIG1hbnkgdW5uZWNlc3NhcnkgbWVyZ2VzLiBUaGUgc29sdXRpb24gaXMgdG8gdXNlIGEKYm9vdHN0cmFwcGVyLCB0aGlzIHJlc3VsdHMgaW4gYSBzaW5nbGUgbGluZSB0byBtZXJnZSBhbmQgYXMgbWFueSBtb2RzIGFzIHlvdSB3YW50LgoKIyMjIEFsdGVybmF0aXZlClRoZXJlIGlzIGEga25vd24gYWx0ZXJuYXRpdmUgdG8gdGlueSBib290c3RyYXBwZXIsIGl0IGlzIGBCb290c3RyYXBgLiBIb3dldmVyIHRoZQptb2QgcmVxdWlyZXMgbW9kIGF1dGhvcnMgdG8gY3JlYXRlIGEgYC53MmVudGAgZmlsZSBhbmQgYnVuZGxlIGl0LiBCdXQgdGhlIHRvb2xzCndlIGhhdmUgdG8gZWRpdCB3MmVudCBmaWxlIGFyZSB1bnN0YWJsZSBhbmQgbWF5IHJlbmRlciB0aGUgd2hvbGUgcHJvY2VzcyBmcnVzdHJhdGluZy4KClRoZSB0aW55IGJvb3RzdHJhcCBvbiB0aGUgb3RoZXIgaGFuZCBvbmx5IHJlcXVpcmVzIHlvdSB0byB3cml0ZSBhIGAueG1sYCBmaWxlIHdoaWNoCmNhbiBiZSBlZGl0ZWQgd2l0aCBiYXNpYyB0ZXh0IGVkaXRvcnMuCgpBdCB0aGUgbW9tZW50IHRpbnkgYm9vdHN0cmFwIGRvZXMgbm90IGhhdmUgYWxsIHRoZSBmZWF0dXJlcyBib290c3RyYXAgb2ZmZXJzLiBGZWF0dXJlcwpsaWtlIHBlcnNpc3RlbnQgc3RvcmFnZSBmb3IgZXhhbXBsZS4gWW91IHdpbGwgbmVlZCBhbm90aGVyIG1vZCBpZiB5b3UgbmVlZCB0aGlzLCBhIHNoYXJlZHV0aWxzCm1vZHVsZSBpcyBpbiB0aGUgd29yayBhbmQgc2hvdWxkIGNvbWUgc29vbi4KCiMjIFVzaW5nIGl0CklmIHlvdSB3aXNoIHRvIGdldCBjb2RlIHRvIHJ1biBhdCBsYXVuY2gsIHJlZmVyIHRvIHRoZSBbZXhhbXBsZS53cyBmaWxlXSguL2NvbnRlbnQvc2NyaXB0cy9sb2NhbC9zaGFyZWR1dGlscy90aW55X2Jvb3RzdHJhcHBlci9leGFtcGxlLndzKQp0byBsZWFybiBob3cgdG8gYWRkIGEgc3RhdGUgdG8gdGhlIFRpbnlCb290c3RyYXAgc3RhdGVtYWNoaW5lLgoKT25jZSB5b3UgaGF2ZSBhZGRlZCB5b3VyIHN0YXRlLCBjcmVhdGUgYSBtb2QvZGxjIGJ1bmRsZSB3aXRoIGFuIHhtbCBmaWxlLCBjb3B5IHRoaXMgY29udGVudCBhbmQKZWRpdCB0aGUgYG5hbWU9Ik15Qm9vc3RyYXBwZWRNb2QiYCBhdHRyaWJ1dGUgc28gdGhhdCBpdCBjb3JyZXNwb25kcyB3aXRoIHlvdXIgbmV3IHN0YXRlOgpgYGB4bWwKPD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTE2Ij8+CjxyZWR4bWw+CiAgPGRlZmluaXRpb25zPgogICAgPGl0ZW1zPgoKICAgICAgPCEtLQogICAgICAgIHRoZSBmYWtlIGl0ZW0gd2hvc2UgbmFtZSBpcyB0aGUgbmFtZSBvZiB0aGUgc3RhdGUgeW91IGNyZWF0ZWQuCiAgICAgICAtLT4KICAgICAgPGl0ZW0gbmFtZT0iTXlCb29zdHJhcHBlZE1vZCI+CiAgICAgICAgPCEtLSBtYWtlIHN1cmUgdG8gYWRkIHRoaXMgdGFnIG9yIGVsc2UgdGhlIGl0ZW0gd29uJ3QgYmUgZGV0ZWN0ZWQgLS0+CiAgICAgICAgPHRhZ3M+U1VfVGlueUJvb3RzdHJhcHBlck1hbmFnZXI8L3RhZ3M+CiAgICAgIDwvaXRlbT4KICAgICAgCiAgICA8L2l0ZW1zPgogIDwvZGVmaW5pdGlvbnM+CjwvcmVkeG1sPgpgYGAKCkJ1bmRsZSB0aGUgbW9kL2RsYyBhbmQgbWFrZSBhIHNjcmlwdCBtb2Qgd2l0aCB5b3VyIHN0YXRlLCBsYXVuY2ggdGhlIGdhbWUsIGxvYWQgYSBzYXZlCmFuZCBjb25maXJtIHRoZSBsb2cgZW50cnkgaW4gdGhlIGxvZyBmaWxlLgoKIyMjIFBlcnNpc3RlbmNlCklmIHlvdSB3aXNoIHRvIHN0b3JlIGRhdGEgaW4gYmV0d2VlbiBzZXNzaW9ucyBvciBsb2FkaW5nIHNjcmVlbnMsIHRoZSBib290c3RyYXBwZWQgY2xhc3MgdGhhdCB5b3UgY3JlYXRlIGFuZCB3aGljaCBgZXh0ZW5kcyBTVV9CYXNlQm9vdHN0cmFwcGVkTW9kYCBzdXBwb3J0cyBgc2F2ZWQgdmFyYGlhYmxlcy4gTWVhbmluZyB0aGF0IHlvdSBjYW4gbWFyayBhbnkgb2YgaXRzIHByb3BlcnRpZXMgYXMgYHNhdmVkYCBhbmQgaXQgd2lsbCBwZXJzaXN0IHRocm91Z2ggcmVsb2Fkcy4gVGhpcyB3b3JrcyBmb3IgcHJpbWl0aXZlIHR5cGVzIGFzIHdlbGwgYXMgY29tcGxleCBvbmVzIGxpa2Ugc3RydWN0cyBhbmQgY2xhc3Nlcy4gSWYgYSBjbGFzcyBpcyBtYXJrZWQgYXMgc2F2ZWQgdGhlbiBldmVyeXRoaW5nIGluIGl0IHdpbGwgYmUgc2F2ZWQsIG5vIG5lZWQgdG8gbWFyayBpdHMgcHJvcGVydGllcyBhcyBzYXZlZC4K</readmeb64>
+    </mod>
+    <mod name="Rare Items Glow" enabled="True" date="2022-12-27 04:26:44" priority="-">
+        <data>modrareitemsglow</data>
+        <menu>rareitemsglow.xml</menu>
+    </mod>
+    <mod name="Real W2 Vivid Eyes" enabled="True" date="2022-12-27 04:26:48" priority="-">
+        <data>modRealW2VividEyes</data>
+    </mod>
+    <mod name="SCAAR - AIO Vengeance" enabled="True" date="2022-12-27 04:20:56" priority="-">
+        <data>modSCAARAIOVengeance</data>
+        <dlc>dlcSCAARAIOVengeance</dlc>
+        <menu>modSCAAR.xml</menu>
+    </mod>
+    <mod name="Shared Imports" enabled="True" date="2022-12-27 02:00:34" priority="-">
+        <data>modSharedImports</data>
+    </mod>
+    <mod name="Skippy Skippy" enabled="True" date="2022-12-27 04:25:47" priority="-">
+        <data>modSkippySkippy</data>
+    </mod>
+    <mod name="Slimmer Griffin Armor - On The Path T5" enabled="True" date="2023-02-14 17:35:35" priority="2">
+        <data>modSlimT5forOTP</data>
+    </mod>
+    <mod name="Tweaks" enabled="True" date="2023-02-06 16:09:33" priority="-">
+        <data>modTweaks</data>
+        <menu>gameplay.xml</menu>
+        <menu>graphics.xml</menu>
+        <menu>graphicsdx11.xml</menu>
+        <menu>hud.xml</menu>
+    </mod>
+    <mod name="Vanilla Enhanced Lighting NGBBC" enabled="True" date="2023-01-08 20:19:37" priority="-">
+        <data>modNG3</data>
+        <dlc>dlcNG3</dlc>
+    </mod>
+    <mod name="Vladimir UI Gwent Board" enabled="False" date="2022-12-27 04:25:54" priority="2">
+        <data>modVladGwentBoard_Vanilla</data>
+    </mod>
+    <mod name="Vladimir UI" enabled="False" date="2022-12-27 02:14:10" priority="3">
+        <data>modVladimirUI</data>
+        <data>modVladimirUI_maps</data>
+        <dlc>dlcVladimirUI</dlc>
+        <menu>Vlad.xml</menu>
+    </mod>
+    <mod name="Custom Patch" enabled="False" date="2023-02-14 17:06:45" priority="-">
+        <data>modVladUICustomPatch</data>
+    </mod>
+    <mod name="White Wolf From Rivia" enabled="True" date="2022-12-27 04:37:22" priority="-">
+        <data>modWhiteWolfFromRivia_v5</data>
+    </mod>
+    <mod name="BASE" enabled="True" date="2023-01-20 21:10:32" priority="3">
+        <data>mod0BASENGEAll</data>
+    </mod>
+    <mod name="Smooth GUI" enabled="True" date="2023-02-15 01:57:17" priority="-">
+        <data>modSmoothGUI</data>
+    </mod>
+    <mod name="Smooth GUI - Sort Everything" enabled="True" date="2023-02-15 01:57:25" priority="4">
+        <data>mod00SortEverything_SGUI</data>
+    </mod>
+    <mod name="Walk by Default" enabled="True" date="2023-02-15 03:39:57" priority="-">
+        <data>modWalkByDefault</data>
+    </mod>
+    <mod name="Better Torches Next-Gen" enabled="True" date="2023-02-18 23:34:41" priority="-">
+        <data>modBetterTorchesNextGen</data>
+    </mod>
+    <mod name="Turn On The Lights" enabled="True" date="2023-02-18 23:35:24" priority="-">
+        <data>modTurnOnTheLights</data>
+        <menu>modTurnOnTheLights.xml</menu>
+    </mod>
+    <mod name="Extended UI Config" enabled="True" date="2023-02-19 16:41:33" priority="-">
+        <data>modExtendedUIConfig</data>
+        <menu>modExtendedUI.xml</menu>
+    </mod>
+    <mod name="Vanilla Test" enabled="False" date="2023-02-22 00:44:58" priority="-">
+        <data>modVanillaTest</data>
+    </mod>
+    <mod name="Gwent Almanac Redone" enabled="True" date="2023-02-25 00:30:39" priority="-">
+        <data>modGwentAlmanacRedone</data>
+    </mod>
+    <mod name="Names from the Path" enabled="True" date="2023-02-26 16:13:21" priority="-">
+        <data>modZ_NamesFromThePath</data>
+    </mod>
+    <mod name="BIA - Brothers in Arms" enabled="True" date="2023-02-26 16:13:36" priority="4">
+        <data>modBrothersInArms</data>
+        <dlc>dlcBrothersInArms</dlc>
+    </mod>
+    <mod name="BIA - LOD Bundle" enabled="True" date="2023-02-26 16:14:07" priority="-">
+        <data>modZBrothersInArms_LOD</data>
+    </mod>
+    <mod name="GFP Camera" enabled="True" date="2023-02-27 02:39:34" priority="-">
+        <data>modGFP_CameraCE</data>
+        <data>modGFP_VR_Fix</data>
+        <dlc>dlcGFP_CameraCE</dlc>
+        <menu>GFP.xml</menu>
+        <xmlkey>&lt;Var builder="Input" id="GFP_ChangeView" displayName="GFP_ChangeView" displayType="INPUTPC" actions="GFP_ChangeView" /&gt;</xmlkey>
+        <xmlkey>&lt;Var builder="Input" id="GFP_Zoom" displayName="GFP_Zoom" displayType="INPUTPC" actions="GFP_Zoom" /&gt;</xmlkey>
+        <xmlkey>&lt;Var builder="Input" id="GFP_InspectWeapon" displayName="GFP_InspectWeapon" displayType="INPUTPC" actions="GFP_InspectWeapon" /&gt;</xmlkey>
+        <xmlkey>&lt;Var builder="Input" id="GFP_SwordSheathe" displayName="GFP_SwordSheathe" displayType="INPUTPC" actions="SwordSheathe" /&gt;</xmlkey>
+        <xmlkey>&lt;Var builder="Input" id="GFP_RotateWithVehicle" displayName="GFP_RotateWithVehicle" displayType="INPUTPC" actions="GFP_RotateWithVehicle" /&gt;</xmlkey>
+        <key context="[BASE_DRAW_SWORDS]">IK_None=(Action=SwordSheathe)</key>
+        <key context="[BASE_DRAW_SWORDS_KEYBOARD]">IK_None=(Action=SwordSheathe)</key>
+        <key context="[Boat]">IK_None=(Action=GFP_Zoom)</key>
+        <key context="[Boat]">IK_None=(Action=GFP_ChangeView)</key>
+        <key context="[Boat]">IK_None=(Action=GFP_InspectWeapon)</key>
+        <key context="[Boat]">IK_None=(Action=GFP_RotateWithVehicle)</key>
+        <key context="[BoatPassenger]">IK_None=(Action=GFP_Zoom)</key>
+        <key context="[BoatPassenger]">IK_None=(Action=GFP_ChangeView)</key>
+        <key context="[BoatPassenger]">IK_None=(Action=GFP_InspectWeapon)</key>
+        <key context="[BoatPassenger]">IK_None=(Action=GFP_RotateWithVehicle)</key>
+        <key context="[Combat]">IK_None=(Action=GFP_Zoom)</key>
+        <key context="[Combat]">IK_None=(Action=GFP_ChangeView)</key>
+        <key context="[Combat]">IK_None=(Action=GFP_InspectWeapon)</key>
+        <key context="[Combat]">IK_None=(Action=GFP_RotateWithVehicle)</key>
+        <key context="[Combat]">IK_None=(Action=SwordSheathe)</key>
+        <key context="[Combat_Replacer_Ciri]">IK_None=(Action=GFP_Zoom)</key>
+        <key context="[Combat_Replacer_Ciri]">IK_None=(Action=GFP_ChangeView)</key>
+        <key context="[Combat_Replacer_Ciri]">IK_None=(Action=GFP_InspectWeapon)</key>
+        <key context="[Combat_Replacer_Ciri]">IK_None=(Action=GFP_RotateWithVehicle)</key>
+        <key context="[Combat_Replacer_Ciri]">IK_None=(Action=SwordSheathe)</key>
+        <key context="[Diving]">IK_None=(Action=GFP_Zoom)</key>
+        <key context="[Diving]">IK_None=(Action=GFP_ChangeView)</key>
+        <key context="[Diving]">IK_None=(Action=GFP_InspectWeapon)</key>
+        <key context="[Diving]">IK_None=(Action=GFP_RotateWithVehicle)</key>
+        <key context="[Exploration]">IK_None=(Action=GFP_Zoom)</key>
+        <key context="[Exploration]">IK_None=(Action=GFP_ChangeView)</key>
+        <key context="[Exploration]">IK_None=(Action=GFP_InspectWeapon)</key>
+        <key context="[Exploration]">IK_None=(Action=GFP_RotateWithVehicle)</key>
+        <key context="[Exploration]">IK_None=(Action=SwordSheathe)</key>
+        <key context="[Exploration_Replacer_Ciri]">IK_None=(Action=GFP_Zoom)</key>
+        <key context="[Exploration_Replacer_Ciri]">IK_None=(Action=GFP_ChangeView)</key>
+        <key context="[Exploration_Replacer_Ciri]">IK_None=(Action=GFP_InspectWeapon)</key>
+        <key context="[Exploration_Replacer_Ciri]">IK_None=(Action=GFP_RotateWithVehicle)</key>
+        <key context="[Exploration_Replacer_Ciri]">IK_None=(Action=SwordSheathe)</key>
+        <key context="[Horse]">IK_None=(Action=GFP_Zoom)</key>
+        <key context="[Horse]">IK_None=(Action=GFP_ChangeView)</key>
+        <key context="[Horse]">IK_None=(Action=GFP_InspectWeapon)</key>
+        <key context="[Horse]">IK_None=(Action=GFP_RotateWithVehicle)</key>
+        <key context="[Horse]">IK_None=(Action=SwordSheathe)</key>
+        <key context="[Horse_Replacer_Ciri]">IK_None=(Action=GFP_Zoom)</key>
+        <key context="[Horse_Replacer_Ciri]">IK_None=(Action=GFP_ChangeView)</key>
+        <key context="[Horse_Replacer_Ciri]">IK_None=(Action=GFP_InspectWeapon)</key>
+        <key context="[Horse_Replacer_Ciri]">IK_None=(Action=GFP_RotateWithVehicle)</key>
+        <key context="[Horse_Replacer_Ciri]">IK_None=(Action=SwordSheathe)</key>
+        <key context="[JumpClimb]">IK_None=(Action=GFP_Zoom)</key>
+        <key context="[JumpClimb]">IK_None=(Action=GFP_ChangeView)</key>
+        <key context="[JumpClimb]">IK_None=(Action=GFP_InspectWeapon)</key>
+        <key context="[JumpClimb]">IK_None=(Action=GFP_RotateWithVehicle)</key>
+        <key context="[JumpClimb]">IK_None=(Action=SwordSheathe)</key>
+        <key context="[Meditation]">IK_None=(Action=GFP_Zoom)</key>
+        <key context="[Meditation]">IK_None=(Action=GFP_ChangeView)</key>
+        <key context="[Meditation]">IK_None=(Action=GFP_InspectWeapon)</key>
+        <key context="[Meditation]">IK_None=(Action=GFP_RotateWithVehicle)</key>
+        <key context="[Swimming]">IK_None=(Action=GFP_Zoom)</key>
+        <key context="[Swimming]">IK_None=(Action=GFP_ChangeView)</key>
+        <key context="[Swimming]">IK_None=(Action=GFP_InspectWeapon)</key>
+        <key context="[Swimming]">IK_None=(Action=GFP_RotateWithVehicle)</key>
+        <key context="[ThrowHold]">IK_None=(Action=GFP_Zoom)</key>
+        <key context="[ThrowHold]">IK_None=(Action=GFP_ChangeView)</key>
+        <key context="[ThrowHold]">IK_None=(Action=GFP_InspectWeapon)</key>
+        <key context="[ThrowHold]">IK_None=(Action=GFP_RotateWithVehicle)</key>
+        <key context="[ThrowHold]">IK_None=(Action=SwordSheathe)</key>
+        <key context="[Scene]">IK_None=(Action=GFP_Zoom)</key>
+        <key context="[Scene]">IK_None=(Action=GFP_ChangeView)</key>
+        <key context="[Scene]">IK_None=(Action=GFP_InspectWeapon)</key>
+        <key context="[Scene]">IK_None=(Action=GFP_RotateWithVehicle)</key>
+        <key context="[SCENE_IS_STARTING_HACK]">IK_None=(Action=GFP_Zoom)</key>
+        <key context="[SCENE_IS_STARTING_HACK]">IK_None=(Action=GFP_ChangeView)</key>
+        <key context="[SCENE_IS_STARTING_HACK]">IK_None=(Action=GFP_InspectWeapon)</key>
+        <key context="[SCENE_IS_STARTING_HACK]">IK_None=(Action=GFP_RotateWithVehicle)</key>
+    </mod>
+    <mod name="GFP Combat" enabled="True" date="2023-02-27 02:39:46" priority="-">
+        <data>modGFP_CombatCE</data>
+        <menu>GFP_Combat.xml</menu>
+        <xmlkey>&lt;Var builder="Input" id="GFP_ModifyAttackDistance" displayName="GFP_ModifyAttackDistance" displayType="INPUTPC" actions="GFP_ModifyAttackDistance" /&gt;</xmlkey>
+        <key context="[Combat]">IK_None=(Action=GFP_ModifyAttackDistance)</key>
+        <key context="[Combat_Replacer_Ciri]">IK_None=(Action=GFP_ModifyAttackDistance)</key>
+        <key context="[Exploration]">IK_None=(Action=GFP_ModifyAttackDistance)</key>
+        <key context="[Exploration_Replacer_Ciri]">IK_None=(Action=GFP_ModifyAttackDistance)</key>
+    </mod>
+    <mod name="GFP Dont Push Me" enabled="True" date="2023-02-27 02:39:48" priority="-">
+        <data>modGFP_DontPushMeCE</data>
+    </mod>
+    <mod name="GFP Strafe" enabled="True" date="2023-02-27 02:39:50" priority="-">
+        <data>modGFP_StrafeCE</data>
+        <xmlkey>&lt;Var builder="Input" id="GFP_LookAround" displayName="GFP_LookAround" displayType="INPUTPC" actions="GFP_LookAround" /&gt;</xmlkey>
+        <key context="[Combat]">IK_None=(Action=GFP_LookAround)</key>
+        <key context="[Combat_Replacer_Ciri]">IK_None=(Action=GFP_LookAround)</key>
+        <key context="[Exploration]">IK_None=(Action=GFP_LookAround)</key>
+        <key context="[Exploration_Replacer_Ciri]">IK_None=(Action=GFP_LookAround)</key>
+        <key context="[Diving]">IK_None=(Action=GFP_LookAround)</key>
+        <key context="[Swimming]">IK_None=(Action=GFP_LookAround)</key>
+    </mod>
+    <mod name="Gwent Redux" enabled="False" date="2023-03-02 23:15:58" priority="-">
+        <data>modGwentRedux</data>
+        <menu>modGwentReduxConfig.xml</menu>
+    </mod>
+</installed>

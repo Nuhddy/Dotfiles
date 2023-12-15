@@ -1,0 +1,66 @@
+[General]
+Configuration Icon=1
+PreAmp=-6.5
+[Speakers]
+SpeakerId0=0
+SpeakerTargets0=all
+SpeakerName0=All
+SpeakerId1=1
+SpeakerTargets1=L
+SpeakerName1=Left
+SpeakerId2=2
+SpeakerTargets2=R
+SpeakerName2=Right
+SpeakerId3=3
+SpeakerTargets3=C
+SpeakerName3=Center
+SpeakerId4=4
+SpeakerTargets4=SUB
+SpeakerName4=Subwoofer
+SpeakerId5=5
+SpeakerTargets5=RL
+SpeakerName5=Left rear
+SpeakerId6=6
+SpeakerTargets6=RR
+SpeakerName6=Right rear
+SpeakerId7=7
+SpeakerTargets7=SL
+SpeakerName7=Left side
+SpeakerId8=8
+SpeakerTargets8=SR
+SpeakerName8=Right side
+[Frequencies]
+Frequency1=21
+Frequency2=7028
+Frequency3=12210
+Frequency4=17503
+Frequency5=19830
+Frequency6=119
+Frequency7=894
+Frequency8=2000
+Frequency9=3557
+Frequency10=5042
+[Gains]
+Gain1=3.8
+Gain2=3.8
+Gain3=3.5
+Gain4=4.8
+Gain5=3.7
+Gain6=-1.9
+Gain7=-2.9
+Gain8=-2.3
+Gain9=6.4
+Gain10=-4.2
+[Qualities]
+Quality1=1.87
+Quality2=3.06
+Quality3=0.81
+Quality4=0.63
+Quality5=1.59
+Quality6=1.01
+Quality7=0.72
+Quality8=1.29
+Quality9=2.71
+Quality10=5.02
+[Configuration]
+HotKey=]

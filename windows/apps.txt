@@ -1,0 +1,13 @@
+ahk
+adb
+explorerpatcher
+hidusbf
+nircmd
+rktools (remapkey)
+hxd
+powertoys
+winaero tweaker
+startallback
+modern flyouts
+ear trumpet
+nbtexplorer
