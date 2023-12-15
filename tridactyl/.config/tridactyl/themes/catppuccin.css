@@ -1,0 +1,158 @@
+:root {
+    --color-rosewater: #f5e0dc;
+    --color-flamingo: #f2cdcd;
+    --color-pink: #f5c2e7;
+    --color-mauve: #cba6f7;
+    --color-red: #f38ba8;
+    --color-maroon: #eba0ac;
+    --color-peach: #fab387;
+    --color-yellow: #f9e2af;
+    --color-green: #a6e3a1;
+    --color-teal: #94e2d5;
+    --color-sky: #89dceb;
+    --color-sapphire: #74c7ec;
+    --color-blue: #89b4fa;
+    --color-lavender: #b4befe;
+    --color-text: #cdd6f4;
+    --color-subtext1: #bac2de;
+    --color-subtext0: #a6adc8;
+    --color-overlay2: #9399b2;
+    --color-overlay1: #7f849c;
+    --color-overlay0: #6c7086;
+    --color-surface2: #585b70;
+    --color-surface1: #45475a;
+    --color-surface0: #313244;
+    --color-base: #1e1e2e;
+    --color-mantle: #181825;
+    --color-crust: #11111b;
+
+    --tridactyl-font-family: "San Francisco", sans-serif;
+    --tridactyl-bg: var(--color-crust);
+    --tridactyl-fg: var(--color-text);
+
+    --tridactyl-status-font-size: 12px;
+    --tridactyl-status-font-family: "Fira Code", "San Francisco";
+    --tridactyl-status-font-bg: var(--tridactyl-cmdl-bg);
+    --tridactyl-status-border: 2px solid black;
+    --tridactyl-status-border-radius: 4px;
+
+    --tridactyl-header-font-size: 16px;
+
+    /* --tridactyl-of-fg: black; */
+    --tridactyl-of-bg: var(--color-surface0);
+
+    --tridactyl-hintspan-fg: var(--color-crust);
+    --tridactyl-hintspan-bg: var(--color-peach);
+
+    --tridactyl-hint-active-fg: #333;
+    --tridactyl-hint-active-bg: var(--color-peach);
+    --tridactyl-hint-active-outline: 1px solid #000;
+
+    --tridactyl-hint-bg: rgba(13, 31, 54, 0.25);
+    --tridactyl-hint-outline: none;
+
+    --tridactyl-cmdl-font-size: 1.5rem;
+    --tridactyl-cmplt-option-height: 1.9em;
+
+    --tridactyl-border-radius: 4px;
+}
+
+
+:root.TridactylOwnNamespace {
+    scrollbar-width: thin;
+}
+
+:root.TridactylOwnNamespace a {
+    color: #3b84ef;
+}
+
+:root.TridactylOwnNamespace code {
+    background-color: #2a333c;
+    padding: 3px 7px;
+}
+
+:root #command-line-holder {
+    order: 1;
+}
+
+:root #command-line-holder, :root #tridactyl-input {
+    border-radius: var(--tridactyl-border-radius) !important;
+}
+
+:root #tridactyl-colon::before {
+    content: "";
+}
+
+:root #tridactyl-input {
+    width: 96%;
+    padding: 1rem;
+}
+
+:root #completions table {
+    font-weight: 200;
+    table-layout: fixed;
+    padding: 1rem;
+    padding-top: 0;
+}
+
+:root #completions > div {
+    max-height: calc(20 * var(--tridactyl-cmplt-option-height));
+    min-height: calc(10 * var(--tridactyl-cmplt-option-height));
+}
+
+:root #completions {
+    border: none !important;
+    font-family: var(--tridactyl-font-family);
+    order: 2;
+    margin-top: 10px;
+    border-radius: var(--tridactyl-border-radius);
+}
+
+:root #completions .HistoryCompletionSource table {
+    width: 100%;
+    border-spacing: 0;
+    table-layout: fixed;
+}
+
+
+:root #completions .BufferCompletionSource table {
+    width: unset;
+    font-size: unset;
+    border-spacing: unset;
+    table-layout: unset;
+}
+
+:root #completions table tr .title {
+    width: 50%;
+}
+
+:root #completions tr .documentation {
+    white-space: nowrap;
+    overflow: auto;
+    text-overflow: ellipsis;
+}
+
+:root #completions .sectionHeader {
+    background: transparent;
+    padding: 1rem 1rem 0.4rem !important;
+}
+
+:root #cmdline_iframe {
+    position: fixed !important;
+    bottom: unset;
+    top: 25% !important;
+    left: 10% !important;
+    z-index: 2147483647 !important;
+    width: 80% !important;
+    filter: drop-shadow(0px 0px 20px #000000) !important;
+    color-scheme: light !important; /* fixes white iframe background bug */
+}
+
+:root .TridactylStatusIndicator {
+    display: none !important;
+    position: fixed !important;
+    bottom: 10px !important;
+    right: 10px !important;
+    font-weight: 200 !important;
+    padding: 5px !important;
+}
