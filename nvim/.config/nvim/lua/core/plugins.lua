@@ -161,6 +161,14 @@ return packer.startup {
             config = function() require "configs.mason-null-ls" end,
         }
 
+        -- Snippets
+        use "rafamadriz/friendly-snippets"
+        use {
+            "l3mon4d3/luasnip",
+            wants = "friendly-snippets",
+            config = function() require "config.luasnip" end,
+        }
+
         -- Completion
         use {
             "hrsh7th/nvim-cmp",
@@ -205,12 +213,12 @@ return packer.startup {
                 require("core.utils").cmp_add_source { name = "nvim_lsp" }
             end,
         }
-        --[[ use {
+        use {
             "saadparwaiz1/cmp_luasnip",
             after = "nvim-cmp",
             config = function()
                 require("core.utils").cmp_add_source { name = "luasnip" }
             end,
-        } ]]
+        }
     end,
 }
