@@ -1,0 +1,5 @@
+#! /bin/bash
+
+[[ -z $(pgrep volume-check) ]] && volume-check &
+
+pamixer $@ >/dev/null

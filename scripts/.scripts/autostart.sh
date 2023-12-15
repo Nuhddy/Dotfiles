@@ -21,3 +21,5 @@ run unclutter
 run keepassxc
 run nextcloud
 run easyeffects --gapplication-service
+run libinput-gestures
+run eww daemon

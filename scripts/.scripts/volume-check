@@ -1,0 +1,28 @@
+#! /bin/bash
+
+EWW_WIN="volume-popup"
+EWW_VAR="volume"
+
+if [[ -z $(eww windows | grep "*$EWW_WIN") ]]; then
+    eww open $EWW_WIN
+fi
+
+vol="$(eww get $EWW_VAR)"
+
+while true; do
+    sleep 2.5
+
+    new_vol=$(eww get $EWW_VAR)
+
+    if [ "$vol" != "$new_vol" ]; then
+        vol="$new_vol"
+    else
+        newest_vol=$(eww get $EWW_VAR)
+        if [ "$vol" == "$newest_vol" ]; then
+            if [[ -n $(eww windows | grep "*$EWW_WIN") ]];then
+                eww close $EWW_WIN;
+                exit
+            fi
+        fi
+    fi
+done
