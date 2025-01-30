@@ -4,7 +4,7 @@
   inputs,
   ...
 }: let
-  secrets = import ./secrets.nix;
+  configSymlink = relPath: config.lib.file.mkOutOfStoreSymlink ("/home/nuhddy/.config/nixos/" + relPath);
 in {
   home.username = "nuhddy";
   home.homeDirectory = "/home/nuhddy";
@@ -218,6 +218,7 @@ in {
       alejandra
     ];
   };
+  xdg.configFile.nvim.source = configSymlink "nvim";
 
   wayland.windowManager.hyprland = {
     enable = true;
