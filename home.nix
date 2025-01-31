@@ -372,6 +372,8 @@ in {
     };
   };
 
+  xdg.configFile."jamesdsp/presets".source = configSymlink "jamesdsp/presets";
+
   home.sessionVariables = {
     EDITOR = "nvim";
     BROWSER = "zen";
