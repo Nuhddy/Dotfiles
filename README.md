@@ -2,12 +2,8 @@
 
 ## Files not included
 
-### secrets.nix
+### secrets/secrets.json
 
 Key | Type
 | - | - |
 email | string
-
-### hardware-configuration.nix
-
-Generated during NixOS install.
