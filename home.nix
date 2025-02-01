@@ -2,6 +2,7 @@
   config,
   pkgs,
   inputs,
+  secrets,
   ...
 }: let
   configSymlink = relPath: config.lib.file.mkOutOfStoreSymlink ("/home/nuhddy/.config/nixos/" + relPath);
@@ -37,6 +38,7 @@ in {
     unzip
     wev
     parted
+    git-crypt
 
     # DE
     mako

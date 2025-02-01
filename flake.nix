@@ -14,6 +14,7 @@
   };
 
   outputs = {...} @ inputs: let
+    secrets = with inputs; builtins.fromJSON (builtins.readFile "${self}/secrets/secrets.json");
     system = "x86_64-linux";
   in {
     nixosConfigurations."octane" = inputs.nixpkgs.lib.nixosSystem {
@@ -22,7 +23,7 @@
     };
     homeConfigurations."nuhddy@octane" = inputs.home-manager.lib.homeManagerConfiguration {
       pkgs = inputs.nixpkgs.legacyPackages.${system};
-      extraSpecialArgs = {inherit inputs system;};
+      extraSpecialArgs = {inherit inputs system secrets;};
       modules = [./home.nix];
     };
   };
