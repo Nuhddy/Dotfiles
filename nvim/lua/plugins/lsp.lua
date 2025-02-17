@@ -91,6 +91,33 @@ return {
                         },
                     },
                 },
+                nixd = {
+                    settings = {
+                        nixd = {
+                            nixpkgs = {
+                                expr = 'import (builtins.getFlake "'
+                                    .. vim.loop.os_homedir()
+                                    .. '/.config/nixos").inputs.nixpkgs { }',
+                            },
+                            options = {
+                                nixos = {
+                                    expr = '(builtins.getFlake "'
+                                        .. '/.config/nixos").nixosConfigurations."'
+                                        .. vim.loop.os_gethostname()
+                                        .. '".options',
+                                },
+                                home_manager = {
+                                    expr = '(builtins.getFlake "'
+                                        .. '/.config/nixos").homeConfigurations."'
+                                        .. vim.loop.os_getenv 'USER'
+                                        .. '@'
+                                        .. vim.loop.os_gethostname()
+                                        .. '".options',
+                                },
+                            },
+                        },
+                    },
+                },
                 -- pyright = {},
                 -- ts_ls = {},
             }

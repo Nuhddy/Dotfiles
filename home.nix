@@ -217,6 +217,7 @@ in {
       gcc
       lua-language-server
       stylua
+      nixd
       alejandra
     ];
   };
