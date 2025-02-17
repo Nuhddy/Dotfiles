@@ -19,12 +19,12 @@
   in {
     nixosConfigurations."octane" = inputs.nixpkgs.lib.nixosSystem {
       specialArgs = {inherit inputs system;};
-      modules = [./configuration.nix];
+      modules = [./hosts/octane/configuration.nix];
     };
     homeConfigurations."nuhddy@octane" = inputs.home-manager.lib.homeManagerConfiguration {
       pkgs = inputs.nixpkgs.legacyPackages.${system};
       extraSpecialArgs = {inherit inputs system secrets;};
-      modules = [./home.nix];
+      modules = [./hosts/octane/home.nix];
     };
   };
 }

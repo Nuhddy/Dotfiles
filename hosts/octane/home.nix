@@ -5,7 +5,7 @@
   secrets,
   ...
 }: let
-  configSymlink = relPath: config.lib.file.mkOutOfStoreSymlink ("/home/nuhddy/.config/nixos/" + relPath);
+  helpers = import ../../util/helpers.nix {inherit config;};
 in {
   home.username = "nuhddy";
   home.homeDirectory = "/home/nuhddy";
@@ -13,6 +13,7 @@ in {
   imports = [
     inputs.stylix.homeManagerModules.stylix
     inputs.nixcord.homeManagerModules.nixcord
+    ../../home-manager-modules/neovim.nix
   ];
 
   home.packages = with pkgs; [
@@ -207,22 +208,6 @@ in {
     };
   };
 
-  programs.neovim = {
-    enable = true;
-    viAlias = true;
-    vimAlias = true;
-    vimdiffAlias = true;
-    extraPackages = with pkgs; [
-      tree-sitter
-      gcc
-      lua-language-server
-      stylua
-      nixd
-      alejandra
-    ];
-  };
-  xdg.configFile.nvim.source = configSymlink "nvim";
-
   wayland.windowManager.hyprland = {
     enable = true;
     settings = {
@@ -351,7 +336,7 @@ in {
 
   stylix = {
     enable = true;
-    image = ./assets/wallpaper.png;
+    image = ../../assets/wallpaper.png;
     base16Scheme = "${pkgs.base16-schemes}/share/themes/catppuccin-mocha.yaml";
     polarity = "dark";
     cursor = {
@@ -375,7 +360,7 @@ in {
     };
   };
 
-  xdg.configFile."jamesdsp/presets".source = configSymlink "jamesdsp/presets";
+  xdg.configFile."jamesdsp/presets".source = helpers.configSymlink "jamesdsp/presets";
 
   home.sessionVariables = {
     EDITOR = "nvim";
