@@ -38,6 +38,7 @@
         devices = ["nodev"];
         efiSupport = true;
         useOSProber = true;
+        gfxmodeEfi = "1920x1080";
       };
     };
     kernelPackages = pkgs.linuxPackages_zen;
