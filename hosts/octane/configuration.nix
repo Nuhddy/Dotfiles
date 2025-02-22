@@ -39,6 +39,7 @@
         efiSupport = true;
         useOSProber = true;
         gfxmodeEfi = "1920x1080";
+        default = "saved"; # default to entry used at last boot
       };
     };
     kernelPackages = pkgs.linuxPackages_zen;
