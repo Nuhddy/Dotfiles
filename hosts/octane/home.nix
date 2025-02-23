@@ -206,6 +206,17 @@ in {
       enable = true;
       createDirectories = true;
     };
+    mimeApps = {
+      enable = true;
+      defaultApplications = let
+        browser = "zen.desktop";
+      in {
+        "x-scheme-handler/http" = browser;
+        "x-scheme-handler/https" = browser;
+        "x-scheme-handler/about" = browser;
+        "x-scheme-handler/unknown" = browser;
+      };
+    };
   };
 
   wayland.windowManager.hyprland = {
