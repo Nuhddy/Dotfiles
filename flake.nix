@@ -1,5 +1,5 @@
 {
-  description = "NixOS & home-manager configurations";
+  description = "Nuhddy's NixOS & home-manager configurations";
 
   inputs = {
     nixpkgs.url = "github:nixos/nixpkgs/nixos-unstable";
@@ -14,17 +14,40 @@
   };
 
   outputs = {...} @ inputs: let
-    secrets = with inputs; builtins.fromJSON (builtins.readFile "${self}/secrets/secrets.json");
+    inherit (inputs.nixpkgs) lib;
+
+    hosts = builtins.attrNames (builtins.readDir ./hosts);
+    secrets = builtins.fromTOML (builtins.readFile ./secrets/secrets.toml);
+    user = "nuhddy";
     system = "x86_64-linux";
+
+    mkNixos = host: {
+      ${host} = lib.nixosSystem {
+        modules = [./hosts/${host}/configuration.nix];
+        specialArgs = {
+          inherit
+            inputs
+            system
+            ;
+        };
+      };
+    };
+    mkHome = host: {
+      "${user}@${host}" = inputs.home-manager.lib.homeManagerConfiguration {
+        pkgs = inputs.nixpkgs.legacyPackages.${system};
+        modules = [./hosts/${host}/home.nix];
+        extraSpecialArgs = {
+          inherit
+            inputs
+            system
+            secrets
+            ;
+        };
+      };
+    };
+    mkConfigurations = configType: lib.foldl (a: b: a // b) {} (builtins.map (host: configType host) hosts);
   in {
-    nixosConfigurations."octane" = inputs.nixpkgs.lib.nixosSystem {
-      specialArgs = {inherit inputs system;};
-      modules = [./hosts/octane/configuration.nix];
-    };
-    homeConfigurations."nuhddy@octane" = inputs.home-manager.lib.homeManagerConfiguration {
-      pkgs = inputs.nixpkgs.legacyPackages.${system};
-      extraSpecialArgs = {inherit inputs system secrets;};
-      modules = [./hosts/octane/home.nix];
-    };
+    nixosConfigurations = mkConfigurations mkNixos;
+    homeConfigurations = mkConfigurations mkHome;
   };
 }
