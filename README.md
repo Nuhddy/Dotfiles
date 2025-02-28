@@ -2,7 +2,7 @@
 
 ## Files not included
 
-### secrets/secrets.json
+### secrets/secrets.toml
 
 Key | Type
 | - | - |
