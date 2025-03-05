@@ -1,0 +1,52 @@
+# yaml-language-server: $schema=https://raw.githubusercontent.com/JanDeDobbeleer/oh-my-posh/main/themes/schema.json
+
+$schema: https://raw.githubusercontent.com/JanDeDobbeleer/oh-my-posh/main/themes/schema.json
+blocks:
+
+  # Line 1 - Left
+  - type: prompt
+    alignment: left
+    segments:
+      - type: os
+        template: '{{ .Icon }}'
+        style: plain
+        properties:
+          windows: ''
+      - type: path
+        template: '  {{ .Path }}'
+        style: plain
+        properties:
+          style: full
+          folder_separator_template: '/'
+        foreground: blue
+
+  # Line 1 - Right
+  - type: rprompt
+    segments:
+      - type: exit
+        template: '{{ if gt .Code 1 }}✘ {{ .Code }}{{ end }}'
+        style: plain
+        properties:
+          always_enabled: false
+        foreground_templates:
+          - '{{ if gt .Code 0 }}red{{ end }}'
+      - type: executiontime
+        template: '{{ .FormattedMs }}'
+        style: plain
+        properties:
+          style: round
+        foreground: yellow
+
+  # Line 2 - Left
+  - newline: true
+    type: prompt
+    alignment: left
+    segments:
+      - type: text
+        template: '❯ '
+        # template: '❮ '
+        style: plain
+        foreground_templates:
+          - '{{ if gt .Code 0 }}red{{ else }}green{{ end }}'
+
+version: 2

@@ -1,0 +1,159 @@
+{
+  "IsFirstTimeExperienceEnabled": false,
+  "IsUkraineSupportMessageEnabled": false,
+  "MinimumTemperature": 500,
+  "MaximumTemperature": 20000,
+  "MinimumBrightness": 0.1,
+  "MaximumBrightness": 1,
+  "DayConfiguration": {
+    "Temperature": 6500,
+    "Brightness": 1
+  },
+  "NightConfiguration": {
+    "Temperature": 3400,
+    "Brightness": 1
+  },
+  "ConfigurationTransitionDuration": "00:40:00",
+  "ConfigurationTransitionOffset": 0,
+  "ConfigurationSmoothingMaxDuration": "00:00:05",
+  "IsManualSunriseSunsetEnabled": false,
+  "ManualSunriseTime": "12:39:00",
+  "ManualSunsetTime": "13:13:00",
+  "Location": {
+    "Latitude": 55.661,
+    "Longitude": 12.5006
+  },
+  "Theme": 0,
+  "IsAutoUpdateEnabled": true,
+  "IsDefaultToDayConfigurationEnabled": true,
+  "IsConfigurationSmoothingEnabled": false,
+  "IsPauseWhenFullScreenEnabled": false,
+  "IsGammaPollingEnabled": false,
+  "IsApplicationWhitelistEnabled": true,
+  "WhitelistedApplications": [
+    {
+      "ExecutableFilePath": "C:\\Games\\Steam\\steamapps\\common\\Control\\Control_DX11.exe",
+      "Name": "Control_DX11"
+    },
+    {
+      "ExecutableFilePath": "C:\\Games\\Ubisoft\\Assassin\u0027s Creed Unity\\ACU.exe",
+      "Name": "ACU"
+    },
+    {
+      "ExecutableFilePath": "C:\\Games\\Steam\\steamapps\\common\\Hellblade\\HellbladeGame\\Binaries\\Win64\\HellbladeGame-Win64-Shipping.exe",
+      "Name": "HellbladeGame-Win64-Shipping"
+    },
+    {
+      "ExecutableFilePath": "C:\\Games\\Steam\\steamapps\\common\\Horizon Zero Dawn\\HorizonZeroDawn.exe",
+      "Name": "HorizonZeroDawn"
+    },
+    {
+      "ExecutableFilePath": "C:\\Games\\Ubisoft\\Assassin\u0027s Creed Brotherhood\\ACBSP.exe",
+      "Name": "ACBSP"
+    },
+    {
+      "ExecutableFilePath": "C:\\Games\\Ubisoft\\Assassin\u0027s Creed 1\\AssassinsCreed_Dx10.exe",
+      "Name": "AssassinsCreed_Dx10"
+    },
+    {
+      "ExecutableFilePath": "C:\\PortablePrograms\\Cemu2\\Cemu.exe",
+      "Name": "Cemu"
+    },
+    {
+      "ExecutableFilePath": "C:\\Games\\Steam\\streaming_client.exe",
+      "Name": "streaming_client"
+    },
+    {
+      "ExecutableFilePath": "C:\\Games\\GOG\\The Witcher 3 Wild Hunt GOTY\\bin\\x64_dx12\\witcher3.exe",
+      "Name": "witcher3"
+    },
+    {
+      "ExecutableFilePath": "C:\\Games\\Ubisoft\\Assassin\u0027s Creed Syndicate\\ACS.exe",
+      "Name": "ACS"
+    },
+    {
+      "ExecutableFilePath": "C:\\Games\\Steam\\steamapps\\common\\Hades\\x64\\Hades.exe",
+      "Name": "Hades"
+    },
+    {
+      "ExecutableFilePath": "C:\\Games\\Epic Games\\DeathStranding\\DeathStranding.exe",
+      "Name": "DeathStranding"
+    },
+    {
+      "ExecutableFilePath": "C:\\Games\\Steam\\steamapps\\common\\The Finals\\Discovery\\Binaries\\Win64\\Discovery.exe",
+      "Name": "Discovery"
+    },
+    {
+      "ExecutableFilePath": "C:\\Games\\Epic Games\\Ghostrunner\\Ghostrunner\\Binaries\\Win64\\Ghostrunner-Win64-Shipping.exe",
+      "Name": "Ghostrunner-Win64-Shipping"
+    },
+    {
+      "ExecutableFilePath": "C:\\Games\\EA\\STAR WARS Squadrons\\starwarssquadrons.exe",
+      "Name": "starwarssquadrons"
+    },
+    {
+      "ExecutableFilePath": "C:\\Games\\Steam\\steamapps\\common\\Jedi Fallen Order\\SwGame\\Binaries\\Win64\\starwarsjedifallenorder.exe",
+      "Name": "starwarsjedifallenorder"
+    },
+    {
+      "ExecutableFilePath": "C:\\Games\\Epic Games\\Fortnite\\FortniteGame\\Binaries\\Win64\\FortniteClient-Win64-Shipping.exe",
+      "Name": "FortniteClient-Win64-Shipping"
+    },
+    {
+      "ExecutableFilePath": "C:\\Games\\Epic Games\\DyingLight\\DyingLightGame.exe",
+      "Name": "DyingLightGame"
+    },
+    {
+      "ExecutableFilePath": "C:\\Games\\Red Dead Redemption 2\\RDR2.exe",
+      "Name": "RDR2"
+    },
+    {
+      "ExecutableFilePath": "C:\\Games\\Steam\\steamapps\\common\\Disco Elysium\\disco.exe",
+      "Name": "disco"
+    },
+    {
+      "ExecutableFilePath": "C:\\Games\\Steam\\steamapps\\common\\Dishonored2\\Dishonored2.exe",
+      "Name": "Dishonored2"
+    },
+    {
+      "ExecutableFilePath": "C:\\Games\\Steam\\steamapps\\common\\Thief\\Binaries2\\Win32\\Shipping-ThiefGame.exe",
+      "Name": "Shipping-ThiefGame"
+    },
+    {
+      "ExecutableFilePath": "C:\\Games\\Steam\\steamapps\\common\\Dishonored\\Binaries\\Win32\\Dishonored.exe",
+      "Name": "Dishonored"
+    },
+    {
+      "ExecutableFilePath": "C:\\Games\\Steam\\steamapps\\common\\Valheim\\valheim.exe",
+      "Name": "valheim"
+    }
+  ],
+  "FocusWindowHotKey": {
+    "Key": 0,
+    "Modifiers": 0
+  },
+  "ToggleHotKey": {
+    "Key": 74,
+    "Modifiers": 1
+  },
+  "IncreaseTemperatureOffsetHotKey": {
+    "Key": 0,
+    "Modifiers": 0
+  },
+  "DecreaseTemperatureOffsetHotKey": {
+    "Key": 0,
+    "Modifiers": 0
+  },
+  "IncreaseBrightnessOffsetHotKey": {
+    "Key": 0,
+    "Modifiers": 0
+  },
+  "DecreaseBrightnessOffsetHotKey": {
+    "Key": 0,
+    "Modifiers": 0
+  },
+  "ResetConfigurationOffsetHotKey": {
+    "Key": 0,
+    "Modifiers": 0
+  }
+}

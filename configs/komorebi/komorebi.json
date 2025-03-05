@@ -1,0 +1,135 @@
+{
+  "$schema": "https://raw.githubusercontent.com/LGUG2Z/komorebi/v0.1.31/schema.json",
+  "app_specific_configuration_path": "$Env:KOMOREBI_CONFIG_HOME/applications.json",
+  "window_hiding_behaviour": "Hide",
+  "default_workspace_padding": 8,
+  "default_container_padding": 8,
+  "animation": {
+    "enabled": false,
+    "fps": 144,
+    "duration": 80
+  },
+  "theme": {
+    "palette": "Catppuccin",
+    "name": "Mocha"
+  },
+  "border_implementation": "Windows",
+  "border": false,
+  "border_width": 1,
+  "border_offset": -1,
+  "mouse_follows_focus": false,
+  "monitors": [
+    {
+      "workspaces": [
+        {
+          "name": "1",
+          "layout": "VerticalStack"
+        },
+        {
+          "name": "2",
+          "layout": "VerticalStack"
+        },
+        {
+          "name": "3",
+          "layout": "VerticalStack"
+        },
+        {
+          "name": "4",
+          "layout": "VerticalStack",
+          "workspace_rules": [
+            {
+              "kind": "Exe",
+              "id": "Discord.exe"
+            }
+          ]
+        },
+        {
+          "name": "5",
+          "layout": "VerticalStack",
+          "workspace_rules": [
+            {
+              "kind": "Exe",
+              "id": "TIDAL.exe"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "tray_and_multi_window_applications": [
+    {
+      "kind": "Exe",
+      "id": "Gif Your Game.exe"
+    },
+    {
+      "kind": "Exe",
+      "id": "Medal.exe"
+    },
+    {
+      "kind": "Class",
+      "id": "Rockstar Games Launcher"
+    }
+  ],
+  "ignore_rules": [
+    {
+      "kind": "Class",
+      "id": "Qt5QWindowIcon"
+    },
+    {
+      "kind": "Exe",
+      "id": "Flow.Launcher.exe"
+    },
+    {
+      "kind": "Exe",
+      "id": "ACB.exe"
+    },
+    {
+      "kind": "Exe",
+      "id": "ACU.exe"
+    },
+    {
+      "kind": "Exe",
+      "id": "ACS.exe"
+    },
+    {
+      "kind": "Exe",
+      "id": "Control_DX11.exe"
+    },
+    {
+      "kind": "Exe",
+      "id": "HellbladeGame-Win64-Shipping.exe"
+    },
+    {
+      "kind": "Exe",
+      "id": "FOVchanger.exe"
+    },
+    {
+      "kind": "Exe",
+      "id": "RDR2.exe"
+    },
+    {
+      "kind": "Exe",
+      "id": "RocketLeague.exe"
+    },
+    {
+      "kind": "Exe",
+      "id": "witcher3.exe"
+    },
+    {
+      "kind": "Exe",
+      "id": "Shipping-ThiefGame.exe"
+    },
+    {
+      "kind": "Exe",
+      "id": "Dishonored.exe"
+    },
+    {
+      "kind": "Exe",
+      "id": "Dishonored2.exe"
+    },
+    {
+      "kind": "Exe",
+      "id": "diacritics.exe"
+    }
+  ]
+}
