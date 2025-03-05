@@ -7,6 +7,7 @@
     nurl
     unzip
     speedtest-cli
+    just
   ];
 
   programs.fastfetch.enable = true;
