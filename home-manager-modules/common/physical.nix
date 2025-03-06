@@ -118,23 +118,6 @@ in {
     };
   };
 
-  programs.neovim = {
-    enable = true;
-    viAlias = true;
-    vimAlias = true;
-    vimdiffAlias = true;
-    extraPackages = with pkgs; [
-      tree-sitter
-      gcc
-      lua-language-server
-      stylua
-      nixd
-      alejandra
-    ];
-  };
-
-  xdg.configFile.nvim.source = helpers.configSymlink "nvim";
-
   programs.vscode = {
     enable = true;
     package = pkgs.vscodium;

@@ -3,6 +3,7 @@
     ../../home-manager-modules/core
     ../../home-manager-modules/common
     ../../home-manager-modules/common/physical.nix
+    ../../home-manager-modules/neovim
   ];
 
   home.packages = with pkgs; [
