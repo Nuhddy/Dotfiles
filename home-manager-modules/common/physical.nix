@@ -5,7 +5,7 @@
   system,
   ...
 }: let
-  helpers = import ../../lib/helpers.nix {inherit config;};
+  helpers = import ../../lib {inherit config;};
 in {
   imports = [
     inputs.stylix.homeManagerModules.stylix
