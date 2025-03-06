@@ -1,10 +1,22 @@
 help:
-    just --list
+    @just --list
 
 alias u := update
-update:
-    git pull
-    sudo nix flake update
+update: sync
     nh os switch .
     nh home switch .
+    @just clean
+
+alias s := sync
+sync:
+    git pull
+    sudo nix flake update
+
+alias r := rebuild
+rebuild +NH-ARGS:
+    git add --intent-to-add .
+    nh {{NH-ARGS}}
+
+alias c := clean
+clean:
     nh clean all --keep 5 --keep-since 7d
