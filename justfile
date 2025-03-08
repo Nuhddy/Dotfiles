@@ -14,7 +14,7 @@ sync:
 
 alias r := rebuild
 rebuild +NH-ARGS:
-    git add --intent-to-add .
+    git add .
     nh {{NH-ARGS}}
 
 alias c := clean
