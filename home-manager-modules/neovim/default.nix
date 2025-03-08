@@ -21,4 +21,6 @@ in {
   };
 
   xdg.configFile.nvim.source = helpers.configSymlink "nvim";
+
+  home.sessionVariables.EDITOR = "nvim";
 }

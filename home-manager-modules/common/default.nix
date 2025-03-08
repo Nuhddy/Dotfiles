@@ -1,4 +1,10 @@
-{pkgs, ...}: {
+{
+  config,
+  pkgs,
+  ...
+}: let
+  helpers = import ../../lib {inherit config;};
+in {
   home.packages = with pkgs; [
     curl
     tree
@@ -8,8 +14,15 @@
     unzip
     speedtest-cli
     just
+    pw-volume
+    jamesdsp
+    playerctl
+    texliveFull
+    python3
   ];
+  xdg.configFile."jamesdsp/presets".source = helpers.configSymlink "jamesdsp/presets";
 
+  programs.pandoc.enable = true;
   programs.fastfetch.enable = true;
   programs.btop.enable = true;
   programs.bat.enable = true;
@@ -56,6 +69,4 @@
     ls1 = "eza -1";
     la1 = "eza -1a";
   };
-
-  home.sessionVariables.EDITOR = "nvim";
 }

@@ -1,0 +1,41 @@
+{...}: {
+  programs.waybar = {
+    enable = true;
+    settings.mainBar = {
+      layer = "top";
+      position = "top";
+      height = 30;
+      output = ["DP-2"];
+      modules-left = ["hyprland/workspaces"];
+      modules-right = [
+        "tray"
+        "pulseaudio"
+        "network"
+        "clock"
+      ];
+      "hyprland/workspaces" = {
+        persistent-workspaces = {"*" = 5;};
+      };
+      tray.spacing = 10;
+      pulseaudio = {
+        format = "{icon}";
+        format-icons.default = ["" "" ""];
+        format-muted = "";
+        scroll-step = 5.0;
+        on-click = "pw-volume mute toggle";
+        on-click-right = "pwvucontrol";
+        ignored-sinks = ["JamesDSP Sink"];
+      };
+      network = {
+        format = "{icon}";
+        format-wifi = "";
+        format-ethernet = "󰌘";
+        format-disconnected = "󰌙";
+        tooltip-format-wifi = "{essid}: {signalStrength}";
+        tooltip-format-ethernet = "{ipaddr}";
+        tooltip-format-disconnect = "No internet connection";
+      };
+      clock.tooltip = false;
+    };
+  };
+}
