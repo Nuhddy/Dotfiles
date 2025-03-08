@@ -1,17 +1,17 @@
-{...}: {
+{pkgs, ...}: {
   wayland.windowManager.hyprland = {
     enable = true;
     settings = {
       monitor = ", highrr, auto, auto";
-      exec-once = [
-        "mako"
-        "hyprctl setcursor capitaine-cursors 24"
-        "waybar"
-        "~/.bin/wlsunset.sh on"
-        "jamesdsp -t"
-        "bitwarden"
-        "nextcloud"
-        "nm-applet"
+      exec-once = with pkgs; [
+        "${mako}/bin/mako"
+        "hyprctl setcursor capitaine-cursors 24" # TODO: where is hyprctl in nix store?
+        "${waybar}/bin/waybar"
+        "~/.bin/wlsunset.sh on" # TODO: rewrite using pkgs.writeShellApplication
+        "${jamesdsp}/bin/jamesdsp -t"
+        "${bitwarden-desktop}/bin/bitwarden"
+        "${nextcloud-client}/bin/nextcloud"
+        "${networkmanagerapplet}/bin/nm-applet"
       ];
       general = {
         gaps_in = 3;
@@ -86,18 +86,20 @@
 
         "SUPER SHIFT, e, exit"
 
-        "SUPER, Return, exec, kitty -1"
-        "SUPER, space, exec, rofi -show drun"
-        "SUPER, e, exec, thunar"
+        "SUPER, Return, exec, ${pkgs.kitty}/bin/kitty -1"
+        "SUPER, space, exec, ${pkgs.rofi-wayland}/bin/rofi -show drun"
+        "SUPER, e, exec, ${pkgs.xfce.thunar}/bin/thunar"
       ];
       bindl = [
+        # TODO: rewrite using pkgs.writeShellApplication
         "SUPER, Delete, exec, ~/.bin/playerctl-specific-player.sh previous"
         "SUPER, End, exec, ~/.bin/playerctl-specific-player.sh play-pause"
         "SUPER, Next, exec, ~/.bin/playerctl-specific-player.sh next"
 
-        "SUPER, bracketleft, exec, jamesdsp --load-preset Flat"
-        "SUPER, bracketright, exec, jamesdsp --load-preset Headphones"
+        "SUPER, bracketleft, exec, ${pkgs.jamesdsp}/bin/jamesdsp --load-preset Flat"
+        "SUPER, bracketright, exec, ${pkgs.jamesdsp}/bin/jamesdsp --load-preset Headphones"
 
+        # TODO: rewrite using pkgs.writeShellApplication
         "ALT, End, exec, ~/.bin/wlsunset.sh toggle"
       ];
       bindm = [

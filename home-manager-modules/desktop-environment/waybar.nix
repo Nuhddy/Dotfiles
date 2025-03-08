@@ -1,4 +1,4 @@
-{...}: {
+{pkgs, ...}: {
   programs.waybar = {
     enable = true;
     settings.mainBar = {
@@ -22,8 +22,8 @@
         format-icons.default = ["" "" ""];
         format-muted = "";
         scroll-step = 5.0;
-        on-click = "pw-volume mute toggle";
-        on-click-right = "pwvucontrol";
+        on-click = "${pkgs.pw-volume}/bin/pw-volume mute toggle";
+        on-click-right = "${pkgs.pwvucontrol}/bin/pwvucontrol";
         ignored-sinks = ["JamesDSP Sink"];
       };
       network = {
