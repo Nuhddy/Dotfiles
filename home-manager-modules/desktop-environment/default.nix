@@ -2,6 +2,7 @@
   imports = [
     ./hyprland.nix
     ./waybar.nix
+    ./awesomewm.nix
     ./terminal.nix
     ./discord.nix
     ./browser.nix
@@ -30,15 +31,6 @@
     bitwarden-desktop
     nextcloud-client
     xfce.thunar
-
-    # Utilities
-    wl-clipboard
-    wev
-    mako
-    rofi-wayland
-    wlsunset
-    # way-displays
-    nwg-look
   ];
 
   programs.vscode = {

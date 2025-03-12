@@ -1,4 +1,14 @@
 {pkgs, ...}: {
+  home.packages = with pkgs; [
+    wl-clipboard
+    wev
+    mako
+    # rofi-wayland
+    wlsunset
+    # way-displays
+    nwg-look
+  ];
+
   wayland.windowManager.hyprland = {
     enable = true;
     settings = {

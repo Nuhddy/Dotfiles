@@ -13,6 +13,7 @@
     zen-browser.url = "github:0xc000022070/zen-browser-flake";
     stylix.url = "github:danth/stylix";
     nixcord.url = "github:kaylorben/nixcord";
+    f2k.url = "github:fortuneteller2k/nixpkgs-f2k";
   };
 
   outputs = {...} @ inputs: let
@@ -22,10 +23,16 @@
     secrets = builtins.fromTOML (builtins.readFile ./secrets/secrets.toml);
     user = "nuhddy";
     system = "x86_64-linux";
+    overlays = [
+      inputs.f2k.overlays.window-managers
+    ];
 
     mkNixos = host: {
       ${host} = lib.nixosSystem {
-        modules = [./hosts/${host}/configuration.nix];
+        modules = [
+          ./hosts/${host}/configuration.nix
+          {nixpkgs.overlays = overlays;}
+        ];
         specialArgs = {
           inherit
             inputs
@@ -37,7 +44,10 @@
     mkHome = host: {
       "${user}@${host}" = inputs.home-manager.lib.homeManagerConfiguration {
         pkgs = inputs.nixpkgs.legacyPackages.${system};
-        modules = [./hosts/${host}/home.nix];
+        modules = [
+          ./hosts/${host}/home.nix
+          {nixpkgs.overlays = overlays;}
+        ];
         extraSpecialArgs = {
           inherit
             inputs
