@@ -1,0 +1,542 @@
+{
+  "__VERSION__": "193",
+  "Main": {
+    "Controls": [
+      {
+        "Calibration": null,
+        "Enable": false,
+        "ForceApply": false,
+        "Identifier": "/lpc/nct6797d/control/0",
+        "IsHidden": true,
+        "ManualControl": false,
+        "ManualControlValue": 50,
+        "MinimumPercent": 0,
+        "Name": "Fan #1",
+        "NickName": "Fan #1",
+        "PairedFanSensor": null,
+        "SelectedCommandStepDown": 8.0,
+        "SelectedCommandStepUp": 8.0,
+        "SelectedFanCurve": null,
+        "SelectedOffset": 0,
+        "SelectedStart": 0,
+        "SelectedStop": 0
+      },
+      {
+        "Calibration": null,
+        "Enable": false,
+        "ForceApply": false,
+        "Identifier": "/lpc/nct6797d/control/2",
+        "IsHidden": true,
+        "ManualControl": false,
+        "ManualControlValue": 50,
+        "MinimumPercent": 0,
+        "Name": "Fan #3",
+        "NickName": "Fan #3",
+        "PairedFanSensor": null,
+        "SelectedCommandStepDown": 8.0,
+        "SelectedCommandStepUp": 8.0,
+        "SelectedFanCurve": null,
+        "SelectedOffset": 0,
+        "SelectedStart": 0,
+        "SelectedStop": 0
+      },
+      {
+        "Calibration": null,
+        "Enable": false,
+        "ForceApply": false,
+        "Identifier": "/lpc/nct6797d/control/3",
+        "IsHidden": true,
+        "ManualControl": false,
+        "ManualControlValue": 50,
+        "MinimumPercent": 0,
+        "Name": "Fan #4",
+        "NickName": "Fan #4",
+        "PairedFanSensor": null,
+        "SelectedCommandStepDown": 8.0,
+        "SelectedCommandStepUp": 8.0,
+        "SelectedFanCurve": null,
+        "SelectedOffset": 0,
+        "SelectedStart": 0,
+        "SelectedStop": 0
+      },
+      {
+        "Calibration": null,
+        "Enable": true,
+        "ForceApply": false,
+        "Identifier": "NVApiWrapper/0-GP104-A/control/0",
+        "IsHidden": false,
+        "ManualControl": false,
+        "ManualControlValue": 50,
+        "MinimumPercent": 0,
+        "Name": "Control 1 - NVIDIA GeForce GTX 1070",
+        "NickName": "GPU",
+        "PairedFanSensor": {
+          "Identifier": "NVApiWrapper/0-GP104-A/fan/0",
+          "IsHidden": false,
+          "Name": "Fan 1 - NVIDIA GeForce GTX 1070",
+          "NickName": "GPU"
+        },
+        "SelectedCommandStepDown": 8.0,
+        "SelectedCommandStepUp": 8.0,
+        "SelectedFanCurve": {
+          "CommandMode": 0,
+          "IgnoreHysteresisAtLimits": true,
+          "IsHidden": false,
+          "MaximumCommand": 100,
+          "MaximumTemperature": 94.0,
+          "MinimumTemperature": 30.0,
+          "Name": "GPU - Graph",
+          "OneWayHysteresis": false,
+          "Points": [
+            "45,0",
+            "46,30",
+            "70,35",
+            "71,70",
+            "80,70",
+            "81,90",
+            "88,90",
+            "89,100"
+          ],
+          "SelectedHysteresis": 2.0,
+          "SelectedResponseTime": 1,
+          "SelectedTempSource": {
+            "Identifier": "NVApiWrapper/0-GP104-A/sensor/0",
+            "IsHidden": false,
+            "Name": "GPU",
+            "NickName": "GPU"
+          }
+        },
+        "SelectedOffset": 0,
+        "SelectedStart": 15,
+        "SelectedStop": 15
+      },
+      {
+        "Calibration": null,
+        "Enable": true,
+        "ForceApply": false,
+        "Identifier": "/lpc/nct6797d/control/1",
+        "IsHidden": false,
+        "ManualControl": false,
+        "ManualControlValue": 50,
+        "MinimumPercent": 0,
+        "Name": "Fan #2",
+        "NickName": "CPU",
+        "PairedFanSensor": {
+          "Identifier": "/lpc/nct6797d/fan/1",
+          "IsHidden": false,
+          "Name": "Fan #2",
+          "NickName": "CPU"
+        },
+        "SelectedCommandStepDown": 8.0,
+        "SelectedCommandStepUp": 8.0,
+        "SelectedFanCurve": {
+          "CommandMode": 0,
+          "IgnoreHysteresisAtLimits": true,
+          "IsHidden": false,
+          "MaximumCommand": 100,
+          "MaximumTemperature": 95.0,
+          "MinimumTemperature": 30.0,
+          "Name": "CPU - Graph",
+          "OneWayHysteresis": false,
+          "Points": [
+            "50,75",
+            "64,80",
+            "65,100",
+            "70,100"
+          ],
+          "SelectedHysteresis": 2.0,
+          "SelectedResponseTime": 6,
+          "SelectedTempSource": {
+            "Identifier": "/amdcpu/0/temperature/4",
+            "IsHidden": false,
+            "Name": "CCD1 (Tdie)",
+            "NickName": "CCD1 (Tdie)"
+          }
+        },
+        "SelectedOffset": 0,
+        "SelectedStart": 39,
+        "SelectedStop": 30
+      },
+      {
+        "Calibration": null,
+        "Enable": true,
+        "ForceApply": false,
+        "Identifier": "/lpc/nct6797d/control/4",
+        "IsHidden": false,
+        "ManualControl": false,
+        "ManualControlValue": 50,
+        "MinimumPercent": 0,
+        "Name": "Fan #5",
+        "NickName": "CASE - Front",
+        "PairedFanSensor": {
+          "Identifier": "/lpc/nct6797d/fan/4",
+          "IsHidden": false,
+          "Name": "Fan #5",
+          "NickName": "CASE - Front"
+        },
+        "SelectedCommandStepDown": 8.0,
+        "SelectedCommandStepUp": 8.0,
+        "SelectedFanCurve": {
+          "CommandMode": 0,
+          "IsHidden": false,
+          "Name": "CASE - Mix",
+          "SelectedFanCurves": [
+            {
+              "CommandMode": 0,
+              "IgnoreHysteresisAtLimits": true,
+              "IsHidden": false,
+              "MaximumFanSpeed": 100,
+              "MaximumTemperature": 75.0,
+              "MinimumFanSpeed": 70,
+              "MinimumTemperature": 65.0,
+              "Name": "CASE - GPU Linear",
+              "OneWayHysteresis": false,
+              "SelectedHysteresis": 2.0,
+              "SelectedResponseTime": 1,
+              "SelectedTempSource": {
+                "Identifier": "NVApiWrapper/0-GP104-A/sensor/0",
+                "IsHidden": false,
+                "Name": "GPU",
+                "NickName": "GPU"
+              }
+            },
+            {
+              "CommandMode": 0,
+              "IgnoreHysteresisAtLimits": true,
+              "IsHidden": false,
+              "MaximumFanSpeed": 100,
+              "MaximumTemperature": 70.0,
+              "MinimumFanSpeed": 70,
+              "MinimumTemperature": 60.0,
+              "Name": "CASE - CPU Linear",
+              "OneWayHysteresis": false,
+              "SelectedHysteresis": 2.0,
+              "SelectedResponseTime": 5,
+              "SelectedTempSource": {
+                "Identifier": "/amdcpu/0/temperature/4",
+                "IsHidden": false,
+                "Name": "CCD1 (Tdie)",
+                "NickName": "CCD1 (Tdie)"
+              }
+            }
+          ],
+          "SelectedMixFunction": 0
+        },
+        "SelectedOffset": 0,
+        "SelectedStart": 33,
+        "SelectedStop": 30
+      },
+      {
+        "Calibration": null,
+        "Enable": true,
+        "ForceApply": false,
+        "Identifier": "/lpc/nct6797d/control/5",
+        "IsHidden": false,
+        "ManualControl": false,
+        "ManualControlValue": 50,
+        "MinimumPercent": 0,
+        "Name": "Fan #6",
+        "NickName": "CASE - Back",
+        "PairedFanSensor": {
+          "Identifier": "/lpc/nct6797d/fan/5",
+          "IsHidden": false,
+          "Name": "Fan #6",
+          "NickName": "CASE - Back"
+        },
+        "SelectedCommandStepDown": 8.0,
+        "SelectedCommandStepUp": 8.0,
+        "SelectedFanCurve": {
+          "CommandMode": 0,
+          "IsHidden": false,
+          "Name": "CASE - Mix",
+          "SelectedFanCurves": [
+            {
+              "CommandMode": 0,
+              "IgnoreHysteresisAtLimits": true,
+              "IsHidden": false,
+              "MaximumFanSpeed": 100,
+              "MaximumTemperature": 75.0,
+              "MinimumFanSpeed": 70,
+              "MinimumTemperature": 65.0,
+              "Name": "CASE - GPU Linear",
+              "OneWayHysteresis": false,
+              "SelectedHysteresis": 2.0,
+              "SelectedResponseTime": 1,
+              "SelectedTempSource": {
+                "Identifier": "NVApiWrapper/0-GP104-A/sensor/0",
+                "IsHidden": false,
+                "Name": "GPU",
+                "NickName": "GPU"
+              }
+            },
+            {
+              "CommandMode": 0,
+              "IgnoreHysteresisAtLimits": true,
+              "IsHidden": false,
+              "MaximumFanSpeed": 100,
+              "MaximumTemperature": 70.0,
+              "MinimumFanSpeed": 70,
+              "MinimumTemperature": 60.0,
+              "Name": "CASE - CPU Linear",
+              "OneWayHysteresis": false,
+              "SelectedHysteresis": 2.0,
+              "SelectedResponseTime": 5,
+              "SelectedTempSource": {
+                "Identifier": "/amdcpu/0/temperature/4",
+                "IsHidden": false,
+                "Name": "CCD1 (Tdie)",
+                "NickName": "CCD1 (Tdie)"
+              }
+            }
+          ],
+          "SelectedMixFunction": 0
+        },
+        "SelectedOffset": 0,
+        "SelectedStart": 21,
+        "SelectedStop": 21
+      },
+      {
+        "Calibration": null,
+        "Enable": false,
+        "ForceApply": false,
+        "Identifier": "/lpc/nct6797d/control/6",
+        "IsHidden": true,
+        "ManualControl": false,
+        "ManualControlValue": 50,
+        "MinimumPercent": 0,
+        "Name": "Fan #7",
+        "NickName": "Fan #7",
+        "PairedFanSensor": null,
+        "SelectedCommandStepDown": 8.0,
+        "SelectedCommandStepUp": 8.0,
+        "SelectedFanCurve": null,
+        "SelectedOffset": 0,
+        "SelectedStart": 0,
+        "SelectedStop": 0
+      }
+    ],
+    "CustomSensors": [],
+    "Fahrenheit": false,
+    "FanCurves": [
+      {
+        "CommandMode": 0,
+        "IgnoreHysteresisAtLimits": true,
+        "IsHidden": false,
+        "MaximumCommand": 100,
+        "MaximumTemperature": 94.0,
+        "MinimumTemperature": 30.0,
+        "Name": "GPU - Graph",
+        "OneWayHysteresis": false,
+        "Points": [
+          "45,0",
+          "46,30",
+          "70,35",
+          "71,70",
+          "80,70",
+          "81,90",
+          "88,90",
+          "89,100"
+        ],
+        "SelectedHysteresis": 2.0,
+        "SelectedResponseTime": 1,
+        "SelectedTempSource": {
+          "Identifier": "NVApiWrapper/0-GP104-A/sensor/0",
+          "IsHidden": false,
+          "Name": "GPU",
+          "NickName": "GPU"
+        }
+      },
+      {
+        "CommandMode": 0,
+        "IgnoreHysteresisAtLimits": true,
+        "IsHidden": false,
+        "MaximumCommand": 100,
+        "MaximumTemperature": 95.0,
+        "MinimumTemperature": 30.0,
+        "Name": "CPU - Graph",
+        "OneWayHysteresis": false,
+        "Points": [
+          "50,75",
+          "64,80",
+          "65,100",
+          "70,100"
+        ],
+        "SelectedHysteresis": 2.0,
+        "SelectedResponseTime": 6,
+        "SelectedTempSource": {
+          "Identifier": "/amdcpu/0/temperature/4",
+          "IsHidden": false,
+          "Name": "CCD1 (Tdie)",
+          "NickName": "CCD1 (Tdie)"
+        }
+      },
+      {
+        "CommandMode": 0,
+        "IgnoreHysteresisAtLimits": true,
+        "IsHidden": false,
+        "MaximumFanSpeed": 100,
+        "MaximumTemperature": 75.0,
+        "MinimumFanSpeed": 70,
+        "MinimumTemperature": 65.0,
+        "Name": "CASE - GPU Linear",
+        "OneWayHysteresis": false,
+        "SelectedHysteresis": 2.0,
+        "SelectedResponseTime": 1,
+        "SelectedTempSource": {
+          "Identifier": "NVApiWrapper/0-GP104-A/sensor/0",
+          "IsHidden": false,
+          "Name": "GPU",
+          "NickName": "GPU"
+        }
+      },
+      {
+        "CommandMode": 0,
+        "IgnoreHysteresisAtLimits": true,
+        "IsHidden": false,
+        "MaximumFanSpeed": 100,
+        "MaximumTemperature": 70.0,
+        "MinimumFanSpeed": 70,
+        "MinimumTemperature": 60.0,
+        "Name": "CASE - CPU Linear",
+        "OneWayHysteresis": false,
+        "SelectedHysteresis": 2.0,
+        "SelectedResponseTime": 5,
+        "SelectedTempSource": {
+          "Identifier": "/amdcpu/0/temperature/4",
+          "IsHidden": false,
+          "Name": "CCD1 (Tdie)",
+          "NickName": "CCD1 (Tdie)"
+        }
+      },
+      {
+        "CommandMode": 0,
+        "IsHidden": false,
+        "Name": "CASE - Mix",
+        "SelectedFanCurves": [
+          {
+            "CommandMode": 0,
+            "IgnoreHysteresisAtLimits": true,
+            "IsHidden": false,
+            "MaximumFanSpeed": 100,
+            "MaximumTemperature": 75.0,
+            "MinimumFanSpeed": 70,
+            "MinimumTemperature": 65.0,
+            "Name": "CASE - GPU Linear",
+            "OneWayHysteresis": false,
+            "SelectedHysteresis": 2.0,
+            "SelectedResponseTime": 1,
+            "SelectedTempSource": {
+              "Identifier": "NVApiWrapper/0-GP104-A/sensor/0",
+              "IsHidden": false,
+              "Name": "GPU",
+              "NickName": "GPU"
+            }
+          },
+          {
+            "CommandMode": 0,
+            "IgnoreHysteresisAtLimits": true,
+            "IsHidden": false,
+            "MaximumFanSpeed": 100,
+            "MaximumTemperature": 70.0,
+            "MinimumFanSpeed": 70,
+            "MinimumTemperature": 60.0,
+            "Name": "CASE - CPU Linear",
+            "OneWayHysteresis": false,
+            "SelectedHysteresis": 2.0,
+            "SelectedResponseTime": 5,
+            "SelectedTempSource": {
+              "Identifier": "/amdcpu/0/temperature/4",
+              "IsHidden": false,
+              "Name": "CCD1 (Tdie)",
+              "NickName": "CCD1 (Tdie)"
+            }
+          }
+        ],
+        "SelectedMixFunction": 0
+      }
+    ],
+    "FanSensors": [
+      {
+        "Identifier": "/lpc/nct6797d/fan/0",
+        "IsHidden": false,
+        "Name": "Fan #1",
+        "NickName": "Fan #1"
+      },
+      {
+        "Identifier": "/lpc/nct6797d/fan/1",
+        "IsHidden": false,
+        "Name": "Fan #2",
+        "NickName": "CPU"
+      },
+      {
+        "Identifier": "/lpc/nct6797d/fan/2",
+        "IsHidden": false,
+        "Name": "Fan #3",
+        "NickName": "Fan #3"
+      },
+      {
+        "Identifier": "/lpc/nct6797d/fan/3",
+        "IsHidden": false,
+        "Name": "Fan #4",
+        "NickName": "Fan #4"
+      },
+      {
+        "Identifier": "/lpc/nct6797d/fan/4",
+        "IsHidden": false,
+        "Name": "Fan #5",
+        "NickName": "CASE - Front"
+      },
+      {
+        "Identifier": "/lpc/nct6797d/fan/5",
+        "IsHidden": false,
+        "Name": "Fan #6",
+        "NickName": "CASE - Back"
+      },
+      {
+        "Identifier": "/lpc/nct6797d/fan/6",
+        "IsHidden": false,
+        "Name": "Fan #7",
+        "NickName": "Fan #7"
+      },
+      {
+        "Identifier": "NVApiWrapper/0-GP104-A/fan/0",
+        "IsHidden": false,
+        "Name": "Fan 1 - NVIDIA GeForce GTX 1070",
+        "NickName": "GPU"
+      }
+    ],
+    "HideCalibration": false,
+    "HideFanSpeedCards": true,
+    "HorizontalUIOrientation": false,
+    "PrimaryColor": "#FF89B4FA",
+    "SecondaryColor": "#FFFFFFFF",
+    "SelectedTheme": "Inherit",
+    "ShowHiddenCards": false,
+    "SyncThemeWithWindows": true,
+    "SyncTrayIconColorWithWindows": true,
+    "TemperatureSensors": [],
+    "TrayIconColor": "#FFFFFFFF",
+    "TrayIcons": []
+  },
+  "Sensors": {
+    "DisabledPlugins": [],
+    "DisableStorageSensors": true,
+    "LibreHardwareMonitorSettings": {
+      "Controller": false,
+      "CPU": true,
+      "EmbeddedEC": true,
+      "GPU": true,
+      "InpOut": false,
+      "Memory": false,
+      "Motherboard": true,
+      "PSU": false,
+      "Storage": false,
+      "ZeroRPMOverride": false
+    },
+    "NvAPIWrapperSettings": {
+      "Enabled": true,
+      "ZeroRPMOverride": false
+    },
+    "SensorCount": 23
+  }
+}
