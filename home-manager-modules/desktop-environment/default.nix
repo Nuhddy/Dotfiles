@@ -1,8 +1,7 @@
 {pkgs, ...}: {
   imports = [
-    ./hyprland.nix
+    ./river.nix
     ./waybar.nix
-    ./awesomewm.nix
     ./terminal.nix
     ./discord.nix
     ./browser.nix

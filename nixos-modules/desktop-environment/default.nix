@@ -1,8 +1,7 @@
 {...}: {
   imports = [
     ./display-manager.nix
-    ./hyprland.nix
-    ./awesomewm.nix
+    ./river.nix
     ./gaming.nix
   ];
 }

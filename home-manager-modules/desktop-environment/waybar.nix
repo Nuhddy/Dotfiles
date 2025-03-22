@@ -6,16 +6,20 @@
       position = "top";
       height = 30;
       output = ["DP-2"];
-      modules-left = ["hyprland/workspaces"];
+      modules-left = [
+        "river/tags"
+        "river/layout"
+      ];
       modules-right = [
         "tray"
         "pulseaudio"
         "network"
         "clock"
       ];
-      "hyprland/workspaces" = {
-        persistent-workspaces = {"*" = 5;};
+      "river/tags" = {
+        "num-tags" = 5;
       };
+      "river/layout" = {};
       tray.spacing = 10;
       pulseaudio = {
         format = "{icon}";
