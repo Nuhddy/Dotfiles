@@ -1,10 +1,15 @@
 {
   config,
   pkgs,
+  inputs,
   ...
 }: let
   helpers = import ../../lib {inherit config;};
 in {
+  imports = [
+    inputs.catppuccin.homeManagerModules.catppuccin
+  ];
+
   home.packages = with pkgs; [
     curl
     tree
@@ -68,5 +73,11 @@ in {
     la = "eza -la";
     ls1 = "eza -1";
     la1 = "eza -1a";
+  };
+
+  catppuccin = {
+    enable = true;
+    accent = "blue";
+    nvim.enable = false;
   };
 }

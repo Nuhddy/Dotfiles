@@ -1,7 +1,6 @@
 {...}: {
   programs.kitty = {
     enable = true;
-    themeFile = "Catppuccin-Mocha";
     settings = {
       kitty_mod = "ctrl+shift";
 

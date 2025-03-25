@@ -11,9 +11,8 @@
 
     hyprland.url = "github:hyprwm/Hyprland";
     zen-browser.url = "github:0xc000022070/zen-browser-flake";
-    stylix.url = "github:danth/stylix";
     nixcord.url = "github:kaylorben/nixcord";
-    f2k.url = "github:fortuneteller2k/nixpkgs-f2k";
+    catppuccin.url = "github:catppuccin/nix";
   };
 
   outputs = {...} @ inputs: let
@@ -23,9 +22,7 @@
     secrets = builtins.fromTOML (builtins.readFile ./secrets/secrets.toml);
     user = "nuhddy";
     system = "x86_64-linux";
-    overlays = [
-      inputs.f2k.overlays.window-managers
-    ];
+    overlays = [];
 
     mkNixos = host: {
       ${host} = lib.nixosSystem {

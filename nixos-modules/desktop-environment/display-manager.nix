@@ -7,8 +7,4 @@
       package = pkgs.kdePackages.sddm;
     };
   };
-  environment.systemPackages = with pkgs; [
-    catppuccin-sddm
-  ];
-  services.displayManager.sddm.theme = "catppuccin-mocha";
 }

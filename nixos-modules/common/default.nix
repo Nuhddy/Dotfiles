@@ -1,4 +1,12 @@
-{pkgs, ...}: {
+{
+  pkgs,
+  inputs,
+  ...
+}: {
+  imports = [
+    inputs.catppuccin.nixosModules.catppuccin
+  ];
+
   programs.zsh.enable = true;
   users.defaultUserShell = pkgs.zsh;
 
@@ -23,5 +31,11 @@
   programs.nh = {
     enable = true;
     flake = "/home/nuhddy/.config/nixos";
+  };
+
+  catppuccin = {
+    enable = true;
+    accent = "blue";
+    cache.enable = true;
   };
 }

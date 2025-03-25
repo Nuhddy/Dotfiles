@@ -5,7 +5,6 @@
     ./terminal.nix
     ./discord.nix
     ./browser.nix
-    ./stylix.nix
   ];
 
   home.packages = with pkgs; [
