@@ -2,10 +2,10 @@ return {
     {
         'neovim/nvim-lspconfig',
         dependencies = {
-            _G.NIXOS == 0 and { 'williamboman/mason.nvim', config = true }
+            _G.OS == 'Windows' and { 'williamboman/mason.nvim', config = true }
                 or nil,
-            _G.NIXOS == 0 and 'williamboman/mason-lspconfig.nvim' or nil,
-            _G.NIXOS == 0 and 'WhoIsSethDaniel/mason-tool-installer.nvim'
+            _G.OS == 'Windows' and 'williamboman/mason-lspconfig.nvim' or nil,
+            _G.OS == 'Windows' and 'WhoIsSethDaniel/mason-tool-installer.nvim'
                 or nil,
             {
                 'j-hui/fidget.nvim',
@@ -122,7 +122,7 @@ return {
                 -- ts_ls = {},
             }
 
-            if _G.NIXOS then
+            if _G.OS == 'NixOS' or _G.OS == 'WSL' then
                 for server, _ in pairs(servers) do
                     require('lspconfig')[server].setup {
                         capabilities = capabilities,
