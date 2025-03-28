@@ -23,6 +23,7 @@ require('util').set_opts {
         breakindent = true,
         termguicolors = true,
         guifont = 'monospace:h17',
+        conceallevel = 2,
 
         ignorecase = true,
         smartcase = true,
