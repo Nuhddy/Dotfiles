@@ -1,4 +1,4 @@
-{pkgs, ...}: {
+{config, pkgs, ...}: {
   home.packages = with pkgs; [
     wl-clipboard
     wev
@@ -8,7 +8,6 @@
     nwg-look
     river-filtile
     swww
-    lua5_4
     lswt
     wlr-randr
   ];
@@ -19,6 +18,8 @@
         if a == 1
         then 1
         else 2 * lshift (a - 1);
+
+      tagStr = a: lshift a |> toString;
 
       filtile = "${pkgs.river-filtile}/bin/filtile";
       jamesdsp = "${pkgs.jamesdsp}/bin/jamesdsp";
@@ -58,16 +59,16 @@
           "Super+Shift Tab" = "send-layout-cmd filtile flip";
 
           # Tags
-          "Super 1" = "set-focused-tags ${lshift 1 |> toString}";
-          "Super 2" = "set-focused-tags ${lshift 2 |> toString}";
-          "Super 3" = "set-focused-tags ${lshift 3 |> toString}";
-          "Super 4" = "set-focused-tags ${lshift 4 |> toString}";
-          "Super 5" = "set-focused-tags ${lshift 5 |> toString}";
-          "Super+Shift 1" = "set-view-tags ${lshift 1 |> toString}";
-          "Super+Shift 2" = "set-view-tags ${lshift 2 |> toString}";
-          "Super+Shift 3" = "set-view-tags ${lshift 3 |> toString}";
-          "Super+Shift 4" = "set-view-tags ${lshift 4 |> toString}";
-          "Super+Shift 5" = "set-view-tags ${lshift 5 |> toString}";
+          "Super 1" = "set-focused-tags ${tagStr 1}";
+          "Super 2" = "set-focused-tags ${tagStr 2}";
+          "Super 3" = "set-focused-tags ${tagStr 3}";
+          "Super 4" = "set-focused-tags ${tagStr 4}";
+          "Super 5" = "set-focused-tags ${tagStr 5}";
+          "Super+Shift 1" = "set-view-tags ${tagStr 1}";
+          "Super+Shift 2" = "set-view-tags ${tagStr 2}";
+          "Super+Shift 3" = "set-view-tags ${tagStr 3}";
+          "Super+Shift 4" = "set-view-tags ${tagStr 4}";
+          "Super+Shift 5" = "set-view-tags ${tagStr 5}";
 
           # Media
           "Super End" = "spawn '${playerctl} play-pause'";
@@ -93,8 +94,8 @@
         ("'${filtile} "
           + "main-location right"
           + ", main-ratio 60"
-          + ", --tags ${lshift 4 |> toString} monocle on"
-          + ", --tags ${lshift 5 |> toString} monocle on"
+          + ", --tags ${tagStr 4} monocle on"
+          + ", --tags ${tagStr 5} monocle on"
           + "'")
         "'${pkgs.swww}/bin/swww-daemon'"
         "'${pkgs.waybar}/bin/waybar'"
@@ -108,11 +109,15 @@
       rule-add = {
         "-app-id" = {
           "'*'" = "ssd";
-          "discord" = {tags = "${lshift 4 |> toString}";};
-          "tidal-hifi" = {tags = "${lshift 5 |> toString}";};
+          "discord" = {tags = "${tagStr 4}";};
+          "tidal-hifi" = {tags = "${tagStr 5}";};
         };
       };
-      border-width = 1;
+      border-width = 2;
+      border-color-focused = "0x89b4fa";
+      border-color-unfocused = "0x1e1e2e";
+      border-color-urgent = "0xf38ba8";
+      xcursor-theme = config.home.pointerCursor.name;
       default-layout = "filtile";
       default-attach-mode = "bottom";
     };

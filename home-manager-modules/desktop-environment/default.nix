@@ -5,6 +5,8 @@
     ./terminal.nix
     ./discord.nix
     ./browser.nix
+    ./fonts.nix
+    ./cursor.nix
   ];
 
   home.packages = with pkgs; [
