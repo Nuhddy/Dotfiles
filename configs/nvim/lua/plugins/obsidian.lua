@@ -4,11 +4,11 @@ local function obs_path(sub_dir)
     if _G.OS == 'WSL' then
         root_dir = '/mnt/c/Users/'
             .. vim.loop.os_getenv 'USER' ---@diagnostic disable-line
-            .. '/Nextcloud/Obsidian/'
+            .. '/Nextcloud/Documents/Obsidian/'
     elseif _G.OS == 'Windows' then
         root_dir = 'C:\\Users\\'
             .. vim.loop.os_getenv 'USER' ---@diagnostic disable-line
-            .. '\\Nextcloud\\Obsidian\\'
+            .. '\\Nextcloud\\Documents\\Obsidian\\'
     else
         root_dir = '~/Nextcloud/Documents/Obsidian/'
     end
