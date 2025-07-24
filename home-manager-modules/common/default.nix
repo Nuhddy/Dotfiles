@@ -7,7 +7,7 @@
   helpers = import ../../lib {inherit config;};
 in {
   imports = [
-    inputs.catppuccin.homeManagerModules.catppuccin
+    inputs.catppuccin.homeModules.catppuccin
   ];
 
   home.packages = with pkgs; [

@@ -20,7 +20,7 @@
 
     # Network
     networkmanagerapplet
-    protonvpn-gui
+    # protonvpn-gui
 
     # Apps
     calibre

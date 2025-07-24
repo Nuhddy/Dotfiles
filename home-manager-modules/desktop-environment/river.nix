@@ -1,4 +1,33 @@
-{config, pkgs, ...}: {
+{
+  config,
+  pkgs,
+  ...
+}: let
+  playerctl-specific-player = pkgs.writeShellApplication {
+    name = "playerctl-specific-player";
+    runtimeInputs = [pkgs.playerctl];
+    text = ''
+      if [ $# -eq 0 ]; then
+          playerctl
+          exit 1
+      fi
+
+      COMMAND=$*
+      PLAYER=tidal-hifi
+
+      players=$(playerctl -l)
+
+      for i in "''${players[@]}"; do
+          if [ "$i" = $PLAYER ]; then
+              playerctl "$COMMAND" -p $PLAYER
+              exit 0
+          fi
+      done
+
+      playerctl "$COMMAND"
+    '';
+  };
+in {
   home.packages = with pkgs; [
     wl-clipboard
     wev
@@ -23,7 +52,7 @@
 
       filtile = "${pkgs.river-filtile}/bin/filtile";
       jamesdsp = "${pkgs.jamesdsp}/bin/jamesdsp";
-      playerctl = "~/.bin/playerctl-specific-player.sh";
+      playerctl = playerctl-specific-player;
       wlsunset = "~/.bin/wlsunset.sh";
     in {
       map = {
@@ -85,6 +114,10 @@
           "Super bracketleft" = "spawn '${jamesdsp} --load-preset Flat'";
           "Super bracketright" = "spawn '${jamesdsp} --load-preset Headphones'";
         };
+      };
+      map-pointer.normal = {
+        "Super BTN_LEFT" = "move-view";
+        "Super BTN_RIGHT" = "resize-view";
       };
       input = {"'*'" = {accel-profile = "flat";};};
       keyboard-layout = "-options 'caps:swapescape' us";
