@@ -1,6 +1,5 @@
 {pkgs, ...}: {
   imports = [
-    # TODO: disko stuff
     ./hardware-configuration.nix
     ../../nixos-modules/core
     ../../nixos-modules/common
