@@ -20,3 +20,6 @@ rebuild +NH-ARGS:
 alias c := clean
 clean:
     nh clean all --keep 5 --keep-since 7d
+
+iso:
+    nom build .#nixosConfigurations.iso.config.system.build.isoImage -o result
