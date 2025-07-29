@@ -1,11 +1,15 @@
-{pkgs, ...}: {
+{
+  config,
+  pkgs,
+  ...
+}: {
   programs.waybar = {
     enable = true;
     settings.mainBar = {
       layer = "top";
       position = "top";
       height = 30;
-      output = ["DP-2"];
+      output = [config.displaySpec.name];
       modules-left = [
         "river/tags"
         "river/layout"

@@ -41,8 +41,10 @@
       "${user}@${host}" = inputs.home-manager.lib.homeManagerConfiguration {
         pkgs = inputs.nixpkgs.legacyPackages.${system};
         modules = [
+          ./hosts/${host}/host-spec.nix
           ./hosts/${host}/home.nix
           {nixpkgs.overlays = overlays;}
+          ./global-modules/display-spec.nix
         ];
         extraSpecialArgs = {
           inherit
