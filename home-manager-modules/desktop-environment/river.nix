@@ -27,13 +27,58 @@
       playerctl "$COMMAND"
     '';
   };
+
+  wlsunset-plus = pkgs.writeShellApplication {
+    name = "wlsunset-plus";
+    runtimeInputs = [pkgs.wlsunset];
+    text = ''
+      if [ $# -eq 0 ]; then
+          echo "Error: expected 1 arg"
+          exit 1
+      fi
+
+      TEMP_DAY=6500
+      TEMP_NIGHT=3400
+      LAT=55.7
+      LON=11.7
+
+      function on {
+          wlsunset -T $TEMP_DAY -t $TEMP_NIGHT -l $LAT -L $LON &
+      }
+
+      case $1 in
+          on)
+              if pgrep wlsunset; then
+                  pkill wlsunset
+              fi
+              on
+              ;;
+          off)
+              if pgrep wlsunset; then
+                  pkill wlsunset
+              fi
+              ;;
+          toggle)
+              if pgrep wlsunset; then
+                  pkill wlsunset
+              else
+                  on
+              fi
+              ;;
+          *)
+              echo "Error: invalid arg: expected on|off|toggle"
+              exit 1
+              ;;
+      esac
+    '';
+  };
 in {
   home.packages = with pkgs; [
     wl-clipboard
     wev
     mako
     rofi-wayland
-    wlsunset
+    # wlsunset
     nwg-look
     river-filtile
     swww
@@ -53,7 +98,7 @@ in {
       filtile = "${pkgs.river-filtile}/bin/filtile";
       jamesdsp = "${pkgs.jamesdsp}/bin/jamesdsp";
       playerctl = playerctl-specific-player;
-      wlsunset = "~/.bin/wlsunset.sh";
+      wlsunset = wlsunset-plus;
     in {
       map = {
         normal = {
