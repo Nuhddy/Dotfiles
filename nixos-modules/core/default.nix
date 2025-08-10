@@ -3,6 +3,7 @@
     "nix-command"
     "flakes"
     "pipe-operators"
+    "ca-derivations"
   ];
 
   nixpkgs.config.allowUnfree = true;
