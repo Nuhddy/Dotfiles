@@ -3,7 +3,7 @@
     ./river.nix
     ./waybar.nix
     ./terminal.nix
-    ./discord.nix
+    # ./discord.nix
     ./browser.nix
     ./fonts.nix
     ./cursor.nix
