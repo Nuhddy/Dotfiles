@@ -55,7 +55,7 @@ in {
     autosuggestion.enable = true;
     syntaxHighlighting.enable = true;
     defaultKeymap = "viins";
-    dotDir = ".config/zsh";
+    dotDir = "${config.xdg.configHome}/zsh";
   };
 
   xdg.enable = true;

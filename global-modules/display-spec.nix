@@ -12,7 +12,7 @@
     };
 
     refreshRate = lib.mkOption {
-      type = lib.types.int;
+      type = lib.types.str;
       description = "Display refresh rate";
     };
   };
