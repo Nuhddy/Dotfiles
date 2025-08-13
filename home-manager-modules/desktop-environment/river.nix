@@ -78,7 +78,6 @@ in {
     wev
     mako
     rofi-wayland
-    # wlsunset
     nwg-look
     river-filtile
     swww

@@ -1,24 +1,23 @@
 {
   inputs,
-  lib,
   system,
   ...
 }: {
   imports = [
     inputs.nixos-wsl.nixosModules.default
-    ../../nixos-modules/core
-    ../../nixos-modules/common
+    ../../nixos-modules/core.nix
+
+    ../../nixos-modules/workstation.nix
   ];
 
   networking.hostName = "fennec";
+  system.stateVersion = "24.11";
 
-  nixpkgs.hostPlatform = lib.mkDefault system;
+  nixpkgs.hostPlatform = system;
 
   wsl = {
     enable = true;
     defaultUser = "nuhddy";
     docker-desktop.enable = true;
   };
-
-  system.stateVersion = "24.11";
 }

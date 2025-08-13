@@ -41,5 +41,6 @@
       "page_down" = "scroll_page_down";
     };
   };
+
   programs.alacritty.enable = true;
 }

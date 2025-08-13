@@ -26,8 +26,10 @@
     mkNixos = host: {
       ${host} = lib.nixosSystem {
         modules = [
-          ./hosts/${host}/configuration.nix
           {nixpkgs.overlays = overlays;}
+          ./global-modules/display-spec.nix
+          ./hosts/${host}/host-spec.nix
+          ./hosts/${host}/configuration.nix
         ];
         specialArgs = {
           inherit
@@ -41,10 +43,10 @@
       "${user}@${host}" = inputs.home-manager.lib.homeManagerConfiguration {
         pkgs = inputs.nixpkgs.legacyPackages.${system};
         modules = [
-          ./hosts/${host}/host-spec.nix
-          ./hosts/${host}/home.nix
           {nixpkgs.overlays = overlays;}
           ./global-modules/display-spec.nix
+          ./hosts/${host}/host-spec.nix
+          ./hosts/${host}/home.nix
         ];
         extraSpecialArgs = {
           inherit

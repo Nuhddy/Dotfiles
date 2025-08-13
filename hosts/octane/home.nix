@@ -1,14 +1,12 @@
-{pkgs, ...}: {
+{...}: {
   imports = [
-    ../../home-manager-modules/core
-    ../../home-manager-modules/common
+    ../../home-manager-modules/core.nix
 
+    ../../home-manager-modules/hardware.nix
+    ../../home-manager-modules/workstation
     ../../home-manager-modules/desktop-environment
-    ../../home-manager-modules/neovim
-  ];
-
-  home.packages = with pkgs; [
-    parted
+    ../../home-manager-modules/gui
+    ../../home-manager-modules/gaming.nix
   ];
 
   home.stateVersion = "24.11";

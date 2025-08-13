@@ -23,9 +23,7 @@
   users.users.nuhddy = {
     description = "Nuhddy";
     isNormalUser = true;
-    extraGroups = [
-      "wheel"
-    ];
+    extraGroups = ["wheel"];
   };
 
   programs.nh = {

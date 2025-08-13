@@ -7,6 +7,7 @@
 in {
   programs.neovim = {
     enable = true;
+    defaultEditor = true;
     viAlias = true;
     vimAlias = true;
     vimdiffAlias = true;
@@ -19,8 +20,5 @@ in {
       alejandra
     ];
   };
-
   xdg.configFile.nvim.source = helpers.configSymlink "nvim";
-
-  home.sessionVariables.EDITOR = "nvim";
 }
