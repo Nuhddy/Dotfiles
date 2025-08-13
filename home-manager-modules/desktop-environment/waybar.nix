@@ -9,7 +9,7 @@
       layer = "top";
       position = "top";
       height = 30;
-      output = [config.displaySpec.name];
+      output = [config.hostSpec.display.name];
       modules-left = [
         "river/tags"
         "river/layout"

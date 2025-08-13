@@ -27,7 +27,7 @@
       ${host} = lib.nixosSystem {
         modules = [
           {nixpkgs.overlays = overlays;}
-          ./global-modules/display-spec.nix
+          ./global-modules
           ./hosts/${host}/host-spec.nix
           ./hosts/${host}/configuration.nix
         ];
@@ -44,7 +44,7 @@
         pkgs = inputs.nixpkgs.legacyPackages.${system};
         modules = [
           {nixpkgs.overlays = overlays;}
-          ./global-modules/display-spec.nix
+          ./global-modules
           ./hosts/${host}/host-spec.nix
           ./hosts/${host}/home.nix
         ];

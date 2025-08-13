@@ -13,7 +13,7 @@
         efiSupport = true;
         useOSProber = true;
         default = "saved"; # default to entry used at last boot
-        gfxmodeEfi = config.displaySpec.resolution;
+        gfxmodeEfi = config.hostSpec.display.resolution;
       };
     };
     kernelPackages = pkgs.linuxPackages_zen;

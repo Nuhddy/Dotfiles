@@ -1,4 +1,9 @@
-{pkgs, ...}: {
+{
+  pkgs,
+  lib,
+  config,
+  ...
+}: {
   imports = [
     ./browsers.nix
     ./terminals.nix
@@ -6,11 +11,9 @@
   ];
 
   home.packages = with pkgs; [
-    texliveFull
-
     # Network
     networkmanagerapplet
-    # protonvpn-gui
+    protonvpn-gui
 
     # File management
     bitwarden-desktop
@@ -25,6 +28,8 @@
     streamlink
     pwvucontrol
     musescore
+
+    (lib.mkIf config.hostSpec.latex.enable texliveFull)
   ];
 
   programs.thunderbird = {

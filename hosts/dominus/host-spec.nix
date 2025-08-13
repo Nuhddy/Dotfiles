@@ -1,7 +1,7 @@
 {...}: {
-  displaySpec = {
-    name = "eDP-1";
-    resolution = "1920x1080";
-    refreshRate = "60";
+  hostSpec = {
+    display.name = "eDP-1";
+
+    latex.enable = true;
   };
 }

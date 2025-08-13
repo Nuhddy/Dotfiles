@@ -167,7 +167,7 @@ in {
       keyboard-layout = "-options 'caps:swapescape' us";
       set-repeat = "50 300";
       spawn = [
-        "'${pkgs.wlr-randr}/bin/wlr-randr --output ${config.displaySpec.name} --mode ${config.displaySpec.resolution}@${config.displaySpec.refreshRate}Hz --adaptive-sync disabled'"
+        "'${pkgs.wlr-randr}/bin/wlr-randr --output ${config.hostSpec.display.name} --mode ${config.hostSpec.display.resolution}@${config.hostSpec.display.refreshRate}Hz --adaptive-sync disabled'"
         ("'${filtile} "
           + "main-location right"
           + ", main-ratio 60"
