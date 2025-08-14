@@ -19,6 +19,27 @@
     kernelPackages = pkgs.linuxPackages_zen;
   };
 
+  # Power management
+  services.auto-cpufreq = {
+    enable = true;
+    settings = {
+      battery = {
+        governor = "powersave";
+        turbo = "auto";
+      };
+      charger = {
+        governor = "performance";
+        turbo = "always";
+      };
+    };
+  };
+
+  # Power buttons
+  services.logind = {
+    lidSwitch = "suspend";
+    powerKey = "suspend";
+  };
+
   # Backlight
   programs.light = {
     enable = true;
