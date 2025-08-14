@@ -19,6 +19,16 @@
     kernelPackages = pkgs.linuxPackages_zen;
   };
 
+  # Backlight
+  programs.light = {
+    enable = true;
+    brightnessKeys = {
+      enable = true;
+      minBrightness = 0;
+      step = 5;
+    };
+  };
+
   # Audio
   services.pipewire = {
     enable = true;
