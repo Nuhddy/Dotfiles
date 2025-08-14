@@ -16,8 +16,10 @@
       ];
       modules-right = [
         "tray"
+        "backlight"
         "pulseaudio"
         "network"
+        "battery"
         "clock"
       ];
       "river/tags" = {
@@ -39,9 +41,19 @@
         format-wifi = "";
         format-ethernet = "󰌘";
         format-disconnected = "󰌙";
-        tooltip-format-wifi = "{essid}: {signalStrength}";
+        tooltip-format-wifi = "{essid}: {signalStrength}% strength";
         tooltip-format-ethernet = "{ipaddr}";
         tooltip-format-disconnect = "No internet connection";
+      };
+      battery = {
+        format = "{icon}";
+        format-icons = ["" "" "" "" ""];
+        tooltip-format = "{capacity}% capacity\n{timeTo}";
+      };
+      backlight = {
+        format = "{icon}";
+        format-icons = ["󰃞" "󰃟" "󰃠"];
+        tooltip-format = "{percent}% brightness";
       };
       clock.tooltip = false;
     };
