@@ -98,7 +98,7 @@ in {
       filtile = "${pkgs.river-filtile}/bin/filtile";
       jamesdsp = "${pkgs.jamesdsp}/bin/jamesdsp";
       playerctl = playerctl-specific-player;
-      wlsunset = pkgs.wlsunset;
+      wlsunset = wlsunset-plus;
     in {
       map = {
         normal = {
