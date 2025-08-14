@@ -83,6 +83,7 @@ in {
     swww
     lswt
     wlr-randr
+    wlsunset
   ];
   wayland.windowManager.river = {
     enable = true;
@@ -97,7 +98,7 @@ in {
       filtile = "${pkgs.river-filtile}/bin/filtile";
       jamesdsp = "${pkgs.jamesdsp}/bin/jamesdsp";
       playerctl = playerctl-specific-player;
-      wlsunset = wlsunset-plus;
+      wlsunset = pkgs.wlsunset;
     in {
       map = {
         normal = {
