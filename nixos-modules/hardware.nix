@@ -59,6 +59,19 @@
   };
   security.rtkit.enable = true;
 
+  # Mouse
+  services.libinput = {
+    enable = true;
+    mouse.accelProfile = "flat";
+    touchpad = {
+      accelProfile = "flat";
+      clickMethod = "clickfinger";
+      tappingButtonMap = "lrm";
+      naturalScrolling = true;
+      disableWhileTyping = true;
+    };
+  };
+
   # Networking
   networking.networkmanager.enable = true;
   users.users.nuhddy.extraGroups = ["networkmanager"];
