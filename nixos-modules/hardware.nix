@@ -72,6 +72,10 @@
     };
   };
 
+  # Bluetooth
+  hardware.bluetooth.eanable = true;
+  services.blueman.enable = true;
+
   # Networking
   networking.networkmanager.enable = true;
   users.users.nuhddy.extraGroups = ["networkmanager"];
