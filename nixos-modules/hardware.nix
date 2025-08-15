@@ -1,6 +1,7 @@
 {
   config,
   pkgs,
+  lib,
   ...
 }: {
   # Bootloader
@@ -38,10 +39,11 @@
   services.logind = {
     lidSwitch = "suspend";
     powerKey = "suspend";
+    suspendKey = "suspend";
   };
 
   # Backlight
-  programs.light = {
+  programs.light = lib.mkIf (config.networking.hostName == "dominus") {
     enable = true;
     brightnessKeys = {
       enable = true;
@@ -58,19 +60,6 @@
     pulse.enable = true;
   };
   security.rtkit.enable = true;
-
-  # Mouse
-  services.libinput = {
-    enable = true;
-    mouse.accelProfile = "flat";
-    touchpad = {
-      accelProfile = "flat";
-      clickMethod = "clickfinger";
-      tappingButtonMap = "lrm";
-      naturalScrolling = true;
-      disableWhileTyping = true;
-    };
-  };
 
   # Bluetooth
   hardware.bluetooth.enable = true;

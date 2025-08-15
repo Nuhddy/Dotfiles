@@ -164,7 +164,18 @@ in {
         "Super BTN_LEFT" = "move-view";
         "Super BTN_RIGHT" = "resize-view";
       };
-      input = {"'*'" = {accel-profile = "flat";};};
+      input = {
+        "'*'" = {
+          accel-profile = "flat";
+        };
+        "'*Touchpad'" = {
+          click-method = "clickfinger";
+          tap = "enabled";
+          tap-button-map = "left-right-middle";
+          natural-scroll = "enabled";
+          disable-while-typing = "enabled";
+        };
+      };
       keyboard-layout = "-options 'caps:swapescape' us";
       set-repeat = "50 300";
       spawn = [
