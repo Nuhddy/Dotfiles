@@ -73,7 +73,7 @@
   };
 
   # Bluetooth
-  hardware.bluetooth.eanable = true;
+  hardware.bluetooth.enable = true;
   services.blueman.enable = true;
 
   # Networking
