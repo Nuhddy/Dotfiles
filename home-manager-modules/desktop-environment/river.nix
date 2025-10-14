@@ -3,81 +3,13 @@
   pkgs,
   ...
 }: let
-  playerctl-specific-player = pkgs.writeShellApplication {
-    name = "playerctl-specific-player";
-    runtimeInputs = [pkgs.playerctl];
-    text = ''
-      if [ $# -eq 0 ]; then
-          playerctl
-          exit 1
-      fi
-
-      COMMAND=$*
-      PLAYER=tidal-hifi
-
-      players=$(playerctl -l)
-
-      for i in "''${players[@]}"; do
-          if [ "$i" = $PLAYER ]; then
-              playerctl "$COMMAND" -p $PLAYER
-              exit 0
-          fi
-      done
-
-      playerctl "$COMMAND"
-    '';
-  };
-
-  wlsunset-plus = pkgs.writeShellApplication {
-    name = "wlsunset-plus";
-    runtimeInputs = [pkgs.wlsunset];
-    text = ''
-      if [ $# -eq 0 ]; then
-          echo "Error: expected 1 arg"
-          exit 1
-      fi
-
-      TEMP_DAY=6500
-      TEMP_NIGHT=3400
-      LAT=55.7
-      LON=11.7
-
-      function on {
-          wlsunset -T $TEMP_DAY -t $TEMP_NIGHT -l $LAT -L $LON &
-      }
-
-      case $1 in
-          on)
-              if pgrep wlsunset; then
-                  pkill wlsunset
-              fi
-              on
-              ;;
-          off)
-              if pgrep wlsunset; then
-                  pkill wlsunset
-              fi
-              ;;
-          toggle)
-              if pgrep wlsunset; then
-                  pkill wlsunset
-              else
-                  on
-              fi
-              ;;
-          *)
-              echo "Error: invalid arg: expected on|off|toggle"
-              exit 1
-              ;;
-      esac
-    '';
-  };
+  apps = import ./scripts.nix {inherit pkgs;};
 in {
   home.packages = with pkgs; [
     wl-clipboard
     wev
     mako
-    rofi-wayland
+    rofi
     nwg-look
     river-filtile
     swww
@@ -97,14 +29,14 @@ in {
 
       filtile = "${pkgs.river-filtile}/bin/filtile";
       jamesdsp = "${pkgs.jamesdsp}/bin/jamesdsp";
-      playerctl = playerctl-specific-player;
-      wlsunset = wlsunset-plus;
+      playerctl = apps.playerctl-specific-player;
+      wlsunset = apps.wlsunset-plus;
     in {
       map = {
         normal = {
           # Apps
           "Super Return" = "spawn '${pkgs.kitty}/bin/kitty -1'";
-          "Super Space" = "spawn '${pkgs.rofi-wayland}/bin/rofi -show drun'";
+          "Super Space" = "spawn '${pkgs.rofi}/bin/rofi -show drun'";
           "Super E" = "spawn ${pkgs.xfce.thunar}/bin/thunar";
           "Alt End" = "spawn '${wlsunset} toggle'";
 
@@ -179,7 +111,7 @@ in {
       keyboard-layout = "-options 'caps:swapescape' us";
       set-repeat = "50 300";
       spawn = [
-        "'${pkgs.wlr-randr}/bin/wlr-randr --output ${config.hostSpec.display.name} --mode ${config.hostSpec.display.resolution}@${config.hostSpec.display.refreshRate}Hz --adaptive-sync disabled'"
+        "'${pkgs.wlr-randr}/bin/wlr-randr --output ${config.hostSpec.display.name} --mode ${toString config.hostSpec.display.width}x${toString config.hostSpec.display.height}@${toString config.hostSpec.display.refreshRate}Hz --adaptive-sync disabled'"
         ("'${filtile} "
           + "main-location right"
           + ", main-ratio 60"

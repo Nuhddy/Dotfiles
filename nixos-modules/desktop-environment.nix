@@ -1,4 +1,12 @@
-{pkgs, ...}: {
+{
+  inputs,
+  pkgs,
+  ...
+}: {
+  imports = [
+    inputs.niri.nixosModules.niri
+  ];
+
   services.displayManager = {
     enable = true;
     sddm = {
@@ -8,7 +16,11 @@
     };
   };
 
-  programs.river.enable = true;
+  programs.river-classic.enable = true;
+  programs.niri = {
+    enable = true;
+    package = pkgs.niri;
+  };
   environment.sessionVariables.NIXOS_OZONE_WL = "1";
 
   hardware.graphics = {

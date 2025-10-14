@@ -1,10 +1,13 @@
 {
-  config,
+  # config,
   pkgs,
   ...
 }: {
+  home.packages = with pkgs; [
+    waybar
+  ];
   programs.waybar = {
-    enable = true;
+    enable = false;
     # settings.mainBar = {
     #   layer = "top";
     #   position = "top";

@@ -10,8 +10,8 @@
 
   console.useXkbConfig = true;
   services.xserver.xkb = {
-    layout = "us";
-    options = "caps:swapescape";
+    layout = "us,dk";
+    options = "caps:swapescape,grp:ctrl_space_toggle";
   };
 
   time.timeZone = "Europe/Copenhagen";

@@ -7,7 +7,7 @@
   imports = [
     ./browsers.nix
     ./terminals.nix
-    # ./discord.nix
+    ./discord.nix
   ];
 
   home.packages = with pkgs; [
@@ -22,19 +22,22 @@
     zotero
     calibre
     obsidian
+    libreoffice
 
     # Media
+    tidal-hifi
     vlc
     streamlink
     pwvucontrol
     musescore
 
     (lib.mkIf config.hostSpec.latex.enable texliveFull)
+    teams-for-linux
   ];
 
   programs.thunderbird = {
     enable = true;
-    profiles."nuhddy".isDefault = true;
+    profiles.${config.home.username}.isDefault = true;
   };
 
   programs.vscode = {
@@ -45,6 +48,12 @@
   programs.pandoc.enable = true;
 
   # Doc reader
-  programs.zathura.enable = true;
+  programs.zathura = {
+    enable = true;
+    options = {
+      selection-clipboard = "clipboard";
+      guioptions = "";
+    };
+  };
   home.sessionVariables.READER = "zathura";
 }

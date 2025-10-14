@@ -13,15 +13,15 @@
         devices = ["nodev"];
         efiSupport = true;
         useOSProber = true;
-        default = "saved"; # default to entry used at last boot
-        gfxmodeEfi = config.hostSpec.display.resolution;
+        default = "saved";
+        gfxmodeEfi = "${toString config.hostSpec.display.width}x${toString config.hostSpec.display.height}";
       };
     };
     kernelPackages = pkgs.linuxPackages_zen;
   };
 
   # Power management
-  services.auto-cpufreq = {
+  services.auto-cpufreq = lib.mkIf (config.networking.hostName == "dominus") {
     enable = true;
     settings = {
       battery = {
@@ -36,10 +36,10 @@
   };
 
   # Power buttons
-  services.logind = {
-    lidSwitch = "suspend";
-    powerKey = "suspend";
-    suspendKey = "suspend";
+  services.logind.settings.Login = {
+    HandleLidSwitch = lib.mkIf (config.networking.hostName == "dominus") "suspend";
+    HandlePowerKey = "suspend";
+    HandleSuspendKey = "suspend";
   };
 
   # Backlight

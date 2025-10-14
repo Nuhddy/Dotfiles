@@ -12,6 +12,7 @@
     zen-browser.url = "github:0xc000022070/zen-browser-flake";
     nixcord.url = "github:kaylorben/nixcord";
     catppuccin.url = "github:catppuccin/nix";
+    niri.url = "github:sodiboo/niri-flake";
   };
 
   outputs = {...} @ inputs: let

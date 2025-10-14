@@ -5,16 +5,23 @@
       description = "Display name";
     };
 
-    resolution = lib.mkOption {
-      type = lib.types.str;
-      default = "1920x1080";
-      description = "Display resolution";
-      example = "1920x1080";
+    width = lib.mkOption {
+      type = lib.types.int;
+      default = 1920;
+      description = "Display resolution width";
+      example = 1920;
+    };
+
+    height = lib.mkOption {
+      type = lib.types.int;
+      default = 1080;
+      description = "Display resolution height";
+      example = 1080;
     };
 
     refreshRate = lib.mkOption {
-      type = lib.types.str;
-      default = "60";
+      type = lib.types.int;
+      default = 60;
       description = "Display refresh rate";
     };
   };
