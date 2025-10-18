@@ -41,7 +41,33 @@
     accent = "blue";
     nvim.enable = false;
   };
-  programs.ssh.enable = true;
+  programs.ssh = {
+    enable = true;
+    enableDefaultConfig = false;
+    matchBlocks = {
+      "*" = {
+        forwardAgent = false;
+        addKeysToAgent = "no";
+        compression = false;
+        serverAliveInterval = 0;
+        serverAliveCountMax = 3;
+        hashKnownHosts = false;
+        userKnownHostsFile = "~/.ssh/known_hosts";
+        controlMaster = "no";
+        controlPath = "~/.ssh/master-%r@%n:%p";
+        controlPersist = "no";
+      };
+      dirac = {
+        hostname = "dirac.ruc.dk";
+        user = secrets.studUsername;
+      };
+      bead50 = {
+        hostname = "bead50";
+        user = secrets.studUsername;
+        proxyJump = "dirac";
+      };
+    };
+  };
   programs.tmux.enable = true;
   programs.fastfetch.enable = true;
   programs.btop.enable = true;
