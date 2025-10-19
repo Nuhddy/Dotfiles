@@ -66,6 +66,18 @@
         user = secrets.studUsername;
         proxyJump = "dirac";
       };
+      bead67 = {
+        hostname = "bead67";
+        user = secrets.studUsername;
+        proxyJump = "bead50";
+        localForwards = [
+          {
+            bind.port = 50000;
+            host.address = "localhost";
+            host.port = 50000;
+          }
+        ];
+      };
     };
   };
   programs.tmux.enable = true;
