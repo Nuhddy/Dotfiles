@@ -66,6 +66,11 @@
         user = secrets.studUsername;
         proxyJump = "dirac";
       };
+      i43 = {
+        hostname = "i43";
+        user = secrets.studUsername;
+        proxyJump = "dirac";
+      };
       bead50 = {
         hostname = "bead50";
         user = secrets.studUsername;
@@ -74,14 +79,7 @@
       bead67 = {
         hostname = "bead67";
         user = secrets.studUsername;
-        proxyJump = "bead50";
-        localForwards = [
-          {
-            bind.port = 50000;
-            host.address = "localhost";
-            host.port = 50000;
-          }
-        ];
+        proxyJump = "dirac";
       };
     };
   };
