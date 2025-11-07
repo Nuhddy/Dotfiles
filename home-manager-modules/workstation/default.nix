@@ -61,23 +61,7 @@
         hostname = "dirac.ruc.dk";
         user = secrets.studUsername;
       };
-      i42 = {
-        hostname = "i42";
-        user = secrets.studUsername;
-        proxyJump = "dirac";
-      };
-      i43 = {
-        hostname = "i43";
-        user = secrets.studUsername;
-        proxyJump = "dirac";
-      };
-      bead50 = {
-        hostname = "bead50";
-        user = secrets.studUsername;
-        proxyJump = "dirac";
-      };
-      bead67 = {
-        hostname = "bead67";
+      "i42 i43 bead50 bead67" = {
         user = secrets.studUsername;
         proxyJump = "dirac";
       };
