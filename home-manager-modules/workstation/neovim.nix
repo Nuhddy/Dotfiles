@@ -18,6 +18,7 @@ in {
       stylua
       nixd
       alejandra
+      black
     ];
   };
   xdg.configFile.nvim.source = helpers.configSymlink "nvim";

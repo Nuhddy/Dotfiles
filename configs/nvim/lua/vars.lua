@@ -8,4 +8,5 @@ _G.OS = (
 _G.FORMATTERS = {
     lua = { 'stylua' },
     nix = { 'alejandra' },
+    python = { 'black' },
 }
