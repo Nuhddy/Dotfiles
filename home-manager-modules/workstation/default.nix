@@ -82,6 +82,7 @@
     extraConfig = {
       init.defaultBranch = "main";
     };
+    lfs.enable = true;
   };
   programs.gh = {
     enable = true;
