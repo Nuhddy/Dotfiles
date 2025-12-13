@@ -10,7 +10,7 @@
   ];
 
   networking.hostName = "octane";
-  system.stateVersion = "24.11";
+  system.stateVersion = "25.11";
 
   services.xserver.videoDrivers = ["nvidia"];
   hardware.nvidia.open = false;
