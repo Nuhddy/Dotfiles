@@ -52,7 +52,6 @@ in {
       "hardware"
       "desktopEnvironment"
       "niri"
-      "waybar"
       "gaming"
       "gui"
     ];

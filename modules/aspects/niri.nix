@@ -1,4 +1,8 @@
-{inputs, ...}: {
+{
+  self,
+  inputs,
+  ...
+}: {
   flake.modules.nixos.niri = {pkgs, ...}: {
     imports = [
       inputs.niri.nixosModules.niri
@@ -19,6 +23,8 @@
   }: let
     apps = import ./scripts.nix {inherit pkgs;};
   in {
+    imports = [self.modules.homeManager.waybar];
+
     home.packages = with pkgs; [
       wl-clipboard
       wev
