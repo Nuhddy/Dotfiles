@@ -12,7 +12,7 @@
       # File management
       bitwarden-desktop
       nextcloud-client
-      xfce.thunar
+      thunar
       zotero
       calibre
       obsidian

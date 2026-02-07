@@ -44,7 +44,7 @@
             # Apps
             "Super Return" = "spawn '${pkgs.kitty}/bin/kitty -1'";
             "Super Space" = "spawn '${pkgs.rofi}/bin/rofi -show drun'";
-            "Super E" = "spawn ${pkgs.xfce.thunar}/bin/thunar";
+            "Super E" = "spawn ${pkgs.thunar}/bin/thunar";
             "Alt End" = "spawn '${wlsunset} toggle'";
 
             # Client

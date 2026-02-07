@@ -110,12 +110,14 @@
     # Git
     programs.git = {
       enable = true;
-      userEmail = secrets.email;
-      userName = "Nuhddy";
-      extraConfig = {
+      lfs.enable = true;
+      settings = {
+        user = {
+          email = secrets.email;
+          name = "Nuhddy";
+        };
         init.defaultBranch = "main";
       };
-      lfs.enable = true;
     };
     programs.gh = {
       enable = true;
