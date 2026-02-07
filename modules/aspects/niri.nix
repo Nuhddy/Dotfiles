@@ -83,10 +83,13 @@
           refresh = 0.0 + config.hostSpec.display.refreshRate;
         };
         */
-        outputs."eDP-1".mode = {
-          width = 1920;
-          height = 1080;
-          refresh = 0.0 + 60;
+        outputs."eDP-1" = {
+          mode = {
+            width = 1920;
+            height = 1080;
+            refresh = 0.0 + 60;
+          };
+          scale = 1.25;
         };
 
         layout = {
