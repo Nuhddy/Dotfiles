@@ -4,11 +4,8 @@ Multi-host flake with configurations for NixOS, NixOS on WSL, and Windows
 
 ## Todo
 
-- Module system with import statements evaluated by lib.mkOption
 - Extend lib instead of importing on use
-
-- Set up python env (devenv.sh?) on NixOS
-- Rice most frequently used DE utils
-
 - Convenient sync of Windows dotfiles with backups for overwritten files
-- Rewrite shell scripts in nix
+- Custom variables for per-host configuration (screen res, etc.)
+- Port iso-config to flake-parts
+- Refer to files as a path relative to the flake-root instead of path relative to individual module files
