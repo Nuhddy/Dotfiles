@@ -28,6 +28,7 @@
       # TODO: fix this
       # (lib.mkIf config.hostSpec.latex.enable texliveFull)
       teams-for-linux
+      slack
 
       # browser
       inputs.zen-browser.packages.${stdenv.hostPlatform.system}.default
