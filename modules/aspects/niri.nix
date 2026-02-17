@@ -1,8 +1,4 @@
-{
-  self,
-  inputs,
-  ...
-}: {
+{inputs, ...}: {
   flake.modules.nixos.niri = {pkgs, ...}: {
     imports = [
       inputs.niri.nixosModules.niri
@@ -23,8 +19,6 @@
   }: let
     apps = import ./scripts.nix {inherit pkgs;};
   in {
-    imports = [self.modules.homeManager.waybar];
-
     home.packages = with pkgs; [
       wl-clipboard
       wev
@@ -144,7 +138,7 @@
         ];
 
         spawn-at-startup = [
-          {argv = ["${pkgs.waybar}/bin/waybar"];}
+          {argv = ["${inputs.quickshell.packages.${pkgs.stdenv.hostPlatform.system}.default}/bin/qs"];}
           {argv = ["${pkgs.swww}/bin/swww" "img" "../../assets/wallpaper.png"];}
           {argv = ["${pkgs.mako}/bin/mako"];}
           {argv = ["${jamesdsp}" "-t"];}

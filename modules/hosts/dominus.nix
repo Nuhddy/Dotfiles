@@ -51,6 +51,7 @@ in {
       "neovim"
       "hardware"
       "desktopEnvironment"
+      "quickshell"
       "niri"
       "gaming"
       "gui"

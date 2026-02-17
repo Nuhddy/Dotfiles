@@ -1,4 +1,4 @@
-{
+{inputs, ...}: {
   flake.modules.nixos.river = {
     programs.river-classic.enable = true;
 
@@ -126,7 +126,7 @@
             + ", --tags ${tagStr 5} monocle on"
             + "'")
           "'${pkgs.swww}/bin/swww-daemon'"
-          "'${pkgs.waybar}/bin/waybar'"
+          "'${inputs.quickshell.packages.${pkgs.stdenv.hostPlatform.system}.default}/bin/qs'"
           "'${pkgs.mako}/bin/mako'"
           "'${wlsunset} on'"
           "'${pkgs.jamesdsp}/bin/jamesdsp -t'"
