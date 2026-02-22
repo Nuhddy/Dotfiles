@@ -3,6 +3,6 @@ import QtQuick
 import "../services"
 
 Text {
-    text: Battery.percentage
+    text: Battery.state + " " + Battery.percentage
     color: root.colText
 }
