@@ -55,6 +55,7 @@
       just
       python3
       devenv
+      dotnet-sdk
 
       # Git
       git-crypt
