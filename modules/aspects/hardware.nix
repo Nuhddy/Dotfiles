@@ -1,4 +1,4 @@
-{
+{inputs, ...}: {
   flake.modules.nixos.hardware = {
     config,
     lib,
@@ -84,6 +84,8 @@
       pw-volume
       jamesdsp
       playerctl
+
+      inputs.globalprotect-openconnect.packages.${pkgs.stdenv.hostPlatform.system}.default
     ];
 
     xdg.configFile."jamesdsp/presets".source = (import ../../lib/symlink-config.nix {inherit config;}) "jamesdsp/presets";
