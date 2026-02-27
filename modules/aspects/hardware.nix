@@ -89,5 +89,7 @@
     ];
 
     xdg.configFile."jamesdsp/presets".source = (import ../../lib/symlink-config.nix {inherit config;}) "jamesdsp/presets";
+
+    home.shellAliases.vpnruc = "sudo -E gpclient --fix-openssl connect vpn.ruc.dk --default-browser";
   };
 }
