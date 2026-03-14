@@ -45,14 +45,9 @@
     };
 
     # Backlight
-    programs.light = lib.mkIf (config.networking.hostName == "dominus") {
-      enable = true;
-      brightnessKeys = {
-        enable = true;
-        minBrightness = 0;
-        step = 5;
-      };
-    };
+    environment.systemPackages = with pkgs; [
+      (lib.mkIf (config.networking.hostName == "dominus") brightnessctl)
+    ];
 
     # Audio
     services.pipewire = {
@@ -69,10 +64,16 @@
 
     # Networking
     networking.networkmanager.enable = true;
-    users.users.nuhddy.extraGroups = ["networkmanager"];
 
     # Keyring
     services.gnome.gnome-keyring.enable = true;
+
+    # User groups
+    users.users.nuhddy.extraGroups = [
+      "networkmanager"
+      "video"
+      "input"
+    ];
   };
 
   flake.modules.homeManager.hardware = {

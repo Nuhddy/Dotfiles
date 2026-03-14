@@ -40,6 +40,7 @@
         jamesdsp = "${pkgs.jamesdsp}/bin/jamesdsp";
         playerctl = apps.playerctl-specific-player;
         pw-volume = "${pkgs.pw-volume}/bin/pw-volume";
+        brightnessctl = "${pkgs.brightnessctl}/bin/brightnessctl";
       in {
         input = {
           keyboard = {
@@ -222,6 +223,14 @@
           #   allow-when-locked = true;
           #   hotkey-overlay.title = "Next track";
           # };
+          "XF86MonBrightnessDown" = {
+            action = spawn "${brightnessctl}" "set" "5%-";
+            hotkey-overlay.title = "Decrease brightness";
+          };
+          "XF86MonBrightnessUp" = {
+            action = spawn "${brightnessctl}" "set" "5%+";
+            hotkey-overlay.title = "Increase brightness";
+          };
           "Mod+Bracketleft" = {
             action = spawn "${jamesdsp}" "--load-preset" "Flat";
             allow-when-locked = true;
