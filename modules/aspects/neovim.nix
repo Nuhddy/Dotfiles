@@ -18,6 +18,8 @@
         nixd
         alejandra
         black
+        fantomas
+        typstyle
       ];
     };
 

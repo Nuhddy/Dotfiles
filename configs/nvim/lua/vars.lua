@@ -9,4 +9,6 @@ _G.FORMATTERS = {
     lua = { 'stylua' },
     nix = { 'alejandra' },
     python = { 'black' },
+    fsharp = { 'fantomas' },
+    typst = { 'typstyle' },
 }
