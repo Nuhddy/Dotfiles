@@ -14,7 +14,8 @@
       nextcloud-client
       thunar
       zotero
-      calibre
+      # INFO: https://nixpk.gs/pr-tracker.html?pr=493988
+      inputs.nixpkgs-stable.legacyPackages.${pkgs.stdenv.hostPlatform.system}.calibre
       obsidian
       libreoffice
 
@@ -27,11 +28,9 @@
 
       # TODO: fix this
       # (lib.mkIf config.hostSpec.latex.enable texliveFull)
+      typst
       teams-for-linux
       slack
-
-      # browser
-      inputs.zen-browser.packages.${stdenv.hostPlatform.system}.default
     ];
 
     programs.thunderbird = {
@@ -54,29 +53,18 @@
         guioptions = "";
       };
     };
-    home.sessionVariables.READER = "zathura";
+    programs.sioyek.enable = true;
+    home.sessionVariables.READER = "sioyek";
+    xdg.mimeApps.defaultApplications."application/pdf" = "sioyek.desktop";
 
     # Browser
-    /*
-       home.packages = with pkgs; [
-      inputs.zen-browser.packages.${system}.default
-    ];
-    */
-
     programs.firefox.enable = true;
-
-    xdg.mimeApps = {
-      enable = true;
-      defaultApplications = let
-        browser = "firefox.desktop";
-      in {
-        "x-scheme-handler/http" = browser;
-        "x-scheme-handler/https" = browser;
-        "x-scheme-handler/about" = browser;
-        "x-scheme-handler/unknown" = browser;
-      };
-    };
     home.sessionVariables.BROWSER = "firefox";
+    xdg.mimeApps.defaultApplications."text/html" = "firefox.desktop";
+    xdg.mimeApps.defaultApplications."x-scheme-handler/http" = "firefox.desktop";
+    xdg.mimeApps.defaultApplications."x-scheme-handler/https" = "firefox.desktop";
+    xdg.mimeApps.defaultApplications."x-scheme-handler/about" = "firefox.desktop";
+    xdg.mimeApps.defaultApplications."x-scheme-handler/unknown" = "firefox.desktop";
 
     # Terminals
     programs.kitty = {

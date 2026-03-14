@@ -56,6 +56,7 @@
       python3
       devenv
       dotnet-sdk
+      android-tools
 
       # Git
       git-crypt
@@ -158,6 +159,7 @@
     programs.dircolors.enable = true;
     xdg = {
       enable = true;
+      mimeApps.enable = true;
       userDirs = {
         enable = true;
         createDirectories = true;
