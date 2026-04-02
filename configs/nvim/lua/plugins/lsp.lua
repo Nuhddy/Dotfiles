@@ -118,7 +118,7 @@ return {
                         },
                     },
                 },
-                fsharp_language_server = {},
+                -- fsharp_language_server = {},
                 -- pyright = {},
                 -- ts_ls = {},
             }
