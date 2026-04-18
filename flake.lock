@@ -535,7 +535,8 @@
         "nixos-wsl": "nixos-wsl",
         "nixpkgs": "nixpkgs_8",
         "nixpkgs-stable": "nixpkgs-stable_2",
-        "quickshell": "quickshell"
+        "quickshell": "quickshell",
+        "typst-templates": "typst-templates"
       }
     },
     "rust-analyzer-src": {
@@ -585,6 +586,26 @@
       "original": {
         "owner": "nix-systems",
         "repo": "default",
+        "type": "github"
+      }
+    },
+    "typst-templates": {
+      "inputs": {
+        "nixpkgs": [
+          "nixpkgs"
+        ]
+      },
+      "locked": {
+        "lastModified": 1775771651,
+        "narHash": "sha256-9IJu/VtcF0lothCE7YGKqyGOaj8lIicELwY/wZL1eg0=",
+        "owner": "Nuhddy",
+        "repo": "typst-templates",
+        "rev": "47d1d8dd6f66ca4fe21509fa577f30e2f0fa520c",
+        "type": "github"
+      },
+      "original": {
+        "owner": "Nuhddy",
+        "repo": "typst-templates",
         "type": "github"
       }
     },
