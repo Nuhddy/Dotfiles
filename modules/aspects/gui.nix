@@ -33,6 +33,9 @@
       slack
     ];
 
+    home.file."${config.xdg.dataHome}/typst/packages/local/uni/0.1.0".source =
+      inputs.typst-templates.packages.${pkgs.stdenv.hostPlatform.system};
+
     programs.thunderbird = {
       enable = true;
       profiles.${config.home.username}.isDefault = true;

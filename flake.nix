@@ -22,6 +22,11 @@
       inputs.nixpkgs.follows = "nixpkgs";
     };
     globalprotect-openconnect.url = "github:yuezk/GlobalProtect-openconnect";
+
+    typst-templates = {
+      url = "github:Nuhddy/typst-templates";
+      inputs.nixpkgs.follows = "nixpkgs";
+    };
   };
 
   outputs = inputs: inputs.flake-parts.lib.mkFlake {inherit inputs;} (inputs.import-tree ./modules);
