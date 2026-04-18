@@ -53,7 +53,33 @@
         guioptions = "";
       };
     };
-    programs.sioyek.enable = true;
+    programs.sioyek = {
+      enable = true;
+      bindings = {
+        "move_down" = "j";
+        "move_up" = "k";
+        "move_right" = "h";
+        "move_left" = "l";
+
+        "move_down_smooth" = "e";
+        "move_up_smooth" = "y";
+
+        "previous_page" = "u";
+        "next_page" = "d";
+
+        "toggle_dark_mode" = "i";
+        "toggle_custom_color" = "I";
+      };
+      config = {
+        "page_separator_width" = "4";
+        "search_url_d" = "https://unduck.link?q=";
+        "zoom_inc_factor" = "1.05";
+        startup_commands = [
+          "toggle_horizontal_scroll_lock"
+          "toggle_statusbar"
+        ];
+      };
+    };
     home.sessionVariables.READER = "sioyek";
     xdg.mimeApps.defaultApplications."application/pdf" = "sioyek.desktop";
 
