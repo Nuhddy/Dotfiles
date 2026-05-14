@@ -14,6 +14,7 @@
     };
 
     services.openssh.enable = true;
+    services.tailscale.enable = true;
 
     i18n.defaultLocale = "en_US.UTF-8";
 
@@ -99,6 +100,11 @@
         "i42 i43 bead50 bead67" = {
           user = secrets.studUsername;
           proxyJump = "dirac";
+        };
+        sixseven = {
+          hostname = "sixseven.tail16495d.ts.net";
+          user = "sevensix";
+          setEnv = {TERM = "xterm-256color";};
         };
       };
     };
