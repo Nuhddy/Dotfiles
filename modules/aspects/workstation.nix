@@ -34,6 +34,21 @@
       accent = "blue";
       cache.enable = true;
     };
+
+    # Binary caches
+    nix.settings = {
+      substituters = [
+        "https://cache.nixos.org"
+        "https://nix-community.cachix.org"
+        "https://devenv.cachix.org"
+        "https://nixpkgs-python.cachix.org"
+      ];
+      trusted-public-keys = [
+        "nix-community.cachix.org-1:mB9FSh9qf2dCimDSUo8Zy7bkq5CX+/rkCWyvRCYg3Fs="
+        "devenv.cachix.org-1:w1cLUi8dv3hnoSPGAuibQv+f9TZLr6cv/Hm9XgU50cw="
+        "nixpkgs-python.cachix.org-1:hxjI7pFxTyuTHn2NkvWCrAUcNZLNS3ZAvfYNuYifcEU="
+      ];
+    };
   };
 
   flake.modules.homeManager.workstation = {
@@ -64,21 +79,6 @@
       git-crypt
     ];
 
-    # Cachix for devenv
-    nix.settings = {
-      substituters = [
-        "https://cache.nixos.org"
-        "https://nix-community.cachix.org"
-        "https://devenv.cachix.org"
-        "https://nixpkgs-python.cachix.org"
-      ];
-      trusted-public-keys = [
-        "nix-community.cachix.org-1:mB9FSh9qf2dCimDSUo8Zy7bkq5CX+/rkCWyvRCYg3Fs="
-        "devenv.cachix.org-1:w1cLUi8dv3hnoSPGAuibQv+f9TZLr6cv/Hm9XgU50cw="
-        "nixpkgs-python.cachix.org-1:hxjI7pFxTyuTHn2NkvWCrAUcNZLNS3ZAvfYNuYifcEU="
-      ];
-    };
-
     catppuccin = {
       enable = true;
       accent = "blue";
@@ -99,19 +99,23 @@
           controlMaster = "no";
           controlPath = "~/.ssh/master-%r@%n:%p";
           controlPersist = "no";
+          setEnv = {TERM = "xterm-256color";};
         };
         dirac = {
           hostname = "dirac.ruc.dk";
-          user = secrets.studUsername;
+          user = secrets.uniUser;
         };
         "i42 i43 bead50 bead67" = {
-          user = secrets.studUsername;
+          user = secrets.uniUser;
           proxyJump = "dirac";
         };
         sixseven = {
           hostname = "sixseven.tail16495d.ts.net";
           user = "sevensix";
-          setEnv = {TERM = "xterm-256color";};
+        };
+        genome = {
+          hostname = "login.genome.au.dk";
+          user = secrets.genomeUser;
         };
       };
     };
