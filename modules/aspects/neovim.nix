@@ -10,6 +10,8 @@
       viAlias = true;
       vimAlias = true;
       vimdiffAlias = true;
+      withPython3 = false;
+      withRuby = false;
       extraPackages = with pkgs; [
         tree-sitter
         gcc
@@ -23,6 +25,7 @@
       ];
     };
 
-    xdg.configFile.nvim.source = (import ../../lib/symlink-config.nix {inherit config;}) "nvim";
+    # TODO: look into config wrapper
+    # xdg.configFile.nvim.source = (import ../../lib/symlink-config.nix {inherit config;}) "nvim";
   };
 }

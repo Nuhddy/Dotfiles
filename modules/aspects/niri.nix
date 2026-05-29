@@ -25,13 +25,13 @@
       mako
       rofi
       nwg-look
-      swww
+      awww
       lswt
       wlsunset
       waybar
     ];
 
-    services.swww = {
+    services.awww = {
       enable = true;
     };
 
@@ -140,7 +140,7 @@
 
         spawn-at-startup = [
           {argv = ["${inputs.quickshell.packages.${pkgs.stdenv.hostPlatform.system}.default}/bin/qs"];}
-          {argv = ["${pkgs.swww}/bin/swww" "img" "../../assets/wallpaper.png"];}
+          {argv = ["${pkgs.awww}/bin/swww" "img" "../../assets/wallpaper.png"];}
           {argv = ["${pkgs.mako}/bin/mako"];}
           {argv = ["${jamesdsp}" "-t"];}
           {argv = ["${pkgs.bitwarden-desktop}/bin/bitwarden"];}

@@ -87,7 +87,7 @@
     programs.ssh = {
       enable = true;
       enableDefaultConfig = false;
-      matchBlocks = {
+      settings = {
         "*" = {
           forwardAgent = false;
           addKeysToAgent = "no";
@@ -99,7 +99,7 @@
           controlMaster = "no";
           controlPath = "~/.ssh/master-%r@%n:%p";
           controlPersist = "no";
-          setEnv = {TERM = "xterm-256color";};
+          setEnv = "TERM=xterm-256color";
         };
         dirac = {
           hostname = "dirac.ruc.dk";
@@ -180,6 +180,7 @@
       userDirs = {
         enable = true;
         createDirectories = true;
+        setSessionVariables = false;
         documents = "${config.home.homeDirectory}/Nextcloud/Documents";
         pictures = "${config.home.homeDirectory}/Nextcloud/Pictures";
         templates = "${config.home.homeDirectory}/Nextcloud/Templates";

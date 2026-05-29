@@ -9,7 +9,8 @@
 
   flake.modules.homeManager.gaming = {pkgs, ...}: {
     home.packages = with pkgs; [
-      lutris
+      # TODO: openldap error on build
+      # lutris
       prismlauncher
     ];
   };

@@ -19,7 +19,7 @@
       rofi
       nwg-look
       river-filtile
-      swww
+      awww
       lswt
       wlr-randr
       wlsunset
@@ -125,7 +125,7 @@
             + ", --tags ${tagStr 4} monocle on"
             + ", --tags ${tagStr 5} monocle on"
             + "'")
-          "'${pkgs.swww}/bin/swww-daemon'"
+          "'${pkgs.awww}/bin/swww-daemon'"
           "'${inputs.quickshell.packages.${pkgs.stdenv.hostPlatform.system}.default}/bin/qs'"
           "'${pkgs.mako}/bin/mako'"
           "'${wlsunset} on'"

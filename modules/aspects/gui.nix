@@ -7,15 +7,14 @@
     home.packages = with pkgs; [
       # Network
       networkmanagerapplet
-      protonvpn-gui
+      proton-vpn
 
       # File management
       bitwarden-desktop
       nextcloud-client
       thunar
       zotero
-      # INFO: https://nixpk.gs/pr-tracker.html?pr=493988
-      inputs.nixpkgs-stable.legacyPackages.${pkgs.stdenv.hostPlatform.system}.calibre
+      calibre
       obsidian
       libreoffice
 
@@ -41,9 +40,8 @@
       profiles.${config.home.username}.isDefault = true;
     };
 
-    programs.vscode = {
+    programs.vscodium = {
       enable = true;
-      package = pkgs.vscodium;
     };
 
     programs.pandoc.enable = true;
@@ -87,7 +85,10 @@
     xdg.mimeApps.defaultApplications."application/pdf" = "sioyek.desktop";
 
     # Browser
-    programs.firefox.enable = true;
+    programs.firefox = {
+      enable = true;
+      configPath = "${config.xdg.configHome}/mozilla/firefox";
+    };
     home.sessionVariables.BROWSER = "firefox";
     xdg.mimeApps.defaultApplications."text/html" = "firefox.desktop";
     xdg.mimeApps.defaultApplications."x-scheme-handler/http" = "firefox.desktop";
