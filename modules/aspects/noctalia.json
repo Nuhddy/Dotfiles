@@ -257,7 +257,7 @@
     },
     "wallpaper": {
       "enabled": true,
-      "overviewEnabled": true,
+      "overviewEnabled": false,
       "directory": "/home/nuhddy/.config/nixos/assets",
       "monitorDirectories": [],
       "enableMultiMonitorDirectories": false,
@@ -681,7 +681,7 @@
       }
     },
     "notificationsState": {
-      "lastSeenTs": 1780173849000
+      "lastSeenTs": 1780188581000
     },
     "changelogState": {
       "lastSeenVersion": "v4.7.6"
