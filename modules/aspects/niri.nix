@@ -1,47 +1,42 @@
-{inputs, ...}: {
-  flake.modules.nixos.niri = {pkgs, ...}: {
-    imports = [
-      inputs.niri.nixosModules.niri
-    ];
-
+{
+  self,
+  inputs,
+  ...
+}: {
+  flake.modules.nixos.niri = {
+    pkgs,
+    lib,
+    ...
+  }: {
     programs.niri = {
       enable = true;
-      package = pkgs.niri;
+      package = self.packages.${pkgs.stdenv.hostPlatform.system}.myNiri;
     };
-
-    environment.sessionVariables.NIXOS_OZONE_WL = "1";
   };
 
   flake.modules.homeManager.niri = {
-    config,
     pkgs,
     ...
-  }: let
-    apps = import ./scripts.nix {inherit pkgs;};
-  in {
+  }: {
     home.packages = with pkgs; [
+      self.packages.${pkgs.stdenv.hostPlatform.system}.myNoctalia
       wl-clipboard
       wev
-      mako
-      rofi
-      nwg-look
-      awww
       lswt
-      wlsunset
-      waybar
+      nwg-look
     ];
+  };
 
-    services.awww = {
-      enable = true;
-    };
+  perSystem = {
+    pkgs,
+    lib,
+    self',
+    ...
+  }: {
+    packages.myNiri = inputs.wrappers.wrappers.niri.wrap {
+      inherit pkgs;
 
-    programs.niri = {
-      settings = let
-        jamesdsp = "${pkgs.jamesdsp}/bin/jamesdsp";
-        playerctl = apps.playerctl-specific-player;
-        pw-volume = "${pkgs.pw-volume}/bin/pw-volume";
-        brightnessctl = "${pkgs.brightnessctl}/bin/brightnessctl";
-      in {
+      settings = {
         input = {
           keyboard = {
             xkb = {
@@ -53,200 +48,138 @@
             track-layout = "global";
           };
           touchpad = {
-            tap = true;
-            dwt = true;
+            tap = _: {};
+            dwt = _: {};
             drag = true;
-            natural-scroll = true;
+            natural-scroll = _: {};
             accel-profile = "flat";
             scroll-method = "two-finger";
             click-method = "clickfinger";
-            disabled-on-external-mouse = true;
+            disabled-on-external-mouse = _: {};
           };
           mouse.accel-profile = "flat";
-          power-key-handling.enable = false;
+          disable-power-key-handling = _: {};
           mod-key = "Super";
         };
 
         cursor.hide-after-inactive-ms = 10000;
 
-        gestures.hot-corners.enable = false;
+        gestures.hot-corners.off = _: {};
 
-        /*
-           outputs."${config.hostSpec.display.name}".mode = {
-          width = config.hostSpec.display.width;
-          height = config.hostSpec.display.height;
-          refresh = 0.0 + config.hostSpec.display.refreshRate;
+        outputs."DP-2" = {
+          mode = "1920x1080@144.001";
+          variable-refresh-rate = _: {};
+          # scale = 1.25;
         };
-        */
-        outputs."eDP-1" = {
-          mode = {
-            width = 1920;
-            height = 1080;
-            refresh = 0.0 + 60;
-          };
-          scale = 1.25;
-        };
+
+        xwayland-satellite.path = lib.getExe pkgs.xwayland-satellite;
 
         layout = {
           gaps = 8;
           background-color = "transparent";
           border = {
-            enable = true;
             width = 2;
-            active = {color = "#89b4fa";};
-            inactive = {color = "#585b70";};
-            urgent = {color = "#f38ba8";};
+            active-color = "#89b4fa";
+            inactive-color = "#585b70";
+            urgent-color = "#f38ba8";
           };
-          focus-ring.enable = false;
+          focus-ring.off = _: {};
           tab-indicator = {
             position = "top";
-            length.total-proportion = 0.4;
+            length = _: {total-proportion = 0.4;};
             width = 8;
             gap = 8;
             corner-radius = 4;
             place-within-column = true;
             gaps-between-tabs = 16;
           };
-          default-column-width = {proportion = 0.5;};
+          default-column-width.proportion = 0.5;
         };
 
         overview = {
           zoom = 0.65;
-          workspace-shadow.enable = false;
+          workspace-shadow.off = _: {};
         };
 
-        prefer-no-csd = true;
+        prefer-no-csd = _: {};
 
         layer-rules = [
           {
-            matches = [{namespace = "swww-daemon";}];
+            matches = [{namespace = "^noctalia-wallpaper*";}];
             place-within-backdrop = true;
           }
         ];
 
         window-rules = [
           {
-            geometry-corner-radius = let
-              r = 10.0;
-            in {
-              top-left = r;
-              top-right = r;
-              bottom-left = r;
-              bottom-right = r;
-            };
+            geometry-corner-radius = 10.0;
             clip-to-geometry = true;
           }
         ];
 
         spawn-at-startup = [
-          {argv = ["${inputs.quickshell.packages.${pkgs.stdenv.hostPlatform.system}.default}/bin/qs"];}
-          {argv = ["${pkgs.awww}/bin/swww" "img" "../../assets/wallpaper.png"];}
-          {argv = ["${pkgs.mako}/bin/mako"];}
-          {argv = ["${jamesdsp}" "-t"];}
-          {argv = ["${pkgs.bitwarden-desktop}/bin/bitwarden"];}
-          {argv = ["${pkgs.nextcloud-client}/bin/nextcloud"];}
-          {argv = ["${pkgs.networkmanager}/bin/nm-applet"];}
-          {argv = ["${pkgs.wlsunset}/bin/wlsunset" "-t" "3400" "-T" "6500" "-l" "55.7" "-L" "11.7"];}
+          (lib.getExe self'.packages.myNoctalia)
+          [(lib.getExe pkgs.jamesdsp) "-t"]
+          (lib.getExe pkgs.bitwarden-desktop)
+          (lib.getExe pkgs.nextcloud-client)
         ];
 
-        hotkey-overlay.skip-at-startup = true;
+        hotkey-overlay.skip-at-startup = _: {};
 
-        binds = with config.lib.niri.actions; {
-          "Mod+Return" = {
-            action = spawn "kitty" "-1";
-            hotkey-overlay.title = "Spawn terminal";
-          };
-          "Mod+Space" = {
-            action = spawn "rofi" "-show" "drun";
-            hotkey-overlay.title = "Spawn launcher";
-          };
-          "Mod+E" = {
-            action = spawn "thunar";
-            hotkey-overlay.title = "Spawn file explorer";
-          };
+        binds = let
+          noctalia-call = x: [(lib.getExe self'.packages.myNoctalia) "ipc" "call"] ++ x;
 
-          "Mod+Shift+Q".action = close-window;
-          "Mod+S".action = toggle-window-floating;
-          "Mod+F".action = fullscreen-window;
+          eq-notify = {name, icon}: ''
+            ${lib.getExe pkgs.jamesdsp} --load-preset ${name}; \
+            ${lib.getExe self'.packages.myNoctalia} ipc call toast send \
+            '${
+	      builtins.toJSON {
+                title = "Equalizer";
+                body = "EQ preset changed to ${name}";
+	        inherit icon;
+              }
+	    }'
+          '';
+        in {
+          "Mod+Return".spawn = [(lib.getExe pkgs.kitty) "-1"];
+          "Mod+Space".spawn = noctalia-call ["launcher" "toggle"];
+          "Mod+E".spawn = lib.getExe pkgs.thunar;
 
-          "Alt+Tab".action = focus-window-previous;
-          "Mod+H".action = focus-column-left;
-          "Mod+L".action = focus-column-right;
-          "Mod+J".action = focus-window-down;
-          "Mod+K".action = focus-window-up;
+          "Mod+Shift+Q".close-window = _: {};
+          "Mod+S".toggle-window-floating = _: {};
+          "Mod+F".fullscreen-window = _: {};
 
-          "Mod+Shift+H".action = move-column-left;
-          "Mod+Shift+L".action = move-column-right;
-          "Mod+Shift+J".action = move-window-down;
-          "Mod+Shift+K".action = move-window-up;
+          "Alt+Tab".focus-window-previous = _: {};
+          "Mod+H".focus-column-left = _: {};
+          "Mod+L".focus-column-right = _: {};
+          "Mod+J".focus-window-down = _: {};
+          "Mod+K".focus-window-up = _: {};
 
-          "Mod+Ctrl+H".action = consume-or-expel-window-left;
-          "Mod+Ctrl+L".action = consume-or-expel-window-right;
+          "Mod+Shift+H".move-column-left = _: {};
+          "Mod+Shift+L".move-column-right = _: {};
+          "Mod+Shift+J".move-window-down = _: {};
+          "Mod+Shift+K".move-window-up = _: {};
 
-          "Mod+Ctrl+J".action = move-window-to-workspace-down;
-          "Mod+Ctrl+K".action = move-window-to-workspace-up;
+          "Mod+Ctrl+H".consume-or-expel-window-left = _: {};
+          "Mod+Ctrl+L".consume-or-expel-window-right = _: {};
 
-          "Mod+Minus".action = set-column-width "-5%";
-          "Mod+Equal".action = set-column-width "+5%";
+          "Mod+Ctrl+J".move-window-to-workspace-down = _: {};
+          "Mod+Ctrl+K".move-window-to-workspace-up = _: {};
 
-          "Win+Tab".action = maximize-column;
-          "Win+Shift+Tab".action = toggle-column-tabbed-display;
+          "Mod+Minus".set-column-width = "-5%";
+          "Mod+Equal".set-column-width = "+5%";
 
-          # TODO: find suitable hotkeys
-          # "Volume Up" = {
-          #   action = spawn "${pw-volume}" "change" "+5%";
-          #   allow-when-locked = true;
-          #   hotkey-overlay.title = "Raise volume";
-          # };
-          # "Volume Down" = {
-          #   action = spawn "${pw-volume}" "change" "-5%";
-          #   allow-when-locked = true;
-          #   hotkey-overlay.title = "Lower volume";
-          # };
-          # "Volume Mute" = {
-          #   action = spawn "${pw-volume}" "mute" "toggle";
-          #   allow-when-locked = true;
-          #   hotkey-overlay.title = "Toggle mute";
-          # };
-          # "Play" = {
-          #   action = spawn "${playerctl}" "play-pause";
-          #   allow-when-locked = true;
-          #   hotkey-overlay.title = "Play/pause track";
-          # };
-          # "Prev" = {
-          #   action = spawn "${playerctl}" "previous";
-          #   allow-when-locked = true;
-          #   hotkey-overlay.title = "Previous track";
-          # };
-          # "Next" = {
-          #   action = spawn "${playerctl}" "next";
-          #   allow-when-locked = true;
-          #   hotkey-overlay.title = "Next track";
-          # };
-          "XF86MonBrightnessDown" = {
-            action = spawn "${brightnessctl}" "set" "5%-";
-            hotkey-overlay.title = "Decrease brightness";
-          };
-          "XF86MonBrightnessUp" = {
-            action = spawn "${brightnessctl}" "set" "5%+";
-            hotkey-overlay.title = "Increase brightness";
-          };
-          "Mod+Bracketleft" = {
-            action = spawn "${jamesdsp}" "--load-preset" "Flat";
-            allow-when-locked = true;
-            hotkey-overlay.title = "Equalizer preset: Flat";
-          };
-          "Mod+Bracketright" = {
-            action = spawn "${jamesdsp}" "--load-preset" "Headphones";
-            allow-when-locked = true;
-            hotkey-overlay.title = "Equalizer preset: Headphones";
-          };
+          "Mod+Tab".maximize-column = _: {};
+          "Mod+Shift+Tab".toggle-overview = _: {};
 
-          "Mod+F1".action = show-hotkey-overlay;
-          "Mod+Ctrl+Shift+E".action = quit;
-        };
-        switch-events = with config.lib.niri.actions; {
-          lid-close.action = spawn "${pkgs.swaylock}/bin/swaylock";
+          "Mod+Delete".spawn = noctalia-call ["media" "previous"];
+          "Mod+End".spawn = noctalia-call ["media" "playPause"];
+          "Mod+Next".spawn = noctalia-call ["media" "next"];
+          "Mod+Bracketleft".spawn-sh = eq-notify {name = "Flat"; icon = "device-speaker";};
+          "Mod+Bracketright".spawn-sh = eq-notify {name = "Headphones"; icon = "headphones";};
+
+          "Mod+F1".show-hotkey-overlay = _: {};
+          "Mod+Ctrl+Shift+E".spawn = noctalia-call ["sessionMenu" "toggle"];
         };
       };
     };

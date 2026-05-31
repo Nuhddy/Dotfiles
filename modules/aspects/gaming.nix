@@ -11,6 +11,7 @@
     home.packages = with pkgs; [
       # TODO: openldap error on build
       # lutris
+      heroic
       prismlauncher
     ];
   };

@@ -1,4 +1,5 @@
 {
+  self,
   inputs,
   lib,
   config,
@@ -43,7 +44,10 @@ in {
       hardware.cpu.amd.updateMicrocode = lib.mkDefault config.hardware.enableRedistributableFirmware;
 
       services.xserver.videoDrivers = ["nvidia"];
-      hardware.nvidia.open = false;
+      hardware.nvidia = {
+        open = false;
+	package = config.boot.kernelPackages.nvidiaPackages.legacy_580;
+      };
     };
     aspects = [
       "base"
