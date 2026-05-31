@@ -68,7 +68,6 @@
 
         outputs."DP-2" = {
           mode = "1920x1080@144.001";
-          variable-refresh-rate = _: {};
           # scale = 1.25;
         };
 
@@ -133,17 +132,20 @@
             ${lib.getExe pkgs.jamesdsp} --load-preset ${name}; \
             ${lib.getExe self'.packages.myNoctalia} ipc call toast send \
             '${
-	      builtins.toJSON {
+              builtins.toJSON {
                 title = "Equalizer";
                 body = "EQ preset changed to ${name}";
-	        inherit icon;
+                inherit icon;
               }
-	    }'
+            }'
           '';
+
+          term = [(lib.getExe pkgs.kitty) "-1"];
         in {
-          "Mod+Return".spawn = [(lib.getExe pkgs.kitty) "-1"];
+          "Mod+Return".spawn = term;
           "Mod+Space".spawn = noctalia-call ["launcher" "toggle"];
           "Mod+E".spawn = lib.getExe pkgs.thunar;
+          "Ctrl+Shift+Escape".spawn = term ++ ["-e" (lib.getExe pkgs.btop)];
 
           "Mod+Shift+Q".close-window = _: {};
           "Mod+S".toggle-window-floating = _: {};
@@ -163,14 +165,17 @@
           "Mod+Ctrl+H".consume-or-expel-window-left = _: {};
           "Mod+Ctrl+L".consume-or-expel-window-right = _: {};
 
-          "Mod+Ctrl+J".move-window-to-workspace-down = _: {};
-          "Mod+Ctrl+K".move-window-to-workspace-up = _: {};
+          "Mod+D".focus-workspace-down = _: {};
+          "Mod+U".focus-workspace-up = _: {};
+
+          "Mod+Shift+D".move-window-to-workspace-down = _: {};
+          "Mod+Shift+U".move-window-to-workspace-up = _: {};
 
           "Mod+Minus".set-column-width = "-5%";
           "Mod+Equal".set-column-width = "+5%";
 
           "Mod+Tab".maximize-column = _: {};
-          "Mod+Shift+Tab".toggle-overview = _: {};
+          "Mod+Escape".toggle-overview = _: {};
 
           "Mod+Delete".spawn = noctalia-call ["media" "previous"];
           "Mod+End".spawn = noctalia-call ["media" "playPause"];
@@ -179,7 +184,7 @@
           "Mod+Bracketright".spawn-sh = eq-notify {name = "Headphones"; icon = "headphones";};
 
           "Mod+F1".show-hotkey-overlay = _: {};
-          "Mod+Ctrl+Shift+E".spawn = noctalia-call ["sessionMenu" "toggle"];
+          "Ctrl+Alt+Delete".spawn = noctalia-call ["sessionMenu" "toggle"];
         };
       };
     };

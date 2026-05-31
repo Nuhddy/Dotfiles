@@ -9,10 +9,10 @@
 
   flake.modules.homeManager.gaming = {pkgs, ...}: {
     home.packages = with pkgs; [
-      # TODO: openldap error on build
-      # lutris
+      lutris-unwrapped
       heroic
       prismlauncher
+      cemu
     ];
   };
 }

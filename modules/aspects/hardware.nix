@@ -15,7 +15,6 @@
           efiSupport = true;
           useOSProber = true;
           default = "saved";
-          # gfxmodeEfi = "${toString config.hostSpec.display.width}x${toString config.hostSpec.display.height}";
           gfxmodeEfi = "1920x1080";
         };
       };
@@ -23,19 +22,7 @@
     };
 
     # Power management
-    services.auto-cpufreq = lib.mkIf (config.networking.hostName == "dominus") {
-      enable = true;
-      settings = {
-        battery = {
-          governor = "powersave";
-          turbo = "auto";
-        };
-        charger = {
-          governor = "performance";
-          turbo = "always";
-        };
-      };
-    };
+    services.power-profiles-daemon.enable = true;
 
     # Power buttons
     services.logind.settings.Login = {

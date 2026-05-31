@@ -16,8 +16,8 @@
       "enableExclusionZoneInset": true,
       "backgroundOpacity": 0.93,
       "useSeparateOpacity": false,
-      "marginVertical": 4,
-      "marginHorizontal": 4,
+      "marginVertical": 8,
+      "marginHorizontal": 8,
       "frameThickness": 8,
       "frameRadius": 12,
       "outerCorners": false,
@@ -32,37 +32,44 @@
             "colorizeSystemIcon": "none",
             "colorizeSystemText": "none",
             "customIconPath": "",
-            "enableColorization": false,
+            "enableColorization": true,
             "icon": "grid-dots",
             "iconColor": "none",
             "id": "Launcher",
-            "useDistroLogo": false
+            "useDistroLogo": true
           },
-          {
-            "colorizeIcons": false,
-            "hideMode": "hidden",
-            "iconScale": 0.8,
-            "id": "Taskbar",
-            "maxTaskbarWidth": 40,
-            "onlyActiveWorkspaces": true,
-            "onlySameOutput": true,
-            "showPinnedApps": false,
-            "showTitle": true,
-            "smartWidth": true,
-            "titleWidth": 120
-          }
-        ],
-        "center": [
           {
             "colorizeDistroLogo": false,
             "colorizeSystemIcon": "none",
             "colorizeSystemText": "none",
             "customIconPath": "",
-            "enableColorization": true,
-            "icon": "noctalia",
+            "enableColorization": false,
+            "icon": "settings-2",
             "id": "ControlCenter",
-            "useDistroLogo": true
+            "useDistroLogo": false
           },
+          {
+            "iconColor": "none",
+            "id": "NoctaliaPerformance"
+          },
+          {
+            "compactMode": false,
+            "hideMode": "hidden",
+            "hideWhenIdle": false,
+            "id": "MediaMini",
+            "maxWidth": 400,
+            "panelShowAlbumArt": true,
+            "scrollingMode": "hover",
+            "showAlbumArt": false,
+            "showArtistFirst": true,
+            "showProgressRing": false,
+            "showVisualizer": false,
+            "textColor": "none",
+            "useFixedWidth": false,
+            "visualizerType": "linear"
+          }
+        ],
+        "center": [
           {
             "characterCount": 2,
             "colorizeIcons": false,
@@ -93,7 +100,11 @@
             "drawerEnabled": true,
             "hidePassive": false,
             "id": "Tray",
-            "pinned": []
+            "pinned": [
+              "steam",
+              "Vesktop",
+              "Heroic"
+            ]
           },
           {
             "displayMode": "onhover",
@@ -107,6 +118,14 @@
             "iconColor": "none",
             "id": "Network",
             "textColor": "none"
+          },
+          {
+            "hideWhenZero": false,
+            "hideWhenZeroUnread": false,
+            "iconColor": "none",
+            "id": "NotificationHistory",
+            "showUnreadBadge": true,
+            "unreadBadgeColor": "primary"
           },
           {
             "displayMode": "forceOpen",
@@ -123,14 +142,6 @@
             "id": "Clock",
             "tooltipFormat": "HH:mm ddd, MMM dd",
             "useCustomFont": false
-          },
-          {
-            "hideWhenZero": false,
-            "hideWhenZeroUnread": false,
-            "iconColor": "none",
-            "id": "NotificationHistory",
-            "showUnreadBadge": true,
-            "unreadBadgeColor": "primary"
           }
         ]
       },
@@ -151,11 +162,11 @@
       "showScreenCorners": false,
       "forceBlackScreenCorners": false,
       "scaleRatio": 1,
-      "radiusRatio": 0.5,
+      "radiusRatio": 0.65,
       "iRadiusRatio": 1,
       "boxRadiusRatio": 1,
       "screenRadiusRatio": 1,
-      "animationSpeed": 1,
+      "animationSpeed": 1.5,
       "animationDisabled": false,
       "compactLockScreen": false,
       "lockScreenAnimations": false,
@@ -274,14 +285,9 @@
       "randomIntervalSec": 300,
       "transitionDuration": 1500,
       "transitionType": [
-        "fade",
-        "disc",
-        "stripes",
-        "wipe",
-        "pixelate",
-        "honeycomb"
+        "fade"
       ],
-      "skipStartupTransition": false,
+      "skipStartupTransition": true,
       "transitionEdgeSmoothness": 0.05,
       "panelPosition": "center",
       "hideWallpaperFilenames": false,
@@ -330,7 +336,7 @@
       "density": "default"
     },
     "controlCenter": {
-      "position": "top_center",
+      "position": "top_left",
       "diskPath": "/",
       "shortcuts": {
         "left": [
@@ -573,7 +579,7 @@
       "volumeStep": 5,
       "volumeOverdrive": false,
       "spectrumFrameRate": 30,
-      "visualizerType": "linear",
+      "visualizerType": "none",
       "spectrumMirrored": true,
       "mprisBlacklist": [],
       "preferredPlayer": "tidal",
@@ -681,7 +687,7 @@
       }
     },
     "notificationsState": {
-      "lastSeenTs": 1780188581000
+      "lastSeenTs": 1780248074000
     },
     "changelogState": {
       "lastSeenVersion": "v4.7.6"
@@ -2569,7 +2575,7 @@
           "path": "Vesper"
         }
       ],
-      "timestamp": 1780174382
+      "timestamp": 1780236151
     },
     "ui": {
       "settingsSidebarExpanded": true
