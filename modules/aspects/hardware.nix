@@ -55,6 +55,9 @@
     # Keyring
     services.gnome.gnome-keyring.enable = true;
 
+    # USB mounting
+    services.udisks2.enable = true;
+
     # User groups
     users.users.nuhddy.extraGroups = [
       "networkmanager"
@@ -73,8 +76,12 @@
       jamesdsp
       playerctl
 
+      ddcutil
+
       inputs.globalprotect-openconnect.packages.${pkgs.stdenv.hostPlatform.system}.default
     ];
+
+    services.udiskie.enable = true;
 
     xdg.configFile."jamesdsp/presets".source = (import ../../lib/symlink-config.nix {inherit config;}) "jamesdsp/presets";
 
