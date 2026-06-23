@@ -3,21 +3,14 @@
   inputs,
   ...
 }: {
-  flake.modules.nixos.niri = {
-    pkgs,
-    lib,
-    ...
-  }: {
+  flake.modules.nixos.niri = {pkgs, ...}: {
     programs.niri = {
       enable = true;
       package = self.packages.${pkgs.stdenv.hostPlatform.system}.myNiri;
     };
   };
 
-  flake.modules.homeManager.niri = {
-    pkgs,
-    ...
-  }: {
+  flake.modules.homeManager.niri = {pkgs, ...}: {
     home.packages = with pkgs; [
       self.packages.${pkgs.stdenv.hostPlatform.system}.myNoctalia
       wl-clipboard
@@ -68,7 +61,6 @@
 
         outputs."DP-2" = {
           mode = "1920x1080@144.001";
-          # scale = 1.25;
         };
 
         xwayland-satellite.path = lib.getExe pkgs.xwayland-satellite;
@@ -128,7 +120,10 @@
         binds = let
           noctalia-call = x: [(lib.getExe self'.packages.myNoctalia) "ipc" "call"] ++ x;
 
-          eq-notify = {name, icon}: ''
+          eq-notify = {
+            name,
+            icon,
+          }: ''
             ${lib.getExe pkgs.jamesdsp} --load-preset ${name}; \
             ${lib.getExe self'.packages.myNoctalia} ipc call toast send \
             '${
@@ -144,7 +139,7 @@
         in {
           "Mod+Return".spawn = term;
           "Mod+Space".spawn = noctalia-call ["launcher" "toggle"];
-          "Mod+E".spawn = lib.getExe pkgs.thunar;
+          "Mod+E".spawn = lib.getExe pkgs.nautilus;
           "Ctrl+Shift+Escape".spawn = term ++ ["-e" (lib.getExe pkgs.btop)];
 
           "Mod+Shift+Q".close-window = _: {};
@@ -180,8 +175,19 @@
           "Mod+Delete".spawn = noctalia-call ["media" "previous"];
           "Mod+End".spawn = noctalia-call ["media" "playPause"];
           "Mod+Next".spawn = noctalia-call ["media" "next"];
-          "Mod+Bracketleft".spawn-sh = eq-notify {name = "Flat"; icon = "device-speaker";};
-          "Mod+Bracketright".spawn-sh = eq-notify {name = "Headphones"; icon = "headphones";};
+          "Mod+Bracketleft".spawn-sh = eq-notify {
+            name = "Flat";
+            icon = "device-speaker";
+          };
+          "Mod+Bracketright".spawn-sh = eq-notify {
+            name = "Headphones";
+            icon = "headphones";
+          };
+
+          "XF86MonBrightnessDown".spawn = noctalia-call ["brightness" "decrease"];
+          "XF86MonBrightnessUp".spawn = noctalia-call ["brightness" "increase"];
+
+          "Mod+G".spawn = noctalia-call ["powerProfile" "toggleNoctaliaPerformance"];
 
           "Mod+F1".show-hotkey-overlay = _: {};
           "Ctrl+Alt+Delete".spawn = noctalia-call ["sessionMenu" "toggle"];
