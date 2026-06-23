@@ -412,6 +412,22 @@
         "type": "github"
       }
     },
+    "nixpkgs_8": {
+      "locked": {
+        "lastModified": 1780749050,
+        "narHash": "sha256-3av0pIjlOWQ6rDbNOmpUSvbNnJkGORQKKjb4LtCZsIY=",
+        "owner": "NixOS",
+        "repo": "nixpkgs",
+        "rev": "a799d3e3886da994fa307f817a6bc705ae538eeb",
+        "type": "github"
+      },
+      "original": {
+        "owner": "NixOS",
+        "ref": "nixos-unstable",
+        "repo": "nixpkgs",
+        "type": "github"
+      }
+    },
     "root": {
       "inputs": {
         "catppuccin": "catppuccin",
@@ -424,7 +440,8 @@
         "nixpkgs": "nixpkgs_7",
         "nixpkgs-stable": "nixpkgs-stable",
         "typst-templates": "typst-templates",
-        "wrappers": "wrappers"
+        "wrappers": "wrappers",
+        "zennotes": "zennotes"
       }
     },
     "rust-analyzer-src": {
@@ -514,6 +531,24 @@
       "original": {
         "owner": "BirdeeHub",
         "repo": "nix-wrapper-modules",
+        "type": "github"
+      }
+    },
+    "zennotes": {
+      "inputs": {
+        "nixpkgs": "nixpkgs_8"
+      },
+      "locked": {
+        "lastModified": 1781291743,
+        "narHash": "sha256-JckPhOMHMoz1JjVWekQ+hRfS9Glc5jMbDhkmGORzLJQ=",
+        "owner": "Nuhddy",
+        "repo": "zennotes-flake",
+        "rev": "b8021f8da4241689e43cd5a4a97c39b7ba77d6c9",
+        "type": "github"
+      },
+      "original": {
+        "owner": "Nuhddy",
+        "repo": "zennotes-flake",
         "type": "github"
       }
     }
