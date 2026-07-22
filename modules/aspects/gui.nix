@@ -10,7 +10,7 @@
       proton-vpn
 
       # File management
-      bitwarden-desktop
+      #bitwarden-desktop
       nextcloud-client
       thunar
       zotero

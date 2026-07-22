@@ -111,7 +111,7 @@
         spawn-at-startup = [
           (lib.getExe self'.packages.myNoctalia)
           [(lib.getExe pkgs.jamesdsp) "-t"]
-          (lib.getExe pkgs.bitwarden-desktop)
+          # (lib.getExe pkgs.bitwarden-desktop)
           (lib.getExe pkgs.nextcloud-client)
         ];
 
