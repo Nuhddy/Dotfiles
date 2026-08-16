@@ -3,27 +3,8 @@
   inputs,
   ...
 }: {
-  perSystem = {pkgs, ...}: {
-    packages.myNeovim = inputs.wrappers.wrappers.neovim.wrap {
-      inherit pkgs;
-
-      settings.config_directory = ../../configs/nvim;
-
-      extraPackages = with pkgs; [
-        tree-sitter
-        gcc
-        lua-language-server
-        stylua
-        nixd
-        alejandra
-        black
-        fantomas
-        typstyle
-      ];
-    };
-  };
   flake.modules.homeManager.neovim = {pkgs, ...}: {
-    home.packages = [self.packages.${pkgs.stdenv.hostPlatform.system}.myNeovim];
+    home.packages = [pkgs.neovim];
   };
   # flake.modules.homeManager.neovim = {
   #   config,
