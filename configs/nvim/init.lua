@@ -4,7 +4,14 @@ ripgrep
 gcc
 tree-sitter
 stylua
+alejandra
+black
+typstyle
+fantomas
+astyle
 lua-language-server
+pyright
+java-language-server
 ]]
 
 vim.loader.enable() -- lua modules caching
@@ -154,6 +161,20 @@ vim.keymap.set(
   { desc = 'Enable spell check - Danish' }
 )
 
+-- Run on vim.pack install/update event
+au('PackChanged', {
+  callback = function(ev)
+    local kind = ev.data.kind
+    if kind ~= 'install' and kind ~= 'update' then return end
+
+    local name = ev.data.spec.name
+    if name == 'nvim-treesitter' then
+      vim.cmd 'TSUpdate'
+      return
+    end
+  end,
+})
+
 -- Mini modules
 vim.pack.add { gh 'nvim-mini/mini.nvim' }
 
@@ -195,6 +216,7 @@ require('mini.surround').setup()
 
 -- Picker
 require('mini.icons').setup()
+require('mini.extra').setup()
 require('mini.pick').setup {
   -- Centered popup
   window = {
@@ -230,6 +252,31 @@ vim.keymap.set(
   { desc = 'Search help' }
 )
 
+vim.keymap.set(
+  'n',
+  '<leader>gd',
+  function() MiniExtra.pickers.lsp { scope = 'definition' } end,
+  { desc = 'LSP: Goto definition' }
+)
+vim.keymap.set(
+  'n',
+  '<leader>gr',
+  function() MiniExtra.pickers.lsp { scope = 'references' } end,
+  { desc = 'LSP: Goto references' }
+)
+vim.keymap.set(
+  'n',
+  '<leader>gt',
+  function() MiniExtra.pickers.lsp { scope = 'type_definition' } end,
+  { desc = 'LSP: Goto type definition' }
+)
+vim.keymap.set(
+  'n',
+  '<leader>gi',
+  function() MiniExtra.pickers.lsp { scope = 'implementation' } end,
+  { desc = 'LSP: Goto implementation' }
+)
+
 -- Statusline
 require('mini.statusline').setup()
 
@@ -242,7 +289,12 @@ require('conform').setup {
     lsp_format = 'fallback',
   },
   formatters_by_ft = {
+    fsharp = { 'fantomas' },
     lua = { 'stylua' },
+    nix = { 'alejandra' },
+    python = { 'black' },
+    typst = { 'typstyle' },
+    java = { 'astyle' },
   },
 }
 vim.keymap.set(
@@ -317,6 +369,8 @@ local servers = {
     ---@type lspconfig.settings.lua_ls
     settings = { Lua = { format = { enable = false } } },
   },
+  pyright = {},
+  java_language_server = {},
 }
 
 for name, server in pairs(servers) do
@@ -339,5 +393,54 @@ au('LspAttach', {
       vim.lsp.buf.declaration,
       { buffer = event.buf, desc = 'LSP: Goto declaration' }
     )
+
+    local client = vim.lsp.get_client_by_id(event.data.client_id)
+    if
+      client
+      and client:supports_method('textDocument/documentHighlight', event.buf)
+    then
+      local highlight_augroup = aug('lsp-highlight', { clear = false })
+      au({ 'CursorHold', 'CursorHoldI' }, {
+        buffer = event.buf,
+        group = highlight_augroup,
+        callback = vim.lsp.buf.document_highlight,
+      })
+      au({ 'CursorMoved', 'CursorMovedI' }, {
+        buffer = event.buf,
+        group = highlight_augroup,
+        callback = vim.lsp.buf.clear_references,
+      })
+      au('LspDetach', {
+        group = aug('lsp-detach', {}),
+        callback = function(event2)
+          vim.lsp.buf.clear_references()
+          vim.api.nvim_clear_autocmds {
+            group = 'lsp-highlight',
+            buffer = event2.buf,
+          }
+        end,
+      })
+    end
   end,
 })
+
+-- Snippets
+vim.pack.add {
+  { src = gh 'l3mon4d3/luasnip', version = vim.version.range '2.*' },
+}
+require('luasnip').setup {}
+vim.pack.add { gh 'rafamadriz/friendly-snippets' }
+require('luasnip.loaders.from_vscode').lazy_load()
+
+-- Auto-complete
+vim.pack.add {
+  { src = gh 'saghen/blink.cmp', version = vim.version.range '1.*' },
+}
+require('blink.cmp').setup {
+  sources = { default = { 'lsp', 'path', 'snippets' } },
+  snippets = { preset = 'luasnip' },
+  signature = { enabled = true },
+  completion = {
+    documentation = { auto_show = true, auto_show_delay_ms = 500 },
+  },
+}

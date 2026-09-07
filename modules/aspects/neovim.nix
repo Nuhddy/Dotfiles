@@ -4,7 +4,21 @@
   ...
 }: {
   flake.modules.homeManager.neovim = {pkgs, ...}: {
-    home.packages = [pkgs.neovim];
+    home.packages = with pkgs; [
+      neovim
+      ripgrep
+      gcc
+      tree-sitter
+      stylua
+      alejandra
+      black
+      typstyle
+      fantomas
+      astyle
+      lua-language-server
+      pyright
+      java-language-server
+    ];
   };
   # flake.modules.homeManager.neovim = {
   #   config,
