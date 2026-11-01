@@ -59,7 +59,7 @@
 
         gestures.hot-corners.off = _: {};
 
-        outputs."DP-2" = {
+        outputs."DP-1" = {
           mode = "1920x1080@144.001";
         };
 
@@ -111,7 +111,7 @@
         spawn-at-startup = [
           (lib.getExe self'.packages.myNoctalia)
           [(lib.getExe pkgs.jamesdsp) "-t"]
-          # (lib.getExe pkgs.bitwarden-desktop)
+          (lib.getExe pkgs.bitwarden-desktop)
           (lib.getExe pkgs.nextcloud-client)
         ];
 

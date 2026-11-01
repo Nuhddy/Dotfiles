@@ -9,12 +9,14 @@
       ripgrep
       gcc
       tree-sitter
+
       stylua
       alejandra
       black
       typstyle
       fantomas
       astyle
+
       lua-language-server
       pyright
       java-language-server

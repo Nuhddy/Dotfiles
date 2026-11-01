@@ -58,6 +58,9 @@
     # USB mounting
     services.udisks2.enable = true;
 
+    # Fan control
+    programs.coolercontrol.enable = true;
+
     # User groups
     users.users.nuhddy.extraGroups = [
       "networkmanager"

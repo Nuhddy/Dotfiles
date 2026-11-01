@@ -21,6 +21,10 @@
     nixcord.url = "github:kaylorben/nixcord";
     catppuccin.url = "github:catppuccin/nix";
     globalprotect-openconnect.url = "github:yuezk/GlobalProtect-openconnect";
+    noctalia = {
+      url = "github:noctalia-dev/noctalia/cachix";
+      inputs.nixpkgs.follows = "nixpkgs";
+    };
 
     typst-templates = {
       url = "github:Nuhddy/typst-templates";

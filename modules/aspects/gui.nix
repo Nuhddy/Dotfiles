@@ -10,10 +10,10 @@
       proton-vpn
 
       # File management
-      #bitwarden-desktop
+      bitwarden-desktop
       nextcloud-client
       thunar
-      zotero
+      inputs.nixpkgs-stable.legacyPackages.${pkgs.stdenv.hostPlatform.system}.zotero
       calibre
       obsidian
       libreoffice

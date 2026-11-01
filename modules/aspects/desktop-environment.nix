@@ -2,10 +2,21 @@
   flake.modules.nixos.desktopEnvironment = {pkgs, ...}: {
     services.displayManager = {
       enable = true;
-      sddm = {
+      # sddm = {
+      #   enable = true;
+      #   wayland.enable = true; # this doesn't disable X11 support
+      #   package = pkgs.kdePackages.sddm;
+      # };
+      noctalia-greeter = {
         enable = true;
-        wayland.enable = true; # this doesn't disable X11 support
-        package = pkgs.kdePackages.sddm;
+        passwordlessSyncUsers = ["nuhddy"];
+        settings = {
+          appearance = {
+            hide_logo = true;
+            scheme_selector_position = "hidden";
+          };
+          output.refresh_rate = 144;
+        };
       };
     };
 

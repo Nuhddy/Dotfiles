@@ -666,12 +666,12 @@
     "openedPanel": "",
     "lockScreenActive": false,
     "wallpapers": {
-      "DP-2": "/home/nuhddy/.config/nixos/assets/wallpaper.png"
+      "DP-1": "/home/nuhddy/.config/nixos/assets/wallpaper.png"
     },
     "desktopWidgetsEditMode": false,
     "display": {
-      "DP-2": {
-        "name": "DP-2",
+      "DP-1": {
+        "name": "DP-1",
         "connected": true,
         "scale": 1,
         "width": 1920,
@@ -682,15 +682,15 @@
         "physical_height": 300,
         "refresh_rate": 144001,
         "vrr_supported": true,
-        "vrr_enabled": true,
+        "vrr_enabled": false,
         "transform": "Normal"
       }
     },
     "notificationsState": {
-      "lastSeenTs": 1780248074000
+      "lastSeenTs": 1788014059000
     },
     "changelogState": {
-      "lastSeenVersion": "v4.7.6"
+      "lastSeenVersion": "v4.7.7"
     },
     "colorSchemesList": {
       "schemes": [
