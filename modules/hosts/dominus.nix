@@ -11,6 +11,12 @@ in {
     inherit host user;
     nixosStateVersion = "25.05";
     homeManagerStateVersion = "25.05";
+    genericConfig = {
+      my.display = {
+        name = "eDP-1";
+        scale = 1.25;
+      };
+    };
     nixosConfig = {
       config,
       modulesPath,
@@ -51,8 +57,8 @@ in {
       "neovim"
       "hardware"
       "desktopEnvironment"
-      "quickshell"
-      "niri"
+      "hyprland"
+      "noctalia"
       "gaming"
       "gui"
     ];

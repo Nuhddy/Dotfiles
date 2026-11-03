@@ -9,9 +9,12 @@
   nixosStateVersion,
   homeManagerStateVersion,
   aspects ? [],
+  genericConfig ? {},
   nixosConfig ? {},
   homeManagerConfig ? {},
 }: let
+  genericOptions = config.flake.modules.generic.options;
+
   selectedAspects = (import ./select-aspects.nix {inherit lib;}) {
     inherit aspects;
     nixosRegistry = config.flake.modules.nixos;
@@ -36,6 +39,8 @@ in
       # NixOS
       selectedAspects.nixos
       ++ [
+        genericOptions
+        genericConfig
         {
           networking.hostName = host;
           system.stateVersion = nixosStateVersion;
@@ -53,6 +58,8 @@ in
             useUserPackages = true;
             users.${user}.imports =
               [
+                genericOptions
+                genericConfig
                 {
                   home = {
                     username = user;

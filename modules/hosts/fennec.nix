@@ -11,6 +11,12 @@ in {
     inherit host;
     nixosStateVersion = "25.11";
     homeManagerStateVersion = "25.11";
+    genericConfig = {
+      my.display = {
+        name = "DP-1";
+        vrr = 3;
+      };
+    };
     nixosConfig = {
       config,
       modulesPath,
@@ -55,10 +61,8 @@ in {
       "neovim"
       "hardware"
       "desktopEnvironment"
-      # "niri"
       "hyprland"
       "noctalia"
-      # "dms"
       "gaming"
       "gui"
     ];

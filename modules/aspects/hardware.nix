@@ -46,8 +46,8 @@
     security.rtkit.enable = true;
 
     # Bluetooth
-    hardware.bluetooth.enable = true;
-    services.blueman.enable = true;
+    hardware.bluetooth.enable = lib.mkIf (config.networking.hostName == "dominus") true;
+    services.blueman.enable = lib.mkIf (config.networking.hostName == "dominus") true;
 
     # Networking
     networking.networkmanager.enable = true;
@@ -59,7 +59,7 @@
     services.udisks2.enable = true;
 
     # Fan control
-    programs.coolercontrol.enable = true;
+    programs.coolercontrol.enable = lib.mkIf (config.networking.hostName == "fennec") true;
 
     # User groups
     users.users.nuhddy.extraGroups = [

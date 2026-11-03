@@ -1,10 +1,12 @@
+local nix = require 'nix'
+
 -- Outputs
 hl.monitor {
-  output = 'DP-1',
+  output = nix['display']['name'],
   mode = 'highrr',
   position = 'auto',
-  scale = 'auto',
-  vrr = 3,
+  scale = nix['display']['scale'],
+  vrr = nix['display']['vrr'],
 }
 
 -- Autostart
@@ -13,7 +15,6 @@ hl.on('hyprland.start', function()
   hl.exec_cmd 'jamesdsp -t'
   hl.exec_cmd 'bitwarden-desktop'
   hl.exec_cmd 'nextcloud'
-  hl.exec_cmd 'coolercontrol'
 end)
 
 -- Input
@@ -89,6 +90,7 @@ hl.config {
   misc = {
     disable_hyprland_logo = true,
     force_default_wallpaper = 0,
+    disable_splash_rendering = true,
   },
 }
 
@@ -276,11 +278,11 @@ hl.bind('SUPER + mouse:273', hl.dsp.window.resize(), { mouse = true })
 -- CoolerControl modes
 local cc_mode = function(name)
   return hl.dsp.exec_cmd(([[
-    T="REPLACE TOKEN"
+    T="%s"
     U=$(curl -s -H "Authorization: Bearer $T" http://localhost:11987/modes \
       | jq -r '.modes[] | select(.name=="%s") | .uid')
     [ -n "$U" ] && curl -s -H "Authorization: Bearer $T" -X POST http://localhost:11987/modes-active/$U
-  ]]):format(name))
+  ]]):format(nix['cc_token'], name))
 end
 
 hl.bind('SUPER + SHIFT + BracketLeft', cc_mode 'Silent')
