@@ -13,7 +13,7 @@ hl.monitor {
 hl.on('hyprland.start', function()
   hl.exec_cmd 'noctalia'
   hl.exec_cmd 'jamesdsp -t'
-  hl.exec_cmd 'bitwarden-desktop'
+  hl.exec_cmd 'bitwarden'
   hl.exec_cmd 'nextcloud'
 end)
 
