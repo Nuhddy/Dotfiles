@@ -347,3 +347,23 @@ hl.on('window.active', function(w)
     deactivate_excl()
   end
 end)
+
+-- Per-class nightlight
+local is_excl_nightlight_class = {}
+for _, x in ipairs {
+  'com.mojang.minecraft',
+} do
+  is_excl_nightlight_class[x] = true
+end
+
+local nightlightFlag = true
+
+hl.on('window.active', function(w)
+  if w ~= nil and is_excl_nightlight_class[w.class] then
+    hl.dispatch(hl.dsp.exec_cmd(noct .. 'nightlight-disable'))
+    nightlightFlag = false
+  elseif nightlightFlag == false then
+    hl.dispatch(hl.dsp.exec_cmd(noct .. 'nightlight-enable'))
+    nightlightFlag = true
+  end
+end)
