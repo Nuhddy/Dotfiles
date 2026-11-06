@@ -130,6 +130,7 @@
         window_border_width = "1.0";
         window_padding_width = 0;
         hide_window_decorations = "yes";
+        remember_window_size = "no";
       };
       keybindings = {
         "kitty_mod+0" = "change_font_size all 0";
