@@ -30,6 +30,7 @@
       typst
       teams-for-linux
       slack
+      element-desktop
     ];
 
     home.file."${config.xdg.dataHome}/typst/packages/local/uni/0.1.0".source =
@@ -39,6 +40,8 @@
       enable = true;
       profiles.${config.home.username}.isDefault = true;
     };
+
+    xdg.mimeApps.defaultApplications."x-scheme-handler/element" = "element-desktop.desktop";
 
     programs.vscodium = {
       enable = true;

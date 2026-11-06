@@ -54,6 +54,7 @@
 
     # Keyring
     services.gnome.gnome-keyring.enable = true;
+    security.pam.services.login.enableGnomeKeyring = true;
 
     # USB mounting
     services.udisks2.enable = true;
