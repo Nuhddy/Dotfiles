@@ -15,6 +15,7 @@ hl.on('hyprland.start', function()
   hl.exec_cmd 'jamesdsp -t'
   hl.exec_cmd 'bitwarden'
   hl.exec_cmd 'nextcloud'
+  hl.exec_cmd 'coolercontrol'
 end)
 
 -- Input
