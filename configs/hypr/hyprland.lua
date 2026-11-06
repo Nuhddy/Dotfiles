@@ -184,8 +184,20 @@ hl.bind(
   { submap_universal = true }
 )
 
-hl.bind('SUPER + SHIFT + H', hl.dsp.window.swap { direction = 'left' })
-hl.bind('SUPER + SHIFT + L', hl.dsp.window.swap { direction = 'right' })
+hl.bind(
+  'SUPER + SHIFT + H',
+  bind_per_layout {
+    scrolling = hl.dsp.layout 'swapcol l',
+    default = hl.dsp.window.swap { direction = 'left' },
+  }
+)
+hl.bind(
+  'SUPER + SHIFT + L',
+  bind_per_layout {
+    scrolling = hl.dsp.layout 'swapcol r',
+    default = hl.dsp.window.swap { direction = 'right' },
+  }
+)
 hl.bind(
   'SUPER + SHIFT + J',
   bind_per_layout {
