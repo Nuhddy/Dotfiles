@@ -79,7 +79,10 @@ hl.config {
 -- Layouts
 hl.config {
   general = { layout = 'scrolling' },
-  scrolling = { explicit_column_widths = '0.5, 1.0' },
+  scrolling = {
+    explicit_column_widths = '0.5, 1.0',
+    wrap_focus = false,
+  },
   master = {
     mfact = 0.6,
     orientation = 'right',
@@ -313,8 +316,60 @@ hl.bind('SUPER + mouse:272', hl.dsp.window.drag(), { mouse = true })
 hl.bind('SUPER + mouse:273', hl.dsp.window.resize(), { mouse = true })
 
 -- Gestures
-hl.gesture { fingers = 3, direction = 'horizontal', action = 'scroll_move' }
-hl.gesture { fingers = 3, direction = 'vertical', action = 'workspace' }
+local function focus_step(d)
+  local a = hl.get_active_window()
+  if a == nil then return end
+
+  local m = hl.get_active_monitor()
+
+  local nb
+  for _, o in ipairs(hl.get_workspace_windows(a.workspace)) do
+    if not o.floating and o.at.x ~= a.at.x then
+      local ahead = (d == 'r' and o.at.x > a.at.x)
+        or (d == 'l' and o.at.x < a.at.x)
+      if
+        ahead
+        and (
+          nb == nil or math.abs(o.at.x - a.at.x) < math.abs(nb.at.x - a.at.x)
+        )
+      then
+        nb = o
+      end
+    end
+  end
+  if nb == nil then return end
+
+  local half = m.width * 0.75
+  local n = 1
+
+  if a.size.x < half and nb.size.x < half then
+    local on_left = (a.at.x + a.size.x / 2) < (m.position.x + m.width / 2)
+    if (d == 'r' and on_left) or (d == 'l' and not on_left) then n = 2 end
+  end
+
+  for _ = 1, n do
+    hl.dispatch(hl.dsp.layout('focus ' .. d))
+  end
+end
+
+hl.gesture {
+  fingers = 3,
+  direction = 'right',
+  action = function() focus_step 'l' end,
+  scale = 2,
+}
+hl.gesture {
+  fingers = 3,
+  direction = 'left',
+  action = function() focus_step 'r' end,
+  scale = 2,
+}
+hl.gesture {
+  fingers = 3,
+  direction = 'vertical',
+  action = 'workspace',
+  scale = 1.5,
+}
 
 -- CoolerControl modes
 local cc_mode = function(name)
