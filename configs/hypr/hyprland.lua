@@ -78,6 +78,7 @@ hl.config {
 -- Layouts
 hl.config {
   general = { layout = 'scrolling' },
+  scrolling = { explicit_column_widths = '0.5, 1.0' },
   master = {
     mfact = 0.6,
     orientation = 'right',
@@ -199,6 +200,29 @@ hl.bind(
   }
 )
 
+-- Relies on pixel x-positions, so only works for ltr horizontal scrolling
+local is_last_column = function(w)
+  for _, o in ipairs(hl.get_workspace_windows(w.workspace)) do
+    if not o.floating and o.at.x > w.at.x then return false end
+  end
+  return true
+end
+hl.bind(
+  'SUPER + Escape',
+  bind_per_layout {
+    scrolling = function()
+      local w = hl.get_active_window()
+      if w == nil then return end
+
+      hl.dispatch(hl.dsp.layout 'colresize +conf')
+      if is_last_column(w) then
+        hl.dispatch(hl.dsp.layout 'focus l')
+        hl.dispatch(hl.dsp.layout 'focus r')
+      end
+    end,
+  }
+)
+
 for i = 1, 5 do
   hl.bind(
     'SUPER + ' .. i,
@@ -274,6 +298,10 @@ hl.bind('CTRL + ALT + Delete', hl.dsp.exec_cmd(noct .. 'panel-toggle session'))
 
 hl.bind('SUPER + mouse:272', hl.dsp.window.drag(), { mouse = true })
 hl.bind('SUPER + mouse:273', hl.dsp.window.resize(), { mouse = true })
+
+-- Gestures
+hl.gesture { fingers = 3, direction = 'horizontal', action = 'scroll_move' }
+hl.gesture { fingers = 3, direction = 'vertical', action = 'workspace' }
 
 -- CoolerControl modes
 local cc_mode = function(name)
