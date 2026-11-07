@@ -381,8 +381,16 @@ local cc_mode = function(name)
   ]]):format(nix['cc_token'], name))
 end
 
-hl.bind('SUPER + SHIFT + BracketLeft', cc_mode 'Silent')
-hl.bind('SUPER + SHIFT + BracketRight', cc_mode 'Main')
+hl.bind(
+  'SUPER + SHIFT + BracketLeft',
+  cc_mode 'Silent',
+  { submap_universal = true }
+)
+hl.bind(
+  'SUPER + SHIFT + BracketRight',
+  cc_mode 'Main',
+  { submap_universal = true }
+)
 
 -- Per-class submap with limited keybinds
 hl.define_submap(
