@@ -152,7 +152,21 @@
     programs.nixcord = {
       enable = true;
       discord.enable = false;
-      vesktop.enable = true;
+      vesktop = {
+        enable = true;
+        package = pkgs.vesktop.overrideAttrs (oldAttrs: {
+          postFixup =
+            (oldAttrs.postFixup or "")
+            + ''
+              substituteInPlace $out/share/applications/vesktop.desktop \
+                --replace-fail "Name=Vesktop" "Name=Discord" \
+                --replace-fail "Icon=vesktop" "Icon=discord"
+              install -Dm0644 \
+                ${pkgs.discord}/share/icons/hicolor/256x256/apps/discord.png \
+                $out/share/icons/hicolor/256x256/apps/discord.png
+            '';
+        });
+      };
       quickCss = "@import url(\"https://catppuccin.github.io/discord/dist/catppuccin-mocha.theme.css\");";
       config = {
         useQuickCss = true;
