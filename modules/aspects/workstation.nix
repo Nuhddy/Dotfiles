@@ -128,6 +128,7 @@
     programs.bat.enable = true;
     programs.jq.enable = true;
     programs.ripgrep.enable = true;
+    programs.github-copilot-cli.enable = true;
 
     # Git
     programs.git = {
