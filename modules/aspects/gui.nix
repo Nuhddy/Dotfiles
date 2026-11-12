@@ -30,7 +30,9 @@
       typst
       teams-for-linux
       slack
-      element-desktop
+      (element-desktop.override {
+        commandLineArgs = "--password-store=gnome-libsecret";
+      })
     ];
 
     home.file."${config.xdg.dataHome}/typst/packages/local/uni/0.1.0".source =
