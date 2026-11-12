@@ -20,7 +20,7 @@ in {
       };
     };
     homeManagerConfig = {pkgs, ...}: {
-      home.packages = [pkgs.wslu];
+      home.packages = with pkgs; [xdg-utils];
     };
     aspects = [
       "base"
