@@ -115,6 +115,14 @@ hl.window_rule {
   workspace = '4',
 }
 hl.window_rule {
+  match = { class = 'teams-for-linux' },
+  workspace = '4',
+}
+hl.window_rule {
+  match = { class = 'element-desktop' },
+  workspace = '4',
+}
+hl.window_rule {
   match = { class = 'tidal-hifi' },
   workspace = '5',
 }
