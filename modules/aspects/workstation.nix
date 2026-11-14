@@ -2,6 +2,7 @@
   flake.modules.nixos.workstation = {pkgs, ...}: {
     imports = [
       inputs.catppuccin.nixosModules.catppuccin
+      inputs.bootvine.nixosModules.default
     ];
 
     programs.zsh.enable = true;
@@ -34,6 +35,8 @@
       accent = "blue";
       cache.enable = true;
     };
+
+    services.bootvine.enable = true;
 
     # Binary caches
     nix.settings = {
