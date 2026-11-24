@@ -54,6 +54,10 @@ in {
         open = false;
         package = config.boot.kernelPackages.nvidiaPackages.latest;
       };
+      environment.sessionVariables = {
+        LIBVA_DRIVER_NAME = "nvidia";
+        NVD_BACKEND = "direct";
+      };
     };
     aspects = [
       "base"

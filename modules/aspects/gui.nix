@@ -1,4 +1,10 @@
 {inputs, ...}: {
+  flake.modules.nixos.gui = {
+    environment.sessionVariables = {
+      MOZ_DISABLE_RDD_SANDBOX = "1";
+    };
+  };
+
   flake.modules.homeManager.gui = {
     config,
     pkgs,
