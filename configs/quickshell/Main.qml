@@ -21,21 +21,22 @@ Rectangle {
       spacing: dotSpacing
 
       Repeater {
-        model: HyprlandEvents.workspaces
+        model: 5
 
         Rectangle {
-          required property var modelData
+          required property int modelData
 
-          property bool isPopulated: modelData.lastIpcObject.windows ?? 0
+          readonly property var workspace: HyprlandEvents.workspaces.values.find(ws => ws.id === modelData + 1)
+          property bool isPopulated: workspace?.lastIpcObject.windows ?? 0
 
           implicitWidth: dotSize
           implicitHeight: dotSize
           radius: dotSize / 2
 
           color: {
-            if (modelData.urgent) {
+            if (workspace?.urgent) {
               return root.colRed;
-            } else if (modelData.focused) {
+            } else if (workspace?.focused) {
               return root.colFg;
             } else if (isPopulated) {
               return Qt.alpha(root.colFg, 0.7);
