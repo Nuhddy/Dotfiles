@@ -34,6 +34,11 @@ hl.config {
     },
   },
   cursor = { no_warps = true },
+  gestures = {
+    workspace_swipe_distance = 1000,
+    workspace_swipe_min_speed_to_force = 1,
+    workspace_swipe_create_new = false,
+  },
 }
 
 -- Animations
@@ -101,11 +106,11 @@ hl.config {
 }
 
 -- Rules
-hl.workspace_rule { workspace = '1', persistent = true }
-hl.workspace_rule { workspace = '2', persistent = true }
-hl.workspace_rule { workspace = '3', persistent = true }
-hl.workspace_rule { workspace = '4', persistent = true, layout = 'monocle' }
-hl.workspace_rule { workspace = '5', persistent = true, layout = 'monocle' }
+hl.workspace_rule { workspace = '1' }
+hl.workspace_rule { workspace = '2' }
+hl.workspace_rule { workspace = '3' }
+hl.workspace_rule { workspace = '4', layout = 'monocle' }
+hl.workspace_rule { workspace = '5', layout = 'monocle' }
 
 hl.window_rule {
   match = { class = 'steam_app_252950' },
