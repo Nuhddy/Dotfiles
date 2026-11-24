@@ -27,19 +27,20 @@ Rectangle {
           required property int modelData
 
           readonly property var workspace: HyprlandEvents.workspaces.values.find(ws => ws.id === modelData + 1)
-          property bool isPopulated: workspace?.lastIpcObject.windows ?? 0
 
           implicitWidth: dotSize
           implicitHeight: dotSize
           radius: dotSize / 2
 
           color: {
-            if (workspace?.urgent) {
-              return root.colRed;
-            } else if (workspace?.focused) {
-              return root.colFg;
-            } else if (isPopulated) {
-              return Qt.alpha(root.colFg, 0.7);
+            if (workspace) {
+              if (workspace.urgent) {
+                return root.colRed;
+              } else if (workspace.focused) {
+                return root.colFg;
+              } else {
+                return Qt.alpha(root.colFg, 0.7);
+              }
             } else {
               return Qt.alpha(root.colFg, 0.4);
             }
