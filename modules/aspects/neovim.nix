@@ -16,6 +16,7 @@
       typstyle
       fantomas
       astyle
+      qt6.qtdeclarative
 
       lua-language-server
       pyright

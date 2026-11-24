@@ -4,10 +4,14 @@ import QtQuick
 import Quickshell
 
 Singleton {
-    readonly property string time: Qt.formatDateTime(clock.date, "HH:mm")
+  property string clock: format("HH:mm")
 
-    SystemClock {
-        id: clock
-        precision: SystemClock.Minutes
-    }
+  function format(s) {
+    return Qt.formatDateTime(clock.date, s);
+  }
+
+  SystemClock {
+    id: clock
+    precision: SystemClock.Seconds
+  }
 }

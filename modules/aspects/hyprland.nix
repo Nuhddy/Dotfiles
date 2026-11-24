@@ -28,6 +28,5 @@
             cc_token = secrets.coolerControlToken;
           };
       };
-    programs.quickshell.enable = true;
   };
 }

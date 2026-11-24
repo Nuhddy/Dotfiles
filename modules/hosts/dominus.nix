@@ -59,6 +59,7 @@ in {
       "desktopEnvironment"
       "hyprland"
       "noctalia"
+      "quickshell"
       "gaming"
       "gui"
     ];
