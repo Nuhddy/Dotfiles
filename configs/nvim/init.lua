@@ -291,6 +291,7 @@ require('conform').setup {
     python = { 'black' },
     typst = { 'typstyle' },
     java = { 'astyle' },
+    qml = { 'qmlformat' },
   },
 }
 vim.keymap.set(
