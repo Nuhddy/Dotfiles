@@ -12,11 +12,6 @@ Rectangle {
   anchors.fill: parent
   color: "transparent"
 
-  MouseArea {
-    anchors.fill: parent
-    onPressed: PillModes.toggleLauncher()
-  }
-
   RowLayout {
     anchors.centerIn: parent
     spacing: 14
