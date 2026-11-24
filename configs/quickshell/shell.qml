@@ -8,5 +8,17 @@ ShellRoot {
   readonly property color colFg: "#eae3e6"
   readonly property color colRed: "#e81b33"
 
+  Connections {
+    target: Quickshell
+
+    function onReloadCompleted() {
+      Quickshell.inhibitReloadPopup();
+    }
+
+    function onReloadFailed() {
+      Quickshell.inhibitReloadPopup();
+    }
+  }
+
   Pill {}
 }
