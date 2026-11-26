@@ -64,12 +64,18 @@ hl.animation {
 }
 
 -- Appearance
-local gaps = 4
+local inner_gaps = 4
+local outer_gaps = inner_gaps * 2
 hl.config {
   general = {
     border_size = 1,
-    gaps_in = gaps,
-    gaps_out = gaps * 2,
+    gaps_in = inner_gaps,
+    gaps_out = {
+      top = outer_gaps + 36,
+      bottom = outer_gaps,
+      left = outer_gaps,
+      right = outer_gaps,
+    },
     col = {
       active_border = '#89b4fa',
       inactive_border = '#585b70',
